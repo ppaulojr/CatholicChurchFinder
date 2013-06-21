@@ -15,6 +15,19 @@
 		ED3B1464177485AD00213826 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1463177485AD00213826 /* Default.png */; };
 		ED3B1466177485AD00213826 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1465177485AD00213826 /* Default@2x.png */; };
 		ED3B1468177485AD00213826 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1467177485AD00213826 /* Default-568h@2x.png */; };
+		EDB2025F177487DC00AB8CFD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB2025E177487DC00AB8CFD /* CoreData.framework */; };
+		EDD33FB2177486E8000CDF87 /* NFCoreDataStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */; };
+		EDD33FB3177486E8000CDF87 /* NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FA9177486E8000CDF87 /* NFEvent.m */; };
+		EDD33FB4177486E8000CDF87 /* NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FAB177486E8000CDF87 /* NFIgreja.m */; };
+		EDD33FB5177486E8000CDF87 /* NFMonthlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FAD177486E8000CDF87 /* NFMonthlyEvent.m */; };
+		EDD33FB6177486E8000CDF87 /* NFWeeklyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FAF177486E8000CDF87 /* NFWeeklyEvent.m */; };
+		EDD33FB7177486E8000CDF87 /* NFYearlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FB1177486E8000CDF87 /* NFYearlyEvent.m */; };
+		EDD33FBB1774872C000CDF87 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FB91774872C000CDF87 /* Model.xcdatamodeld */; };
+		EDD33FC717748748000CDF87 /* _NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FBE17748748000CDF87 /* _NFEvent.m */; };
+		EDD33FC817748748000CDF87 /* _NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC017748748000CDF87 /* _NFIgreja.m */; };
+		EDD33FC917748748000CDF87 /* _NFMonthlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC217748748000CDF87 /* _NFMonthlyEvent.m */; };
+		EDD33FCA17748748000CDF87 /* _NFWeeklyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */; };
+		EDD33FCB17748748000CDF87 /* _NFYearlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +43,30 @@
 		ED3B1463177485AD00213826 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ED3B1465177485AD00213826 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		ED3B1467177485AD00213826 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EDB2025E177487DC00AB8CFD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCoreDataStackManager.h; sourceTree = "<group>"; };
+		EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCoreDataStackManager.m; sourceTree = "<group>"; };
+		EDD33FA8177486E8000CDF87 /* NFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFEvent.h; sourceTree = "<group>"; };
+		EDD33FA9177486E8000CDF87 /* NFEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFEvent.m; sourceTree = "<group>"; };
+		EDD33FAA177486E8000CDF87 /* NFIgreja.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgreja.h; sourceTree = "<group>"; };
+		EDD33FAB177486E8000CDF87 /* NFIgreja.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgreja.m; sourceTree = "<group>"; };
+		EDD33FAC177486E8000CDF87 /* NFMonthlyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFMonthlyEvent.h; sourceTree = "<group>"; };
+		EDD33FAD177486E8000CDF87 /* NFMonthlyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFMonthlyEvent.m; sourceTree = "<group>"; };
+		EDD33FAE177486E8000CDF87 /* NFWeeklyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFWeeklyEvent.h; sourceTree = "<group>"; };
+		EDD33FAF177486E8000CDF87 /* NFWeeklyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFWeeklyEvent.m; sourceTree = "<group>"; };
+		EDD33FB0177486E8000CDF87 /* NFYearlyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFYearlyEvent.h; sourceTree = "<group>"; };
+		EDD33FB1177486E8000CDF87 /* NFYearlyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFYearlyEvent.m; sourceTree = "<group>"; };
+		EDD33FBA1774872C000CDF87 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		EDD33FBD17748748000CDF87 /* _NFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFEvent.h; sourceTree = "<group>"; };
+		EDD33FBE17748748000CDF87 /* _NFEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFEvent.m; sourceTree = "<group>"; };
+		EDD33FBF17748748000CDF87 /* _NFIgreja.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFIgreja.h; sourceTree = "<group>"; };
+		EDD33FC017748748000CDF87 /* _NFIgreja.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFIgreja.m; sourceTree = "<group>"; };
+		EDD33FC117748748000CDF87 /* _NFMonthlyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFMonthlyEvent.h; sourceTree = "<group>"; };
+		EDD33FC217748748000CDF87 /* _NFMonthlyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFMonthlyEvent.m; sourceTree = "<group>"; };
+		EDD33FC317748748000CDF87 /* _NFWeeklyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFWeeklyEvent.h; sourceTree = "<group>"; };
+		EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFWeeklyEvent.m; sourceTree = "<group>"; };
+		EDD33FC517748748000CDF87 /* _NFYearlyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFYearlyEvent.h; sourceTree = "<group>"; };
+		EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFYearlyEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB2025F177487DC00AB8CFD /* CoreData.framework in Frameworks */,
 				ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */,
 				ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */,
 				ED3B1456177485AD00213826 /* CoreGraphics.framework in Frameworks */,
@@ -66,9 +104,10 @@
 		ED3B1450177485AD00213826 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED3B1451177485AD00213826 /* UIKit.framework */,
-				ED3B1453177485AD00213826 /* Foundation.framework */,
+				EDB2025E177487DC00AB8CFD /* CoreData.framework */,
 				ED3B1455177485AD00213826 /* CoreGraphics.framework */,
+				ED3B1453177485AD00213826 /* Foundation.framework */,
+				ED3B1451177485AD00213826 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,6 +115,7 @@
 		ED3B1457177485AD00213826 /* IgrejasRio */ = {
 			isa = PBXGroup;
 			children = (
+				EDD33FB8177486EF000CDF87 /* Model */,
 				ED3B1460177485AD00213826 /* NFAppDelegate.h */,
 				ED3B1461177485AD00213826 /* NFAppDelegate.m */,
 				ED3B1458177485AD00213826 /* Supporting Files */,
@@ -94,6 +134,44 @@
 				ED3B145D177485AD00213826 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDD33FB8177486EF000CDF87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDD33FBC17748748000CDF87 /* mogenerator */,
+				EDD33FB91774872C000CDF87 /* Model.xcdatamodeld */,
+				EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */,
+				EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */,
+				EDD33FA8177486E8000CDF87 /* NFEvent.h */,
+				EDD33FA9177486E8000CDF87 /* NFEvent.m */,
+				EDD33FAA177486E8000CDF87 /* NFIgreja.h */,
+				EDD33FAB177486E8000CDF87 /* NFIgreja.m */,
+				EDD33FAC177486E8000CDF87 /* NFMonthlyEvent.h */,
+				EDD33FAD177486E8000CDF87 /* NFMonthlyEvent.m */,
+				EDD33FAE177486E8000CDF87 /* NFWeeklyEvent.h */,
+				EDD33FAF177486E8000CDF87 /* NFWeeklyEvent.m */,
+				EDD33FB0177486E8000CDF87 /* NFYearlyEvent.h */,
+				EDD33FB1177486E8000CDF87 /* NFYearlyEvent.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EDD33FBC17748748000CDF87 /* mogenerator */ = {
+			isa = PBXGroup;
+			children = (
+				EDD33FBD17748748000CDF87 /* _NFEvent.h */,
+				EDD33FBE17748748000CDF87 /* _NFEvent.m */,
+				EDD33FBF17748748000CDF87 /* _NFIgreja.h */,
+				EDD33FC017748748000CDF87 /* _NFIgreja.m */,
+				EDD33FC117748748000CDF87 /* _NFMonthlyEvent.h */,
+				EDD33FC217748748000CDF87 /* _NFMonthlyEvent.m */,
+				EDD33FC317748748000CDF87 /* _NFWeeklyEvent.h */,
+				EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */,
+				EDD33FC517748748000CDF87 /* _NFYearlyEvent.h */,
+				EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */,
+			);
+			path = mogenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +241,18 @@
 			files = (
 				ED3B145E177485AD00213826 /* main.m in Sources */,
 				ED3B1462177485AD00213826 /* NFAppDelegate.m in Sources */,
+				EDD33FB2177486E8000CDF87 /* NFCoreDataStackManager.m in Sources */,
+				EDD33FB3177486E8000CDF87 /* NFEvent.m in Sources */,
+				EDD33FB4177486E8000CDF87 /* NFIgreja.m in Sources */,
+				EDD33FB5177486E8000CDF87 /* NFMonthlyEvent.m in Sources */,
+				EDD33FB6177486E8000CDF87 /* NFWeeklyEvent.m in Sources */,
+				EDD33FB7177486E8000CDF87 /* NFYearlyEvent.m in Sources */,
+				EDD33FBB1774872C000CDF87 /* Model.xcdatamodeld in Sources */,
+				EDD33FC717748748000CDF87 /* _NFEvent.m in Sources */,
+				EDD33FC817748748000CDF87 /* _NFIgreja.m in Sources */,
+				EDD33FC917748748000CDF87 /* _NFMonthlyEvent.m in Sources */,
+				EDD33FCA17748748000CDF87 /* _NFWeeklyEvent.m in Sources */,
+				EDD33FCB17748748000CDF87 /* _NFYearlyEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDD33FB91774872C000CDF87 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDD33FBA1774872C000CDF87 /* Model.xcdatamodel */,
+			);
+			currentVersion = EDD33FBA1774872C000CDF87 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ED3B1446177485AD00213826 /* Project object */;
 }
