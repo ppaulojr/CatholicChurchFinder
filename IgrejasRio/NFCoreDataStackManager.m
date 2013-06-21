@@ -10,7 +10,7 @@
 
 @implementation NFCoreDataStackManager
 
-+ (instancetype)sharedInstance
++ (instancetype)sharedManager
 {
     static NFCoreDataStackManager *instance;
     static dispatch_once_t onceToken;
@@ -25,7 +25,7 @@
     static NSManagedObjectModel *mom;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Igrejas_Rio" withExtension:@"momd"];
+        NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
         mom = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     });
     return mom;
@@ -37,7 +37,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
-        NSURL *storeURL = [[NSBundle mainBundle] URLForResource:@"Igrejas_Rio" withExtension:@"sqlite"];
+        NSURL *storeURL = [[NSBundle mainBundle] URLForResource:@"IgrejasRio" withExtension:@"sqlite"];
         [self.persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                       configuration:nil URL:storeURL
                                                             options:nil error:NULL];

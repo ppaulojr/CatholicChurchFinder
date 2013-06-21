@@ -7,6 +7,7 @@
 extern const struct NFIgrejaAttributes {
 	__unsafe_unretained NSString *bairro;
 	__unsafe_unretained NSString *cep;
+	__unsafe_unretained NSString *email;
 	__unsafe_unretained NSString *endereco;
 	__unsafe_unretained NSString *lastModified;
 	__unsafe_unretained NSString *latitude;
@@ -14,6 +15,7 @@ extern const struct NFIgrejaAttributes {
 	__unsafe_unretained NSString *nome;
 	__unsafe_unretained NSString *observacao;
 	__unsafe_unretained NSString *paroco;
+	__unsafe_unretained NSString *site;
 	__unsafe_unretained NSString *telefones;
 } NFIgrejaAttributes;
 
@@ -25,6 +27,8 @@ extern const struct NFIgrejaFetchedProperties {
 } NFIgrejaFetchedProperties;
 
 @class NFEvent;
+
+
 
 
 
@@ -65,6 +69,16 @@ extern const struct NFIgrejaFetchedProperties {
 
 
 //- (BOOL)validateCep:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSString* email;
+
+
+
+//- (BOOL)validateEmail:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -148,6 +162,16 @@ extern const struct NFIgrejaFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString* site;
+
+
+
+//- (BOOL)validateSite:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSString* telefones;
 
 
@@ -188,6 +212,12 @@ extern const struct NFIgrejaFetchedProperties {
 
 - (NSString*)primitiveCep;
 - (void)setPrimitiveCep:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveEmail;
+- (void)setPrimitiveEmail:(NSString*)value;
 
 
 
@@ -236,6 +266,12 @@ extern const struct NFIgrejaFetchedProperties {
 
 - (NSString*)primitiveParoco;
 - (void)setPrimitiveParoco:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveSite;
+- (void)setPrimitiveSite:(NSString*)value;
 
 
 

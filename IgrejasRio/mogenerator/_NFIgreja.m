@@ -6,6 +6,7 @@
 const struct NFIgrejaAttributes NFIgrejaAttributes = {
 	.bairro = @"bairro",
 	.cep = @"cep",
+	.email = @"email",
 	.endereco = @"endereco",
 	.lastModified = @"lastModified",
 	.latitude = @"latitude",
@@ -13,6 +14,7 @@ const struct NFIgrejaAttributes NFIgrejaAttributes = {
 	.nome = @"nome",
 	.observacao = @"observacao",
 	.paroco = @"paroco",
+	.site = @"site",
 	.telefones = @"telefones",
 };
 
@@ -74,6 +76,13 @@ const struct NFIgrejaFetchedProperties NFIgrejaFetchedProperties = {
 
 
 @dynamic cep;
+
+
+
+
+
+
+@dynamic email;
 
 
 
@@ -161,6 +170,13 @@ const struct NFIgrejaFetchedProperties NFIgrejaFetchedProperties = {
 
 
 @dynamic paroco;
+
+
+
+
+
+
+@dynamic site;
 
 
 

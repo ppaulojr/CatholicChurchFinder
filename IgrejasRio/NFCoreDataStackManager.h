@@ -17,6 +17,6 @@
 
 @property (readonly, nonatomic, strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-+ (instancetype)sharedInstance;
++ (instancetype)sharedManager;
 
 @end

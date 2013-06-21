@@ -7,6 +7,7 @@
 //
 
 #import "NFAppDelegate.h"
+#import "NFCoreDataStackManager+Import.h"
 
 @implementation NFAppDelegate
 
@@ -14,10 +15,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+#if !TARGET_IPHONE_SIMULATOR
+    NSLog(@"You must run this in the simulator!");
+    abort();
+#endif
+
+    NSLog(@"Starting import...");
+    [[NFCoreDataStackManager sharedManager] performImport];
+    NSLog(@"Importing done!");
+    NSLog(@"Get the Core Data database at: %@", [NFCoreDataStackManager sharedManager].importOutputDatabasePath);
+
+    exit(0);
 }
 
 @end
