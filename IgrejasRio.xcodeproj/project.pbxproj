@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */; };
 		ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
 		ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
 		ED3B1456177485AD00213826 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1455177485AD00213826 /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVImporter.xcconfig"; path = "Pods/Pods-CSVImporter.xcconfig"; sourceTree = SOURCE_ROOT; };
 		ED3B144E177485AD00213826 /* IgrejasRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IgrejasRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3B1451177485AD00213826 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED3B1453177485AD00213826 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +80,7 @@
 		EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFWeeklyEvent.m; sourceTree = "<group>"; };
 		EDD33FC517748748000CDF87 /* _NFYearlyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFYearlyEvent.h; sourceTree = "<group>"; };
 		EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFYearlyEvent.m; sourceTree = "<group>"; };
+		EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSVImporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 				EDB202A51774892D00AB8CFD /* UIKit.framework in Frameworks */,
 				EDB202A61774892D00AB8CFD /* Foundation.framework in Frameworks */,
 				EDB202A71774892D00AB8CFD /* CoreGraphics.framework in Frameworks */,
+				DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +116,7 @@
 				EDB202A81774892D00AB8CFD /* CSVImporter */,
 				ED3B1450177485AD00213826 /* Frameworks */,
 				ED3B144F177485AD00213826 /* Products */,
+				84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +135,7 @@
 				EDB2025E177487DC00AB8CFD /* CoreData.framework */,
 				ED3B1455177485AD00213826 /* CoreGraphics.framework */,
 				ED3B1453177485AD00213826 /* Foundation.framework */,
+				EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -241,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDB202BC1774892E00AB8CFD /* Build configuration list for PBXNativeTarget "CSVImporter" */;
 			buildPhases = (
+				4BB27C7C4C8D465E8DE30D73 /* Check Pods Manifest.lock */,
 				EDB202A01774892D00AB8CFD /* Sources */,
 				EDB202A11774892D00AB8CFD /* Frameworks */,
 				EDB202A21774892D00AB8CFD /* Resources */,
+				B7B62FBE480A4E41BBC324AD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,6 +309,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BB27C7C4C8D465E8DE30D73 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		B7B62FBE480A4E41BBC324AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CSVImporter-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED3B144A177485AD00213826 /* Sources */ = {
@@ -416,6 +455,7 @@
 		};
 		EDB202BA1774892E00AB8CFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -428,6 +468,7 @@
 		};
 		EDB202BB1774892E00AB8CFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
