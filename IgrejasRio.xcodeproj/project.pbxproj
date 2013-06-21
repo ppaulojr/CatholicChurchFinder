@@ -16,6 +16,11 @@
 		ED3B1466177485AD00213826 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1465177485AD00213826 /* Default@2x.png */; };
 		ED3B1468177485AD00213826 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1467177485AD00213826 /* Default-568h@2x.png */; };
 		EDB2025F177487DC00AB8CFD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB2025E177487DC00AB8CFD /* CoreData.framework */; };
+		EDB202A51774892D00AB8CFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
+		EDB202A61774892D00AB8CFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
+		EDB202A71774892D00AB8CFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1455177485AD00213826 /* CoreGraphics.framework */; };
+		EDB202AF1774892E00AB8CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB202AE1774892E00AB8CFD /* main.m */; };
+		EDB202B31774892E00AB8CFD /* NFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB202B21774892E00AB8CFD /* NFAppDelegate.m */; };
 		EDD33FB2177486E8000CDF87 /* NFCoreDataStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */; };
 		EDD33FB3177486E8000CDF87 /* NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FA9177486E8000CDF87 /* NFEvent.m */; };
 		EDD33FB4177486E8000CDF87 /* NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FAB177486E8000CDF87 /* NFIgreja.m */; };
@@ -44,6 +49,12 @@
 		ED3B1465177485AD00213826 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		ED3B1467177485AD00213826 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDB2025E177487DC00AB8CFD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EDB202A41774892D00AB8CFD /* CSVImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB202AA1774892E00AB8CFD /* CSVImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSVImporter-Info.plist"; sourceTree = "<group>"; };
+		EDB202AE1774892E00AB8CFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDB202B01774892E00AB8CFD /* CSVImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSVImporter-Prefix.pch"; sourceTree = "<group>"; };
+		EDB202B11774892E00AB8CFD /* NFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFAppDelegate.h; sourceTree = "<group>"; };
+		EDB202B21774892E00AB8CFD /* NFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFAppDelegate.m; sourceTree = "<group>"; };
 		EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCoreDataStackManager.h; sourceTree = "<group>"; };
 		EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCoreDataStackManager.m; sourceTree = "<group>"; };
 		EDD33FA8177486E8000CDF87 /* NFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFEvent.h; sourceTree = "<group>"; };
@@ -81,6 +92,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDB202A11774892D00AB8CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB202A51774892D00AB8CFD /* UIKit.framework in Frameworks */,
+				EDB202A61774892D00AB8CFD /* Foundation.framework in Frameworks */,
+				EDB202A71774892D00AB8CFD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				ED3B1457177485AD00213826 /* IgrejasRio */,
+				EDB202A81774892D00AB8CFD /* CSVImporter */,
 				ED3B1450177485AD00213826 /* Frameworks */,
 				ED3B144F177485AD00213826 /* Products */,
 			);
@@ -97,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				ED3B144E177485AD00213826 /* IgrejasRio.app */,
+				EDB202A41774892D00AB8CFD /* CSVImporter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +155,26 @@
 				ED3B1459177485AD00213826 /* IgrejasRio-Info.plist */,
 				ED3B145F177485AD00213826 /* IgrejasRio-Prefix.pch */,
 				ED3B145D177485AD00213826 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDB202A81774892D00AB8CFD /* CSVImporter */ = {
+			isa = PBXGroup;
+			children = (
+				EDB202B11774892E00AB8CFD /* NFAppDelegate.h */,
+				EDB202B21774892E00AB8CFD /* NFAppDelegate.m */,
+				EDB202A91774892D00AB8CFD /* Supporting Files */,
+			);
+			path = CSVImporter;
+			sourceTree = "<group>";
+		};
+		EDB202A91774892D00AB8CFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDB202AA1774892E00AB8CFD /* CSVImporter-Info.plist */,
+				EDB202B01774892E00AB8CFD /* CSVImporter-Prefix.pch */,
+				EDB202AE1774892E00AB8CFD /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -194,6 +237,23 @@
 			productReference = ED3B144E177485AD00213826 /* IgrejasRio.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EDB202A31774892D00AB8CFD /* CSVImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB202BC1774892E00AB8CFD /* Build configuration list for PBXNativeTarget "CSVImporter" */;
+			buildPhases = (
+				EDB202A01774892D00AB8CFD /* Sources */,
+				EDB202A11774892D00AB8CFD /* Frameworks */,
+				EDB202A21774892D00AB8CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSVImporter;
+			productName = CSVImporter;
+			productReference = EDB202A41774892D00AB8CFD /* CSVImporter.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +277,7 @@
 			projectRoot = "";
 			targets = (
 				ED3B144D177485AD00213826 /* IgrejasRio */,
+				EDB202A31774892D00AB8CFD /* CSVImporter */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +290,13 @@
 				ED3B1464177485AD00213826 /* Default.png in Resources */,
 				ED3B1466177485AD00213826 /* Default@2x.png in Resources */,
 				ED3B1468177485AD00213826 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB202A21774892D00AB8CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +321,15 @@
 				EDD33FC917748748000CDF87 /* _NFMonthlyEvent.m in Sources */,
 				EDD33FCA17748748000CDF87 /* _NFWeeklyEvent.m in Sources */,
 				EDD33FCB17748748000CDF87 /* _NFYearlyEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB202A01774892D00AB8CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB202AF1774892E00AB8CFD /* main.m in Sources */,
+				EDB202B31774892E00AB8CFD /* NFAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +414,30 @@
 			};
 			name = Release;
 		};
+		EDB202BA1774892E00AB8CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSVImporter/CSVImporter-Prefix.pch";
+				INFOPLIST_FILE = "CSVImporter/CSVImporter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDB202BB1774892E00AB8CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSVImporter/CSVImporter-Prefix.pch";
+				INFOPLIST_FILE = "CSVImporter/CSVImporter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +455,15 @@
 			buildConfigurations = (
 				ED3B146C177485AD00213826 /* Debug */,
 				ED3B146D177485AD00213826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB202BC1774892E00AB8CFD /* Build configuration list for PBXNativeTarget "CSVImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB202BA1774892E00AB8CFD /* Debug */,
+				EDB202BB1774892E00AB8CFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
