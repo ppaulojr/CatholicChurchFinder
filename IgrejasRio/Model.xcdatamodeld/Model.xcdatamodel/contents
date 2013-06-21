@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Event" representedClassName="NFEvent" isAbstract="YES" syncable="YES">
-        <attribute name="endTime" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="endTime" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="observation" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="startTime" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="igreja" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Igreja" inverseName="event" inverseEntity="Igreja" syncable="YES"/>
+        <attribute name="startTime" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <relationship name="igreja" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Igreja" inverseName="event" inverseEntity="Igreja" syncable="YES"/>
     </entity>
     <entity name="Igreja" representedClassName="NFIgreja" syncable="YES">
         <attribute name="bairro" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>

@@ -30,7 +30,7 @@
 		ED6B2F4317748BDD00EA66D0 /* NFYearlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FB1177486E8000CDF87 /* NFYearlyEvent.m */; };
 		ED6B2F4417748BE300EA66D0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FB91774872C000CDF87 /* Model.xcdatamodeld */; };
 		ED6B2F4517748BF900EA66D0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB2025E177487DC00AB8CFD /* CoreData.framework */; };
-		ED6B2F4917748C1E00EA66D0 /* eventos.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED6B2F4717748C1E00EA66D0 /* eventos.csv */; };
+		ED6B2F4917748C1E00EA66D0 /* events.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED6B2F4717748C1E00EA66D0 /* events.csv */; };
 		ED6B2F4A17748C1E00EA66D0 /* igrejas.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED6B2F4817748C1E00EA66D0 /* igrejas.csv */; };
 		EDB2025F177487DC00AB8CFD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB2025E177487DC00AB8CFD /* CoreData.framework */; };
 		EDB202A51774892D00AB8CFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
@@ -68,7 +68,7 @@
 		ED3B1467177485AD00213826 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NFCoreDataStackManager+Import.m"; sourceTree = "<group>"; };
 		ED6B2F3717748BBE00EA66D0 /* NFCoreDataStackManager+Import.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NFCoreDataStackManager+Import.h"; sourceTree = "<group>"; };
-		ED6B2F4717748C1E00EA66D0 /* eventos.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eventos.csv; sourceTree = "<group>"; };
+		ED6B2F4717748C1E00EA66D0 /* events.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = events.csv; sourceTree = "<group>"; };
 		ED6B2F4817748C1E00EA66D0 /* igrejas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = igrejas.csv; sourceTree = "<group>"; };
 		EDB2025E177487DC00AB8CFD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EDB202A41774892D00AB8CFD /* CSVImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,7 +189,7 @@
 		ED6B2F4617748C1E00EA66D0 /* CSV */ = {
 			isa = PBXGroup;
 			children = (
-				ED6B2F4717748C1E00EA66D0 /* eventos.csv */,
+				ED6B2F4717748C1E00EA66D0 /* events.csv */,
 				ED6B2F4817748C1E00EA66D0 /* igrejas.csv */,
 			);
 			path = CSV;
@@ -338,7 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED6B2F4917748C1E00EA66D0 /* eventos.csv in Resources */,
+				ED6B2F4917748C1E00EA66D0 /* events.csv in Resources */,
 				ED6B2F4A17748C1E00EA66D0 /* igrejas.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
