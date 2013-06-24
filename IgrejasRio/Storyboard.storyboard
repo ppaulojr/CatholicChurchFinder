@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SCG-TY-QUg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="SCG-TY-QUg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,15 +12,12 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ssV-fG-pBt"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="ssV-fG-pBt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ssV-fG-pBt" firstAttribute="top" secondItem="j5e-au-MPB" secondAttribute="top" type="default" id="GqX-66-4KN"/>
-                            <constraint firstItem="ssV-fG-pBt" firstAttribute="bottom" secondItem="j5e-au-MPB" secondAttribute="bottom" type="default" id="Xbb-um-plx"/>
-                            <constraint firstItem="ssV-fG-pBt" firstAttribute="trailing" secondItem="j5e-au-MPB" secondAttribute="trailing" type="default" id="n4m-Eq-Uag"/>
-                            <constraint firstItem="ssV-fG-pBt" firstAttribute="leading" secondItem="j5e-au-MPB" secondAttribute="leading" type="default" id="qfy-cA-mRz"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Igrejas Rio" id="ITL-2W-1aG"/>
                     <connections>
@@ -56,9 +53,6 @@
             <relationships>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
             </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
