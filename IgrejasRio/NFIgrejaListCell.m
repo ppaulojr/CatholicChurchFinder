@@ -43,4 +43,23 @@ static NSNumberFormatter *numberFormatter;
     self.distanceLabel.text = [[[self numberFormatter] stringFromNumber:@(distance / 1000)] stringByAppendingString:@" km"];
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+
+    [self.distanceLabel sizeToFit];
+    CGRect frame = self.distanceLabel.frame;
+    frame.origin.x = CGRectGetMaxX(self.contentView.bounds) - CGRectGetWidth(frame) - 10;
+    frame.origin.y = (CGRectGetHeight(self.contentView.bounds) - CGRectGetHeight(frame)) / 2;
+    self.distanceLabel.frame = frame;
+
+    CGRect titleFrame = self.titleLabel.frame;
+    titleFrame.size.width = CGRectGetMinX(frame) - 10 - 8;
+    self.titleLabel.frame = titleFrame;
+
+    CGRect detailFrame = self.detailLabel.frame;
+    detailFrame.size.width = titleFrame.size.width;
+    self.detailLabel.frame = detailFrame;
+}
+
 @end
