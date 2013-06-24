@@ -82,6 +82,19 @@
     return string.length ? string : nil;
 }
 
+- (NSString *)stringByNormalizingImportedString:(NSString *)string
+{
+    if (!string) {
+        return nil;
+    }
+
+    NSMutableString *buffer = [string mutableCopy];
+    CFMutableStringRef bufferRef = (__bridge CFMutableStringRef)buffer;
+    CFStringTransform(bufferRef, NULL, kCFStringTransformToLatin, false);
+    CFStringTransform(bufferRef, NULL, kCFStringTransformStripCombiningMarks, false);
+    return buffer.lowercaseString;
+}
+
 - (NSDictionary *)importIgrejasWithContext:(NSManagedObjectContext *)moc
 {
     NSLog(@"Importing igrejas...");
@@ -118,6 +131,9 @@
         igreja.site = [self stringOrNilWithImportedString:fields[15]];
         igreja.email = [self stringOrNilWithImportedString:fields[16]];
         igreja.lastModified = [self dateWithImportedString:fields[20]];
+
+        igreja.normalizedNome = [self stringByNormalizingImportedString:igreja.nome];
+        igreja.normalizedBairro = [self stringByNormalizingImportedString:igreja.bairro];
 
         igrejas[fields[0]] = igreja;
     };

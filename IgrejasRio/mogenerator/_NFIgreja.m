@@ -12,6 +12,8 @@ const struct NFIgrejaAttributes NFIgrejaAttributes = {
 	.latitude = @"latitude",
 	.longitude = @"longitude",
 	.nome = @"nome",
+	.normalizedBairro = @"normalizedBairro",
+	.normalizedNome = @"normalizedNome",
 	.observacao = @"observacao",
 	.paroco = @"paroco",
 	.site = @"site",
@@ -156,6 +158,20 @@ const struct NFIgrejaFetchedProperties NFIgrejaFetchedProperties = {
 
 
 @dynamic nome;
+
+
+
+
+
+
+@dynamic normalizedBairro;
+
+
+
+
+
+
+@dynamic normalizedNome;
 
 
 

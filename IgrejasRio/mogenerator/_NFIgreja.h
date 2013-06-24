@@ -13,6 +13,8 @@ extern const struct NFIgrejaAttributes {
 	__unsafe_unretained NSString *latitude;
 	__unsafe_unretained NSString *longitude;
 	__unsafe_unretained NSString *nome;
+	__unsafe_unretained NSString *normalizedBairro;
+	__unsafe_unretained NSString *normalizedNome;
 	__unsafe_unretained NSString *observacao;
 	__unsafe_unretained NSString *paroco;
 	__unsafe_unretained NSString *site;
@@ -27,6 +29,8 @@ extern const struct NFIgrejaFetchedProperties {
 } NFIgrejaFetchedProperties;
 
 @class NFEvent;
+
+
 
 
 
@@ -137,6 +141,26 @@ extern const struct NFIgrejaFetchedProperties {
 
 
 //- (BOOL)validateNome:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSString* normalizedBairro;
+
+
+
+//- (BOOL)validateNormalizedBairro:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSString* normalizedNome;
+
+
+
+//- (BOOL)validateNormalizedNome:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -254,6 +278,18 @@ extern const struct NFIgrejaFetchedProperties {
 
 - (NSString*)primitiveNome;
 - (void)setPrimitiveNome:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveNormalizedBairro;
+- (void)setPrimitiveNormalizedBairro:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveNormalizedNome;
+- (void)setPrimitiveNormalizedNome:(NSString*)value;
 
 
 
