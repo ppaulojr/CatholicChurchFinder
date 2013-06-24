@@ -38,9 +38,7 @@
     dispatch_once(&onceToken, ^{
         psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
         NSURL *storeURL = [[NSBundle mainBundle] URLForResource:@"IgrejasRio" withExtension:@"sqlite"];
-        [self.persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
-                                                      configuration:nil URL:storeURL
-                                                            options:nil error:NULL];
+        [psc addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:NULL];
     });
     return psc;
 }

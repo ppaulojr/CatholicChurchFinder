@@ -50,6 +50,11 @@
 		EDD33FC917748748000CDF87 /* _NFMonthlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC217748748000CDF87 /* _NFMonthlyEvent.m */; };
 		EDD33FCA17748748000CDF87 /* _NFWeeklyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */; };
 		EDD33FCB17748748000CDF87 /* _NFYearlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */; };
+		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
+		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
+		EDFEE6641774EC3C002F886A /* NFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFEE6631774EC3C002F886A /* NFMainViewController.m */; };
+		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
+		EDFEE66A17750205002F886A /* IgrejasRio.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE66917750205002F886A /* IgrejasRio.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +105,12 @@
 		EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFWeeklyEvent.m; sourceTree = "<group>"; };
 		EDD33FC517748748000CDF87 /* _NFYearlyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFYearlyEvent.h; sourceTree = "<group>"; };
 		EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFYearlyEvent.m; sourceTree = "<group>"; };
+		EDFEE65E1774E905002F886A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		EDFEE6601774EB4E002F886A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EDFEE6621774EC3C002F886A /* NFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFMainViewController.h; sourceTree = "<group>"; };
+		EDFEE6631774EC3C002F886A /* NFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFMainViewController.m; sourceTree = "<group>"; };
+		EDFEE6671774FCDE002F886A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EDFEE66917750205002F886A /* IgrejasRio.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = IgrejasRio.sqlite; sourceTree = "<group>"; };
 		EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSVImporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */,
+				EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */,
 				EDB2025F177487DC00AB8CFD /* CoreData.framework in Frameworks */,
 				ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */,
 				ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */,
@@ -153,10 +166,12 @@
 		ED3B1450177485AD00213826 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */,
 				EDB2025E177487DC00AB8CFD /* CoreData.framework */,
 				ED3B1455177485AD00213826 /* CoreGraphics.framework */,
+				EDFEE6671774FCDE002F886A /* CoreLocation.framework */,
 				ED3B1453177485AD00213826 /* Foundation.framework */,
-				EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */,
+				EDFEE6601774EB4E002F886A /* MapKit.framework */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -166,8 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				EDD33FB8177486EF000CDF87 /* Model */,
-				ED3B1460177485AD00213826 /* NFAppDelegate.h */,
-				ED3B1461177485AD00213826 /* NFAppDelegate.m */,
+				EDFEE6651774EC52002F886A /* Controllers */,
+				EDFEE6661774EC58002F886A /* Views */,
 				ED3B1458177485AD00213826 /* Supporting Files */,
 			);
 			path = IgrejasRio;
@@ -221,14 +236,13 @@
 		EDD33FB8177486EF000CDF87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDFEE66B17750210002F886A /* Core Data */,
 				EDD33FBC17748748000CDF87 /* mogenerator */,
-				EDD33FB91774872C000CDF87 /* Model.xcdatamodeld */,
 				EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */,
 				EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */,
 				EDD33FA8177486E8000CDF87 /* NFEvent.h */,
 				EDD33FA9177486E8000CDF87 /* NFEvent.m */,
 				EDD33FAA177486E8000CDF87 /* NFIgreja.h */,
-				EDD33FAB177486E8000CDF87 /* NFIgreja.m */,
 				EDD33FAC177486E8000CDF87 /* NFMonthlyEvent.h */,
 				EDD33FAD177486E8000CDF87 /* NFMonthlyEvent.m */,
 				EDD33FAE177486E8000CDF87 /* NFWeeklyEvent.h */,
@@ -254,6 +268,35 @@
 				EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */,
 			);
 			path = mogenerator;
+			sourceTree = "<group>";
+		};
+		EDFEE6651774EC52002F886A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B1460177485AD00213826 /* NFAppDelegate.h */,
+				ED3B1461177485AD00213826 /* NFAppDelegate.m */,
+				EDFEE6621774EC3C002F886A /* NFMainViewController.h */,
+				EDFEE6631774EC3C002F886A /* NFMainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EDFEE6661774EC58002F886A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDFEE65E1774E905002F886A /* Storyboard.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EDFEE66B17750210002F886A /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				EDFEE66917750205002F886A /* IgrejasRio.sqlite */,
+				EDD33FB91774872C000CDF87 /* Model.xcdatamodeld */,
+				EDD33FAB177486E8000CDF87 /* NFIgreja.m */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +374,8 @@
 				ED3B1464177485AD00213826 /* Default.png in Resources */,
 				ED3B1466177485AD00213826 /* Default@2x.png in Resources */,
 				ED3B1468177485AD00213826 /* Default-568h@2x.png in Resources */,
+				EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */,
+				EDFEE66A17750205002F886A /* IgrejasRio.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +440,7 @@
 				EDD33FC917748748000CDF87 /* _NFMonthlyEvent.m in Sources */,
 				EDD33FCA17748748000CDF87 /* _NFWeeklyEvent.m in Sources */,
 				EDD33FCB17748748000CDF87 /* _NFYearlyEvent.m in Sources */,
+				EDFEE6641774EC3C002F886A /* NFMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

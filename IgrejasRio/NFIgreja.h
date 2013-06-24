@@ -8,6 +8,10 @@
 
 #import "_NFIgreja.h"
 
-@interface NFIgreja : _NFIgreja
+@interface NFIgreja : _NFIgreja <MKAnnotation>
+
++ (NSArray *)allIgrejasInContext:(NSManagedObjectContext *)moc;
+
+- (CLLocationCoordinate2D)coordinate;
 
 @end
