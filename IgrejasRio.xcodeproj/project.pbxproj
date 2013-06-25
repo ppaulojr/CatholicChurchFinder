@@ -271,6 +271,7 @@
 				EDD33FA8177486E8000CDF87 /* NFEvent.h */,
 				EDD33FA9177486E8000CDF87 /* NFEvent.m */,
 				EDD33FAA177486E8000CDF87 /* NFIgreja.h */,
+				EDD33FAB177486E8000CDF87 /* NFIgreja.m */,
 				EDD33FAC177486E8000CDF87 /* NFMonthlyEvent.h */,
 				EDD33FAD177486E8000CDF87 /* NFMonthlyEvent.m */,
 				EDD33FAE177486E8000CDF87 /* NFWeeklyEvent.h */,
@@ -332,7 +333,6 @@
 			children = (
 				EDFEE66917750205002F886A /* IgrejasRio.sqlite */,
 				EDD33FB91774872C000CDF87 /* Model.xcdatamodeld */,
-				EDD33FAB177486E8000CDF87 /* NFIgreja.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
