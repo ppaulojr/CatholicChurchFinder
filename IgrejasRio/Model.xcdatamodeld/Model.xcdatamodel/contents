@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DailyEvent" representedClassName="NFDailyEvent" parentEntity="Event" syncable="YES"/>
     <entity name="Event" representedClassName="NFEvent" isAbstract="YES" syncable="YES">
         <attribute name="endTime" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="observation" optional="YES" attributeType="String" syncable="YES"/>
@@ -40,5 +41,6 @@
         <element name="MonthlyEvent" positionX="0" positionY="0" width="128" height="75"/>
         <element name="WeeklyEvent" positionX="0" positionY="0" width="128" height="60"/>
         <element name="YearlyEvent" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="DailyEvent" positionX="160" positionY="192" width="128" height="45"/>
     </elements>
 </model>

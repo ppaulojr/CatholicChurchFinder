@@ -8,6 +8,7 @@
 
 #import "CHCSVParser.h"
 #import "NFCoreDataStackManager+Import.h"
+#import "NFDailyEvent.h"
 #import "NFIgreja.h"
 #import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
@@ -179,7 +180,7 @@
                 if (month != 0 && week != 0) {
                     NSLog(@"Warning: Invalid entry (id = %d), ignoring month and week fields", [fields[0] intValue]);
                 }
-                // TODO: Handle this case
+                event = [NFDailyEvent insertInManagedObjectContext:moc];
             } else if (week == 0) {
                 assert(weekday >= 1 && weekday <= 7);
                 NFWeeklyEvent *weeklyEvent = [NFWeeklyEvent insertInManagedObjectContext:moc];

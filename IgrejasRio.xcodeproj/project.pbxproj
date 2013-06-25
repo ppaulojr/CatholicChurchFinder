@@ -19,6 +19,10 @@
 		ED50D50E17788984000C0FB3 /* NFIgrejaListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */; };
 		ED50D51117788B54000C0FB3 /* NFIgrejaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */; };
 		ED50D5151778C5C9000C0FB3 /* NSString+NFNormalizing.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D5141778C5C9000C0FB3 /* NSString+NFNormalizing.m */; };
+		ED5B62F4177A3AE800068D33 /* _NFDailyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B62F3177A3AE800068D33 /* _NFDailyEvent.m */; };
+		ED5B62F7177A3AF300068D33 /* NFDailyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B62F6177A3AF300068D33 /* NFDailyEvent.m */; };
+		ED5B62F8177A3B4900068D33 /* NFDailyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B62F6177A3AF300068D33 /* NFDailyEvent.m */; };
+		ED5B62F9177A3B5000068D33 /* _NFDailyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B62F3177A3AE800068D33 /* _NFDailyEvent.m */; };
 		ED6B2F3817748BBE00EA66D0 /* NFCoreDataStackManager+Import.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */; };
 		ED6B2F3917748BDD00EA66D0 /* _NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FBE17748748000CDF87 /* _NFEvent.m */; };
 		ED6B2F3A17748BDD00EA66D0 /* _NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC017748748000CDF87 /* _NFIgreja.m */; };
@@ -83,6 +87,10 @@
 		ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaListViewController.m; sourceTree = "<group>"; };
 		ED50D5131778C5C9000C0FB3 /* NSString+NFNormalizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NFNormalizing.h"; path = "../../../NetFilter/netfilter-git/NetFilter/NSString+NFNormalizing.h"; sourceTree = "<group>"; };
 		ED50D5141778C5C9000C0FB3 /* NSString+NFNormalizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NFNormalizing.m"; path = "../../../NetFilter/netfilter-git/NetFilter/NSString+NFNormalizing.m"; sourceTree = "<group>"; };
+		ED5B62F2177A3AE800068D33 /* _NFDailyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFDailyEvent.h; sourceTree = "<group>"; };
+		ED5B62F3177A3AE800068D33 /* _NFDailyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFDailyEvent.m; sourceTree = "<group>"; };
+		ED5B62F5177A3AF300068D33 /* NFDailyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDailyEvent.h; sourceTree = "<group>"; };
+		ED5B62F6177A3AF300068D33 /* NFDailyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFDailyEvent.m; sourceTree = "<group>"; };
 		ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NFCoreDataStackManager+Import.m"; sourceTree = "<group>"; };
 		ED6B2F3717748BBE00EA66D0 /* NFCoreDataStackManager+Import.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NFCoreDataStackManager+Import.h"; sourceTree = "<group>"; };
 		ED6B2F4717748C1E00EA66D0 /* events.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = events.csv; sourceTree = "<group>"; };
@@ -258,6 +266,8 @@
 				EDD33FBC17748748000CDF87 /* mogenerator */,
 				EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */,
 				EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */,
+				ED5B62F5177A3AF300068D33 /* NFDailyEvent.h */,
+				ED5B62F6177A3AF300068D33 /* NFDailyEvent.m */,
 				EDD33FA8177486E8000CDF87 /* NFEvent.h */,
 				EDD33FA9177486E8000CDF87 /* NFEvent.m */,
 				EDD33FAA177486E8000CDF87 /* NFIgreja.h */,
@@ -276,6 +286,8 @@
 		EDD33FBC17748748000CDF87 /* mogenerator */ = {
 			isa = PBXGroup;
 			children = (
+				ED5B62F2177A3AE800068D33 /* _NFDailyEvent.h */,
+				ED5B62F3177A3AE800068D33 /* _NFDailyEvent.m */,
 				EDD33FBD17748748000CDF87 /* _NFEvent.h */,
 				EDD33FBE17748748000CDF87 /* _NFEvent.m */,
 				EDD33FBF17748748000CDF87 /* _NFIgreja.h */,
@@ -472,6 +484,8 @@
 				EDD967B51779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m in Sources */,
 				EDD967B81779DE3D00F9FC93 /* NFMissaListViewController.m in Sources */,
 				EDD967BB1779DEA200F9FC93 /* NFMissaListCell.m in Sources */,
+				ED5B62F4177A3AE800068D33 /* _NFDailyEvent.m in Sources */,
+				ED5B62F7177A3AF300068D33 /* NFDailyEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +509,8 @@
 				ED6B2F4317748BDD00EA66D0 /* NFYearlyEvent.m in Sources */,
 				ED6B2F4417748BE300EA66D0 /* Model.xcdatamodeld in Sources */,
 				EDD967BC177A333400F9FC93 /* NSString+NFNormalizing.m in Sources */,
+				ED5B62F8177A3B4900068D33 /* NFDailyEvent.m in Sources */,
+				ED5B62F9177A3B5000068D33 /* _NFDailyEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
