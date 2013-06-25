@@ -26,7 +26,7 @@ static NSNumberFormatter *numberFormatter;
     numberFormatter = nil;
 }
 
-- (NSNumberFormatter *)numberFormatter
+- (NSNumberFormatter *)_numberFormatter
 {
     if (!numberFormatter) {
         numberFormatter = [NSNumberFormatter new];
@@ -41,7 +41,7 @@ static NSNumberFormatter *numberFormatter;
 {
     self.titleLabel.text = igreja.nome;
     self.detailLabel.text = igreja.bairro;
-    self.distanceLabel.text = [[[self numberFormatter] stringFromNumber:@(distance / 1000)] stringByAppendingString:@" km"];
+    self.distanceLabel.text = [[[self _numberFormatter] stringFromNumber:@(distance / 1000)] stringByAppendingString:@" km"];
 }
 
 - (void)layoutSubviews

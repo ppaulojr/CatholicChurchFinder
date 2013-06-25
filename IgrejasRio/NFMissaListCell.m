@@ -26,7 +26,7 @@ static NSNumberFormatter *numberFormatter;
     numberFormatter = nil;
 }
 
-- (NSNumberFormatter *)numberFormatter
+- (NSNumberFormatter *)_numberFormatter
 {
     if (!numberFormatter) {
         numberFormatter = [NSNumberFormatter new];
@@ -40,7 +40,7 @@ static NSNumberFormatter *numberFormatter;
 - (void)configureWithEvent:(NFEvent *)event distance:(CLLocationDistance)distance
 {
     self.titleLabel.text = event.igreja.nome;
-    self.distanceLabel.text = [[[self numberFormatter] stringFromNumber:@(distance / 1000)] stringByAppendingString:@" km"];
+    self.distanceLabel.text = [[[self _numberFormatter] stringFromNumber:@(distance / 1000)] stringByAppendingString:@" km"];
 
     // Print the time and date (note that we don't take the
     // user locale into account here)

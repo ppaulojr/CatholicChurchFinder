@@ -90,17 +90,17 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
         [self.entries addObject:entry];
     }
 
-    [self calculateDistances];
+    [self _calculateDistances];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localeDidChange) name:NSCurrentLocaleDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_localeDidChange) name:NSCurrentLocaleDidChangeNotification object:nil];
 }
 
-- (void)localeDidChange
+- (void)_localeDidChange
 {
     [NFIgrejaListCell invalidateCachedLocale];
 }
 
-- (void)calculateDistances
+- (void)_calculateDistances
 {
     for (NFIgrejaListEntry *entry in self.entries) {
         entry.distance = [entry.location distanceFromLocation:self.userLocation];
@@ -111,7 +111,7 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
     [self.tableView reloadData];
 }
 
-- (NSArray *)arrayForTableView:(UITableView *)tableView
+- (NSArray *)_arrayForTableView:(UITableView *)tableView
 {
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return self.filteredEntries;
@@ -120,9 +120,9 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
     }
 }
 
-- (NFIgrejaListEntry *)entryForRowAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView
+- (NFIgrejaListEntry *)_entryForRowAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView
 {
-    return [self arrayForTableView:tableView][indexPath.row];
+    return [self _arrayForTableView:tableView][indexPath.row];
 }
 
 
@@ -130,12 +130,12 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self arrayForTableView:tableView].count;
+    return [self _arrayForTableView:tableView].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NFIgrejaListEntry *entry = [self entryForRowAtIndexPath:indexPath tableView:tableView];
+    NFIgrejaListEntry *entry = [self _entryForRowAtIndexPath:indexPath tableView:tableView];
 
     // It's important to use self.tableView here instead of tableView,
     // as the prototype cell is set up for self.tableView, not for the
@@ -152,7 +152,7 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     self.userLocation = [locations lastObject];
-    [self calculateDistances];
+    [self _calculateDistances];
 }
 
 
