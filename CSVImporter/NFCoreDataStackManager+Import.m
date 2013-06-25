@@ -175,22 +175,34 @@
         NFEvent *event;
 
         if (day == 0) {
-            if (week == 0) {
+            if (weekday == 0) {
+                if (month != 0 && week != 0) {
+                    NSLog(@"Warning: Invalid entry (id = %d), ignoring month and week fields", [fields[0] intValue]);
+                }
+                // TODO: Handle this case
+            } else if (week == 0) {
+                assert(weekday >= 1 && weekday <= 7);
                 NFWeeklyEvent *weeklyEvent = [NFWeeklyEvent insertInManagedObjectContext:moc];
                 weeklyEvent.weekdayValue = weekday;
                 event = weeklyEvent;
             } else {
+                assert(weekday >= 1 && weekday <= 7);
                 NFMonthlyEvent *monthlyEvent = [NFMonthlyEvent insertInManagedObjectContext:moc];
                 monthlyEvent.dayValue = weekday;
                 monthlyEvent.weekValue = week;
                 event = monthlyEvent;
             }
         } else {
+            assert(day > 0);
+            if (weekday != 0) {
+                NSLog(@"Warning: Invalid entry (id = %d), ignoring weekday field", [fields[0] intValue]);
+            }
             if (month == 0) {
                 NFMonthlyEvent *monthlyEvent = [NFMonthlyEvent insertInManagedObjectContext:moc];
                 monthlyEvent.dayValue = day;
                 event = monthlyEvent;
             } else {
+                assert(month >= 1 && month <= 12);
                 NFYearlyEvent *yearlyEvent = [NFYearlyEvent insertInManagedObjectContext:moc];
                 yearlyEvent.dayValue = day;
                 yearlyEvent.monthValue = month;
