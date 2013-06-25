@@ -97,7 +97,7 @@
 
 - (void)_refreshTimerFired
 {
-    // Reload the interface
+    // Reload the model
     [self _updateEvents];
     [self _calculateDistances];
 
