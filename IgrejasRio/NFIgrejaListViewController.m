@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
+#import "CLLocation+NFDefaultLocation.h"
 #import "NFCoreDataStackManager.h"
 #import "NFIgreja.h"
 #import "NFIgrejaListCell.h"
@@ -71,7 +72,7 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
 {
     [super awakeFromNib];
 
-    self.userLocation = [[CLLocation alloc] initWithLatitude:-22.903534 longitude:-43.209572];
+    self.userLocation = [CLLocation nf_defaultLocation];
 
     self.locationManager = [CLLocationManager new];
     self.locationManager.delegate = self;

@@ -53,6 +53,7 @@
 		EDD33FC917748748000CDF87 /* _NFMonthlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC217748748000CDF87 /* _NFMonthlyEvent.m */; };
 		EDD33FCA17748748000CDF87 /* _NFWeeklyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */; };
 		EDD33FCB17748748000CDF87 /* _NFYearlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */; };
+		EDD967B51779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD967B41779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m */; };
 		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
 		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
@@ -113,6 +114,8 @@
 		EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFWeeklyEvent.m; sourceTree = "<group>"; };
 		EDD33FC517748748000CDF87 /* _NFYearlyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NFYearlyEvent.h; sourceTree = "<group>"; };
 		EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFYearlyEvent.m; sourceTree = "<group>"; };
+		EDD967B31779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+NFDefaultLocation.h"; sourceTree = "<group>"; };
+		EDD967B41779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+NFDefaultLocation.m"; sourceTree = "<group>"; };
 		EDFEE65E1774E905002F886A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		EDFEE6601774EB4E002F886A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EDFEE6671774FCDE002F886A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -242,6 +245,8 @@
 		EDD33FB8177486EF000CDF87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDD967B31779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.h */,
+				EDD967B41779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m */,
 				EDFEE66B17750210002F886A /* Core Data */,
 				EDD33FBC17748748000CDF87 /* mogenerator */,
 				EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */,
@@ -453,6 +458,7 @@
 				ED50D50E17788984000C0FB3 /* NFIgrejaListCell.m in Sources */,
 				ED50D51117788B54000C0FB3 /* NFIgrejaListViewController.m in Sources */,
 				ED50D5151778C5C9000C0FB3 /* NSString+NFNormalizing.m in Sources */,
+				EDD967B51779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
