@@ -116,6 +116,9 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
     [self.entries sortUsingSelector:@selector(compareToEntry:)];
 
     [self.tableView reloadData];
+    if (self.searchDisplayController.isActive) {
+        [self.searchDisplayController.searchResultsTableView reloadData];
+    }
 }
 
 - (NSArray *)_arrayForTableView:(UITableView *)tableView
