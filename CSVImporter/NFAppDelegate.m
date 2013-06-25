@@ -16,8 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 #if !TARGET_IPHONE_SIMULATOR
-    NSLog(@"You must run this in the simulator!");
-    abort();
+# error "You must compile and run this in the simulator!"
 #endif
 
     NSLog(@"Starting import...");
