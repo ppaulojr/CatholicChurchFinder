@@ -137,17 +137,7 @@
 
 #pragma mark - Fetching from the database
 
-- (NSDate *)_searchStartDate
-{
-    NSDate *now = [NSDate date];
-
-    NSDateComponents *components = [NSDateComponents new];
-    components.minute = 15;
-
-    return [self.calendar dateByAddingComponents:components toDate:now options:0];
-}
-
-- (NSDate *)_searchEndDateWithStartDate:(NSDate *)startDate
+- (NSDate *)_searchLimitDateWithStartDate:(NSDate *)startDate
 {
     NSDateComponents *components = [NSDateComponents new];
     components.hour = 1;
@@ -165,16 +155,16 @@
 {
     NSManagedObjectContext *moc = [NFCoreDataStackManager sharedManager].managedObjectContext;
 
-    NSDate *startDate = [self _searchStartDate];
-    NSDate *endDate = [self _searchEndDateWithStartDate:startDate];
+    NSDate *startDate = [NSDate date];
+    NSDate *limitDate = [self _searchLimitDateWithStartDate:startDate];
 
     uint16_t startTime = [self _timeFromNSDate:startDate];
-    uint16_t endTime = [self _timeFromNSDate:endDate];
+    uint16_t limitTime = [self _timeFromNSDate:limitDate];
 
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[NFEvent entityName]];
 
     // TODO: Filter by event type too
-    request.predicate = [NSPredicate predicateWithFormat:@"startTime >= %@ AND startTime <= endTime", @(startTime), @(endTime)];
+    request.predicate = [NSPredicate predicateWithFormat:@"startTime >= %@ AND startTime <= %@", @(startTime), @(limitTime)];
 
     NSMutableArray *matches = [[moc executeFetchRequest:request error:NULL] mutableCopy];
 
