@@ -163,8 +163,8 @@
 
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[NFEvent entityName]];
 
-    // TODO: Filter by event type too
-    request.predicate = [NSPredicate predicateWithFormat:@"startTime >= %@ AND startTime <= %@", @(startTime), @(limitTime)];
+    request.predicate = [NSPredicate predicateWithFormat:@"startTime >= %@ AND startTime <= %@ AND type == %@",
+                         @(startTime), @(limitTime), @(NFEventTypeMissa)];
 
     NSMutableArray *matches = [[moc executeFetchRequest:request error:NULL] mutableCopy];
 
