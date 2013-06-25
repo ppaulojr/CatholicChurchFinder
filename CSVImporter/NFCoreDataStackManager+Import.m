@@ -214,11 +214,19 @@
 
         int startHours = [fields[6] intValue];
         int startMinutes = [fields[7] intValue];
+        assert(startHours >= 0 && startHours < 24);
+        assert(startMinutes >= 0 && startMinutes < 60);
         event.startTimeValue = startHours * 100 + startMinutes;
 
         int endHours = [fields[8] intValue];
         int endMinutes = [fields[9] intValue];
-        event.endTimeValue = endHours * 100 + endMinutes;
+        if (endHours == -1) {
+            assert(endMinutes == -1);
+        } else {
+            assert(endHours >= 0 && endHours < 24);
+            assert(endMinutes >= 0 && endMinutes < 60);
+            event.endTimeValue = endHours * 100 + endMinutes;
+        }
 
         ++count;
     };
