@@ -94,15 +94,6 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localeDidChange) name:NSCurrentLocaleDidChangeNotification object:nil];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    // Hide the search bar initially
-    CGFloat headerHeight = self.tableView.tableHeaderView.frame.size.height;
-    self.tableView.contentOffset = CGPointMake(0, headerHeight);
-}
-
 - (void)localeDidChange
 {
     [NFIgrejaListCell invalidateCachedLocale];
