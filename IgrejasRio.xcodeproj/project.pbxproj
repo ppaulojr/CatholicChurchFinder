@@ -56,6 +56,7 @@
 		EDD967B51779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD967B41779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m */; };
 		EDD967B81779DE3D00F9FC93 /* NFMissaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD967B71779DE3D00F9FC93 /* NFMissaListViewController.m */; };
 		EDD967BB1779DEA200F9FC93 /* NFMissaListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD967BA1779DEA200F9FC93 /* NFMissaListCell.m */; };
+		EDD967BC177A333400F9FC93 /* NSString+NFNormalizing.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D5141778C5C9000C0FB3 /* NSString+NFNormalizing.m */; };
 		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
 		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
@@ -493,6 +494,7 @@
 				ED6B2F4217748BDD00EA66D0 /* NFWeeklyEvent.m in Sources */,
 				ED6B2F4317748BDD00EA66D0 /* NFYearlyEvent.m in Sources */,
 				ED6B2F4417748BE300EA66D0 /* Model.xcdatamodeld in Sources */,
+				EDD967BC177A333400F9FC93 /* NSString+NFNormalizing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
