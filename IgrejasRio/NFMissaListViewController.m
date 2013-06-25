@@ -8,6 +8,7 @@
 
 #import "CLLocation+NFDefaultLocation.h"
 #import "NFCoreDataStackManager.h"
+#import "NFDailyEvent.h"
 #import "NFIgreja.h"
 #import "NFMissaListCell.h"
 #import "NFMissaListViewController.h"
@@ -203,7 +204,9 @@
     NSInteger reverseWeeksOrdinal = weeksFromLastWeekdayComp.week - 1;
 
     [matches filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NFEvent *entry, NSDictionary *bindings) {
-        if ([entry isKindOfClass:[NFWeeklyEvent class]]) {
+        if ([entry isKindOfClass:[NFDailyEvent class]]) {
+            return YES;
+        } else if ([entry isKindOfClass:[NFWeeklyEvent class]]) {
             // This is an event that happens every week on
             // a specific weekday
             NFWeeklyEvent *event = (NFWeeklyEvent *)entry;
