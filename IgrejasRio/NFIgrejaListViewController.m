@@ -97,7 +97,14 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
 
 - (void)_localeDidChange
 {
+    // The cells rely on the locale as well
     [NFIgrejaListCell invalidateCachedLocale];
+
+    // Reload the table views
+    [self.tableView reloadData];
+    if (self.searchDisplayController.isActive) {
+        [self.searchDisplayController.searchResultsTableView reloadData];
+    }
 }
 
 - (void)_calculateDistances
