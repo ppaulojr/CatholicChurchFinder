@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Igreja List View Controller-->
+        <!--Igreja List View Controller - Igrejas-->
         <scene sceneID="uoM-XC-Bvk">
             <objects>
                 <tableViewController id="o0N-ST-hDJ" customClass="NFIgrejaListViewController" sceneMemberID="viewController">
@@ -69,7 +69,7 @@
                             <outlet property="delegate" destination="o0N-ST-hDJ" id="oRe-Jh-5dy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="mhb-jd-hxO"/>
+                    <navigationItem key="navigationItem" title="Igrejas" id="mhb-jd-hxO"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="CKR-5z-Uhu" id="QSn-Bh-D6x"/>
                     </connections>
@@ -87,11 +87,69 @@
             </objects>
             <point key="canvasLocation" x="1521" y="136"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Missa List View Controller - Missas-->
+        <scene sceneID="jdu-dJ-euD">
+            <objects>
+                <tableViewController id="eGb-3N-bxj" customClass="NFMissaListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="Mre-Z0-CRn">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="2H6-KS-czh" customClass="NFMissaListCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Catedral Metropolitana de São Sebastião" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E37-Gl-kTE">
+                                            <rect key="frame" x="10" y="6" width="204" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="13:45 - 14:45" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="daX-Vr-TWC">
+                                            <rect key="frame" x="10" y="23" width="204" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="137,5 km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="BeY-59-msn">
+                                            <rect key="frame" x="222" y="15" width="68" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="detailLabel" destination="daX-Vr-TWC" id="sGk-Y3-LY8"/>
+                                    <outlet property="distanceLabel" destination="BeY-59-msn" id="Giv-ot-qfR"/>
+                                    <outlet property="titleLabel" destination="E37-Gl-kTE" id="0od-pg-Boc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eGb-3N-bxj" id="4L4-0H-fnX"/>
+                            <outlet property="delegate" destination="eGb-3N-bxj" id="F3Q-hK-MyN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Missas" id="GvG-mw-kXc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNr-6m-k67" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="879"/>
+        </scene>
+        <!--Navigation Controller - Igrejas-->
         <scene sceneID="vSm-FK-bSE">
             <objects>
                 <navigationController id="kOd-6t-wsA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="NBs-YY-F2L"/>
+                    <tabBarItem key="tabBarItem" title="Igrejas" id="NBs-YY-F2L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tkk-Jz-zIA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -118,11 +176,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="kOd-6t-wsA" kind="relationship" relationship="viewControllers" id="flZ-Ua-HDl"/>
+                        <segue destination="hHW-6h-iXM" kind="relationship" relationship="viewControllers" id="dhJ-nl-rGU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtI-JH-Gk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="469" y="136"/>
+        </scene>
+        <!--Navigation Controller - Missas-->
+        <scene sceneID="7eQ-WD-xJF">
+            <objects>
+                <navigationController id="hHW-6h-iXM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Missas" id="apu-BJ-5Vr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ofL-Dm-92g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eGb-3N-bxj" kind="relationship" relationship="rootViewController" id="vlS-XX-Gty"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQn-0K-6qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="879"/>
         </scene>
     </scenes>
     <classes>
@@ -136,6 +214,17 @@
         </class>
         <class className="NFIgrejaListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NFIgrejaListViewController.h"/>
+        </class>
+        <class className="NFMissaListCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFMissaListCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NFMissaListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFMissaListViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

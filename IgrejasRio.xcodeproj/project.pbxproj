@@ -54,6 +54,8 @@
 		EDD33FCA17748748000CDF87 /* _NFWeeklyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC417748748000CDF87 /* _NFWeeklyEvent.m */; };
 		EDD33FCB17748748000CDF87 /* _NFYearlyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */; };
 		EDD967B51779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD967B41779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m */; };
+		EDD967B81779DE3D00F9FC93 /* NFMissaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD967B71779DE3D00F9FC93 /* NFMissaListViewController.m */; };
+		EDD967BB1779DEA200F9FC93 /* NFMissaListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD967BA1779DEA200F9FC93 /* NFMissaListCell.m */; };
 		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
 		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
@@ -116,6 +118,10 @@
 		EDD33FC617748748000CDF87 /* _NFYearlyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NFYearlyEvent.m; sourceTree = "<group>"; };
 		EDD967B31779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+NFDefaultLocation.h"; sourceTree = "<group>"; };
 		EDD967B41779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+NFDefaultLocation.m"; sourceTree = "<group>"; };
+		EDD967B61779DE3D00F9FC93 /* NFMissaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFMissaListViewController.h; sourceTree = "<group>"; };
+		EDD967B71779DE3D00F9FC93 /* NFMissaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFMissaListViewController.m; sourceTree = "<group>"; };
+		EDD967B91779DEA200F9FC93 /* NFMissaListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFMissaListCell.h; sourceTree = "<group>"; };
+		EDD967BA1779DEA200F9FC93 /* NFMissaListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFMissaListCell.m; sourceTree = "<group>"; };
 		EDFEE65E1774E905002F886A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		EDFEE6601774EB4E002F886A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EDFEE6671774FCDE002F886A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -290,6 +296,8 @@
 				ED3B1461177485AD00213826 /* NFAppDelegate.m */,
 				ED50D50F17788B54000C0FB3 /* NFIgrejaListViewController.h */,
 				ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */,
+				EDD967B61779DE3D00F9FC93 /* NFMissaListViewController.h */,
+				EDD967B71779DE3D00F9FC93 /* NFMissaListViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +307,8 @@
 			children = (
 				ED50D50C17788984000C0FB3 /* NFIgrejaListCell.h */,
 				ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */,
+				EDD967B91779DEA200F9FC93 /* NFMissaListCell.h */,
+				EDD967BA1779DEA200F9FC93 /* NFMissaListCell.m */,
 				EDFEE65E1774E905002F886A /* Storyboard.storyboard */,
 			);
 			name = Views;
@@ -459,6 +469,8 @@
 				ED50D51117788B54000C0FB3 /* NFIgrejaListViewController.m in Sources */,
 				ED50D5151778C5C9000C0FB3 /* NSString+NFNormalizing.m in Sources */,
 				EDD967B51779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m in Sources */,
+				EDD967B81779DE3D00F9FC93 /* NFMissaListViewController.m in Sources */,
+				EDD967BB1779DEA200F9FC93 /* NFMissaListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
