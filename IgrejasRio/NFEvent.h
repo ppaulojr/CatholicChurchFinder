@@ -15,4 +15,6 @@ typedef NS_ENUM(NSInteger, NFEventType) {
 
 @interface NFEvent : _NFEvent
 
+- (NSString *)formattedTime;
+
 @end

@@ -40,13 +40,8 @@ static NSNumberFormatter *numberFormatter;
 - (void)configureWithEvent:(NFEvent *)event distance:(CLLocationDistance)distance
 {
     self.titleLabel.text = event.igreja.nome;
+    self.detailLabel.text = [event formattedTime];
     self.distanceLabel.text = [[[self _numberFormatter] stringFromNumber:@(distance / 1000)] stringByAppendingString:@" km"];
-
-    // Print the time and date (note that we don't take the
-    // user locale into account here)
-    self.detailLabel.text = [NSString stringWithFormat:@"%02d:%02d - %02d:%02d",
-                             event.startTimeValue / 100, event.startTimeValue % 100,
-                             event.endTimeValue / 100, event.endTimeValue % 100];
 }
 
 - (void)layoutSubviews
