@@ -8,6 +8,7 @@ extern const struct NFEventAttributes {
 	__unsafe_unretained NSString *endTime;
 	__unsafe_unretained NSString *observation;
 	__unsafe_unretained NSString *startTime;
+	__unsafe_unretained NSString *type;
 } NFEventAttributes;
 
 extern const struct NFEventRelationships {
@@ -18,6 +19,7 @@ extern const struct NFEventFetchedProperties {
 } NFEventFetchedProperties;
 
 @class NFIgreja;
+
 
 
 
@@ -74,6 +76,20 @@ extern const struct NFEventFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSNumber* type;
+
+
+
+@property int16_t typeValue;
+- (int16_t)typeValue;
+- (void)setTypeValue:(int16_t)value_;
+
+//- (BOOL)validateType:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NFIgreja *igreja;
 
 //- (BOOL)validateIgreja:(id*)value_ error:(NSError**)error_;
@@ -111,6 +127,15 @@ extern const struct NFEventFetchedProperties {
 
 - (int16_t)primitiveStartTimeValue;
 - (void)setPrimitiveStartTimeValue:(int16_t)value_;
+
+
+
+
+- (NSNumber*)primitiveType;
+- (void)setPrimitiveType:(NSNumber*)value;
+
+- (int16_t)primitiveTypeValue;
+- (void)setPrimitiveTypeValue:(int16_t)value_;
 
 
 

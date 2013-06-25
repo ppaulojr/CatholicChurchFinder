@@ -229,6 +229,14 @@
             event.endTimeValue = endHours * 100 + endMinutes;
         }
 
+        int type = [fields[10] intValue];
+        if (type == 1) {
+            event.typeValue = NFEventTypeMissa;
+        } else {
+            NSAssert(type == 2, @"Expected event type 1 or 2, got %d", type);
+            event.typeValue = NFEventTypeConfissao;
+        }
+
         ++count;
     };
 

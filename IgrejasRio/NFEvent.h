@@ -8,6 +8,11 @@
 
 #import "_NFEvent.h"
 
+typedef NS_ENUM(NSInteger, NFEventType) {
+    NFEventTypeMissa = 0,
+    NFEventTypeConfissao
+};
+
 @interface NFEvent : _NFEvent
 
 @end

@@ -7,6 +7,7 @@ const struct NFEventAttributes NFEventAttributes = {
 	.endTime = @"endTime",
 	.observation = @"observation",
 	.startTime = @"startTime",
+	.type = @"type",
 };
 
 const struct NFEventRelationships NFEventRelationships = {
@@ -49,6 +50,11 @@ const struct NFEventFetchedProperties NFEventFetchedProperties = {
 	}
 	if ([key isEqualToString:@"startTimeValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"startTime"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+	if ([key isEqualToString:@"typeValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"type"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 		return keyPaths;
 	}
@@ -112,6 +118,32 @@ const struct NFEventFetchedProperties NFEventFetchedProperties = {
 
 - (void)setPrimitiveStartTimeValue:(int16_t)value_ {
 	[self setPrimitiveStartTime:[NSNumber numberWithShort:value_]];
+}
+
+
+
+
+
+@dynamic type;
+
+
+
+- (int16_t)typeValue {
+	NSNumber *result = [self type];
+	return [result shortValue];
+}
+
+- (void)setTypeValue:(int16_t)value_ {
+	[self setType:[NSNumber numberWithShort:value_]];
+}
+
+- (int16_t)primitiveTypeValue {
+	NSNumber *result = [self primitiveType];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveTypeValue:(int16_t)value_ {
+	[self setPrimitiveType:[NSNumber numberWithShort:value_]];
 }
 
 

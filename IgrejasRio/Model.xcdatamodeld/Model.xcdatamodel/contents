@@ -5,6 +5,7 @@
         <attribute name="endTime" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="observation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startTime" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
         <relationship name="igreja" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Igreja" inverseName="event" inverseEntity="Igreja" syncable="YES"/>
     </entity>
     <entity name="Igreja" representedClassName="NFIgreja" syncable="YES">
@@ -36,7 +37,7 @@
         <attribute name="month" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Event" positionX="0" positionY="0" width="128" height="120"/>
         <element name="Igreja" positionX="0" positionY="0" width="128" height="255"/>
         <element name="MonthlyEvent" positionX="0" positionY="0" width="128" height="75"/>
         <element name="WeeklyEvent" positionX="0" positionY="0" width="128" height="60"/>
