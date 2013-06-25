@@ -32,6 +32,7 @@ static NSNumberFormatter *numberFormatter;
         numberFormatter = [NSNumberFormatter new];
         numberFormatter.minimumFractionDigits = 1;
         numberFormatter.maximumFractionDigits = 1;
+        numberFormatter.minimumIntegerDigits = 1;
     }
     return numberFormatter;
 }

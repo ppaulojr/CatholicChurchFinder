@@ -12,6 +12,7 @@
 #import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
 #import "NFYearlyEvent.h"
+#import "NSString+NFNormalizing.h"
 
 
 @interface NFCSVParserDelegate : NSObject <CHCSVParserDelegate>
@@ -84,15 +85,7 @@
 
 - (NSString *)stringByNormalizingImportedString:(NSString *)string
 {
-    if (!string) {
-        return nil;
-    }
-
-    NSMutableString *buffer = [string mutableCopy];
-    CFMutableStringRef bufferRef = (__bridge CFMutableStringRef)buffer;
-    CFStringTransform(bufferRef, NULL, kCFStringTransformToLatin, false);
-    CFStringTransform(bufferRef, NULL, kCFStringTransformStripCombiningMarks, false);
-    return buffer.lowercaseString;
+    return string ? [string nf_searchNormalizedString] : nil;
 }
 
 - (NSDictionary *)importIgrejasWithContext:(NSManagedObjectContext *)moc

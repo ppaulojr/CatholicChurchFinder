@@ -10,6 +10,14 @@
 #import "NFIgreja.h"
 #import "NFIgrejaListCell.h"
 #import "NFIgrejaListViewController.h"
+#import "NSString+NFNormalizing.h"
+
+
+typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
+    NFIgrejaListScopeAll = 0,
+    NFIgrejaListScopeNome,
+    NFIgrejaListScopeBairro
+};
 
 
 @interface NFIgrejaListEntry : NSObject
@@ -38,13 +46,17 @@
 @end
 
 
-@interface NFIgrejaListViewController () <CLLocationManagerDelegate>
+@interface NFIgrejaListViewController () <CLLocationManagerDelegate, UISearchDisplayDelegate>
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
 
 @property (nonatomic, strong) CLLocation *userLocation;
 
 @property (nonatomic, strong) NSMutableArray *entries;
+
+@property (nonatomic, strong) NSPredicate *filterPredicate;
+
+@property (nonatomic, strong) NSArray *filteredEntries;
 
 @end
 
@@ -57,6 +69,8 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
+
     self.userLocation = [[CLLocation alloc] initWithLatitude:-22.903534 longitude:-43.209572];
 
     self.locationManager = [CLLocationManager new];
@@ -80,6 +94,15 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localeDidChange) name:NSCurrentLocaleDidChangeNotification object:nil];
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    // Hide the search bar initially
+    CGFloat headerHeight = self.tableView.tableHeaderView.frame.size.height;
+    self.tableView.contentOffset = CGPointMake(0, headerHeight);
+}
+
 - (void)localeDidChange
 {
     [NFIgrejaListCell invalidateCachedLocale];
@@ -96,19 +119,36 @@
     [self.tableView reloadData];
 }
 
+- (NSArray *)arrayForTableView:(UITableView *)tableView
+{
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return self.filteredEntries;
+    } else {
+        return self.entries;
+    }
+}
+
+- (NFIgrejaListEntry *)entryForRowAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView
+{
+    return [self arrayForTableView:tableView][indexPath.row];
+}
+
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.entries.count;
+    return [self arrayForTableView:tableView].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NFIgrejaListEntry *entry = self.entries[indexPath.row];
+    NFIgrejaListEntry *entry = [self entryForRowAtIndexPath:indexPath tableView:tableView];
 
-    NFIgrejaListCell *cell = (NFIgrejaListCell *)[tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    // It's important to use self.tableView here instead of tableView,
+    // as the prototype cell is set up for self.tableView, not for the
+    // table view provided by the search display controller
+    NFIgrejaListCell *cell = (NFIgrejaListCell *)[self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     [cell configureWithIgreja:entry.igreja distance:entry.distance];
 
     return cell;
@@ -121,6 +161,41 @@
 {
     self.userLocation = [locations lastObject];
     [self calculateDistances];
+}
+
+
+#pragma mark - Search display controller delegate
+
+- (void)filterSearchResultsWithScope:(NFIgrejaListScope)scope text:(NSString *)text
+{
+    NSString *normalizedText = [text nf_searchNormalizedString];
+    NSPredicate *predicate;
+
+    switch (scope) {
+        case NFIgrejaListScopeAll:
+            predicate = [NSPredicate predicateWithFormat:@"self.igreja.normalizedNome CONTAINS %@ OR self.igreja.normalizedBairro CONTAINS %@", normalizedText, normalizedText];
+            break;
+        case NFIgrejaListScopeNome:
+            predicate = [NSPredicate predicateWithFormat:@"self.igreja.normalizedNome CONTAINS %@", normalizedText];
+            break;
+        case NFIgrejaListScopeBairro:
+            predicate = [NSPredicate predicateWithFormat:@"self.igreja.normalizedBairro CONTAINS %@", normalizedText];
+            break;
+    }
+
+    self.filteredEntries = [self.entries filteredArrayUsingPredicate:predicate];
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption
+{
+    [self filterSearchResultsWithScope:searchOption text:self.searchDisplayController.searchBar.text];
+    return YES;
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterSearchResultsWithScope:self.searchDisplayController.searchBar.selectedScopeButtonIndex text:searchString];
+    return YES;
 }
 
 @end

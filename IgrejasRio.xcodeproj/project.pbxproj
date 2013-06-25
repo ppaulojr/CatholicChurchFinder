@@ -18,6 +18,7 @@
 		ED3B1468177485AD00213826 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1467177485AD00213826 /* Default-568h@2x.png */; };
 		ED50D50E17788984000C0FB3 /* NFIgrejaListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */; };
 		ED50D51117788B54000C0FB3 /* NFIgrejaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */; };
+		ED50D5151778C5C9000C0FB3 /* NSString+NFNormalizing.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D5141778C5C9000C0FB3 /* NSString+NFNormalizing.m */; };
 		ED6B2F3817748BBE00EA66D0 /* NFCoreDataStackManager+Import.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */; };
 		ED6B2F3917748BDD00EA66D0 /* _NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FBE17748748000CDF87 /* _NFEvent.m */; };
 		ED6B2F3A17748BDD00EA66D0 /* _NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC017748748000CDF87 /* _NFIgreja.m */; };
@@ -76,6 +77,8 @@
 		ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaListCell.m; sourceTree = "<group>"; };
 		ED50D50F17788B54000C0FB3 /* NFIgrejaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaListViewController.h; sourceTree = "<group>"; };
 		ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaListViewController.m; sourceTree = "<group>"; };
+		ED50D5131778C5C9000C0FB3 /* NSString+NFNormalizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NFNormalizing.h"; path = "../../../NetFilter/netfilter-git/NetFilter/NSString+NFNormalizing.h"; sourceTree = "<group>"; };
+		ED50D5141778C5C9000C0FB3 /* NSString+NFNormalizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NFNormalizing.m"; path = "../../../NetFilter/netfilter-git/NetFilter/NSString+NFNormalizing.m"; sourceTree = "<group>"; };
 		ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NFCoreDataStackManager+Import.m"; sourceTree = "<group>"; };
 		ED6B2F3717748BBE00EA66D0 /* NFCoreDataStackManager+Import.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NFCoreDataStackManager+Import.h"; sourceTree = "<group>"; };
 		ED6B2F4717748C1E00EA66D0 /* events.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = events.csv; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				EDD33FAF177486E8000CDF87 /* NFWeeklyEvent.m */,
 				EDD33FB0177486E8000CDF87 /* NFYearlyEvent.h */,
 				EDD33FB1177486E8000CDF87 /* NFYearlyEvent.m */,
+				ED50D5131778C5C9000C0FB3 /* NSString+NFNormalizing.h */,
+				ED50D5141778C5C9000C0FB3 /* NSString+NFNormalizing.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -447,6 +452,7 @@
 				EDD33FCB17748748000CDF87 /* _NFYearlyEvent.m in Sources */,
 				ED50D50E17788984000C0FB3 /* NFIgrejaListCell.m in Sources */,
 				ED50D51117788B54000C0FB3 /* NFIgrejaListViewController.m in Sources */,
+				ED50D5151778C5C9000C0FB3 /* NSString+NFNormalizing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
