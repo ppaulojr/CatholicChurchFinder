@@ -26,12 +26,25 @@
     return [[NSBundle mainBundle] loadNibNamed:@"NFIgrejaDetailPanel" owner:nil options:nil][0];
 }
 
+- (void)_setTextOrNil:(NSString *)textOrNil forLabel:(UILabel *)label
+{
+    if (textOrNil) {
+        label.text = textOrNil;
+    } else {
+        NSDictionary *attrs = @{
+            NSFontAttributeName : [UIFont italicSystemFontOfSize:14],
+            NSForegroundColorAttributeName : [UIColor grayColor]
+        };
+        label.attributedText = [[NSAttributedString alloc] initWithString:@"(Não informado)" attributes:attrs];
+    }
+}
+
 - (void)configureWithIgreja:(NFIgreja *)igreja
 {
     self.nomeLabel.text = igreja.nome;
-    self.parocoLabel.text = igreja.paroco;
-    self.telefonesLabel.text = igreja.telefones;
-    self.siteLabel.text = igreja.site;
+    [self _setTextOrNil:igreja.paroco forLabel:self.parocoLabel];
+    [self _setTextOrNil:igreja.telefones forLabel:self.telefonesLabel];
+    [self _setTextOrNil:igreja.site forLabel:self.siteLabel];
 
     NSMutableString *endereco = [igreja.endereco mutableCopy];
     if (igreja.bairro) {
