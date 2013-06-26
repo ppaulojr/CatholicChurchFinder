@@ -9,6 +9,7 @@
 #import "CLLocation+NFDefaultLocation.h"
 #import "NFCoreDataStackManager.h"
 #import "NFIgreja.h"
+#import "NFIgrejaDetailViewController.h"
 #import "NFIgrejaListCell.h"
 #import "NFIgrejaListViewController.h"
 #import "NSString+NFNormalizing.h"
@@ -95,6 +96,27 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_localeDidChange) name:NSCurrentLocaleDidChangeNotification object:nil];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[NFIgrejaDetailViewController class]]) {
+        UITableView *tableView;
+        if (self.searchDisplayController.isActive) {
+            tableView = self.searchDisplayController.searchResultsTableView;
+        } else {
+            tableView = self.tableView;
+        }
+
+        NSIndexPath *selection = [tableView indexPathForSelectedRow];
+        NSAssert(selection != nil, @"Expected table view row to be selected");
+
+        NFIgrejaListEntry *entry = [self _entryForRowAtIndexPath:selection tableView:tableView];
+
+        NFIgrejaDetailViewController *controller = (NFIgrejaDetailViewController *)segue.destinationViewController;
+        controller.title = entry.igreja.nome;
+        controller.igreja = entry.igreja;
+    }
+}
+
 - (void)_localeDidChange
 {
     // The cells rely on the locale as well
@@ -154,6 +176,14 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
     [cell configureWithIgreja:entry.igreja distance:entry.distance];
 
     return cell;
+}
+
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"detail" sender:nil];
 }
 
 

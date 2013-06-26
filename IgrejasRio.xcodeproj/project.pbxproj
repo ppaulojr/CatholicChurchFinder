@@ -19,6 +19,9 @@
 		ED50D50E17788984000C0FB3 /* NFIgrejaListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */; };
 		ED50D51117788B54000C0FB3 /* NFIgrejaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */; };
 		ED50D5151778C5C9000C0FB3 /* NSString+NFNormalizing.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D5141778C5C9000C0FB3 /* NSString+NFNormalizing.m */; };
+		ED5BB10D177B258E00C98CE9 /* NFIgrejaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5BB10C177B258E00C98CE9 /* NFIgrejaDetailViewController.m */; };
+		ED5BB111177B2E3100C98CE9 /* NFIgrejaDetailPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5BB10F177B2E3100C98CE9 /* NFIgrejaDetailPanel.m */; };
+		ED5BB112177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5BB110177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib */; };
 		ED6B2F3817748BBE00EA66D0 /* NFCoreDataStackManager+Import.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */; };
 		ED6B2F3917748BDD00EA66D0 /* _NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FBE17748748000CDF87 /* _NFEvent.m */; };
 		ED6B2F3A17748BDD00EA66D0 /* _NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC017748748000CDF87 /* _NFIgreja.m */; };
@@ -83,6 +86,11 @@
 		ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaListViewController.m; sourceTree = "<group>"; };
 		ED50D5131778C5C9000C0FB3 /* NSString+NFNormalizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NFNormalizing.h"; path = "../../../NetFilter/netfilter-git/NetFilter/NSString+NFNormalizing.h"; sourceTree = "<group>"; };
 		ED50D5141778C5C9000C0FB3 /* NSString+NFNormalizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NFNormalizing.m"; path = "../../../NetFilter/netfilter-git/NetFilter/NSString+NFNormalizing.m"; sourceTree = "<group>"; };
+		ED5BB10B177B258E00C98CE9 /* NFIgrejaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaDetailViewController.h; sourceTree = "<group>"; };
+		ED5BB10C177B258E00C98CE9 /* NFIgrejaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaDetailViewController.m; sourceTree = "<group>"; };
+		ED5BB10E177B2E3100C98CE9 /* NFIgrejaDetailPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaDetailPanel.h; sourceTree = "<group>"; };
+		ED5BB10F177B2E3100C98CE9 /* NFIgrejaDetailPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaDetailPanel.m; sourceTree = "<group>"; };
+		ED5BB110177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NFIgrejaDetailPanel.xib; sourceTree = "<group>"; };
 		ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NFCoreDataStackManager+Import.m"; sourceTree = "<group>"; };
 		ED6B2F3717748BBE00EA66D0 /* NFCoreDataStackManager+Import.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NFCoreDataStackManager+Import.h"; sourceTree = "<group>"; };
 		ED6B2F4717748C1E00EA66D0 /* events.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = events.csv; sourceTree = "<group>"; };
@@ -296,6 +304,8 @@
 			children = (
 				ED3B1460177485AD00213826 /* NFAppDelegate.h */,
 				ED3B1461177485AD00213826 /* NFAppDelegate.m */,
+				ED5BB10B177B258E00C98CE9 /* NFIgrejaDetailViewController.h */,
+				ED5BB10C177B258E00C98CE9 /* NFIgrejaDetailViewController.m */,
 				ED50D50F17788B54000C0FB3 /* NFIgrejaListViewController.h */,
 				ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */,
 				EDD967B61779DE3D00F9FC93 /* NFMissaListViewController.h */,
@@ -307,6 +317,9 @@
 		EDFEE6661774EC58002F886A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED5BB10E177B2E3100C98CE9 /* NFIgrejaDetailPanel.h */,
+				ED5BB10F177B2E3100C98CE9 /* NFIgrejaDetailPanel.m */,
+				ED5BB110177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib */,
 				ED50D50C17788984000C0FB3 /* NFIgrejaListCell.h */,
 				ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */,
 				EDD967B91779DEA200F9FC93 /* NFMissaListCell.h */,
@@ -402,6 +415,7 @@
 				ED3B1468177485AD00213826 /* Default-568h@2x.png in Resources */,
 				EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */,
 				EDFEE66A17750205002F886A /* IgrejasRio.sqlite in Resources */,
+				ED5BB112177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +486,8 @@
 				EDD967B51779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m in Sources */,
 				EDD967B81779DE3D00F9FC93 /* NFMissaListViewController.m in Sources */,
 				EDD967BB1779DEA200F9FC93 /* NFMissaListCell.m in Sources */,
+				ED5BB10D177B258E00C98CE9 /* NFIgrejaDetailViewController.m in Sources */,
+				ED5BB111177B2E3100C98CE9 /* NFIgrejaDetailPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

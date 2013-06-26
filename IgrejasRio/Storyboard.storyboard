@@ -72,6 +72,7 @@
                     <navigationItem key="navigationItem" title="Igrejas" id="mhb-jd-hxO"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="CKR-5z-Uhu" id="QSn-Bh-D6x"/>
+                        <segue destination="9wZ-xG-cVY" kind="push" identifier="detail" id="apY-c8-TYQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HK-RQ-70Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -85,7 +86,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1521" y="136"/>
+            <point key="canvasLocation" x="1535" y="-607"/>
         </scene>
         <!--Missa List View Controller - Missas-->
         <scene sceneID="jdu-dJ-euD">
@@ -140,10 +141,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Missas" id="GvG-mw-kXc"/>
+                    <connections>
+                        <segue destination="9wZ-xG-cVY" kind="push" identifier="detail" id="jtT-hv-Vg5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNr-6m-k67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521" y="879"/>
+            <point key="canvasLocation" x="1535" y="136"/>
         </scene>
         <!--Navigation Controller - Igrejas-->
         <scene sceneID="vSm-FK-bSE">
@@ -162,7 +166,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ql-CP-Z83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995" y="136"/>
+            <point key="canvasLocation" x="1009" y="-607"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wf7-3g-7z6">
@@ -200,10 +204,48 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQn-0K-6qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995" y="879"/>
+            <point key="canvasLocation" x="1009" y="136"/>
+        </scene>
+        <!--Igreja Detail View Controller-->
+        <scene sceneID="bee-L4-crE">
+            <objects>
+                <viewController id="9wZ-xG-cVY" customClass="NFIgrejaDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BGP-wU-55n">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wJN-PH-H0s">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" id="SG7-dk-Z09">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </mapView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Pp-w6-H0L"/>
+                    <connections>
+                        <outlet property="mapView" destination="SG7-dk-Z09" id="k9N-9Y-PQa"/>
+                        <outlet property="scrollView" destination="wJN-PH-H0s" id="T3z-m1-y48"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEi-iM-29b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="136"/>
         </scene>
     </scenes>
     <classes>
+        <class className="NFIgrejaDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFIgrejaDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
         <class className="NFIgrejaListCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NFIgrejaListCell.h"/>
             <relationships>
@@ -232,4 +274,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="apY-c8-TYQ"/>
+    </inferredMetricsTieBreakers>
 </document>

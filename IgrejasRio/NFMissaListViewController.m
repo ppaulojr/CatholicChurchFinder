@@ -9,6 +9,7 @@
 #import "CLLocation+NFDefaultLocation.h"
 #import "NFCoreDataStackManager.h"
 #import "NFIgreja.h"
+#import "NFIgrejaDetailViewController.h"
 #import "NFMissaListCell.h"
 #import "NFMissaListViewController.h"
 #import "NFMonthlyEvent.h"
@@ -100,6 +101,20 @@
     // Stop the refresh timer
     [self.refreshTimer invalidate];
     self.refreshTimer = nil;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[NFIgrejaDetailViewController class]]) {
+        NSIndexPath *selection = [self.tableView indexPathForSelectedRow];
+        NSAssert(selection != nil, @"Expected table view row to be selected");
+
+        NFMissaListEntry *entry = self.entries[selection.row];
+
+        NFIgrejaDetailViewController *controller = (NFIgrejaDetailViewController *)segue.destinationViewController;
+        controller.title = entry.event.igreja.nome;
+        controller.igreja = entry.event.igreja;
+    }
 }
 
 - (void)_refreshTimerFired
@@ -261,6 +276,14 @@
     [cell configureWithEvent:entry.event distance:entry.igrejaDistance];
 
     return cell;
+}
+
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"detail" sender:self];
 }
 
 
