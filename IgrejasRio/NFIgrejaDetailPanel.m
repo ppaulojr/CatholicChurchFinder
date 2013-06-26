@@ -41,11 +41,13 @@
         [endereco appendFormat:@"\nCEP %@", igreja.cep];
     }
     self.enderecoLabel.text = endereco;
+
+    [self setNeedsLayout];
 }
 
 - (CGSize)sizeThatFits:(CGSize)size
 {
-    [self updateConstraintsIfNeeded];
+    [self layoutIfNeeded];
 
     size.height = CGRectGetMaxY(self.lastView.frame) + 20;
     return size;

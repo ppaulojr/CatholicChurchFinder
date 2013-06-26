@@ -37,6 +37,7 @@
     [self.mapView addAnnotation:self.igreja];
 
     [self.detailPanel configureWithIgreja:self.igreja];
+    [self.view setNeedsLayout];
 }
 
 - (void)viewWillLayoutSubviews
