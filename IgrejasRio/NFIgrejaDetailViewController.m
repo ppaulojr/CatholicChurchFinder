@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
+#import <PSAlertView/PSPDFActionSheet.h>
+
 #import "NFIgrejaDetailPanel.h"
 #import "NFIgrejaDetailViewController.h"
 
@@ -56,7 +58,15 @@
 
 - (void)igrejaDetailPanelSiteLinkTapped:(NFIgrejaDetailPanel *)panel
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.igreja.site]];
+    PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
+
+    [actionSheet addButtonWithTitle:@"Abrir link no navegador" block:^{
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.igreja.site]];
+    }];
+
+    [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
+
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
 
 @end
