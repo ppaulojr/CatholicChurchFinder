@@ -30,13 +30,20 @@
 
 - (NSComparisonResult)compareToEntry:(NFMissaListEntry *)entry
 {
-    if (self.igrejaDistance > entry.igrejaDistance) {
-        return NSOrderedDescending;
-    } else if (self.igrejaDistance < entry.igrejaDistance) {
-        return NSOrderedAscending;
-    } else {
-        return [self.event.igreja.nome caseInsensitiveCompare:entry.event.igreja.nome];
+#define CMP(x, y) \
+    if ((x) > (y)) { \
+        return NSOrderedDescending; \
+    } else if ((y) > (x)) { \
+        return NSOrderedAscending; \
+    } else
+
+    CMP(self.event.startTimeValue, entry.event.startTimeValue) {
+        CMP(self.igrejaDistance, entry.igrejaDistance) {
+            return [self.event.igreja.nome caseInsensitiveCompare:entry.event.igreja.nome];
+        }
     }
+
+#undef CMP
 }
 
 @end
