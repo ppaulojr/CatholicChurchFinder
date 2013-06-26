@@ -29,10 +29,18 @@
 - (void)configureWithIgreja:(NFIgreja *)igreja
 {
     self.nomeLabel.text = igreja.nome;
-    self.enderecoLabel.text = igreja.endereco;
     self.parocoLabel.text = igreja.paroco;
     self.telefonesLabel.text = igreja.telefones;
     self.siteLabel.text = igreja.site;
+
+    NSMutableString *endereco = [igreja.endereco mutableCopy];
+    if (igreja.bairro) {
+        [endereco appendFormat:@"\n%@", igreja.bairro];
+    }
+    if (igreja.cep) {
+        [endereco appendFormat:@"\nCEP %@", igreja.cep];
+    }
+    self.enderecoLabel.text = endereco;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size
