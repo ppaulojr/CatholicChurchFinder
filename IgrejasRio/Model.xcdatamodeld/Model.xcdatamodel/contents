@@ -2,10 +2,10 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="DailyEvent" representedClassName="NFDailyEvent" parentEntity="Event" syncable="YES"/>
     <entity name="Event" representedClassName="NFEvent" isAbstract="YES" syncable="YES">
-        <attribute name="endTime" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
         <attribute name="observation" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="startTime" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
-        <attribute name="type" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="startTime" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" indexed="YES" syncable="YES"/>
         <relationship name="igreja" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Igreja" inverseName="event" inverseEntity="Igreja" syncable="YES"/>
     </entity>
     <entity name="Igreja" representedClassName="NFIgreja" syncable="YES">
@@ -14,8 +14,8 @@
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="endereco" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastModified" attributeType="Date" syncable="YES"/>
-        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
-        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" indexed="YES" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" indexed="YES" syncable="YES"/>
         <attribute name="nome" attributeType="String" syncable="YES"/>
         <attribute name="normalizedBairro" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="normalizedNome" attributeType="String" indexed="YES" syncable="YES"/>
@@ -26,22 +26,22 @@
         <relationship name="event" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="igreja" inverseEntity="Event" syncable="YES"/>
     </entity>
     <entity name="MonthlyEvent" representedClassName="NFMonthlyEvent" parentEntity="Event" syncable="YES">
-        <attribute name="day" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="week" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="day" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="week" optional="YES" attributeType="Integer 16" syncable="YES"/>
     </entity>
     <entity name="WeeklyEvent" representedClassName="NFWeeklyEvent" parentEntity="Event" syncable="YES">
-        <attribute name="weekday" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weekday" attributeType="Integer 16" syncable="YES"/>
     </entity>
     <entity name="YearlyEvent" representedClassName="NFYearlyEvent" parentEntity="Event" syncable="YES">
-        <attribute name="day" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="month" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="day" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="month" attributeType="Integer 16" syncable="YES"/>
     </entity>
     <elements>
+        <element name="DailyEvent" positionX="160" positionY="192" width="128" height="45"/>
         <element name="Event" positionX="0" positionY="0" width="128" height="120"/>
-        <element name="Igreja" positionX="0" positionY="0" width="128" height="255"/>
+        <element name="Igreja" positionX="0" positionY="0" width="128" height="270"/>
         <element name="MonthlyEvent" positionX="0" positionY="0" width="128" height="75"/>
         <element name="WeeklyEvent" positionX="0" positionY="0" width="128" height="60"/>
         <element name="YearlyEvent" positionX="0" positionY="0" width="128" height="75"/>
-        <element name="DailyEvent" positionX="160" positionY="192" width="128" height="45"/>
     </elements>
 </model>
