@@ -9,7 +9,7 @@
 #import "NFIgrejaDetailPanel.h"
 #import "NFIgrejaDetailViewController.h"
 
-@interface NFIgrejaDetailViewController ()
+@interface NFIgrejaDetailViewController () <NFIgrejaDetailPanelDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -26,6 +26,7 @@
     [super viewDidLoad];
 
     self.detailPanel = [NFIgrejaDetailPanel panel];
+    self.detailPanel.delegate = self;
     [self.scrollView addSubview:self.detailPanel];
 }
 
@@ -48,6 +49,14 @@
     self.detailPanel.frame = frame;
 
     self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.bounds), CGRectGetMaxY(frame));
+}
+
+
+#pragma mark - Igreja detail panel delegate
+
+- (void)igrejaDetailPanelSiteLinkTapped:(NFIgrejaDetailPanel *)panel
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.igreja.site]];
 }
 
 @end

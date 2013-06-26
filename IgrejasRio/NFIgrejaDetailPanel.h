@@ -10,10 +10,22 @@
 
 #import "NFIgreja.h"
 
+@protocol NFIgrejaDetailPanelDelegate;
+
+
 @interface NFIgrejaDetailPanel : UIView
+
+@property (weak, nonatomic) id <NFIgrejaDetailPanelDelegate> delegate;
 
 + (instancetype)panel;
 
 - (void)configureWithIgreja:(NFIgreja *)igreja;
+
+@end
+
+
+@protocol NFIgrejaDetailPanelDelegate <NSObject>
+
+- (void)igrejaDetailPanelSiteLinkTapped:(NFIgrejaDetailPanel *)panel;
 
 @end
