@@ -6,7 +6,9 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
+#import "NFEvent.h"
 #import "NFIgrejaDetailPanel.h"
+#import "NFIgrejaEventsPanel.h"
 
 @interface NFIgrejaDetailPanel ()
 
@@ -15,6 +17,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *parocoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *telefonesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *siteLabel;
+@property (weak, nonatomic) IBOutlet NFIgrejaEventsPanel *missaEventsPanel;
+@property (weak, nonatomic) IBOutlet NFIgrejaEventsPanel *confissaoEventsPanel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *missaEventsPanelHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *confissaoEventsPanelHeightConstraint;
 @property (weak, nonatomic) IBOutlet UIView *lastView;
 
 @end
@@ -95,12 +101,31 @@
         }
     }
 
-    [self setNeedsLayout];
+    NSPredicate *missaPredicate = [NSPredicate predicateWithFormat:@"self.type == %@", @(NFEventTypeMissa)];
+    [self.missaEventsPanel configureWithEvents:[igreja.eventSet filteredSetUsingPredicate:missaPredicate]];
+
+    NSPredicate *confissaoPredicate = [NSPredicate predicateWithFormat:@"self.type == %@", @(NFEventTypeConfissao)];
+    [self.confissaoEventsPanel configureWithEvents:[igreja.eventSet filteredSetUsingPredicate:confissaoPredicate]];
 }
 
-- (void)_siteLinkTapped
+- (void)layoutSubviews
 {
-    [self.delegate igrejaDetailPanelSiteLinkTapped:self];
+    [super layoutSubviews];
+
+    // We need to update the constraints to take into
+    // acount the new frame for the events panels
+    [self setNeedsUpdateConstraints];
+}
+
+- (void)updateConstraints
+{
+    [super updateConstraints];
+
+    CGSize size = [self.missaEventsPanel sizeThatFits:self.bounds.size];
+    self.missaEventsPanelHeightConstraint.constant = size.height;
+
+    size = [self.confissaoEventsPanel sizeThatFits:self.bounds.size];
+    self.confissaoEventsPanelHeightConstraint.constant = size.height;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size
@@ -109,6 +134,11 @@
 
     size.height = CGRectGetMaxY(self.lastView.frame) + 20;
     return size;
+}
+
+- (void)_siteLinkTapped
+{
+    [self.delegate igrejaDetailPanelSiteLinkTapped:self];
 }
 
 @end

@@ -43,7 +43,7 @@
     [self.view setNeedsLayout];
 }
 
-- (void)viewWillLayoutSubviews
+- (void)viewDidLayoutSubviews
 {
     [self.detailPanel sizeToFit];
     CGRect frame = self.detailPanel.frame;
