@@ -143,6 +143,7 @@ static const int ordinalZero = 3;
         UILabel *contentLabel = [UILabel new];
         contentLabel.font = [UIFont systemFontOfSize:14];
         contentLabel.text = pair.contentText;
+        contentLabel.numberOfLines = 0;
         [self addSubview:contentLabel];
     }
 }
@@ -223,7 +224,7 @@ static const int ordinalZero = 3;
         if (event.observation) {
             text = [text stringByAppendingFormat:@" %@", event.observation];
         }
-        [bucket addObject:[event formattedTime]];
+        [bucket addObject:text];
     }
 
     for (int i = 0; i < 7; i++) {
