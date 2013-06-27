@@ -8,6 +8,7 @@
 
 #import "NFIgreja.h"
 #import "NFIgrejaEventsPanel.h"
+#import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
 
 #define CMP(x, y) \
@@ -16,6 +17,27 @@
     } else if ((y) > (x)) { \
         return NSOrderedAscending; \
     } else
+
+
+static NSString * const weekdayNames[] = {
+    @"Domingo", @"Segunda", @"Terça", @"Quarta", @"Quinta", @"Sexta", @"Sábado"
+};
+
+static NSString * const ordinalNamesM[] = {
+    @"Antepenúltimo", @"Penúltimo", @"Último", nil,
+    @"Primeiro", @"Segundo", @"Terceiro", @"Quarto", @"Quinto"
+};
+
+static NSString * const ordinalNamesF[] = {
+    @"Antepenúltima", @"Penúltima", @"Última", nil,
+    @"Primeira", @"Segunda", @"Terceira", @"Quarta", @"Quinta"
+};
+
+static BOOL weekdayIsM[] = {
+    YES, NO, NO, NO, NO, NO, YES
+};
+
+static const int ordinalZero = 3;
 
 
 @interface NFIgrejaEventPair : NSObject
@@ -72,7 +94,10 @@
     NSArray *weeklyEvents = [[events allObjects] filteredArrayUsingPredicate:weeklyPredicate];
     [self _addWeeklyEvents:weeklyEvents];
 
-    // TODO: Then add the monthly events
+    // Then add the monthly events
+    NSPredicate *monthlyPredicate = [NSPredicate predicateWithFormat:@"self.class == %@", [NFMonthlyEvent class]];
+    NSArray *monthlyEvents = [[events allObjects] filteredArrayUsingPredicate:monthlyPredicate];
+    [self _addMonthlyEvents:monthlyEvents];
 
     // TODO: And then the yearly events
 
@@ -156,11 +181,18 @@
 
 - (void)_addWeeklyEvents:(NSArray *)events
 {
+    if (!events.count) {
+        return;
+    }
+
     // Order the events by weekday and then start time
     events = [events sortedArrayUsingComparator:^NSComparisonResult(NFWeeklyEvent *e1, NFWeeklyEvent *e2) {
         CMP(e1.weekdayValue, e2.weekdayValue) {
             CMP(e1.startTimeValue, e2.startTimeValue) {
-                return [e1.igreja.nome caseInsensitiveCompare:e2.igreja.nome];
+#ifdef DEBUG
+                abort();
+#endif
+                return NSOrderedSame;
             }
         }
     }];
@@ -186,15 +218,12 @@
 
     for (int i = 0; i < 7; i++) {
         // Nothing to do if we don't have events on this weekday
-        NSMutableArray *bucket = buckets[i];
+        NSArray *bucket = buckets[i];
         if (!bucket) {
             continue;
         }
 
         // Find the weekday name
-        static NSString *weekdayNames[] = {
-            @"Domingo", @"Segunda", @"Terça", @"Quarta", @"Quinta", @"Sexta", @"Sábado"
-        };
         NSString *weekdayName = weekdayNames[i];
         assert(weekdayName);
 
@@ -205,6 +234,90 @@
         NFIgrejaEventPair *pair = [NFIgrejaEventPair new];
         pair.headerText = [weekdayName stringByAppendingString:@":"];
         pair.contentText = content;
+        [self.eventPairs addObject:pair];
+    }
+}
+
+- (void)_addMonthlyEvents:(NSArray *)events
+{
+    if (!events.count) {
+        return;
+    }
+
+    NSMutableDictionary *buckets = [NSMutableDictionary dictionaryWithCapacity:events.count];
+
+    // Sort the events by start time so they're already
+    // sorted when we join them in a string
+    events = [events sortedArrayUsingComparator:^NSComparisonResult(NFMonthlyEvent *e1, NFMonthlyEvent *e2) {
+        CMP(e1.startTimeValue, e2.startTimeValue) {
+            return NSOrderedSame;
+        }
+    }];
+
+    // Group together events in the same day, using a key
+    // that allows us to sort the events
+    for (NFMonthlyEvent *event in events) {
+        int keyInt = event.dayValue;
+        if (event.weekValue == 0) {
+            // Absolute day of month will come later
+            keyInt += 1000000;
+        } else {
+            int weekValueForKey = event.weekValue;
+            if (weekValueForKey < 0) {
+                // We want "last or before last" type specifiers
+                // to be shown after "first or second" specifiers,
+                // and we also want them in the reverse order (i.e.,
+                // before last should come before the last one)
+                weekValueForKey += 100;
+            }
+            keyInt += 10000 * event.weekValue;
+        }
+
+        NSNumber *key = @(keyInt);
+        NSMutableArray *bucket = buckets[key];
+        if (!bucket) {
+            bucket = [NSMutableArray array];
+            buckets[key] = bucket;
+        }
+        [bucket addObject:event];
+    }
+
+    // Sort the buckets so we can iterate in order
+    NSArray *sortedKeys = [[buckets allKeys] sortedArrayUsingSelector:@selector(compare:)];
+
+    // Finally output the text for each bucket
+    for (NSNumber *key in sortedKeys) {
+        NSArray *bucket = buckets[key];
+        NFIgrejaEventPair *pair = [NFIgrejaEventPair new];
+
+        NFMonthlyEvent *firstEvent = bucket[0];
+        if (firstEvent.weekValue == 0) {
+            pair.headerText = [NSString stringWithFormat:@"Todo dia %d:", firstEvent.dayValue];
+        } else {
+            int weekdayIndex = firstEvent.dayValue - 1;
+            NSString *weekday = weekdayNames[weekdayIndex];
+            NSString * const *ordinalNames = weekdayIsM[weekdayIndex] ? ordinalNamesM : ordinalNamesF;
+
+            int ordinalindex = ordinalZero + firstEvent.weekValue;
+            NSString *ordinalName = ordinalNames[ordinalindex];
+
+            pair.headerText = [NSString stringWithFormat:@"%@ %@:", ordinalName, weekday];
+        }
+
+        // Get the formatted time and observation from each event
+        NSMutableArray *textComponents = [NSMutableArray arrayWithCapacity:bucket.count];
+        for (NFMonthlyEvent *event in bucket) {
+            NSString *text = [event formattedTime];
+            if (event.observation) {
+                text = [text stringByAppendingFormat:@" %@", event.observation];
+            }
+            [textComponents addObject:text];
+        }
+
+        // Define the content text
+        pair.contentText = [textComponents componentsJoinedByString:@", "];
+
+        // Add the pair to the list
         [self.eventPairs addObject:pair];
     }
 }
