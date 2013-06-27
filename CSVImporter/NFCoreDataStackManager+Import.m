@@ -204,6 +204,7 @@
         }
 
         event.igreja = igrejas[fields[1]];
+        event.observation = [self stringOrNilWithImportedString:fields[12]];
 
         int startHours = [fields[6] intValue];
         int startMinutes = [fields[7] intValue];
