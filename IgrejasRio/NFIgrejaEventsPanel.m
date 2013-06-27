@@ -18,6 +18,19 @@
         return NSOrderedAscending; \
     } else
 
+#define CMP_STR(x, y) \
+    do { \
+        if ((x) && (y)) { \
+            return [(x) compare:(y)]; \
+        } else if ((x)) { \
+            return NSOrderedDescending; \
+        } else if ((y)) { \
+            return NSOrderedAscending; \
+        } else { \
+            return NSOrderedSame; \
+        } \
+    } while (NO)
+
 
 static NSString * const weekdayNames[] = {
     @"Domingo", @"Segunda", @"Terça", @"Quarta", @"Quinta", @"Sexta", @"Sábado"
@@ -189,10 +202,7 @@ static const int ordinalZero = 3;
     events = [events sortedArrayUsingComparator:^NSComparisonResult(NFWeeklyEvent *e1, NFWeeklyEvent *e2) {
         CMP(e1.weekdayValue, e2.weekdayValue) {
             CMP(e1.startTimeValue, e2.startTimeValue) {
-#ifdef DEBUG
-                abort();
-#endif
-                return NSOrderedSame;
+                CMP_STR(e1.observation, e2.observation);
             }
         }
     }];
