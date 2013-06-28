@@ -24,4 +24,9 @@
     return coordinate;
 }
 
+- (NSString *)title
+{
+    return self.nome;
+}
+
 @end

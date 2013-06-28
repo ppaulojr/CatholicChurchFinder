@@ -37,12 +37,6 @@
     self.mapView.userTrackingMode = MKUserTrackingModeFollow;
 }
 
-- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
-{
-    self.selectedIgreja = view.annotation;
-    [self performSegueWithIdentifier:@"detail" sender:self];
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.destinationViewController isKindOfClass:[NFIgrejaDetailViewController class]]) {
@@ -50,6 +44,31 @@
         controller.title = self.selectedIgreja.nome;
         controller.igreja = self.selectedIgreja;
     }
+}
+
+
+#pragma mark - Map view delegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    if (![annotation isKindOfClass:[NFIgreja class]]) {
+        return nil;
+    }
+
+    static NSString * const reuseIdentifier = @"igreja";
+    MKAnnotationView *view = [mapView dequeueReusableAnnotationViewWithIdentifier:reuseIdentifier];
+    if (!view) {
+        view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pin"];
+        view.canShowCallout = YES;
+        view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    }
+    return view;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    self.selectedIgreja = view.annotation;
+    [self performSegueWithIdentifier:@"detail" sender:self];
 }
 
 @end

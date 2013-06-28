@@ -258,7 +258,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6Pp-w6-H0L"/>
                     <connections>
-                        <outlet property="mapView" destination="SG7-dk-Z09" id="k9N-9Y-PQa"/>
+                        <outlet property="mapView" destination="SG7-dk-Z09" id="gJy-hQ-cdz"/>
                         <outlet property="scrollView" destination="wJN-PH-H0s" id="T3z-m1-y48"/>
                     </connections>
                 </viewController>
