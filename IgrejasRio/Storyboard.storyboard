@@ -181,6 +181,7 @@
                     <connections>
                         <segue destination="kOd-6t-wsA" kind="relationship" relationship="viewControllers" id="flZ-Ua-HDl"/>
                         <segue destination="hHW-6h-iXM" kind="relationship" relationship="viewControllers" id="dhJ-nl-rGU"/>
+                        <segue destination="135-Zx-z2C" kind="relationship" relationship="viewControllers" id="7HH-PC-xMR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtI-JH-Gk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -205,6 +206,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQn-0K-6qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1009" y="136"/>
+        </scene>
+        <!--Map View Controller - Mapa-->
+        <scene sceneID="eK5-5r-BFb">
+            <objects>
+                <viewController id="BaX-HP-Pv2" customClass="NFMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKX-vT-vSZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="dmA-La-VOB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BaX-HP-Pv2" id="l4k-YY-k9Q"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mapa" id="FZV-UK-qGF"/>
+                    <connections>
+                        <outlet property="mapView" destination="dmA-La-VOB" id="f13-iD-rnk"/>
+                        <segue destination="9wZ-xG-cVY" kind="push" identifier="detail" id="qsp-wK-dxp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eR-oZ-VRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1535" y="888"/>
         </scene>
         <!--Igreja Detail View Controller-->
         <scene sceneID="bee-L4-crE">
@@ -237,6 +266,25 @@
             </objects>
             <point key="canvasLocation" x="2076" y="136"/>
         </scene>
+        <!--Navigation Controller - Mapa-->
+        <scene sceneID="qO5-2w-yFa">
+            <objects>
+                <navigationController id="135-Zx-z2C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mapa" id="vBF-In-nQF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B1H-zC-CVL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BaX-HP-Pv2" kind="relationship" relationship="rootViewController" id="aV3-3c-2Na"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdK-NU-70d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="888"/>
+        </scene>
     </scenes>
     <classes>
         <class className="NFIgrejaDetailViewController" superclassName="UIViewController">
@@ -257,6 +305,12 @@
         <class className="NFIgrejaListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NFIgrejaListViewController.h"/>
         </class>
+        <class className="NFMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFMapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
         <class className="NFMissaListCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NFMissaListCell.h"/>
             <relationships>
@@ -275,6 +329,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="apY-c8-TYQ"/>
+        <segue reference="qsp-wK-dxp"/>
     </inferredMetricsTieBreakers>
 </document>
