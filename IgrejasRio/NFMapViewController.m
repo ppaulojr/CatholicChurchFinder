@@ -51,11 +51,12 @@
 - (void)_updateMapRegion
 {
     MKCoordinateRegion region = self.mapView.region;
+    NSPredicate *excludingUserPredicate = [NSPredicate predicateWithFormat:@"class != %@", [MKUserLocation class]];
 
     // Check if we're too zoomed out for annotations
     if (region.span.latitudeDelta > 0.1) {
         self.annotationsRect = MKMapRectMake(0, 0, 0, 0);
-        [self.mapView removeAnnotations:self.mapView.annotations];
+        [self.mapView removeAnnotations:[self.mapView.annotations filteredArrayUsingPredicate:excludingUserPredicate]];
         return;
     }
 
@@ -77,7 +78,7 @@
         NSArray *allAnnotations = [NFIgreja igrejasInMapRegion:annotationsRegion context:self.backgroundMOC];
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            NSArray *currentAnnotations = self.mapView.annotations;
+            NSArray *currentAnnotations = [self.mapView.annotations filteredArrayUsingPredicate:excludingUserPredicate];
 
             NSPredicate *toRemovePredicate = [NSPredicate predicateWithFormat:@"NOT SELF IN %@", allAnnotations];
             NSArray *toRemove = [currentAnnotations filteredArrayUsingPredicate:toRemovePredicate];
