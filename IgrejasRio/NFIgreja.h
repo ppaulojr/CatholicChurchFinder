@@ -12,6 +12,8 @@
 
 + (NSArray *)allIgrejasInContext:(NSManagedObjectContext *)moc;
 
++ (NSArray *)igrejasInMapRegion:(MKCoordinateRegion)region context:(NSManagedObjectContext *)moc;
+
 - (CLLocationCoordinate2D)coordinate;
 
 @end
