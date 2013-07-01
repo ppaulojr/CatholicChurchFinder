@@ -38,10 +38,8 @@
         return NSOrderedAscending; \
     } else
 
-    CMP(self.event.startTimeValue, entry.event.startTimeValue) {
-        CMP(self.igrejaDistance, entry.igrejaDistance) {
-            return [self.event.igreja.nome caseInsensitiveCompare:entry.event.igreja.nome];
-        }
+    CMP(self.igrejaDistance, entry.igrejaDistance) {
+        return [self.event.igreja.nome caseInsensitiveCompare:entry.event.igreja.nome];
     }
 
 #undef CMP
@@ -58,7 +56,7 @@
 
 @property (nonatomic, strong) NSCalendar *calendar;
 
-@property (nonatomic, strong) NSMutableArray *entries;
+@property (nonatomic, strong) NSMutableArray *sections;
 
 @property (nonatomic, strong) NSTimer *refreshTimer;
 
@@ -109,7 +107,7 @@
         NSIndexPath *selection = [self.tableView indexPathForSelectedRow];
         NSAssert(selection != nil, @"Expected table view row to be selected");
 
-        NFMissaListEntry *entry = self.entries[selection.row];
+        NFMissaListEntry *entry = ((NSArray *)self.sections[selection.section])[selection.row];
 
         NFIgrejaDetailViewController *controller = (NFIgrejaDetailViewController *)segue.destinationViewController;
         controller.title = entry.event.igreja.nome;
@@ -143,13 +141,13 @@
 
 - (void)_calculateDistances
 {
-    // Calculate all distances again
-    for (NFMissaListEntry *entry in self.entries) {
-        entry.igrejaDistance = [entry.igrejaLocation distanceFromLocation:self.userLocation];
+    // Calculate all distances again and sort the sections
+    for (NSMutableArray *section in self.sections) {
+        for (NFMissaListEntry *entry in section) {
+            entry.igrejaDistance = [entry.igrejaLocation distanceFromLocation:self.userLocation];
+        }
+        [section sortUsingSelector:@selector(compareToEntry:)];
     }
-
-    // Sort by distance
-    [self.entries sortUsingSelector:@selector(compareToEntry:)];
 
     // Reload what's shown on screen
     [self.tableView reloadData];
@@ -161,7 +159,7 @@
 - (NSDate *)_searchLimitDateWithStartDate:(NSDate *)startDate
 {
     NSDateComponents *components = [NSDateComponents new];
-    components.hour = 1;
+    components.hour = 3;
 
     return [self.calendar dateByAddingComponents:components toDate:startDate options:0];
 }
@@ -249,30 +247,55 @@
         }
     }]];
 
-    self.entries = [NSMutableArray arrayWithCapacity:matches.count];
+    // Find out the unique start times
+    NSArray *times = [matches valueForKeyPath:@"@distinctUnionOfObjects.startTime"];
+    times = [times sortedArrayUsingSelector:@selector(compare:)];
 
-    // Create the entries
-    for (NFEvent *event in matches) {
-        NFMissaListEntry *entry = [NFMissaListEntry new];
-        entry.event = event;
-        entry.igrejaLocation = [[CLLocation alloc] initWithLatitude:event.igreja.latitudeValue longitude:event.igreja.longitudeValue];
-        [self.entries addObject:entry];
+    self.sections = [NSMutableArray arrayWithCapacity:times.count];
+
+    // Create the sections
+    for (NSNumber *startTime in times) {
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"startTime == %@", startTime];
+        NSArray *filtered = [matches filteredArrayUsingPredicate:predicate];
+
+        NSMutableArray *section = [NSMutableArray arrayWithCapacity:filtered.count];
+        for (NFEvent *event in filtered) {
+            NFMissaListEntry *entry = [NFMissaListEntry new];
+            entry.event = event;
+            entry.igrejaLocation = [[CLLocation alloc] initWithLatitude:event.igreja.latitudeValue longitude:event.igreja.longitudeValue];
+            [section addObject:entry];
+        }
+
+        [self.sections addObject:section];
     }
 }
 
 
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return self.sections.count;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NFMissaListEntry *entry = ((NSArray *)self.sections[section])[0];
+    int startTime = entry.event.startTimeValue;
+
+    return [NSString stringWithFormat:@"%02d:%02d", startTime / 100, startTime % 100];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.entries.count;
+    return ((NSArray *)self.sections[section]).count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NFMissaListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
 
-    NFMissaListEntry *entry = self.entries[indexPath.row];
+    NFMissaListEntry *entry = ((NSArray *)self.sections[indexPath.section])[indexPath.row];
     [cell configureWithEvent:entry.event distance:entry.igrejaDistance];
 
     return cell;

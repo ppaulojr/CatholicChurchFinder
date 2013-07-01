@@ -40,7 +40,7 @@ static NSNumberFormatter *numberFormatter;
 - (void)configureWithEvent:(NFEvent *)event distance:(CLLocationDistance)distance
 {
     self.titleLabel.text = event.igreja.nome;
-    self.detailLabel.text = [event formattedTime];
+    self.detailLabel.text = event.igreja.bairro;
     self.distanceLabel.text = [[[self _numberFormatter] stringFromNumber:@(distance / 1000)] stringByAppendingString:@" km"];
 }
 
