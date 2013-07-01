@@ -198,6 +198,11 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
 
 #pragma mark - Search display controller delegate
 
+- (void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+{
+    controller.searchBar.selectedScopeButtonIndex = 0;
+}
+
 - (void)filterSearchResultsWithScope:(NFIgrejaListScope)scope text:(NSString *)text
 {
     NSString *normalizedText = [text nf_searchNormalizedString];
