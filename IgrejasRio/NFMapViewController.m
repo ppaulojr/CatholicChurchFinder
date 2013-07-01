@@ -11,6 +11,7 @@
 #import "NFIgreja.h"
 #import "NFIgrejaDetailViewController.h"
 #import "NFMapViewController.h"
+#import "NFSettingsManager.h"
 
 @interface NFMapViewController () <MKMapViewDelegate>
 
@@ -28,6 +29,8 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+
     // Create a managed object context for background access
     self.backgroundMOC = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
     self.backgroundMOC.persistentStoreCoordinator = [NFCoreDataStackManager sharedManager].persistentStoreCoordinator;
@@ -37,6 +40,13 @@
 
     // Track the user
     self.mapView.userTrackingMode = MKUserTrackingModeFollow;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    self.mapView.mapType = [NFSettingsManager sharedManager].mapType;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

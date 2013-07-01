@@ -49,6 +49,8 @@
 		EDB202AF1774892E00AB8CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB202AE1774892E00AB8CFD /* main.m */; };
 		EDB202B31774892E00AB8CFD /* NFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB202B21774892E00AB8CFD /* NFAppDelegate.m */; };
 		EDC7A6A51781FC5800C9B659 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC7A6A41781FC5800C9B659 /* AddressBook.framework */; };
+		EDC7A6A81782192200C9B659 /* NFSettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC7A6A71782192200C9B659 /* NFSettingsManager.m */; };
+		EDC7A6AB17821A4C00C9B659 /* NFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC7A6AA17821A4C00C9B659 /* NFSettingsViewController.m */; };
 		EDD33FB2177486E8000CDF87 /* NFCoreDataStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */; };
 		EDD33FB3177486E8000CDF87 /* NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FA9177486E8000CDF87 /* NFEvent.m */; };
 		EDD33FB4177486E8000CDF87 /* NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FAB177486E8000CDF87 /* NFIgreja.m */; };
@@ -113,6 +115,10 @@
 		EDB202B11774892E00AB8CFD /* NFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFAppDelegate.h; sourceTree = "<group>"; };
 		EDB202B21774892E00AB8CFD /* NFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFAppDelegate.m; sourceTree = "<group>"; };
 		EDC7A6A41781FC5800C9B659 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		EDC7A6A61782192200C9B659 /* NFSettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFSettingsManager.h; sourceTree = "<group>"; };
+		EDC7A6A71782192200C9B659 /* NFSettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFSettingsManager.m; sourceTree = "<group>"; };
+		EDC7A6A917821A4C00C9B659 /* NFSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFSettingsViewController.h; sourceTree = "<group>"; };
+		EDC7A6AA17821A4C00C9B659 /* NFSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFSettingsViewController.m; sourceTree = "<group>"; };
 		EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCoreDataStackManager.h; sourceTree = "<group>"; };
 		EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCoreDataStackManager.m; sourceTree = "<group>"; };
 		EDD33FA8177486E8000CDF87 /* NFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFEvent.h; sourceTree = "<group>"; };
@@ -288,6 +294,8 @@
 				EDD33FAB177486E8000CDF87 /* NFIgreja.m */,
 				EDD33FAC177486E8000CDF87 /* NFMonthlyEvent.h */,
 				EDD33FAD177486E8000CDF87 /* NFMonthlyEvent.m */,
+				EDC7A6A61782192200C9B659 /* NFSettingsManager.h */,
+				EDC7A6A71782192200C9B659 /* NFSettingsManager.m */,
 				EDD33FAE177486E8000CDF87 /* NFWeeklyEvent.h */,
 				EDD33FAF177486E8000CDF87 /* NFWeeklyEvent.m */,
 				EDD33FB0177486E8000CDF87 /* NFYearlyEvent.h */,
@@ -328,6 +336,8 @@
 				ED167883177E1B540071BE43 /* NFMapViewController.m */,
 				EDD967B61779DE3D00F9FC93 /* NFMissaListViewController.h */,
 				EDD967B71779DE3D00F9FC93 /* NFMissaListViewController.m */,
+				EDC7A6A917821A4C00C9B659 /* NFSettingsViewController.h */,
+				EDC7A6AA17821A4C00C9B659 /* NFSettingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -540,6 +550,8 @@
 				ED040CF8177B71F80028B73D /* NFIgrejaEventsPanel.m in Sources */,
 				ED6BAB9F177DC8CF002326C3 /* NSString+NFNormalizing.m in Sources */,
 				ED167884177E1B540071BE43 /* NFMapViewController.m in Sources */,
+				EDC7A6A81782192200C9B659 /* NFSettingsManager.m in Sources */,
+				EDC7A6AB17821A4C00C9B659 /* NFSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

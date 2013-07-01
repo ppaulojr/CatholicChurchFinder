@@ -11,6 +11,7 @@
 
 #import "NFIgrejaDetailPanel.h"
 #import "NFIgrejaDetailViewController.h"
+#import "NFSettingsManager.h"
 
 @interface NFIgrejaDetailViewController () <NFIgrejaDetailPanelDelegate>
 
@@ -36,6 +37,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
+    self.mapView.mapType = [NFSettingsManager sharedManager].mapType;
 
     self.mapView.region = MKCoordinateRegionMakeWithDistance(self.igreja.coordinate, 1000, 1000);
     [self.mapView addAnnotation:self.igreja];
