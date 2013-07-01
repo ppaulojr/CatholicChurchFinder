@@ -28,4 +28,6 @@
 
 - (void)igrejaDetailPanelSiteLinkTapped:(NFIgrejaDetailPanel *)panel;
 
+- (void)igrejaDetailPanel:(NFIgrejaDetailPanel *)panel phoneLinkTappedWithTextCheckingResults:(NSArray *)results;
+
 @end

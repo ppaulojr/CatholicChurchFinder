@@ -23,6 +23,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *confissaoEventsPanelHeightConstraint;
 @property (weak, nonatomic) IBOutlet UIView *lastView;
 
+@property (strong, nonatomic) NSMutableArray *phoneTextCheckingResults;
+
 @end
 
 @implementation NFIgrejaDetailPanel
@@ -45,6 +47,14 @@
     }
 }
 
+- (NSDictionary *)_attributesForLink
+{
+    return @{
+        NSForegroundColorAttributeName : [UIColor blueColor],
+        NSUnderlineStyleAttributeName : @YES
+    };
+}
+
 - (void)configureWithIgreja:(NFIgreja *)igreja
 {
     self.nomeLabel.text = igreja.nome;
@@ -62,9 +72,45 @@
     }
     self.enderecoLabel.text = endereco;
 
-    // Make sure we don't have recognizers attached (in case we're reconfigured)
-    if (self.siteLabel.gestureRecognizers.count) {
-        [self.siteLabel removeGestureRecognizer:self.siteLabel.gestureRecognizers[0]];
+    // Reset in case we are being reconfigured
+    for (UIView *view in @[self.telefonesLabel, self.siteLabel]) {
+        for (UIGestureRecognizer *recognizer in view.gestureRecognizers) {
+            [view removeGestureRecognizer:recognizer];
+        }
+    }
+    self.phoneTextCheckingResults = nil;
+
+    // If we can detect phone numbers, make them look like links
+    // and add a gesture recognizer to the label
+    if (igreja.telefones && [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"tel://"]]) {
+        NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:igreja.telefones];
+        NSDictionary *attrs = [self _attributesForLink];
+
+        // We need the cast because NSTextCheckingTypes and NSTextCheckingType are
+        // two different enums these days. An API bug, bug this is 100% safe and
+        // it's documented (although the docs don't mention the cast)
+        NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:(NSTextCheckingTypes)NSTextCheckingTypePhoneNumber error:NULL];
+
+        [detector enumerateMatchesInString:igreja.telefones options:kNilOptions range:NSMakeRange(0, igreja.telefones.length) usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+            // Save the result for later
+            if (!self.phoneTextCheckingResults) {
+                self.phoneTextCheckingResults = [NSMutableArray arrayWithCapacity:10];
+            }
+            [self.phoneTextCheckingResults addObject:result];
+
+            // Add the link style
+            [attrStr addAttributes:attrs range:result.range];
+        }];
+
+        if (self.phoneTextCheckingResults) {
+            // Set up the label to use the attributed string
+            self.telefonesLabel.attributedText = attrStr;
+
+            // Add a gesture recognizer to open the phone numbers
+            id recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_phoneLinkTapped)];
+            [self.telefonesLabel addGestureRecognizer:recognizer];
+            self.telefonesLabel.userInteractionEnabled = YES;
+        }
     }
 
     // If we do have a site, make it look like a link
@@ -88,10 +134,7 @@
             }
 
             // Make it look like a link
-            NSDictionary *attrs = @{
-                NSForegroundColorAttributeName : [UIColor blueColor],
-                NSUnderlineStyleAttributeName : @YES
-            };
+            NSDictionary *attrs = [self _attributesForLink];
             self.siteLabel.attributedText = [[NSAttributedString alloc] initWithString:siteStr attributes:attrs];
 
             // Add a gesture recognizer to open the link
@@ -134,6 +177,11 @@
 
     size.height = CGRectGetMaxY(self.lastView.frame) + 20;
     return size;
+}
+
+- (void)_phoneLinkTapped
+{
+    [self.delegate igrejaDetailPanel:self phoneLinkTappedWithTextCheckingResults:self.phoneTextCheckingResults];
 }
 
 - (void)_siteLinkTapped

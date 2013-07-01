@@ -56,6 +56,22 @@
 
 #pragma mark - Igreja detail panel delegate
 
+- (void)igrejaDetailPanel:(NFIgrejaDetailPanel *)panel phoneLinkTappedWithTextCheckingResults:(NSArray *)results
+{
+    PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
+
+    for (NSTextCheckingResult *result in results) {
+        NSString *title = [NSString stringWithFormat:@"Ligar para %@", result.phoneNumber];
+        [actionSheet addButtonWithTitle:title block:^{
+            [[UIApplication sharedApplication] openURL:result.URL];
+        }];
+    }
+
+    [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
+
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
 - (void)igrejaDetailPanelSiteLinkTapped:(NFIgrejaDetailPanel *)panel
 {
     PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
