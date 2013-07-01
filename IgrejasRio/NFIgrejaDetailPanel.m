@@ -55,8 +55,21 @@
     };
 }
 
+- (void)_reset
+{
+    for (UIView *view in @[self.telefonesLabel, self.siteLabel]) {
+        for (UIGestureRecognizer *recognizer in view.gestureRecognizers) {
+            [view removeGestureRecognizer:recognizer];
+        }
+    }
+    self.phoneTextCheckingResults = nil;
+}
+
 - (void)configureWithIgreja:(NFIgreja *)igreja
 {
+    // Reset in case we are being reconfigured
+    [self _reset];
+
     self.nomeLabel.text = igreja.nome;
     [self _setTextOrNil:igreja.paroco forLabel:self.parocoLabel];
     [self _setTextOrNil:igreja.telefones forLabel:self.telefonesLabel];
@@ -70,15 +83,14 @@
     if (igreja.cep) {
         [endereco appendFormat:@"\nCEP %@", igreja.cep];
     }
-    self.enderecoLabel.text = endereco;
 
-    // Reset in case we are being reconfigured
-    for (UIView *view in @[self.telefonesLabel, self.siteLabel]) {
-        for (UIGestureRecognizer *recognizer in view.gestureRecognizers) {
-            [view removeGestureRecognizer:recognizer];
-        }
-    }
-    self.phoneTextCheckingResults = nil;
+    // Create a link to the address in maps
+    self.enderecoLabel.attributedText = [[NSAttributedString alloc] initWithString:endereco attributes:[self _attributesForLink]];
+
+    // Add the gesture recognizer to the address label
+    id recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_addressLinkTapped)];
+    [self.enderecoLabel addGestureRecognizer:recognizer];
+    self.enderecoLabel.userInteractionEnabled = YES;
 
     // If we can detect phone numbers, make them look like links
     // and add a gesture recognizer to the label
@@ -177,6 +189,11 @@
 
     size.height = CGRectGetMaxY(self.lastView.frame) + 20;
     return size;
+}
+
+- (void)_addressLinkTapped
+{
+    [self.delegate igrejaDetailPanelAddressLinkTapped:self];
 }
 
 - (void)_phoneLinkTapped

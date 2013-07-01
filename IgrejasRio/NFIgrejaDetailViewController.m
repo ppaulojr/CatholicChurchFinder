@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
+#import <AddressBook/AddressBook.h>
 #import <PSAlertView/PSPDFActionSheet.h>
 
 #import "NFIgrejaDetailPanel.h"
@@ -55,6 +56,58 @@
 
 
 #pragma mark - Igreja detail panel delegate
+
+- (MKMapItem *)_mapItemForIgreja
+{
+    NSString *endereco = self.igreja.endereco;
+    if (self.igreja.bairro) {
+        endereco = [endereco stringByAppendingFormat:@", %@", self.igreja.bairro];
+    }
+
+    NSMutableDictionary *addressDict = [@{
+        (__bridge NSString *)kABPersonAddressStreetKey : endereco,
+        (__bridge NSString *)kABPersonAddressCityKey : @"Rio de Janeiro",
+        (__bridge NSString *)kABPersonAddressStateKey : @"Rio de Janeiro"
+    } mutableCopy];
+
+    if (self.igreja.cep) {
+        addressDict[(__bridge NSString *)kABPersonAddressZIPKey] = self.igreja.cep;
+    }
+
+    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:self.igreja.coordinate addressDictionary:addressDict];
+    MKMapItem *item = [[MKMapItem alloc] initWithPlacemark:placemark];
+
+    item.name = self.igreja.nome;
+
+    return item;
+}
+
+- (void)igrejaDetailPanelAddressLinkTapped:(NFIgrejaDetailPanel *)panel
+{
+    PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
+
+    [actionSheet addButtonWithTitle:@"Ver no mapa" block:^{
+        [[self _mapItemForIgreja] openInMapsWithLaunchOptions:nil];
+    }];
+
+    [actionSheet addButtonWithTitle:@"Rota de carro" block:^{
+        MKMapItem *igrejaMapItem = [self _mapItemForIgreja];
+        MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+        NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+        [MKMapItem openMapsWithItems:@[currentLocationMapItem, igrejaMapItem] launchOptions:launchOptions];
+    }];
+
+    [actionSheet addButtonWithTitle:@"Rota à pé" block:^{
+        MKMapItem *igrejaMapItem = [self _mapItemForIgreja];
+        MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+        NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeWalking};
+        [MKMapItem openMapsWithItems:@[currentLocationMapItem, igrejaMapItem] launchOptions:launchOptions];
+    }];
+
+    [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
+
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
 
 - (void)igrejaDetailPanel:(NFIgrejaDetailPanel *)panel phoneLinkTappedWithTextCheckingResults:(NSArray *)results
 {

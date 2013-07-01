@@ -26,8 +26,10 @@
 
 @protocol NFIgrejaDetailPanelDelegate <NSObject>
 
-- (void)igrejaDetailPanelSiteLinkTapped:(NFIgrejaDetailPanel *)panel;
+- (void)igrejaDetailPanelAddressLinkTapped:(NFIgrejaDetailPanel *)panel;
 
 - (void)igrejaDetailPanel:(NFIgrejaDetailPanel *)panel phoneLinkTappedWithTextCheckingResults:(NSArray *)results;
+
+- (void)igrejaDetailPanelSiteLinkTapped:(NFIgrejaDetailPanel *)panel;
 
 @end

@@ -48,6 +48,7 @@
 		EDB202A71774892D00AB8CFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1455177485AD00213826 /* CoreGraphics.framework */; };
 		EDB202AF1774892E00AB8CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB202AE1774892E00AB8CFD /* main.m */; };
 		EDB202B31774892E00AB8CFD /* NFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB202B21774892E00AB8CFD /* NFAppDelegate.m */; };
+		EDC7A6A51781FC5800C9B659 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC7A6A41781FC5800C9B659 /* AddressBook.framework */; };
 		EDD33FB2177486E8000CDF87 /* NFCoreDataStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */; };
 		EDD33FB3177486E8000CDF87 /* NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FA9177486E8000CDF87 /* NFEvent.m */; };
 		EDD33FB4177486E8000CDF87 /* NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FAB177486E8000CDF87 /* NFIgreja.m */; };
@@ -111,6 +112,7 @@
 		EDB202B01774892E00AB8CFD /* CSVImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSVImporter-Prefix.pch"; sourceTree = "<group>"; };
 		EDB202B11774892E00AB8CFD /* NFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFAppDelegate.h; sourceTree = "<group>"; };
 		EDB202B21774892E00AB8CFD /* NFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFAppDelegate.m; sourceTree = "<group>"; };
+		EDC7A6A41781FC5800C9B659 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCoreDataStackManager.h; sourceTree = "<group>"; };
 		EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCoreDataStackManager.m; sourceTree = "<group>"; };
 		EDD33FA8177486E8000CDF87 /* NFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFEvent.h; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC7A6A51781FC5800C9B659 /* AddressBook.framework in Frameworks */,
 				EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */,
 				EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */,
 				EDB2025F177487DC00AB8CFD /* CoreData.framework in Frameworks */,
@@ -202,13 +205,14 @@
 			isa = PBXGroup;
 			children = (
 				EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */,
+				B38B88B9D7454CFA9551953D /* libPods.a */,
+				EDC7A6A41781FC5800C9B659 /* AddressBook.framework */,
 				EDB2025E177487DC00AB8CFD /* CoreData.framework */,
 				ED3B1455177485AD00213826 /* CoreGraphics.framework */,
 				EDFEE6671774FCDE002F886A /* CoreLocation.framework */,
 				ED3B1453177485AD00213826 /* Foundation.framework */,
 				EDFEE6601774EB4E002F886A /* MapKit.framework */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
-				B38B88B9D7454CFA9551953D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
