@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *mapTypeStandardCell;
 @property (weak, nonatomic) IBOutlet UITableViewCell *mapTypeHybridCell;
+@property (weak, nonatomic) IBOutlet UITableViewCell *versionCell;
 
 @end
 
@@ -20,7 +21,18 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
+
     [self _selectMapType:[NFSettingsManager sharedManager].mapType];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    NSString *versionString = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    NSAssert(versionString, @"Unable to find the CFBundleShortVersionString");
+    self.versionCell.detailTextLabel.text = versionString;
 }
 
 - (void)_selectMapType:(MKMapType)mapType
