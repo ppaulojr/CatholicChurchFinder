@@ -70,6 +70,8 @@
 		EDF24AD117830CD200AEDC32 /* licenses.html in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AD017830CD200AEDC32 /* licenses.html */; };
 		EDF24AD51783152500AEDC32 /* NFGoogleMapsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF24AD41783152500AEDC32 /* NFGoogleMapsIntegration.m */; };
 		EDF24AD817831AC000AEDC32 /* NFWazeIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF24AD717831AC000AEDC32 /* NFWazeIntegration.m */; };
+		EDF24ADF17836CB500AEDC32 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24ADE17836CB500AEDC32 /* Icon.png */; };
+		EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AE017836CBB00AEDC32 /* Icon@2x.png */; };
 		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
 		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
@@ -159,6 +161,8 @@
 		EDF24AD41783152500AEDC32 /* NFGoogleMapsIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFGoogleMapsIntegration.m; sourceTree = "<group>"; };
 		EDF24AD617831AC000AEDC32 /* NFWazeIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFWazeIntegration.h; sourceTree = "<group>"; };
 		EDF24AD717831AC000AEDC32 /* NFWazeIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFWazeIntegration.m; sourceTree = "<group>"; };
+		EDF24ADE17836CB500AEDC32 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		EDF24AE017836CBB00AEDC32 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		EDFEE65E1774E905002F886A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		EDFEE6601774EB4E002F886A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EDFEE6671774FCDE002F886A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -252,6 +256,8 @@
 				ED3B1467177485AD00213826 /* Default-568h@2x.png */,
 				ED3B1463177485AD00213826 /* Default.png */,
 				ED3B1465177485AD00213826 /* Default@2x.png */,
+				EDF24ADE17836CB500AEDC32 /* Icon.png */,
+				EDF24AE017836CBB00AEDC32 /* Icon@2x.png */,
 				ED3B1459177485AD00213826 /* IgrejasRio-Info.plist */,
 				ED3B145F177485AD00213826 /* IgrejasRio-Prefix.pch */,
 				ED3B145D177485AD00213826 /* main.m */,
@@ -483,6 +489,8 @@
 				EDFEE66A17750205002F886A /* IgrejasRio.sqlite in Resources */,
 				ED5BB112177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib in Resources */,
 				EDF24AD117830CD200AEDC32 /* licenses.html in Resources */,
+				EDF24ADF17836CB500AEDC32 /* Icon.png in Resources */,
+				EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
