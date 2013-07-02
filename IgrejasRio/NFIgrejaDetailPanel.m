@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet NFIgrejaEventsPanel *confissaoEventsPanel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *missaEventsPanelHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *confissaoEventsPanelHeightConstraint;
+@property (weak, nonatomic) IBOutlet UITextView *observacaoTextView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *observacaoTextViewHeightConstraint;
 @property (weak, nonatomic) IBOutlet UIView *lastView;
 
 @property (strong, nonatomic) NSMutableArray *phoneTextCheckingResults;
@@ -34,16 +36,22 @@
     return [[NSBundle mainBundle] loadNibNamed:@"NFIgrejaDetailPanel" owner:nil options:nil][0];
 }
 
-- (void)_setTextOrNil:(NSString *)textOrNil forLabel:(UILabel *)label
+- (void)awakeFromNib
+{
+    // This removes the margins in the text view
+    self.observacaoTextView.contentInset = UIEdgeInsetsMake(-8, -8, -8, -8);
+}
+
+- (void)_setTextOrNil:(NSString *)textOrNil forLabel:(id)label
 {
     if (textOrNil) {
-        label.text = textOrNil;
+        [label setText:textOrNil];
     } else {
         NSDictionary *attrs = @{
             NSFontAttributeName : [UIFont italicSystemFontOfSize:14],
             NSForegroundColorAttributeName : [UIColor grayColor]
         };
-        label.attributedText = [[NSAttributedString alloc] initWithString:@"(Não informado)" attributes:attrs];
+        [label setAttributedText:[[NSAttributedString alloc] initWithString:@"(Não informado)" attributes:attrs]];
     }
 }
 
@@ -74,6 +82,7 @@
     [self _setTextOrNil:igreja.paroco forLabel:self.parocoLabel];
     [self _setTextOrNil:igreja.telefones forLabel:self.telefonesLabel];
     [self _setTextOrNil:igreja.site forLabel:self.siteLabel];
+    [self _setTextOrNil:igreja.observacao forLabel:self.observacaoTextView];
 
     // Compose the address
     NSMutableString *endereco = [igreja.endereco mutableCopy];
@@ -181,6 +190,9 @@
 
     size = [self.confissaoEventsPanel sizeThatFits:self.bounds.size];
     self.confissaoEventsPanelHeightConstraint.constant = size.height;
+
+    size = self.observacaoTextView.contentSize;
+    self.observacaoTextViewHeightConstraint.constant = size.height;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size
