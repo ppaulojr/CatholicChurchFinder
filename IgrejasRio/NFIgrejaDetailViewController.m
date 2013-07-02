@@ -9,6 +9,7 @@
 #import <AddressBook/AddressBook.h>
 #import <PSAlertView/PSPDFActionSheet.h>
 
+#import "NFGoogleMapsIntegration.h"
 #import "NFIgrejaDetailPanel.h"
 #import "NFIgrejaDetailViewController.h"
 #import "NFSettingsManager.h"
@@ -106,6 +107,12 @@
         NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeWalking};
         [MKMapItem openMapsWithItems:@[currentLocationMapItem, igrejaMapItem] launchOptions:launchOptions];
     }];
+
+    if ([NFGoogleMapsIntegration canOpenDirectionsInGoogleMaps]) {
+        [actionSheet addButtonWithTitle:@"Rota no Google Maps" block:^{
+            [NFGoogleMapsIntegration openDirectionsInGoogleMapsWithIgreja:self.igreja];
+        }];
+    }
 
     [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
 

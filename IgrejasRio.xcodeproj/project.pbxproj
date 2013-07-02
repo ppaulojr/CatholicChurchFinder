@@ -68,6 +68,7 @@
 		EDD967BB1779DEA200F9FC93 /* NFMissaListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD967BA1779DEA200F9FC93 /* NFMissaListCell.m */; };
 		EDF24ACE17830C6D00AEDC32 /* NFLicensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF24ACD17830C6D00AEDC32 /* NFLicensesViewController.m */; };
 		EDF24AD117830CD200AEDC32 /* licenses.html in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AD017830CD200AEDC32 /* licenses.html */; };
+		EDF24AD51783152500AEDC32 /* NFGoogleMapsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF24AD41783152500AEDC32 /* NFGoogleMapsIntegration.m */; };
 		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
 		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
@@ -153,6 +154,8 @@
 		EDF24ACC17830C6D00AEDC32 /* NFLicensesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFLicensesViewController.h; sourceTree = "<group>"; };
 		EDF24ACD17830C6D00AEDC32 /* NFLicensesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFLicensesViewController.m; sourceTree = "<group>"; };
 		EDF24AD017830CD200AEDC32 /* licenses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = licenses.html; sourceTree = "<group>"; };
+		EDF24AD31783152500AEDC32 /* NFGoogleMapsIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFGoogleMapsIntegration.h; sourceTree = "<group>"; };
+		EDF24AD41783152500AEDC32 /* NFGoogleMapsIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFGoogleMapsIntegration.m; sourceTree = "<group>"; };
 		EDFEE65E1774E905002F886A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		EDFEE6601774EB4E002F886A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EDFEE6671774FCDE002F886A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -296,6 +299,8 @@
 				EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */,
 				EDD33FA8177486E8000CDF87 /* NFEvent.h */,
 				EDD33FA9177486E8000CDF87 /* NFEvent.m */,
+				EDF24AD31783152500AEDC32 /* NFGoogleMapsIntegration.h */,
+				EDF24AD41783152500AEDC32 /* NFGoogleMapsIntegration.m */,
 				EDD33FAA177486E8000CDF87 /* NFIgreja.h */,
 				EDD33FAB177486E8000CDF87 /* NFIgreja.m */,
 				EDD33FAC177486E8000CDF87 /* NFMonthlyEvent.h */,
@@ -570,6 +575,7 @@
 				EDC7A6A81782192200C9B659 /* NFSettingsManager.m in Sources */,
 				EDC7A6AB17821A4C00C9B659 /* NFSettingsViewController.m in Sources */,
 				EDF24ACE17830C6D00AEDC32 /* NFLicensesViewController.m in Sources */,
+				EDF24AD51783152500AEDC32 /* NFGoogleMapsIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
