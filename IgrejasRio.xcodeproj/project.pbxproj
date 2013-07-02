@@ -78,6 +78,8 @@
 		EDF24AF717836F9500AEDC32 /* ico-mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF117836F9500AEDC32 /* ico-mapa@2x.png */; };
 		EDF24AF817836F9500AEDC32 /* ico-missas.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF217836F9500AEDC32 /* ico-missas.png */; };
 		EDF24AF917836F9500AEDC32 /* ico-missas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */; };
+		EDF24AFC17836FD700AEDC32 /* pin-map.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AFA17836FD700AEDC32 /* pin-map.png */; };
+		EDF24AFD17836FD700AEDC32 /* pin-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AFB17836FD700AEDC32 /* pin-map@2x.png */; };
 		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
 		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
@@ -175,6 +177,8 @@
 		EDF24AF117836F9500AEDC32 /* ico-mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa@2x.png"; sourceTree = "<group>"; };
 		EDF24AF217836F9500AEDC32 /* ico-missas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-missas.png"; sourceTree = "<group>"; };
 		EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-missas@2x.png"; sourceTree = "<group>"; };
+		EDF24AFA17836FD700AEDC32 /* pin-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-map.png"; sourceTree = "<group>"; };
+		EDF24AFB17836FD700AEDC32 /* pin-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-map@2x.png"; sourceTree = "<group>"; };
 		EDFEE65E1774E905002F886A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		EDFEE6601774EB4E002F886A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EDFEE6671774FCDE002F886A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -364,6 +368,8 @@
 				EDF24AF217836F9500AEDC32 /* ico-missas.png */,
 				EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */,
 				EDF24AD017830CD200AEDC32 /* licenses.html */,
+				EDF24AFA17836FD700AEDC32 /* pin-map.png */,
+				EDF24AFB17836FD700AEDC32 /* pin-map@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -515,6 +521,8 @@
 				EDF24AF717836F9500AEDC32 /* ico-mapa@2x.png in Resources */,
 				EDF24AF817836F9500AEDC32 /* ico-missas.png in Resources */,
 				EDF24AF917836F9500AEDC32 /* ico-missas@2x.png in Resources */,
+				EDF24AFC17836FD700AEDC32 /* pin-map.png in Resources */,
+				EDF24AFD17836FD700AEDC32 /* pin-map@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

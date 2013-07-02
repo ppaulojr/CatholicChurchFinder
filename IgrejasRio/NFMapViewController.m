@@ -119,7 +119,8 @@
     static NSString * const reuseIdentifier = @"igreja";
     MKAnnotationView *view = [mapView dequeueReusableAnnotationViewWithIdentifier:reuseIdentifier];
     if (!view) {
-        view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pin"];
+        view = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
+        view.image = [UIImage imageNamed:@"pin-map"];
         view.canShowCallout = YES;
         view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     }

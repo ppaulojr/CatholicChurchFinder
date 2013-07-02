@@ -15,7 +15,7 @@
 #import "NFSettingsManager.h"
 #import "NFWazeIntegration.h"
 
-@interface NFIgrejaDetailViewController () <NFIgrejaDetailPanelDelegate>
+@interface NFIgrejaDetailViewController () <MKMapViewDelegate, NFIgrejaDetailPanelDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -57,6 +57,20 @@
     self.detailPanel.frame = frame;
 
     self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.bounds), CGRectGetMaxY(frame));
+}
+
+
+#pragma mark - Map view delegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    if ([annotation isKindOfClass:[NFIgreja class]]) {
+        MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:nil];
+        annotationView.image = [UIImage imageNamed:@"pin-map"];
+        return annotationView;
+    } else {
+        return nil;
+    }
 }
 
 
