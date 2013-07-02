@@ -13,6 +13,7 @@
 #import "NFIgrejaDetailPanel.h"
 #import "NFIgrejaDetailViewController.h"
 #import "NFSettingsManager.h"
+#import "NFWazeIntegration.h"
 
 @interface NFIgrejaDetailViewController () <NFIgrejaDetailPanelDelegate>
 
@@ -111,6 +112,12 @@
     if ([NFGoogleMapsIntegration canOpenDirectionsInGoogleMaps]) {
         [actionSheet addButtonWithTitle:@"Rota no Google Maps" block:^{
             [NFGoogleMapsIntegration openDirectionsInGoogleMapsWithIgreja:self.igreja];
+        }];
+    }
+
+    if ([NFWazeIntegration canOpenDirectionsInWaze]) {
+        [actionSheet addButtonWithTitle:@"Rota no Waze" block:^{
+            [NFWazeIntegration openDirectionsInWazeWithIgreja:self.igreja];
         }];
     }
 
