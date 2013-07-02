@@ -12,4 +12,12 @@
 
 @synthesize window = _window;
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    UINavigationBar *allNavBars = [UINavigationBar appearance];
+    allNavBars.tintColor = [UIColor colorWithRed:53/255.0 green:139/255.0 blue:171/255.0 alpha:1];
+
+    return YES;
+}
+
 @end

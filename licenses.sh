@@ -27,17 +27,17 @@ cat >"$LICENSES_FILE" <<EOD
     <meta charset="UTF-8">
     <style type="text/css">
 body {
-    background: #ddd;
+    background: transparent;
     font-family: "Helvetica Neue", "Helvetica";
-    font-size: 90%;
+    font-size: 80%;
 }
 
 h1 {
-    font-size: 120%;
+    font-size: 110%;
 }
 
 h2 {
-    font-size: 110%;
+    font-size: 100%;
 }
     </style>
 </head>
