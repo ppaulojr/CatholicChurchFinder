@@ -153,7 +153,7 @@
         <scene sceneID="vSm-FK-bSE">
             <objects>
                 <navigationController id="kOd-6t-wsA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Igrejas" id="NBs-YY-F2L"/>
+                    <tabBarItem key="tabBarItem" title="Igrejas" image="ico-igreja.png" id="NBs-YY-F2L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tkk-Jz-zIA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -193,7 +193,7 @@
         <scene sceneID="7eQ-WD-xJF">
             <objects>
                 <navigationController id="hHW-6h-iXM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Missas" id="apu-BJ-5Vr"/>
+                    <tabBarItem key="tabBarItem" title="Missas" image="ico-missas.png" id="apu-BJ-5Vr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ofL-Dm-92g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -271,7 +271,7 @@
         <scene sceneID="qO5-2w-yFa">
             <objects>
                 <navigationController id="135-Zx-z2C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mapa" id="vBF-In-nQF"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="ico-mapa.png" id="vBF-In-nQF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="B1H-zC-CVL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -448,6 +448,11 @@
             <point key="canvasLocation" x="2074" y="1255"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ico-igreja.png" width="30" height="30"/>
+        <image name="ico-mapa.png" width="30" height="30"/>
+        <image name="ico-missas.png" width="30" height="30"/>
+    </resources>
     <classes>
         <class className="NFIgrejaDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NFIgrejaDetailViewController.h"/>

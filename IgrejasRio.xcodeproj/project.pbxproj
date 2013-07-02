@@ -72,6 +72,12 @@
 		EDF24AD817831AC000AEDC32 /* NFWazeIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF24AD717831AC000AEDC32 /* NFWazeIntegration.m */; };
 		EDF24ADF17836CB500AEDC32 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24ADE17836CB500AEDC32 /* Icon.png */; };
 		EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AE017836CBB00AEDC32 /* Icon@2x.png */; };
+		EDF24AF417836F9500AEDC32 /* ico-igreja.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AEE17836F9500AEDC32 /* ico-igreja.png */; };
+		EDF24AF517836F9500AEDC32 /* ico-igreja@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */; };
+		EDF24AF617836F9500AEDC32 /* ico-mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF017836F9500AEDC32 /* ico-mapa.png */; };
+		EDF24AF717836F9500AEDC32 /* ico-mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF117836F9500AEDC32 /* ico-mapa@2x.png */; };
+		EDF24AF817836F9500AEDC32 /* ico-missas.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF217836F9500AEDC32 /* ico-missas.png */; };
+		EDF24AF917836F9500AEDC32 /* ico-missas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */; };
 		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
 		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
@@ -163,6 +169,12 @@
 		EDF24AD717831AC000AEDC32 /* NFWazeIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFWazeIntegration.m; sourceTree = "<group>"; };
 		EDF24ADE17836CB500AEDC32 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		EDF24AE017836CBB00AEDC32 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		EDF24AEE17836F9500AEDC32 /* ico-igreja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-igreja.png"; sourceTree = "<group>"; };
+		EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-igreja@2x.png"; sourceTree = "<group>"; };
+		EDF24AF017836F9500AEDC32 /* ico-mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa.png"; sourceTree = "<group>"; };
+		EDF24AF117836F9500AEDC32 /* ico-mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa@2x.png"; sourceTree = "<group>"; };
+		EDF24AF217836F9500AEDC32 /* ico-missas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-missas.png"; sourceTree = "<group>"; };
+		EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-missas@2x.png"; sourceTree = "<group>"; };
 		EDFEE65E1774E905002F886A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		EDFEE6601774EB4E002F886A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EDFEE6671774FCDE002F886A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -345,6 +357,12 @@
 		EDF24ACF17830CD200AEDC32 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EDF24AEE17836F9500AEDC32 /* ico-igreja.png */,
+				EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */,
+				EDF24AF017836F9500AEDC32 /* ico-mapa.png */,
+				EDF24AF117836F9500AEDC32 /* ico-mapa@2x.png */,
+				EDF24AF217836F9500AEDC32 /* ico-missas.png */,
+				EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */,
 				EDF24AD017830CD200AEDC32 /* licenses.html */,
 			);
 			path = Resources;
@@ -491,6 +509,12 @@
 				EDF24AD117830CD200AEDC32 /* licenses.html in Resources */,
 				EDF24ADF17836CB500AEDC32 /* Icon.png in Resources */,
 				EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */,
+				EDF24AF417836F9500AEDC32 /* ico-igreja.png in Resources */,
+				EDF24AF517836F9500AEDC32 /* ico-igreja@2x.png in Resources */,
+				EDF24AF617836F9500AEDC32 /* ico-mapa.png in Resources */,
+				EDF24AF717836F9500AEDC32 /* ico-mapa@2x.png in Resources */,
+				EDF24AF817836F9500AEDC32 /* ico-missas.png in Resources */,
+				EDF24AF917836F9500AEDC32 /* ico-missas@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
