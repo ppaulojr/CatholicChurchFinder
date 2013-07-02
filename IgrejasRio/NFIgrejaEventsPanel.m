@@ -10,6 +10,7 @@
 #import "NFIgrejaEventsPanel.h"
 #import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
+#import "NFYearlyEvent.h"
 
 #define CMP(x, y) \
     if ((x) > (y)) { \
@@ -101,18 +102,22 @@ static const int ordinalZero = 3;
     // TODO: Move part of this to the model, add unit tests
 
     self.eventPairs = [NSMutableArray arrayWithCapacity:events.count];
+    NSArray *allEvents = [events allObjects];
 
     // Add the weekly events first
     NSPredicate *weeklyPredicate = [NSPredicate predicateWithFormat:@"self.class == %@", [NFWeeklyEvent class]];
-    NSArray *weeklyEvents = [[events allObjects] filteredArrayUsingPredicate:weeklyPredicate];
+    NSArray *weeklyEvents = [allEvents filteredArrayUsingPredicate:weeklyPredicate];
     [self _addWeeklyEvents:weeklyEvents];
 
     // Then add the monthly events
     NSPredicate *monthlyPredicate = [NSPredicate predicateWithFormat:@"self.class == %@", [NFMonthlyEvent class]];
-    NSArray *monthlyEvents = [[events allObjects] filteredArrayUsingPredicate:monthlyPredicate];
+    NSArray *monthlyEvents = [allEvents filteredArrayUsingPredicate:monthlyPredicate];
     [self _addMonthlyEvents:monthlyEvents];
 
-    // TODO: And then the yearly events
+    // And then the yearly events
+    NSPredicate *yearlyPredicate = [NSPredicate predicateWithFormat:@"self.class == %@", [NFYearlyEvent class]];
+    NSArray *yearlyEvents = [allEvents filteredArrayUsingPredicate:yearlyPredicate];
+    [self _addYearlyEvents:yearlyEvents];
 
     // Finally place the labels
     [self _placeLabels];
@@ -329,6 +334,34 @@ static const int ordinalZero = 3;
         pair.contentText = [textComponents componentsJoinedByString:@", "];
 
         // Add the pair to the list
+        [self.eventPairs addObject:pair];
+    }
+}
+
+- (void)_addYearlyEvents:(NSArray *)events
+{
+    // Sort by month, day and start time
+    events = [events sortedArrayUsingComparator:^NSComparisonResult(NFYearlyEvent *ev1, NFYearlyEvent *ev2) {
+        CMP(ev1.monthValue, ev2.monthValue) {
+            CMP(ev1.dayValue, ev2.dayValue) {
+                CMP(ev1.startTimeValue, ev2.startTimeValue) {
+                    CMP_STR(ev1.observation, ev2.observation);
+                }
+            }
+        }
+    }];
+
+    // Simply output them
+    for (NFYearlyEvent *event in events) {
+        NFIgrejaEventPair *pair = [NFIgrejaEventPair new];
+        pair.headerText = [NSString stringWithFormat:@"Todo dia %02d/%02d", event.dayValue, event.monthValue];
+
+        NSString *text = [event formattedTime];
+        if (event.observation) {
+            text = [text stringByAppendingFormat:@" %@", event.observation];
+        }
+        pair.contentText = text;
+
         [self.eventPairs addObject:pair];
     }
 }
