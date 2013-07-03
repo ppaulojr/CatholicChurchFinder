@@ -849,7 +849,7 @@
         <scene sceneID="Kko-V5-nOb">
             <objects>
                 <navigationController id="za0-tb-9dB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="JMJ 2013" id="qq0-aa-9Cz"/>
+                    <tabBarItem key="tabBarItem" title="JMJ 2013" image="ico-jmj.png" id="qq0-aa-9Cz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JtE-ah-gg4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -867,6 +867,7 @@
     </scenes>
     <resources>
         <image name="ico-igreja.png" width="30" height="30"/>
+        <image name="ico-jmj.png" width="30" height="30"/>
         <image name="ico-mapa.png" width="30" height="30"/>
         <image name="ico-missas.png" width="30" height="30"/>
         <image name="ico-settings.png" width="30" height="30"/>

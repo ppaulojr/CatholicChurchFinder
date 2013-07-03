@@ -16,6 +16,8 @@
 		ED1432181784CE1700DB283C /* ico-mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432141784CE1700DB283C /* ico-mapa@2x.png */; };
 		ED1432191784CE1700DB283C /* ico-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432151784CE1700DB283C /* ico-settings.png */; };
 		ED14321A1784CE1700DB283C /* ico-settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432161784CE1700DB283C /* ico-settings@2x.png */; };
+		ED14321D1784CFC100DB283C /* ico-jmj.png in Resources */ = {isa = PBXBuildFile; fileRef = ED14321B1784CFC100DB283C /* ico-jmj.png */; };
+		ED14321E1784CFC100DB283C /* ico-jmj@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED14321C1784CFC100DB283C /* ico-jmj@2x.png */; };
 		ED167884177E1B540071BE43 /* NFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED167883177E1B540071BE43 /* NFMapViewController.m */; };
 		ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
 		ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
@@ -104,6 +106,8 @@
 		ED1432141784CE1700DB283C /* ico-mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa@2x.png"; sourceTree = "<group>"; };
 		ED1432151784CE1700DB283C /* ico-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-settings.png"; sourceTree = "<group>"; };
 		ED1432161784CE1700DB283C /* ico-settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-settings@2x.png"; sourceTree = "<group>"; };
+		ED14321B1784CFC100DB283C /* ico-jmj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-jmj.png"; sourceTree = "<group>"; };
+		ED14321C1784CFC100DB283C /* ico-jmj@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-jmj@2x.png"; sourceTree = "<group>"; };
 		ED167882177E1B540071BE43 /* NFMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFMapViewController.h; sourceTree = "<group>"; };
 		ED167883177E1B540071BE43 /* NFMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFMapViewController.m; sourceTree = "<group>"; };
 		ED3B144E177485AD00213826 /* IgrejasRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IgrejasRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,6 +377,8 @@
 			children = (
 				EDF24AEE17836F9500AEDC32 /* ico-igreja.png */,
 				EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */,
+				ED14321B1784CFC100DB283C /* ico-jmj.png */,
+				ED14321C1784CFC100DB283C /* ico-jmj@2x.png */,
 				ED1432131784CE1700DB283C /* ico-mapa.png */,
 				ED1432141784CE1700DB283C /* ico-mapa@2x.png */,
 				EDF24AF217836F9500AEDC32 /* ico-missas.png */,
@@ -541,6 +547,8 @@
 				ED1432181784CE1700DB283C /* ico-mapa@2x.png in Resources */,
 				ED1432191784CE1700DB283C /* ico-settings.png in Resources */,
 				ED14321A1784CE1700DB283C /* ico-settings@2x.png in Resources */,
+				ED14321D1784CFC100DB283C /* ico-jmj.png in Resources */,
+				ED14321E1784CFC100DB283C /* ico-jmj@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
