@@ -21,13 +21,7 @@ static NSString * const kURLFormat = @"%@?daddr=%@";
 + (void)openDirectionsInGoogleMapsWithIgreja:(NFIgreja *)igreja
 {
     NSString *endereco = igreja.endereco;
-    if (igreja.bairro) {
-        endereco = [endereco stringByAppendingFormat:@", %@", igreja.bairro];
-    }
-    if (igreja.cep) {
-        endereco = [endereco stringByAppendingFormat:@" - CEP %@", igreja.cep];
-    }
-    endereco = [endereco stringByAppendingFormat:@", Rio de Janeiro - RJ"];
+    endereco = [endereco stringByAppendingFormat:@" - RJ"];
     endereco = [endereco stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
     NSString *url = [NSString stringWithFormat:kURLFormat, kURLScheme, endereco];
