@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		50378128151C43E3BD2795B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B88B9D7454CFA9551953D /* libPods.a */; };
 		DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */; };
+		ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */; };
+		ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */; };
 		ED040CF8177B71F80028B73D /* NFIgrejaEventsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */; };
 		ED167884177E1B540071BE43 /* NFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED167883177E1B540071BE43 /* NFMapViewController.m */; };
 		ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
@@ -90,6 +92,10 @@
 		598E3167B82747C4BF0833E9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVImporter.xcconfig"; path = "Pods/Pods-CSVImporter.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B38B88B9D7454CFA9551953D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED021FA61784C69100E96B49 /* NFJMJ2013ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFJMJ2013ViewController.h; sourceTree = "<group>"; };
+		ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFJMJ2013ViewController.m; sourceTree = "<group>"; };
+		ED021FA91784C6C800E96B49 /* NFTelefonesUteisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTelefonesUteisViewController.h; sourceTree = "<group>"; };
+		ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTelefonesUteisViewController.m; sourceTree = "<group>"; };
 		ED040CF6177B71F80028B73D /* NFIgrejaEventsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaEventsPanel.h; sourceTree = "<group>"; };
 		ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaEventsPanel.m; sourceTree = "<group>"; };
 		ED167882177E1B540071BE43 /* NFMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFMapViewController.h; sourceTree = "<group>"; };
@@ -394,6 +400,8 @@
 				ED5BB10C177B258E00C98CE9 /* NFIgrejaDetailViewController.m */,
 				ED50D50F17788B54000C0FB3 /* NFIgrejaListViewController.h */,
 				ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */,
+				ED021FA61784C69100E96B49 /* NFJMJ2013ViewController.h */,
+				ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */,
 				EDF24ACC17830C6D00AEDC32 /* NFLicensesViewController.h */,
 				EDF24ACD17830C6D00AEDC32 /* NFLicensesViewController.m */,
 				ED167882177E1B540071BE43 /* NFMapViewController.h */,
@@ -402,6 +410,8 @@
 				EDD967B71779DE3D00F9FC93 /* NFMissaListViewController.m */,
 				EDC7A6A917821A4C00C9B659 /* NFSettingsViewController.h */,
 				EDC7A6AA17821A4C00C9B659 /* NFSettingsViewController.m */,
+				ED021FA91784C6C800E96B49 /* NFTelefonesUteisViewController.h */,
+				ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -630,6 +640,8 @@
 				EDF24ACE17830C6D00AEDC32 /* NFLicensesViewController.m in Sources */,
 				EDF24AD51783152500AEDC32 /* NFGoogleMapsIntegration.m in Sources */,
 				EDF24AD817831AC000AEDC32 /* NFWazeIntegration.m in Sources */,
+				ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */,
+				ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
