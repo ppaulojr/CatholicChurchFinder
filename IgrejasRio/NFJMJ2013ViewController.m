@@ -16,11 +16,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0 && indexPath.row == 0) {
-        NSURL *url = [NSURL URLWithString:@"http://www.rio2013.com/"];
-        [[UIApplication sharedApplication] openURL:url];
-
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    switch (indexPath.row) {
+        case 0: {
+            NSURL *url = [NSURL URLWithString:@"http://www.rio2013.com/"];
+            [[UIApplication sharedApplication] openURL:url];
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];
+            break;
+        }
+        case 1: {
+            NSURL *url = [NSURL URLWithString:@"http://www.horariodemissa.com.br/"];
+            [[UIApplication sharedApplication] openURL:url];
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];
+            break;
+        }
     }
 }
 
