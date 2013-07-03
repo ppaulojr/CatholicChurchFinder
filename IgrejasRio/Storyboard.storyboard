@@ -294,7 +294,7 @@
         <scene sceneID="7Hn-l6-Ltt">
             <objects>
                 <navigationController id="0YI-dM-rHb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Ajustes" id="wz4-gj-pks"/>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="ico-settings.png" id="wz4-gj-pks"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BFg-Ut-tgI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -869,6 +869,7 @@
         <image name="ico-igreja.png" width="30" height="30"/>
         <image name="ico-mapa.png" width="30" height="30"/>
         <image name="ico-missas.png" width="30" height="30"/>
+        <image name="ico-settings.png" width="30" height="30"/>
     </resources>
     <classes>
         <class className="NFIgrejaDetailViewController" superclassName="UIViewController">

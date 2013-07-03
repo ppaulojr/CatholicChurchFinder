@@ -12,6 +12,10 @@
 		ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */; };
 		ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */; };
 		ED040CF8177B71F80028B73D /* NFIgrejaEventsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */; };
+		ED1432171784CE1700DB283C /* ico-mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432131784CE1700DB283C /* ico-mapa.png */; };
+		ED1432181784CE1700DB283C /* ico-mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432141784CE1700DB283C /* ico-mapa@2x.png */; };
+		ED1432191784CE1700DB283C /* ico-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432151784CE1700DB283C /* ico-settings.png */; };
+		ED14321A1784CE1700DB283C /* ico-settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432161784CE1700DB283C /* ico-settings@2x.png */; };
 		ED167884177E1B540071BE43 /* NFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED167883177E1B540071BE43 /* NFMapViewController.m */; };
 		ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
 		ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
@@ -76,8 +80,6 @@
 		EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AE017836CBB00AEDC32 /* Icon@2x.png */; };
 		EDF24AF417836F9500AEDC32 /* ico-igreja.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AEE17836F9500AEDC32 /* ico-igreja.png */; };
 		EDF24AF517836F9500AEDC32 /* ico-igreja@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */; };
-		EDF24AF617836F9500AEDC32 /* ico-mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF017836F9500AEDC32 /* ico-mapa.png */; };
-		EDF24AF717836F9500AEDC32 /* ico-mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF117836F9500AEDC32 /* ico-mapa@2x.png */; };
 		EDF24AF817836F9500AEDC32 /* ico-missas.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF217836F9500AEDC32 /* ico-missas.png */; };
 		EDF24AF917836F9500AEDC32 /* ico-missas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */; };
 		EDF24AFC17836FD700AEDC32 /* pin-map.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AFA17836FD700AEDC32 /* pin-map.png */; };
@@ -98,6 +100,10 @@
 		ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTelefonesUteisViewController.m; sourceTree = "<group>"; };
 		ED040CF6177B71F80028B73D /* NFIgrejaEventsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaEventsPanel.h; sourceTree = "<group>"; };
 		ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaEventsPanel.m; sourceTree = "<group>"; };
+		ED1432131784CE1700DB283C /* ico-mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa.png"; sourceTree = "<group>"; };
+		ED1432141784CE1700DB283C /* ico-mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa@2x.png"; sourceTree = "<group>"; };
+		ED1432151784CE1700DB283C /* ico-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-settings.png"; sourceTree = "<group>"; };
+		ED1432161784CE1700DB283C /* ico-settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-settings@2x.png"; sourceTree = "<group>"; };
 		ED167882177E1B540071BE43 /* NFMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFMapViewController.h; sourceTree = "<group>"; };
 		ED167883177E1B540071BE43 /* NFMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFMapViewController.m; sourceTree = "<group>"; };
 		ED3B144E177485AD00213826 /* IgrejasRio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IgrejasRio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,8 +185,6 @@
 		EDF24AE017836CBB00AEDC32 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		EDF24AEE17836F9500AEDC32 /* ico-igreja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-igreja.png"; sourceTree = "<group>"; };
 		EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-igreja@2x.png"; sourceTree = "<group>"; };
-		EDF24AF017836F9500AEDC32 /* ico-mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa.png"; sourceTree = "<group>"; };
-		EDF24AF117836F9500AEDC32 /* ico-mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa@2x.png"; sourceTree = "<group>"; };
 		EDF24AF217836F9500AEDC32 /* ico-missas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-missas.png"; sourceTree = "<group>"; };
 		EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-missas@2x.png"; sourceTree = "<group>"; };
 		EDF24AFA17836FD700AEDC32 /* pin-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-map.png"; sourceTree = "<group>"; };
@@ -369,10 +373,12 @@
 			children = (
 				EDF24AEE17836F9500AEDC32 /* ico-igreja.png */,
 				EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */,
-				EDF24AF017836F9500AEDC32 /* ico-mapa.png */,
-				EDF24AF117836F9500AEDC32 /* ico-mapa@2x.png */,
+				ED1432131784CE1700DB283C /* ico-mapa.png */,
+				ED1432141784CE1700DB283C /* ico-mapa@2x.png */,
 				EDF24AF217836F9500AEDC32 /* ico-missas.png */,
 				EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */,
+				ED1432151784CE1700DB283C /* ico-settings.png */,
+				ED1432161784CE1700DB283C /* ico-settings@2x.png */,
 				EDF24AD017830CD200AEDC32 /* licenses.html */,
 				EDF24AFA17836FD700AEDC32 /* pin-map.png */,
 				EDF24AFB17836FD700AEDC32 /* pin-map@2x.png */,
@@ -527,12 +533,14 @@
 				EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */,
 				EDF24AF417836F9500AEDC32 /* ico-igreja.png in Resources */,
 				EDF24AF517836F9500AEDC32 /* ico-igreja@2x.png in Resources */,
-				EDF24AF617836F9500AEDC32 /* ico-mapa.png in Resources */,
-				EDF24AF717836F9500AEDC32 /* ico-mapa@2x.png in Resources */,
 				EDF24AF817836F9500AEDC32 /* ico-missas.png in Resources */,
 				EDF24AF917836F9500AEDC32 /* ico-missas@2x.png in Resources */,
 				EDF24AFC17836FD700AEDC32 /* pin-map.png in Resources */,
 				EDF24AFD17836FD700AEDC32 /* pin-map@2x.png in Resources */,
+				ED1432171784CE1700DB283C /* ico-mapa.png in Resources */,
+				ED1432181784CE1700DB283C /* ico-mapa@2x.png in Resources */,
+				ED1432191784CE1700DB283C /* ico-settings.png in Resources */,
+				ED14321A1784CE1700DB283C /* ico-settings@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
