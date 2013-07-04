@@ -6,7 +6,11 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
+#import "NFFacebookIntegration.h"
 #import "NFJMJ2013ViewController.h"
+
+static NSString *kURL = @"https://pt-br.facebook.com/jornadamundialdajuventude";
+static NSString *kProfileID = @"173659739788";
 
 @implementation NFJMJ2013ViewController
 
@@ -25,6 +29,20 @@
             [tableView deselectRowAtIndexPath:indexPath animated:YES];
             break;
         }
+        case 101: {
+            [self _openFacebookPage];
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];
+            break;
+        }
+    }
+}
+
+- (void)_openFacebookPage
+{
+    if ([NFFacebookIntegration canOpenFacebookApp]) {
+        [NFFacebookIntegration openProfileWithID:kProfileID];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kURL]];
     }
 }
 
