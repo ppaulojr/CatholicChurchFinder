@@ -33,7 +33,7 @@ static NSString * const kStatusURLFormat = @"https://twitter.com/%@/status/%@";
 
     [self _showStatusWithText:@"Carregando tweets..."];
 
-    self.timelineLoader = [[NFTwitterTimelineLoader alloc] initWithTableView:self.tableView screenName:kScreenNameURLFormat];
+    self.timelineLoader = [[NFTwitterTimelineLoader alloc] initWithTableView:self.tableView screenName:kScreenName];
     self.timelineLoader.delegate = self;
     self.tableView.dataSource = self.timelineLoader;
 }
