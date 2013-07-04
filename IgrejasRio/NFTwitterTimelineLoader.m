@@ -115,6 +115,9 @@ static NSString * const kTimelineURL = @"https://api.twitter.com/1.1/statuses/us
         };
 
         id failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+#ifdef DEBUG
+            NSLog(@"Failed to contact the Twitter endpoint: %@", error.localizedDescription);
+#endif
             [self.delegate twitterTimelineLoader:self didFinishLoadingTweetsWithSuccess:NO];
         };
 
