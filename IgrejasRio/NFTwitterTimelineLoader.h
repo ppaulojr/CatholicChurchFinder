@@ -19,6 +19,8 @@
 
 - (id)initWithTableView:(UITableView *)tableView screenName:(NSString *)screenName;
 
+- (NSString *)statusIDForTweetAtIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 

@@ -6,10 +6,16 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
+#import <PSAlertView/PSPDFActionSheet.h>
 #import <QuartzCore/QuartzCore.h>
 
+#import "NFTwitterIntegration.h"
 #import "NFTwitterTimelineLoader.h"
 #import "NFTwitterTimelineViewController.h"
+
+static NSString * const kScreenName = @"jmj_pt";
+static NSString * const kScreenNameURLFormat = @"https://twitter.com/%@";
+static NSString * const kStatusURLFormat = @"https://twitter.com/%@/status/%@";
 
 @interface NFTwitterTimelineViewController () <NFTwitterTimelineLoaderDelegate>
 
@@ -27,7 +33,7 @@
 
     [self _showStatusWithText:@"Carregando tweets..."];
 
-    self.timelineLoader = [[NFTwitterTimelineLoader alloc] initWithTableView:self.tableView screenName:@"jmj_pt"];
+    self.timelineLoader = [[NFTwitterTimelineLoader alloc] initWithTableView:self.tableView screenName:kScreenNameURLFormat];
     self.timelineLoader.delegate = self;
     self.tableView.dataSource = self.timelineLoader;
 }
@@ -68,6 +74,26 @@
     self.statusView = nil;
 }
 
+- (IBAction)_actionButtonTapped:(id)sender
+{
+    PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
+
+    if ([NFTwitterIntegration canOpenTwitterApp]) {
+        [actionSheet addButtonWithTitle:@"Ver no app do Twitter" block:^{
+            [NFTwitterIntegration openTwitterAppWithScreenName:kScreenName];
+        }];
+    }
+
+    [actionSheet addButtonWithTitle:@"Ver no Safari" block:^{
+        NSString *url = [NSString stringWithFormat:kScreenNameURLFormat, kScreenName];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }];
+
+    [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
+
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
 
 #pragma mark - Twitter timeline loader delegate
 
@@ -86,6 +112,20 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     cell.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    NSString *statusID = [self.timelineLoader statusIDForTweetAtIndexPath:indexPath];
+
+    if ([NFTwitterIntegration canOpenTwitterApp]) {
+        [NFTwitterIntegration openTwitterAppWithStatusID:statusID];
+    } else {
+        NSString *url = [NSString stringWithFormat:kStatusURLFormat, kScreenName, statusID];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }
 }
 
 @end

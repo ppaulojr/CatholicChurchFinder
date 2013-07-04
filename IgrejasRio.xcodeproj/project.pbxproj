@@ -20,6 +20,7 @@
 		ED0B884D1785C6FF003174F6 /* twitter-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0B884B1785C6FF003174F6 /* twitter-placeholder@2x.png */; };
 		ED0B884E1785C6FF003174F6 /* twitter-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0B884C1785C6FF003174F6 /* twitter-placeholder.png */; };
 		ED0B88511785E016003174F6 /* NFTwitterTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88501785E016003174F6 /* NFTwitterTimelineCell.m */; };
+		ED0B88541785F9EF003174F6 /* NFTwitterIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88531785F9EF003174F6 /* NFTwitterIntegration.m */; };
 		ED1432171784CE1700DB283C /* ico-mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432131784CE1700DB283C /* ico-mapa.png */; };
 		ED1432181784CE1700DB283C /* ico-mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432141784CE1700DB283C /* ico-mapa@2x.png */; };
 		ED1432191784CE1700DB283C /* ico-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432151784CE1700DB283C /* ico-settings.png */; };
@@ -122,6 +123,8 @@
 		ED0B884C1785C6FF003174F6 /* twitter-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-placeholder.png"; sourceTree = "<group>"; };
 		ED0B884F1785E016003174F6 /* NFTwitterTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTwitterTimelineCell.h; sourceTree = "<group>"; };
 		ED0B88501785E016003174F6 /* NFTwitterTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTwitterTimelineCell.m; sourceTree = "<group>"; };
+		ED0B88521785F9EF003174F6 /* NFTwitterIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTwitterIntegration.h; sourceTree = "<group>"; };
+		ED0B88531785F9EF003174F6 /* NFTwitterIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTwitterIntegration.m; sourceTree = "<group>"; };
 		ED1432131784CE1700DB283C /* ico-mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa.png"; sourceTree = "<group>"; };
 		ED1432141784CE1700DB283C /* ico-mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa@2x.png"; sourceTree = "<group>"; };
 		ED1432151784CE1700DB283C /* ico-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-settings.png"; sourceTree = "<group>"; };
@@ -354,7 +357,7 @@
 		EDD33FB8177486EF000CDF87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EDF24AD917831AC600AEDC32 /* 3rd-party Maps */,
+				EDF24AD917831AC600AEDC32 /* 3rd-party Apps */,
 				EDD967B31779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.h */,
 				EDD967B41779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m */,
 				EDFEE66B17750210002F886A /* Core Data */,
@@ -422,15 +425,17 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		EDF24AD917831AC600AEDC32 /* 3rd-party Maps */ = {
+		EDF24AD917831AC600AEDC32 /* 3rd-party Apps */ = {
 			isa = PBXGroup;
 			children = (
 				EDF24AD31783152500AEDC32 /* NFGoogleMapsIntegration.h */,
 				EDF24AD41783152500AEDC32 /* NFGoogleMapsIntegration.m */,
+				ED0B88521785F9EF003174F6 /* NFTwitterIntegration.h */,
+				ED0B88531785F9EF003174F6 /* NFTwitterIntegration.m */,
 				EDF24AD617831AC000AEDC32 /* NFWazeIntegration.h */,
 				EDF24AD717831AC000AEDC32 /* NFWazeIntegration.m */,
 			);
-			name = "3rd-party Maps";
+			name = "3rd-party Apps";
 			sourceTree = "<group>";
 		};
 		EDFEE6651774EC52002F886A /* Controllers */ = {
@@ -698,6 +703,7 @@
 				ED0B88431785AE8C003174F6 /* NFTwitterTimelineLoader.m in Sources */,
 				ED0B884A1785C283003174F6 /* NFTweetFormatter.m in Sources */,
 				ED0B88511785E016003174F6 /* NFTwitterTimelineCell.m in Sources */,
+				ED0B88541785F9EF003174F6 /* NFTwitterIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

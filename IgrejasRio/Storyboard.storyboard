@@ -946,7 +946,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Twitter" id="eQS-jy-GqU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="VcX-LD-3bC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="VcX-LD-3bC">
+                            <connections>
+                                <action selector="_actionButtonTapped:" destination="VF7-7X-BX5" id="v3S-AF-yoi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fW0-iE-Ro6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -981,69 +985,6 @@
         <image name="ico-settings.png" width="30" height="30"/>
         <image name="twitter-placeholder.png" width="48" height="48"/>
     </resources>
-    <classes>
-        <class className="NFIgrejaDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFIgrejaDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="NFIgrejaListCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFIgrejaListCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NFIgrejaListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFIgrejaListViewController.h"/>
-        </class>
-        <class className="NFJMJ2013ViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFJMJ2013ViewController.h"/>
-        </class>
-        <class className="NFLicensesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFLicensesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="NFMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFMapViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="NFMissaListCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFMissaListCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NFMissaListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFMissaListViewController.h"/>
-        </class>
-        <class className="NFSettingsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFSettingsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapTypeHybridCell" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="mapTypeStandardCell" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="versionCell" candidateClass="UITableViewCell"/>
-            </relationships>
-        </class>
-        <class className="NFTelefonesUteisViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFTelefonesUteisViewController.h"/>
-        </class>
-        <class className="NFTwitterTimelineCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFTwitterTimelineCell.h"/>
-        </class>
-        <class className="NFTwitterTimelineViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFTwitterTimelineViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

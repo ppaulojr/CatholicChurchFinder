@@ -141,6 +141,12 @@ static NSString * const kTimelineURL = @"https://api.twitter.com/1.1/statuses/us
     [self _loadTimeline];
 }
 
+- (NSString *)statusIDForTweetAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *tweet = self.tweets[indexPath.row];
+    return [NSString stringWithFormat:@"%@", tweet[@"id"]];
+}
+
 
 #pragma mark - Table view data source
 
