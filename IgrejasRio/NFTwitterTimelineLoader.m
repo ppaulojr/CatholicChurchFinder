@@ -13,7 +13,7 @@
 #import "NFTweetFormatter.h"
 #import "NFTwitterTimelineLoader.h"
 
-#define MAX_TWEETS 50
+#define NUM_TWEETS 30
 
 static NSString * const kTimelineURL = @"https://api.twitter.com/1.1/statuses/user_timeline.json";
 
@@ -42,7 +42,7 @@ static NSString * const kTimelineURL = @"https://api.twitter.com/1.1/statuses/us
         self.tableView = tableView;
         self.screenName = screenName;
 
-        self.tweets = [NSMutableArray arrayWithCapacity:MAX_TWEETS];
+        self.tweets = [NSMutableArray arrayWithCapacity:NUM_TWEETS * 2];
         self.accountStore = [ACAccountStore new];
 
         self.tweetFormatter = [NFTweetFormatter new];
@@ -73,11 +73,17 @@ static NSString * const kTimelineURL = @"https://api.twitter.com/1.1/statuses/us
             return;
         }
 
-        // TODO: Use since_id to add objects to the array
-        NSDictionary *params = @{
+        NSMutableDictionary *params = [@{
             @"screen_name" : self.screenName,
-            @"count" : @"50"
-        };
+            @"count" : [NSString stringWithFormat:@"%d", NUM_TWEETS]
+        } mutableCopy];
+
+        BOOL appendingTweets = NO;
+        if (self.tweets.count) {
+            appendingTweets = YES;
+            NSDictionary *latestTweet = self.tweets[0];
+            params[@"since_id"] = [NSString stringWithFormat:@"%@", latestTweet[@"id"]];
+        }
 
         SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                                 requestMethod:SLRequestMethodGET
@@ -87,17 +93,24 @@ static NSString * const kTimelineURL = @"https://api.twitter.com/1.1/statuses/us
         request.account = [[self.accountStore accountsWithAccountType:accountType] lastObject];
 
         id success = ^(NSURLRequest *request, NSHTTPURLResponse *response, NSArray *JSON) {
-            NSUInteger previousCount = self.tweets.count;
-            [self.tweets addObjectsFromArray:JSON];
+            NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, JSON.count)];
+            [self.tweets insertObjects:JSON atIndexes:indexSet];
 
-            if (previousCount == 0) {
-                [self.tableView reloadData];
-            } else {
-                // TODO
+            if (JSON.count) {
+                if (appendingTweets) {
+                    NSMutableArray *indexPaths = [NSMutableArray arrayWithCapacity:JSON.count];
+                    for (int i = 0; i < JSON.count; ++i) {
+                        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+                        [indexPaths addObject:indexPath];
+                    }
+
+                    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+                } else {
+                    [self.tableView reloadData];
+                }
             }
 
-            // TODO
-            //[self _setupRefreshTimer];
+            [self _setupRefreshTimer];
         };
 
         id failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
