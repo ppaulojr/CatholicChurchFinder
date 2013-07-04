@@ -22,6 +22,7 @@
 		ED0B88511785E016003174F6 /* NFTwitterTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88501785E016003174F6 /* NFTwitterTimelineCell.m */; };
 		ED0B88541785F9EF003174F6 /* NFTwitterIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88531785F9EF003174F6 /* NFTwitterIntegration.m */; };
 		ED0B88561786046C003174F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0B88551786046C003174F6 /* QuartzCore.framework */; };
+		ED0B88591786083B003174F6 /* NFAdBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88581786083B003174F6 /* NFAdBannerManager.m */; };
 		ED1432171784CE1700DB283C /* ico-mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432131784CE1700DB283C /* ico-mapa.png */; };
 		ED1432181784CE1700DB283C /* ico-mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432141784CE1700DB283C /* ico-mapa@2x.png */; };
 		ED1432191784CE1700DB283C /* ico-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432151784CE1700DB283C /* ico-settings.png */; };
@@ -127,6 +128,8 @@
 		ED0B88521785F9EF003174F6 /* NFTwitterIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTwitterIntegration.h; sourceTree = "<group>"; };
 		ED0B88531785F9EF003174F6 /* NFTwitterIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTwitterIntegration.m; sourceTree = "<group>"; };
 		ED0B88551786046C003174F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ED0B88571786083B003174F6 /* NFAdBannerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFAdBannerManager.h; sourceTree = "<group>"; };
+		ED0B88581786083B003174F6 /* NFAdBannerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFAdBannerManager.m; sourceTree = "<group>"; };
 		ED1432131784CE1700DB283C /* ico-mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa.png"; sourceTree = "<group>"; };
 		ED1432141784CE1700DB283C /* ico-mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa@2x.png"; sourceTree = "<group>"; };
 		ED1432151784CE1700DB283C /* ico-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-settings.png"; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 				EDD967B41779DC8D00F9FC93 /* CLLocation+NFDefaultLocation.m */,
 				EDFEE66B17750210002F886A /* Core Data */,
 				EDD33FBC17748748000CDF87 /* mogenerator */,
+				ED0B88571786083B003174F6 /* NFAdBannerManager.h */,
+				ED0B88581786083B003174F6 /* NFAdBannerManager.m */,
 				EDD33FA6177486E8000CDF87 /* NFCoreDataStackManager.h */,
 				EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */,
 				EDD33FA8177486E8000CDF87 /* NFEvent.h */,
@@ -708,6 +713,7 @@
 				ED0B884A1785C283003174F6 /* NFTweetFormatter.m in Sources */,
 				ED0B88511785E016003174F6 /* NFTwitterTimelineCell.m in Sources */,
 				ED0B88541785F9EF003174F6 /* NFTwitterIntegration.m in Sources */,
+				ED0B88591786083B003174F6 /* NFAdBannerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

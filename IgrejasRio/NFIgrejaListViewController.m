@@ -7,6 +7,7 @@
 //
 
 #import "CLLocation+NFDefaultLocation.h"
+#import "NFAdBannerManager.h"
 #import "NFCoreDataStackManager.h"
 #import "NFIgreja.h"
 #import "NFIgrejaDetailViewController.h"
@@ -60,6 +61,8 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
 
 @property (nonatomic, strong) NSArray *filteredEntries;
 
+@property (nonatomic, weak) UIView *adView;
+
 @end
 
 @implementation NFIgrejaListViewController
@@ -94,6 +97,28 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
     [self _calculateDistances];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_localeDidChange) name:NSCurrentLocaleDidChangeNotification object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    NFAdBannerManager *adManager = [NFAdBannerManager sharedManagerWithRootViewController:self.tabBarController];
+
+    [adManager takeOverAdBannerWithAddBlock:^(UIView *adView) {
+        self.adView = adView;
+
+        [self.tableView addSubview:adView];
+        [self _adjustAdViewPosition];
+
+        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, adView.frame.size.height, 0);
+        self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    } removeBlock:^(UIView *adView) {
+        [adView removeFromSuperview];
+
+        self.tableView.contentInset = UIEdgeInsetsZero;
+        self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
+    }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -157,6 +182,17 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
     return [self _arrayForTableView:tableView][indexPath.row];
 }
 
+- (void)_adjustAdViewPosition
+{
+    if (!self.adView) {
+        return;
+    }
+
+    CGRect frame = self.adView.frame;
+    frame.origin.y = self.tableView.contentOffset.y + self.tableView.frame.size.height - frame.size.height;
+    self.adView.frame = frame;
+}
+
 
 #pragma mark - Table view data source
 
@@ -189,6 +225,14 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"detail" sender:nil];
+}
+
+
+#pragma mark - Scroll view delegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self _adjustAdViewPosition];
 }
 
 
