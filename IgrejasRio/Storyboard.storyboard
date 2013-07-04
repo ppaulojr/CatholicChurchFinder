@@ -188,7 +188,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtI-JH-Gk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="465" y="134"/>
+            <point key="canvasLocation" x="469" y="507"/>
         </scene>
         <!--Navigation Controller - Missas-->
         <scene sceneID="7eQ-WD-xJF">
@@ -380,6 +380,49 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Redes sociais" footerTitle="" id="gw4-lx-XsZ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="3oP-wk-PW0" style="IBUITableViewCellStyleDefault" id="b9K-zo-0SP">
+                                        <rect key="frame" x="0.0" y="314" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Twitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3oP-wk-PW0">
+                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="VF7-7X-BX5" kind="push" id="hAQ-xh-tSF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="1re-FY-wKD" style="IBUITableViewCellStyleDefault" id="WTQ-b3-Adt">
+                                        <rect key="frame" x="0.0" y="359" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1re-FY-wKD">
+                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="EnW-yq-jfh" id="r76-ky-dek"/>
@@ -390,7 +433,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWI-gY-jNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533" y="1265"/>
+            <point key="canvasLocation" x="2074" y="1265"/>
         </scene>
         <!--Telefones Uteis View Controller - Telefones Úteis-->
         <scene sceneID="sgH-yu-PQ9">
@@ -719,7 +762,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGk-fU-gkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="1265"/>
+            <point key="canvasLocation" x="2622" y="881"/>
         </scene>
         <!--Settings View Controller - Ajustes-->
         <scene sceneID="gU8-2f-wyL">
@@ -864,6 +907,52 @@
             </objects>
             <point key="canvasLocation" x="2074" y="2027"/>
         </scene>
+        <!--Twitter Timeline View Controller - Twitter-->
+        <scene sceneID="0bP-65-xm9">
+            <objects>
+                <tableViewController id="VF7-7X-BX5" customClass="NFTwitterTimelineViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="F4u-iv-zDn">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.84999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweet" textLabel="EMI-Ej-qZV" imageView="ttb-F1-wmH" rowHeight="66" style="IBUITableViewCellStyleDefault" id="ju0-Nt-Jsg" customClass="NFTwitterTimelineCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="EMI-Ej-qZV">
+                                            <rect key="frame" x="66" y="0.0" width="244" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <string key="text">Neste sábado acontecerá uma grande festa para receber os #SímbolosdaJMJ no RJ! Vai ficar de fora? Veja as atrações: http://goo.gl/gjbc0 </string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="twitter-placeholder.png" id="ttb-F1-wmH">
+                                            <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VF7-7X-BX5" id="FFr-2p-hHv"/>
+                            <outlet property="delegate" destination="VF7-7X-BX5" id="Cc8-3p-RR6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Twitter" id="eQS-jy-GqU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="VcX-LD-3bC"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fW0-iE-Ro6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2622" y="1649"/>
+        </scene>
         <!--Navigation Controller - JMJ 2013-->
         <scene sceneID="Kko-V5-nOb">
             <objects>
@@ -890,6 +979,7 @@
         <image name="ico-mapa.png" width="30" height="30"/>
         <image name="ico-missas.png" width="30" height="30"/>
         <image name="ico-settings.png" width="30" height="30"/>
+        <image name="twitter-placeholder.png" width="48" height="48"/>
     </resources>
     <classes>
         <class className="NFIgrejaDetailViewController" superclassName="UIViewController">
@@ -946,6 +1036,12 @@
         </class>
         <class className="NFTelefonesUteisViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NFTelefonesUteisViewController.h"/>
+        </class>
+        <class className="NFTwitterTimelineCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFTwitterTimelineCell.h"/>
+        </class>
+        <class className="NFTwitterTimelineViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NFTwitterTimelineViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

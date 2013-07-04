@@ -8,15 +8,11 @@
 
 #import "NFJMJ2013ViewController.h"
 
-@interface NFJMJ2013ViewController ()
-
-@end
-
 @implementation NFJMJ2013ViewController
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.row) {
+    switch (indexPath.section * 100 + indexPath.row) {
         case 0: {
             NSURL *url = [NSURL URLWithString:@"http://www.rio2013.com/"];
             [[UIApplication sharedApplication] openURL:url];

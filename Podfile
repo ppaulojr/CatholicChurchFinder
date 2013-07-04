@@ -1,5 +1,6 @@
 platform :ios, '6.0'
 
+pod 'AFNetworking', '1.2.1'
 pod 'PSAlertView', '1.1'
 
 target :CSVImporter, :exclusive => true do

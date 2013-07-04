@@ -12,6 +12,14 @@
 		ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */; };
 		ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */; };
 		ED040CF8177B71F80028B73D /* NFIgrejaEventsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */; };
+		ED0B88401785AC53003174F6 /* NFTwitterTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B883F1785AC53003174F6 /* NFTwitterTimelineViewController.m */; };
+		ED0B88431785AE8C003174F6 /* NFTwitterTimelineLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88421785AE8C003174F6 /* NFTwitterTimelineLoader.m */; };
+		ED0B88451785B478003174F6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0B88441785B478003174F6 /* Social.framework */; };
+		ED0B88471785B9CD003174F6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0B88461785B9CD003174F6 /* Accounts.framework */; };
+		ED0B884A1785C283003174F6 /* NFTweetFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88491785C283003174F6 /* NFTweetFormatter.m */; };
+		ED0B884D1785C6FF003174F6 /* twitter-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0B884B1785C6FF003174F6 /* twitter-placeholder@2x.png */; };
+		ED0B884E1785C6FF003174F6 /* twitter-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0B884C1785C6FF003174F6 /* twitter-placeholder.png */; };
+		ED0B88511785E016003174F6 /* NFTwitterTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88501785E016003174F6 /* NFTwitterTimelineCell.m */; };
 		ED1432171784CE1700DB283C /* ico-mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432131784CE1700DB283C /* ico-mapa.png */; };
 		ED1432181784CE1700DB283C /* ico-mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432141784CE1700DB283C /* ico-mapa@2x.png */; };
 		ED1432191784CE1700DB283C /* ico-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1432151784CE1700DB283C /* ico-settings.png */; };
@@ -102,6 +110,18 @@
 		ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTelefonesUteisViewController.m; sourceTree = "<group>"; };
 		ED040CF6177B71F80028B73D /* NFIgrejaEventsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaEventsPanel.h; sourceTree = "<group>"; };
 		ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaEventsPanel.m; sourceTree = "<group>"; };
+		ED0B883E1785AC53003174F6 /* NFTwitterTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTwitterTimelineViewController.h; sourceTree = "<group>"; };
+		ED0B883F1785AC53003174F6 /* NFTwitterTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTwitterTimelineViewController.m; sourceTree = "<group>"; };
+		ED0B88411785AE8C003174F6 /* NFTwitterTimelineLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTwitterTimelineLoader.h; sourceTree = "<group>"; };
+		ED0B88421785AE8C003174F6 /* NFTwitterTimelineLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTwitterTimelineLoader.m; sourceTree = "<group>"; };
+		ED0B88441785B478003174F6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		ED0B88461785B9CD003174F6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		ED0B88481785C283003174F6 /* NFTweetFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTweetFormatter.h; sourceTree = "<group>"; };
+		ED0B88491785C283003174F6 /* NFTweetFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTweetFormatter.m; sourceTree = "<group>"; };
+		ED0B884B1785C6FF003174F6 /* twitter-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-placeholder@2x.png"; sourceTree = "<group>"; };
+		ED0B884C1785C6FF003174F6 /* twitter-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-placeholder.png"; sourceTree = "<group>"; };
+		ED0B884F1785E016003174F6 /* NFTwitterTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTwitterTimelineCell.h; sourceTree = "<group>"; };
+		ED0B88501785E016003174F6 /* NFTwitterTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTwitterTimelineCell.m; sourceTree = "<group>"; };
 		ED1432131784CE1700DB283C /* ico-mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa.png"; sourceTree = "<group>"; };
 		ED1432141784CE1700DB283C /* ico-mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-mapa@2x.png"; sourceTree = "<group>"; };
 		ED1432151784CE1700DB283C /* ico-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-settings.png"; sourceTree = "<group>"; };
@@ -205,6 +225,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0B88471785B9CD003174F6 /* Accounts.framework in Frameworks */,
+				ED0B88451785B478003174F6 /* Social.framework in Frameworks */,
 				EDC7A6A51781FC5800C9B659 /* AddressBook.framework in Frameworks */,
 				EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */,
 				EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */,
@@ -257,12 +279,14 @@
 			children = (
 				EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */,
 				B38B88B9D7454CFA9551953D /* libPods.a */,
+				ED0B88461785B9CD003174F6 /* Accounts.framework */,
 				EDC7A6A41781FC5800C9B659 /* AddressBook.framework */,
 				EDB2025E177487DC00AB8CFD /* CoreData.framework */,
 				ED3B1455177485AD00213826 /* CoreGraphics.framework */,
 				EDFEE6671774FCDE002F886A /* CoreLocation.framework */,
 				ED3B1453177485AD00213826 /* Foundation.framework */,
 				EDFEE6601774EB4E002F886A /* MapKit.framework */,
+				ED0B88441785B478003174F6 /* Social.framework */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -345,6 +369,10 @@
 				EDD33FAD177486E8000CDF87 /* NFMonthlyEvent.m */,
 				EDC7A6A61782192200C9B659 /* NFSettingsManager.h */,
 				EDC7A6A71782192200C9B659 /* NFSettingsManager.m */,
+				ED0B88481785C283003174F6 /* NFTweetFormatter.h */,
+				ED0B88491785C283003174F6 /* NFTweetFormatter.m */,
+				ED0B88411785AE8C003174F6 /* NFTwitterTimelineLoader.h */,
+				ED0B88421785AE8C003174F6 /* NFTwitterTimelineLoader.m */,
 				EDD33FAE177486E8000CDF87 /* NFWeeklyEvent.h */,
 				EDD33FAF177486E8000CDF87 /* NFWeeklyEvent.m */,
 				EDD33FB0177486E8000CDF87 /* NFYearlyEvent.h */,
@@ -388,6 +416,8 @@
 				EDF24AD017830CD200AEDC32 /* licenses.html */,
 				EDF24AFA17836FD700AEDC32 /* pin-map.png */,
 				EDF24AFB17836FD700AEDC32 /* pin-map@2x.png */,
+				ED0B884C1785C6FF003174F6 /* twitter-placeholder.png */,
+				ED0B884B1785C6FF003174F6 /* twitter-placeholder@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -424,6 +454,8 @@
 				EDC7A6AA17821A4C00C9B659 /* NFSettingsViewController.m */,
 				ED021FA91784C6C800E96B49 /* NFTelefonesUteisViewController.h */,
 				ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */,
+				ED0B883E1785AC53003174F6 /* NFTwitterTimelineViewController.h */,
+				ED0B883F1785AC53003174F6 /* NFTwitterTimelineViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -440,6 +472,8 @@
 				ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */,
 				EDD967B91779DEA200F9FC93 /* NFMissaListCell.h */,
 				EDD967BA1779DEA200F9FC93 /* NFMissaListCell.m */,
+				ED0B884F1785E016003174F6 /* NFTwitterTimelineCell.h */,
+				ED0B88501785E016003174F6 /* NFTwitterTimelineCell.m */,
 				EDFEE65E1774E905002F886A /* Storyboard.storyboard */,
 			);
 			name = Views;
@@ -549,6 +583,8 @@
 				ED14321A1784CE1700DB283C /* ico-settings@2x.png in Resources */,
 				ED14321D1784CFC100DB283C /* ico-jmj.png in Resources */,
 				ED14321E1784CFC100DB283C /* ico-jmj@2x.png in Resources */,
+				ED0B884D1785C6FF003174F6 /* twitter-placeholder@2x.png in Resources */,
+				ED0B884E1785C6FF003174F6 /* twitter-placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +694,10 @@
 				EDF24AD817831AC000AEDC32 /* NFWazeIntegration.m in Sources */,
 				ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */,
 				ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */,
+				ED0B88401785AC53003174F6 /* NFTwitterTimelineViewController.m in Sources */,
+				ED0B88431785AE8C003174F6 /* NFTwitterTimelineLoader.m in Sources */,
+				ED0B884A1785C283003174F6 /* NFTweetFormatter.m in Sources */,
+				ED0B88511785E016003174F6 /* NFTwitterTimelineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
