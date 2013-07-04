@@ -15,6 +15,8 @@
 
 @property (weak, nonatomic) id <NFTwitterTimelineLoaderDelegate> delegate;
 
+@property (readonly, strong, nonatomic) NSMutableArray *tweets;
+
 - (id)initWithTableView:(UITableView *)tableView screenName:(NSString *)screenName;
 
 @end
@@ -22,6 +24,6 @@
 
 @protocol NFTwitterTimelineLoaderDelegate <NSObject>
 
-// TODO
+- (void)twitterTimelineLoader:(NFTwitterTimelineLoader *)loader didFinishLoadingTweetsWithSuccess:(BOOL)success;
 
 @end

@@ -62,14 +62,14 @@ static NSString * const kTimelineURL = @"https://api.twitter.com/1.1/statuses/us
     [self _cancelRefreshTimer];
 
     if (![SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
-        // TODO: Call the delegate
+        [self.delegate twitterTimelineLoader:self didFinishLoadingTweetsWithSuccess:NO];
         return;
     }
 
     ACAccountType *accountType = [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     [self.accountStore requestAccessToAccountsWithType:accountType options:nil completion:^(BOOL granted, NSError *error) {
         if (!granted) {
-            // TODO: Invoke the delegate
+            [self.delegate twitterTimelineLoader:self didFinishLoadingTweetsWithSuccess:NO];
             return;
         }
 
@@ -111,10 +111,11 @@ static NSString * const kTimelineURL = @"https://api.twitter.com/1.1/statuses/us
             }
 
             [self _setupRefreshTimer];
+            [self.delegate twitterTimelineLoader:self didFinishLoadingTweetsWithSuccess:YES];
         };
 
         id failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-            // TODO: Invoke the delegate
+            [self.delegate twitterTimelineLoader:self didFinishLoadingTweetsWithSuccess:NO];
         };
 
         AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[request preparedURLRequest]
