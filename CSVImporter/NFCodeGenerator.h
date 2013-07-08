@@ -29,6 +29,8 @@
 
 @optional
 
+- (NSStringEncoding)languageEncoding;
+
 - (NSString *)enteredIgrejaWithIndex:(NSUInteger)index;
 - (NSString *)leftIgrejaWithIndex:(NSUInteger)index;
 

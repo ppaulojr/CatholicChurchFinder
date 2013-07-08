@@ -37,6 +37,13 @@
     for (id <NFCodeGeneratorLanguage> language in self.languages) {
         NSLog(@"Generating code for language %@...", [language languageName]);
 
+        NSStringEncoding encoding;
+        if ([language respondsToSelector:@selector(languageEncoding)]) {
+            encoding = [language languageEncoding];
+        } else {
+            encoding = NSUTF8StringEncoding;
+        }
+
         NSMutableString *templateData = [NSMutableString new];
 
         NSString *newIgrejaSnippet = [language snippetForNewIgreja];
@@ -90,11 +97,11 @@
         templateFilename = [templateFilename stringByDeletingPathExtension];
 
         NSString *templatePath = [[NSBundle mainBundle] pathForResource:templateFilename ofType:templateExtension];
-        NSString *template = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:NULL];
+        NSString *template = [NSString stringWithContentsOfFile:templatePath encoding:encoding error:NULL];
 
         NSString *path = [baseDir stringByAppendingPathComponent:[language outputFilename]];
         NSString *code = [template stringByReplacingOccurrencesOfString:@"%%DATA%%" withString:templateData];
-        [code writeToFile:path atomically:NO encoding:NSUTF8StringEncoding error:NULL];
+        [code writeToFile:path atomically:NO encoding:encoding error:NULL];
 
         NSLog(@"Generated code for language %@ at %@", [language languageName], path);
     }

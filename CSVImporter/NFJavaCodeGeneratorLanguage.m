@@ -35,6 +35,11 @@
     return @"GeneratedDatabase.java";
 }
 
+- (NSStringEncoding)languageEncoding
+{
+    return NSMacOSRomanStringEncoding;
+}
+
 - (NSString *)enteredIgrejaWithIndex:(NSUInteger)index
 {
     self.totalIgrejas++;
