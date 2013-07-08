@@ -9,6 +9,7 @@
 #import "CHCSVParser.h"
 #import "NFCoreDataStackManager+Import.h"
 #import "NFIgreja.h"
+#import "NFJavaCodeGeneratorLanguage.h"
 #import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
 #import "NFYearlyEvent.h"
@@ -261,6 +262,12 @@
 
     NSDictionary *igrejas = [self importIgrejasWithContext:moc];
     [self importEventsWithIgrejas:igrejas context:moc];
+
+    // Generate code for other platforms
+    NFCodeGenerator *generator = [[NFCodeGenerator alloc] initWithLanguages:@[
+        [NFJavaCodeGeneratorLanguage new]
+    ]];
+    [generator generateForIgrejas:[igrejas allValues]];
 }
 
 @end

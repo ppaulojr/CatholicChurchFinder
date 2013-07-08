@@ -31,6 +31,7 @@
 		ED14321D1784CFC100DB283C /* ico-jmj.png in Resources */ = {isa = PBXBuildFile; fileRef = ED14321B1784CFC100DB283C /* ico-jmj.png */; };
 		ED14321E1784CFC100DB283C /* ico-jmj@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED14321C1784CFC100DB283C /* ico-jmj@2x.png */; };
 		ED167884177E1B540071BE43 /* NFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED167883177E1B540071BE43 /* NFMapViewController.m */; };
+		ED2517C0178B01F100D9F79E /* template.java in Resources */ = {isa = PBXBuildFile; fileRef = ED40937317876A2F00140068 /* template.java */; };
 		ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
 		ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
 		ED3B1456177485AD00213826 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1455177485AD00213826 /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 		ED3B1464177485AD00213826 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1463177485AD00213826 /* Default.png */; };
 		ED3B1466177485AD00213826 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1465177485AD00213826 /* Default@2x.png */; };
 		ED3B1468177485AD00213826 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1467177485AD00213826 /* Default-568h@2x.png */; };
+		ED40937817876A7300140068 /* NFCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ED40937517876A4E00140068 /* NFCodeGenerator.m */; };
+		ED40937917876A7300140068 /* NFJavaCodeGeneratorLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = ED40937717876A6900140068 /* NFJavaCodeGeneratorLanguage.m */; };
 		ED50D50E17788984000C0FB3 /* NFIgrejaListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */; };
 		ED50D51117788B54000C0FB3 /* NFIgrejaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */; };
 		ED5BB10D177B258E00C98CE9 /* NFIgrejaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5BB10C177B258E00C98CE9 /* NFIgrejaDetailViewController.m */; };
@@ -153,6 +156,11 @@
 		ED3B1463177485AD00213826 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ED3B1465177485AD00213826 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		ED3B1467177485AD00213826 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ED40937317876A2F00140068 /* template.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = template.java; sourceTree = "<group>"; };
+		ED40937417876A4E00140068 /* NFCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFCodeGenerator.h; sourceTree = "<group>"; };
+		ED40937517876A4E00140068 /* NFCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFCodeGenerator.m; sourceTree = "<group>"; };
+		ED40937617876A6900140068 /* NFJavaCodeGeneratorLanguage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFJavaCodeGeneratorLanguage.h; sourceTree = "<group>"; };
+		ED40937717876A6900140068 /* NFJavaCodeGeneratorLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFJavaCodeGeneratorLanguage.m; sourceTree = "<group>"; };
 		ED50D50C17788984000C0FB3 /* NFIgrejaListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaListCell.h; sourceTree = "<group>"; };
 		ED50D50D17788984000C0FB3 /* NFIgrejaListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaListCell.m; sourceTree = "<group>"; };
 		ED50D50F17788B54000C0FB3 /* NFIgrejaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaListViewController.h; sourceTree = "<group>"; };
@@ -332,6 +340,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED409370178760A400140068 /* Code Generation */ = {
+			isa = PBXGroup;
+			children = (
+				ED40937417876A4E00140068 /* NFCodeGenerator.h */,
+				ED40937517876A4E00140068 /* NFCodeGenerator.m */,
+				ED40937617876A6900140068 /* NFJavaCodeGeneratorLanguage.h */,
+				ED40937717876A6900140068 /* NFJavaCodeGeneratorLanguage.m */,
+				ED40937117876A2F00140068 /* Templates */,
+			);
+			name = "Code Generation";
+			sourceTree = "<group>";
+		};
+		ED40937117876A2F00140068 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				ED40937317876A2F00140068 /* template.java */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
 		ED6B2F4617748C1E00EA66D0 /* CSV */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +372,7 @@
 		EDB202A81774892D00AB8CFD /* CSVImporter */ = {
 			isa = PBXGroup;
 			children = (
+				ED409370178760A400140068 /* Code Generation */,
 				ED6B2F4617748C1E00EA66D0 /* CSV */,
 				EDB202B11774892E00AB8CFD /* NFAppDelegate.h */,
 				EDB202B21774892E00AB8CFD /* NFAppDelegate.m */,
@@ -613,6 +642,7 @@
 			files = (
 				ED6B2F4917748C1E00EA66D0 /* events.csv in Resources */,
 				ED6B2F4A17748C1E00EA66D0 /* igrejas.csv in Resources */,
+				ED2517C0178B01F100D9F79E /* template.java in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,7 +765,9 @@
 				ED6B2F3B17748BDD00EA66D0 /* _NFMonthlyEvent.m in Sources */,
 				ED6B2F3C17748BDD00EA66D0 /* _NFWeeklyEvent.m in Sources */,
 				ED6B2F3D17748BDD00EA66D0 /* _NFYearlyEvent.m in Sources */,
+				ED40937917876A7300140068 /* NFJavaCodeGeneratorLanguage.m in Sources */,
 				ED6B2F3E17748BDD00EA66D0 /* NFCoreDataStackManager.m in Sources */,
+				ED40937817876A7300140068 /* NFCodeGenerator.m in Sources */,
 				ED6B2F3F17748BDD00EA66D0 /* NFEvent.m in Sources */,
 				ED6B2F4017748BDD00EA66D0 /* NFIgreja.m in Sources */,
 				ED6B2F4117748BDD00EA66D0 /* NFMonthlyEvent.m in Sources */,
