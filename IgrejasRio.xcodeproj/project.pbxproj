@@ -65,6 +65,7 @@
 		ED6B2F4A17748C1E00EA66D0 /* igrejas.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED6B2F4817748C1E00EA66D0 /* igrejas.csv */; };
 		ED6BAB9F177DC8CF002326C3 /* NSString+NFNormalizing.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6BAB9E177DC8CF002326C3 /* NSString+NFNormalizing.m */; };
 		ED6BABA0177DC8CF002326C3 /* NSString+NFNormalizing.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6BAB9E177DC8CF002326C3 /* NSString+NFNormalizing.m */; };
+		ED747BFA178B62BB00E6D242 /* NFEventMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ED747BF9178B62BB00E6D242 /* NFEventMatchContext.m */; };
 		EDB2025F177487DC00AB8CFD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB2025E177487DC00AB8CFD /* CoreData.framework */; };
 		EDB202A51774892D00AB8CFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
 		EDB202A61774892D00AB8CFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
@@ -176,6 +177,8 @@
 		ED6B2F4817748C1E00EA66D0 /* igrejas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = igrejas.csv; sourceTree = "<group>"; };
 		ED6BAB9D177DC8CF002326C3 /* NSString+NFNormalizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NFNormalizing.h"; sourceTree = "<group>"; };
 		ED6BAB9E177DC8CF002326C3 /* NSString+NFNormalizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NFNormalizing.m"; sourceTree = "<group>"; };
+		ED747BF8178B62BB00E6D242 /* NFEventMatchContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFEventMatchContext.h; sourceTree = "<group>"; };
+		ED747BF9178B62BB00E6D242 /* NFEventMatchContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFEventMatchContext.m; sourceTree = "<group>"; };
 		EDB2025E177487DC00AB8CFD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EDB202A41774892D00AB8CFD /* CSVImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB202AA1774892E00AB8CFD /* CSVImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSVImporter-Info.plist"; sourceTree = "<group>"; };
@@ -407,6 +410,8 @@
 				EDD33FA7177486E8000CDF87 /* NFCoreDataStackManager.m */,
 				EDD33FA8177486E8000CDF87 /* NFEvent.h */,
 				EDD33FA9177486E8000CDF87 /* NFEvent.m */,
+				ED747BF8178B62BB00E6D242 /* NFEventMatchContext.h */,
+				ED747BF9178B62BB00E6D242 /* NFEventMatchContext.m */,
 				EDD33FAA177486E8000CDF87 /* NFIgreja.h */,
 				EDD33FAB177486E8000CDF87 /* NFIgreja.m */,
 				EDD33FAC177486E8000CDF87 /* NFMonthlyEvent.h */,
@@ -750,6 +755,7 @@
 				ED0B88541785F9EF003174F6 /* NFTwitterIntegration.m in Sources */,
 				ED0B88591786083B003174F6 /* NFAdBannerManager.m in Sources */,
 				ED0B885C178618FC003174F6 /* NFFacebookIntegration.m in Sources */,
+				ED747BFA178B62BB00E6D242 /* NFEventMatchContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

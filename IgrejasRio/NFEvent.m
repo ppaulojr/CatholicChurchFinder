@@ -23,4 +23,10 @@
     }
 }
 
+- (BOOL)matchesWithContext:(NFEventMatchContext *)context
+{
+    [self doesNotRecognizeSelector:_cmd];
+    return NO;
+}
+
 @end

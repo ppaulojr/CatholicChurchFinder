@@ -10,4 +10,10 @@
 
 @implementation NFYearlyEvent
 
+- (BOOL)matchesWithContext:(NFEventMatchContext *)context
+{
+    return self.dayValue == context.referenceDateComponents.day &&
+    self.monthValue == context.referenceDateComponents.month;
+}
+
 @end

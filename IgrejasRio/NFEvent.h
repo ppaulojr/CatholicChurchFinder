@@ -7,6 +7,7 @@
 //
 
 #import "_NFEvent.h"
+#import "NFEventMatchContext.h"
 
 typedef NS_ENUM(NSInteger, NFEventType) {
     NFEventTypeMissa = 0,
@@ -16,5 +17,7 @@ typedef NS_ENUM(NSInteger, NFEventType) {
 @interface NFEvent : _NFEvent
 
 - (NSString *)formattedTime;
+
+- (BOOL)matchesWithContext:(NFEventMatchContext *)context;
 
 @end

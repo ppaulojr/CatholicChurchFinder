@@ -10,4 +10,9 @@
 
 @implementation NFWeeklyEvent
 
+- (BOOL)matchesWithContext:(NFEventMatchContext *)context
+{
+    return self.weekdayValue == context.referenceDateComponents.weekday;
+}
+
 @end

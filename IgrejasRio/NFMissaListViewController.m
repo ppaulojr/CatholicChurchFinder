@@ -9,13 +9,11 @@
 #import "CLLocation+NFDefaultLocation.h"
 #import "NFAdBannerManager.h"
 #import "NFCoreDataStackManager.h"
+#import "NFEventMatchContext.h"
 #import "NFIgreja.h"
 #import "NFIgrejaDetailViewController.h"
 #import "NFMissaListCell.h"
 #import "NFMissaListViewController.h"
-#import "NFMonthlyEvent.h"
-#import "NFWeeklyEvent.h"
-#import "NFYearlyEvent.h"
 
 
 @interface NFMissaListEntry : NSObject
@@ -210,6 +208,8 @@
 
 - (void)_updateEvents
 {
+    // TODO: Move more stuff into the the model, add unit tests
+
     NSManagedObjectContext *moc = [NFCoreDataStackManager sharedManager].managedObjectContext;
 
     NSDate *startDate = [NSDate date];
@@ -225,64 +225,9 @@
 
     NSMutableArray *matches = [[moc executeFetchRequest:request error:NULL] mutableCopy];
 
-    // TODO: Move all this logic to the model, add unit tests
-
-    // Get some components we'll need to filter further
-    NSUInteger flags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit;
-    NSDateComponents *components = [self.calendar components:flags fromDate:startDate];
-
-    // Find out what is the last weekday this month
-    NSDateComponents *lastWeekdayComp = [NSDateComponents new];
-    lastWeekdayComp.year = components.year;
-    lastWeekdayComp.month = components.month;
-    lastWeekdayComp.weekday = components.weekday;
-    lastWeekdayComp.weekdayOrdinal = -1;
-    NSDate *lastWeekday = [self.calendar dateFromComponents:lastWeekdayComp];
-
-    // Get the start date without time
-    NSDateComponents *startDateWithoutTimeComp = [NSDateComponents new];
-    startDateWithoutTimeComp.year = components.year;
-    startDateWithoutTimeComp.month = components.month;
-    startDateWithoutTimeComp.day = components.day;
-    NSDate *startDateWithoutTime = [self.calendar dateFromComponents:startDateWithoutTimeComp];
-
-    // Figure out how many weeks from the last week
-    NSDateComponents *weeksFromLastWeekdayComp = [self.calendar components:NSWeekCalendarUnit fromDate:lastWeekday toDate:startDateWithoutTime options:0];
-    NSInteger reverseWeeksOrdinal = weeksFromLastWeekdayComp.week - 1;
-
+    NFEventMatchContext *context = [[NFEventMatchContext alloc] initWithReferenceDate:startDate calendar:self.calendar];
     [matches filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NFEvent *entry, NSDictionary *bindings) {
-        if ([entry isKindOfClass:[NFWeeklyEvent class]]) {
-            // This is an event that happens every week on
-            // a specific weekday
-            NFWeeklyEvent *event = (NFWeeklyEvent *)entry;
-            return event.weekdayValue == components.weekday;
-        } else if ([entry isKindOfClass:[NFMonthlyEvent class]]) {
-            NFMonthlyEvent *event = (NFMonthlyEvent *)entry;
-            if (event.weekValue == 0) {
-                // This is an event that happens every month on
-                // a specific day of the month
-                return event.dayValue == components.day;
-            } else if (event.dayValue == components.weekday) {
-                // This is an event that happens every month on
-                // a specific weekday on a specific week and we
-                // already checked that the weekday matches
-                if (event.weekValue > 0) {
-                    // The specific week is the ordinal number of the week
-                    // (e.g. first monday of every month)
-                    return event.weekValue == components.weekdayOrdinal;
-                } else {
-                    // The specific week is an offset from the first weekday
-                    // in the next month (e.g. last monday of every month)
-                    return event.weekValue == reverseWeeksOrdinal;
-                }
-            } else {
-                // The weekday doesn't match
-                return NO;
-            }
-        } else {
-            NFYearlyEvent *event = (NFYearlyEvent *)entry;
-            return event.dayValue == components.day && event.monthValue == components.month;
-        }
+        return [entry matchesWithContext:context];
     }]];
 
     // Find out the unique start times
