@@ -3,6 +3,8 @@
 // MODIFY THE TEMPLATE IN THE IPHONE PROJECT INSTEAD.
 //
 
+package br.com.netfilter.Igrejasrj;
+
 import java.util.*;
 
 public abstract class GeneratedDatabase
