@@ -12,6 +12,12 @@
 #import "NFWeeklyEvent.h"
 #import "NFYearlyEvent.h"
 
+@interface NFJavaCodeGeneratorLanguage ()
+
+@property (assign, nonatomic) NSUInteger totalIgrejas;
+
+@end
+
 @implementation NFJavaCodeGeneratorLanguage
 
 - (NSString *)languageName
@@ -29,35 +35,50 @@
     return @"GeneratedDatabase.java";
 }
 
-- (NSString *)preamble
+- (NSString *)enteredIgrejaWithIndex:(NSUInteger)index
 {
-    return @"\
-Igreja igreja;\n\
-Igreja.Event event;\n\
-Igreja.WeeklyEvent wEvent;\n\
-Igreja.MonthlyEvent mEvent;\n\
-Igreja.YearlyEvent yEvent;\n";
+    self.totalIgrejas++;
+
+    return [NSString stringWithFormat:@"    private void createIgreja%d() {\n", index];
+}
+
+- (NSString *)leftIgrejaWithIndex:(NSUInteger)index
+{
+    return @"    }\n\n";
+}
+
+- (NSString *)postamble
+{
+    NSMutableString *string = [@"    public GeneratedDatabase() {\n" mutableCopy];
+
+    for (NSUInteger i = 0; i < self.totalIgrejas; i++) {
+        [string appendFormat:@"        createIgreja%d();\n", i];
+    }
+
+    [string appendString:@"    }\n"];
+
+    return string;
 }
 
 - (NSString *)snippetForNewIgreja
 {
     return @"\
-igreja = new Igreja();\n\
-igreja.bairro = %%bairro%%;\n\
-igreja.cep = %%cep%%;\n\
-igreja.email = %%email%%;\n\
-igreja.endereco = %%endereco%%;\n\
-igreja.lastModified = %%lastModified%%;\n\
-igreja.latitude = %%latitude%%;\n\
-igreja.longitude = %%longitude%%;\n\
-igreja.nome = %%nome%%;\n\
-igreja.normalizedBairro = %%normalizedBairro%%;\n\
-igreja.normalizedNome = %%normalizedNome%%;\n\
-igreja.observacao = %%observacao%%;\n\
-igreja.paroco = %%paroco%%;\n\
-igreja.site = %%site%%;\n\
-igreja.telefones = %%telefones%%;\n\
-mAllIgrejas.add(igreja);\n\
+        Igreja igreja = new Igreja();\n\
+        igreja.bairro = %%bairro%%;\n\
+        igreja.cep = %%cep%%;\n\
+        igreja.email = %%email%%;\n\
+        igreja.endereco = %%endereco%%;\n\
+        igreja.lastModified = %%lastModified%%;\n\
+        igreja.latitude = %%latitude%%;\n\
+        igreja.longitude = %%longitude%%;\n\
+        igreja.nome = %%nome%%;\n\
+        igreja.normalizedBairro = %%normalizedBairro%%;\n\
+        igreja.normalizedNome = %%normalizedNome%%;\n\
+        igreja.observacao = %%observacao%%;\n\
+        igreja.paroco = %%paroco%%;\n\
+        igreja.site = %%site%%;\n\
+        igreja.telefones = %%telefones%%;\n\
+        mAllIgrejas.add(igreja);\n\
 ";
 }
 
@@ -67,37 +88,35 @@ mAllIgrejas.add(igreja);\n\
 
     if (class == [NFWeeklyEvent class]) {
         before = @"\
-wEvent = new Igreja.WeeklyEvent();\n\
-event = wEvent;\n\
-wEvent.weekday = %%weekday%%;\n\
+            Igreja.WeeklyEvent event = new Igreja.WeeklyEvent();\n\
+            event.weekday = %%weekday%%;\n\
 ";
     } else if (class == [NFMonthlyEvent class]) {
         before = @"\
-mEvent = new Igreja.MonthlyEvent();\n\
-event = mEvent;\n\
-mEvent.day = %%day%%;\n\
-mEvent.week = %%week%%;\n\
+            Igreja.MonthlyEvent event = new Igreja.MonthlyEvent();\n\
+            event.day = %%day%%;\n\
+            event.week = %%week%%;\n\
 ";
     } else if (class == [NFYearlyEvent class]) {
         before = @"\
-yEvent = new Igreja.YearlyEvent();\n\
-event = yEvent;\n\
-yEvent.day = %%day%%;\n\
-yEvent.month = %%month%%;\n\
+            Igreja.YearlyEvent event = new Igreja.YearlyEvent();\n\
+            event.day = %%day%%;\n\
+            event.month = %%month%%;\n\
 ";
     }
 
     NSString *common = @"\
-event.endTime = %%endTime%%;\n\
-event.observation = %%observation%%;\n\
-event.startTime = %%startTime%%;\n\
-event.type = %%type%%;\n\
-event.igreja = %%igreja%%;\n\
-mAllEvents.add(event);\n\
-igreja.events.add(event);\n\
+            event.endTime = %%endTime%%;\n\
+            event.observation = %%observation%%;\n\
+            event.startTime = %%startTime%%;\n\
+            event.type = %%type%%;\n\
+            event.igreja = %%igreja%%;\n\
+            mAllEvents.add(event);\n\
+            igreja.events.add(event);\n\
+        }\n\
 ";
 
-    return [NSString stringWithFormat:@"%@%@", before, common];
+    return [NSString stringWithFormat:@"        {\n\%@%@", before, common];
 }
 
 - (NSString *)replacementInSnippetForObject:(id)obj withKey:(NSString *)key

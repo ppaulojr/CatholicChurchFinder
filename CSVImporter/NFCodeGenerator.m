@@ -39,10 +39,6 @@
 
         NSMutableString *templateData = [NSMutableString new];
 
-        if ([language respondsToSelector:@selector(preamble)]) {
-            [templateData appendString:[language preamble]];
-        }
-
         NSString *newIgrejaSnippet = [language snippetForNewIgreja];
         NSArray *newIgrejaKeys = [self _keysFromSnippet:newIgrejaSnippet];
 
@@ -56,7 +52,18 @@
             keysByClass[key] = [self _keysFromSnippet:snippet];
         }
 
+        if ([language respondsToSelector:@selector(preamble)]) {
+            [templateData appendString:[language preamble]];
+        }
+
         [igrejas enumerateObjectsUsingBlock:^(NFIgreja *igreja, NSUInteger idx, BOOL *stop) {
+            if ([language respondsToSelector:@selector(enteredIgrejaWithIndex:)]) {
+                NSString *data = [language enteredIgrejaWithIndex:idx];
+                if (data) {
+                    [templateData appendString:data];
+                }
+            }
+
             NSString *replaced = [self _stringByPerformingSubstitutionsWithLanguage:language snippet:newIgrejaSnippet object:igreja keys:newIgrejaKeys];
             [templateData appendString:replaced];
 
@@ -64,6 +71,13 @@
                 NSString *key = NSStringFromClass([event class]);
                 replaced = [self _stringByPerformingSubstitutionsWithLanguage:language snippet:snippetsByClass[key] object:event keys:keysByClass[key]];
                 [templateData appendString:replaced];
+            }
+
+            if ([language respondsToSelector:@selector(leftIgrejaWithIndex:)]) {
+                NSString *data = [language leftIgrejaWithIndex:idx];
+                if (data) {
+                    [templateData appendString:data];
+                }
             }
         }];
 

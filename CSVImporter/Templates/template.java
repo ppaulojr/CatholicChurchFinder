@@ -62,7 +62,4 @@ public abstract class GeneratedDatabase
     protected ArrayList<Igreja> mAllIgrejas = new ArrayList<Igreja>();
     protected ArrayList<Igreja.Event> mAllEvents = new ArrayList<Igreja.Event>();
 
-    public GeneratedDatabase() {
-%%DATA%%
-    }
-}
+%%DATA%%}

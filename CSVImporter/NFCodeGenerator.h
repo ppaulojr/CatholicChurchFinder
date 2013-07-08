@@ -28,6 +28,10 @@
 - (NSString *)replacementInSnippetForObject:(id)obj withKey:(NSString *)key;
 
 @optional
+
+- (NSString *)enteredIgrejaWithIndex:(NSUInteger)index;
+- (NSString *)leftIgrejaWithIndex:(NSUInteger)index;
+
 - (NSString *)preamble;
 - (NSString *)postamble;
 
