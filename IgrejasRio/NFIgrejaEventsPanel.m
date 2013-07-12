@@ -76,8 +76,6 @@ static const int ordinalZero = 3;
 
 @property (strong, nonatomic) NSMutableArray *eventPairs;
 
-@property (assign, nonatomic) CGFloat largestHeaderWidth;
-
 @end
 
 @implementation NFIgrejaEventsPanel
@@ -94,7 +92,6 @@ static const int ordinalZero = 3;
         label.textColor = [UIColor grayColor];
         label.text = @"(Nenhum evento informado)";
         [label sizeToFit];
-        self.largestHeaderWidth = label.frame.size.width;
         [self addSubview:label];
         return;
     }
@@ -128,25 +125,20 @@ static const int ordinalZero = 3;
 
 - (void)_placeLabels
 {
-    self.largestHeaderWidth = 0;
-
     for (NFIgrejaEventPair *pair in self.eventPairs) {
         // Create the header label
-        UILabel *headerLabel = [UILabel new];
-        headerLabel.font = [UIFont boldSystemFontOfSize:14];
+        UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 9999, 9999)];
+        headerLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:15];
+        headerLabel.textColor = [UIColor colorWithRed:0x99/255.0 green:0x99/255.0 blue:0x99/255.0 alpha:1];
         headerLabel.text = pair.headerText;
         [self addSubview:headerLabel];
 
-        // Find out if it's larger than the previous largest header
+        // We can size the header here
         [headerLabel sizeToFit];
-        CGSize size = headerLabel.frame.size;
-        if (size.width > self.largestHeaderWidth) {
-            self.largestHeaderWidth = size.width;
-        }
 
         // Create the content label
         UILabel *contentLabel = [UILabel new];
-        contentLabel.font = [UIFont systemFontOfSize:14];
+        contentLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:15];
         contentLabel.text = pair.contentText;
         contentLabel.numberOfLines = 0;
         [self addSubview:contentLabel];
@@ -155,12 +147,9 @@ static const int ordinalZero = 3;
 
 - (void)layoutSubviews
 {
-    CGFloat lineHeight = 0;
     BOOL handlingHeader = YES;
-
-    CGRect maxContentFrame;
-    maxContentFrame.size.width = self.bounds.size.width - self.largestHeaderWidth - 8;
-    maxContentFrame.size.height = 9999;
+    CGFloat lastY = 0;
+    CGRect maxFrame = CGRectMake(0, 0, self.bounds.size.width, 9999);
 
     for (UILabel *label in self.subviews) {
         CGRect frame;
@@ -168,20 +157,21 @@ static const int ordinalZero = 3;
         if (handlingHeader) {
             // Just position the header
             frame = label.frame;
-            frame.origin.x = self.largestHeaderWidth - label.frame.size.width;
-            frame.origin.y = lineHeight;
+            frame.origin.y = lastY;
+
+            // Increment by the small distance
+            lastY += frame.size.height + 4;
         } else {
             // Size the label
-            label.frame = maxContentFrame;
+            label.frame = maxFrame;
             [label sizeToFit];
 
-            // Position it to the right of the header
+            // Position it
             frame = label.frame;
-            frame.origin.x = self.largestHeaderWidth + 8;
-            frame.origin.y = lineHeight;
+            frame.origin.y = lastY;
 
-            // Set the new line height
-            lineHeight = CGRectGetMaxY(frame);
+            // Increment by the big distnace
+            lastY += frame.size.height + 20;
         }
 
         label.frame = frame;

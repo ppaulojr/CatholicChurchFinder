@@ -58,8 +58,7 @@
 - (NSDictionary *)_attributesForLink
 {
     return @{
-        NSForegroundColorAttributeName : [UIColor blueColor],
-        NSUnderlineStyleAttributeName : @YES
+        NSForegroundColorAttributeName : [UIColor blueColor]
     };
 }
 
@@ -78,7 +77,7 @@
     // Reset in case we are being reconfigured
     [self _reset];
 
-    self.nomeLabel.text = igreja.nome;
+    self.nomeLabel.text = [igreja.nome uppercaseString];
     [self _setTextOrNil:igreja.paroco forLabel:self.parocoLabel];
     [self _setTextOrNil:igreja.telefones forLabel:self.telefonesLabel];
     [self _setTextOrNil:igreja.site forLabel:self.siteLabel];
