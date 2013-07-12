@@ -47,7 +47,9 @@
 @end
 
 
-@interface NFMissaListViewController () <CLLocationManagerDelegate>
+@interface NFMissaListViewController () <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
 
@@ -89,17 +91,23 @@
 {
     [super viewWillAppear:animated];
 
+    // We have to do this here because we're not an
+    // UITableViewController subclass
+    NSIndexPath *selection = [self.tableView indexPathForSelectedRow];
+    if (selection) {
+        [self.tableView deselectRowAtIndexPath:selection animated:animated];
+    }
+
     NFAdBannerManager *adManager = [NFAdBannerManager sharedManagerWithRootViewController:self.tabBarController];
 
     [adManager takeOverAdBannerWithAddBlock:^(UIView *adView) {
         self.adView = adView;
-
-        [self.tableView addSubview:adView];
-        [self _adjustAdViewPosition];
+        [self.view addSubview:adView];
 
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, adView.frame.size.height, 0);
         self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     } removeBlock:^(UIView *adView) {
+        self.adView = nil;
         [adView removeFromSuperview];
 
         self.tableView.contentInset = UIEdgeInsetsZero;
@@ -178,14 +186,16 @@
     [self.tableView reloadData];
 }
 
-- (void)_adjustAdViewPosition
+- (void)viewDidLayoutSubviews
 {
+    [super viewDidLayoutSubviews];
+
     if (!self.adView) {
         return;
     }
 
     CGRect frame = self.adView.frame;
-    frame.origin.y = self.tableView.contentOffset.y + self.tableView.frame.size.height - frame.size.height;
+    frame.origin.y = self.tableView.frame.size.height - frame.size.height;
     self.adView.frame = frame;
 }
 
@@ -282,14 +292,6 @@
     [cell configureWithEvent:entry.event distance:entry.igrejaDistance];
 
     return cell;
-}
-
-
-#pragma mark - Scroll view delegate
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    [self _adjustAdViewPosition];
 }
 
 
