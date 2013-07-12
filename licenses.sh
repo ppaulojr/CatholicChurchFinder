@@ -22,7 +22,6 @@ LICENSES_FILE="IgrejasRio/Resources/licenses.html"
 
 cat >"$LICENSES_FILE" <<EOD
 <!DOCTYPE html>
-<body>
 <head>
     <meta charset="UTF-8">
     <style type="text/css">
@@ -41,6 +40,7 @@ h2 {
 }
     </style>
 </head>
+<body>
 EOD
 
 $MARKDOWN "$MARKDOWN_FILE" >>"$LICENSES_FILE"
