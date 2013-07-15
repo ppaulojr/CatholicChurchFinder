@@ -22,8 +22,6 @@
 {
     self = [super init];
     if (self) {
-        // TODO: Add unit tests for matching in general
-
         // Get the components we'll need
         NSUInteger flags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit;
         self.referenceDateComponents = [calendar components:flags fromDate:referenceDate];

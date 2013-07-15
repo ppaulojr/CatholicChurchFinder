@@ -32,6 +32,7 @@
 		ED14321E1784CFC100DB283C /* ico-jmj@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED14321C1784CFC100DB283C /* ico-jmj@2x.png */; };
 		ED167884177E1B540071BE43 /* NFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED167883177E1B540071BE43 /* NFMapViewController.m */; };
 		ED2517C0178B01F100D9F79E /* template.java in Resources */ = {isa = PBXBuildFile; fileRef = ED40937317876A2F00140068 /* template.java */; };
+		ED28184117945D35001D7975 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB2025E177487DC00AB8CFD /* CoreData.framework */; };
 		ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
 		ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
 		ED3B1456177485AD00213826 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1455177485AD00213826 /* CoreGraphics.framework */; };
@@ -299,6 +300,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED28184117945D35001D7975 /* CoreData.framework in Frameworks */,
 				ED84964F1790A507009B61A4 /* SenTestingKit.framework in Frameworks */,
 				ED8496501790A507009B61A4 /* UIKit.framework in Frameworks */,
 				ED8496511790A507009B61A4 /* Foundation.framework in Frameworks */,
@@ -324,8 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				ED3B1457177485AD00213826 /* IgrejasRio */,
-				EDB202A81774892D00AB8CFD /* CSVImporter */,
 				ED8496521790A507009B61A4 /* IgrejasRioTests */,
+				EDB202A81774892D00AB8CFD /* CSVImporter */,
 				ED3B1450177485AD00213826 /* Frameworks */,
 				ED3B144F177485AD00213826 /* Products */,
 				84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */,
@@ -1102,6 +1104,7 @@
 				ED84965D1790A507009B61A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDB202BC1774892E00AB8CFD /* Build configuration list for PBXNativeTarget "CSVImporter" */ = {
 			isa = XCConfigurationList;
