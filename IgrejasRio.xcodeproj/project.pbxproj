@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		50378128151C43E3BD2795B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B88B9D7454CFA9551953D /* libPods.a */; };
+		82C8CB47179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */; };
+		82C8CB49179489EE00C8F787 /* template.cs in Resources */ = {isa = PBXBuildFile; fileRef = 82C8CB48179489EE00C8F787 /* template.cs */; };
 		DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */; };
 		ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */; };
 		ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */; };
@@ -132,6 +134,9 @@
 
 /* Begin PBXFileReference section */
 		598E3167B82747C4BF0833E9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		82C8CB45179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCSharpCodeGeneratorLanguage.h; sourceTree = "<group>"; };
+		82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCSharpCodeGeneratorLanguage.m; sourceTree = "<group>"; };
+		82C8CB48179489EE00C8F787 /* template.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.cs; sourceTree = "<group>"; };
 		84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVImporter.xcconfig"; path = "Pods/Pods-CSVImporter.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B38B88B9D7454CFA9551953D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED021FA61784C69100E96B49 /* NFJMJ2013ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFJMJ2013ViewController.h; sourceTree = "<group>"; };
@@ -397,6 +402,8 @@
 			children = (
 				ED40937417876A4E00140068 /* NFCodeGenerator.h */,
 				ED40937517876A4E00140068 /* NFCodeGenerator.m */,
+				82C8CB45179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.h */,
+				82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */,
 				ED40937617876A6900140068 /* NFJavaCodeGeneratorLanguage.h */,
 				ED40937717876A6900140068 /* NFJavaCodeGeneratorLanguage.m */,
 				ED40937117876A2F00140068 /* Templates */,
@@ -407,6 +414,7 @@
 		ED40937117876A2F00140068 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				82C8CB48179489EE00C8F787 /* template.cs */,
 				ED40937317876A2F00140068 /* template.java */,
 			);
 			path = Templates;
@@ -757,6 +765,7 @@
 				ED6B2F4917748C1E00EA66D0 /* events.csv in Resources */,
 				ED6B2F4A17748C1E00EA66D0 /* igrejas.csv in Resources */,
 				ED2517C0178B01F100D9F79E /* template.java in Resources */,
+				82C8CB49179489EE00C8F787 /* template.cs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,6 +920,7 @@
 				ED6B2F4317748BDD00EA66D0 /* NFYearlyEvent.m in Sources */,
 				ED6B2F4417748BE300EA66D0 /* Model.xcdatamodeld in Sources */,
 				ED6BABA0177DC8CF002326C3 /* NSString+NFNormalizing.m in Sources */,
+				82C8CB47179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
