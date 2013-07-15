@@ -72,6 +72,11 @@
 		ED84964317908AB7009B61A4 /* separador2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED84963F17908AB7009B61A4 /* separador2@2x.png */; };
 		ED84964617908DF9009B61A4 /* detail-igreja.png in Resources */ = {isa = PBXBuildFile; fileRef = ED84964417908DF9009B61A4 /* detail-igreja.png */; };
 		ED84964717908DF9009B61A4 /* detail-igreja@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED84964517908DF9009B61A4 /* detail-igreja@2x.png */; };
+		ED84964F1790A507009B61A4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84964E1790A507009B61A4 /* SenTestingKit.framework */; };
+		ED8496501790A507009B61A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
+		ED8496511790A507009B61A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
+		ED8496571790A507009B61A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED8496551790A507009B61A4 /* InfoPlist.strings */; };
+		ED8496611790A598009B61A4 /* NFEventMatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8496601790A598009B61A4 /* NFEventMatchTests.m */; };
 		EDB2025F177487DC00AB8CFD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB2025E177487DC00AB8CFD /* CoreData.framework */; };
 		EDB202A51774892D00AB8CFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1451177485AD00213826 /* UIKit.framework */; };
 		EDB202A61774892D00AB8CFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3B1453177485AD00213826 /* Foundation.framework */; };
@@ -113,6 +118,16 @@
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
 		EDFEE66A17750205002F886A /* IgrejasRio.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE66917750205002F886A /* IgrejasRio.sqlite */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED8496621790AA32009B61A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED3B1446177485AD00213826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3B144D177485AD00213826;
+			remoteInfo = IgrejasRio;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		598E3167B82747C4BF0833E9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -191,6 +206,13 @@
 		ED84963F17908AB7009B61A4 /* separador2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "separador2@2x.png"; sourceTree = "<group>"; };
 		ED84964417908DF9009B61A4 /* detail-igreja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail-igreja.png"; sourceTree = "<group>"; };
 		ED84964517908DF9009B61A4 /* detail-igreja@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail-igreja@2x.png"; sourceTree = "<group>"; };
+		ED84964D1790A507009B61A4 /* IgrejasRioTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IgrejasRioTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED84964E1790A507009B61A4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		ED8496541790A507009B61A4 /* IgrejasRioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IgrejasRioTests-Info.plist"; sourceTree = "<group>"; };
+		ED8496561790A507009B61A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED84965B1790A507009B61A4 /* IgrejasRioTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IgrejasRioTests-Prefix.pch"; sourceTree = "<group>"; };
+		ED84965F1790A598009B61A4 /* NFEventMatchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFEventMatchTests.h; sourceTree = "<group>"; };
+		ED8496601790A598009B61A4 /* NFEventMatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFEventMatchTests.m; sourceTree = "<group>"; };
 		EDB2025E177487DC00AB8CFD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EDB202A41774892D00AB8CFD /* CSVImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB202AA1774892E00AB8CFD /* CSVImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSVImporter-Info.plist"; sourceTree = "<group>"; };
@@ -273,6 +295,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED8496491790A507009B61A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED84964F1790A507009B61A4 /* SenTestingKit.framework in Frameworks */,
+				ED8496501790A507009B61A4 /* UIKit.framework in Frameworks */,
+				ED8496511790A507009B61A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDB202A11774892D00AB8CFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +325,7 @@
 			children = (
 				ED3B1457177485AD00213826 /* IgrejasRio */,
 				EDB202A81774892D00AB8CFD /* CSVImporter */,
+				ED8496521790A507009B61A4 /* IgrejasRioTests */,
 				ED3B1450177485AD00213826 /* Frameworks */,
 				ED3B144F177485AD00213826 /* Products */,
 				84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */,
@@ -305,6 +338,7 @@
 			children = (
 				ED3B144E177485AD00213826 /* IgrejasRio.app */,
 				EDB202A41774892D00AB8CFD /* CSVImporter.app */,
+				ED84964D1790A507009B61A4 /* IgrejasRioTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -324,6 +358,7 @@
 				ED0B88551786046C003174F6 /* QuartzCore.framework */,
 				ED0B88441785B478003174F6 /* Social.framework */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
+				ED84964E1790A507009B61A4 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -382,6 +417,26 @@
 				ED6B2F4817748C1E00EA66D0 /* igrejas.csv */,
 			);
 			path = CSV;
+			sourceTree = "<group>";
+		};
+		ED8496521790A507009B61A4 /* IgrejasRioTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED84965F1790A598009B61A4 /* NFEventMatchTests.h */,
+				ED8496601790A598009B61A4 /* NFEventMatchTests.m */,
+				ED8496531790A507009B61A4 /* Supporting Files */,
+			);
+			path = IgrejasRioTests;
+			sourceTree = "<group>";
+		};
+		ED8496531790A507009B61A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED8496541790A507009B61A4 /* IgrejasRioTests-Info.plist */,
+				ED8496551790A507009B61A4 /* InfoPlist.strings */,
+				ED84965B1790A507009B61A4 /* IgrejasRioTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		EDB202A81774892D00AB8CFD /* CSVImporter */ = {
@@ -581,6 +636,25 @@
 			productReference = ED3B144E177485AD00213826 /* IgrejasRio.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ED84964C1790A507009B61A4 /* IgrejasRioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED84965E1790A507009B61A4 /* Build configuration list for PBXNativeTarget "IgrejasRioTests" */;
+			buildPhases = (
+				ED8496481790A507009B61A4 /* Sources */,
+				ED8496491790A507009B61A4 /* Frameworks */,
+				ED84964A1790A507009B61A4 /* Resources */,
+				ED84964B1790A507009B61A4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED8496631790AA32009B61A4 /* PBXTargetDependency */,
+			);
+			name = IgrejasRioTests;
+			productName = IgrejasRioTests;
+			productReference = ED84964D1790A507009B61A4 /* IgrejasRioTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		EDB202A31774892D00AB8CFD /* CSVImporter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDB202BC1774892E00AB8CFD /* Build configuration list for PBXNativeTarget "CSVImporter" */;
@@ -624,6 +698,7 @@
 			targets = (
 				ED3B144D177485AD00213826 /* IgrejasRio */,
 				EDB202A31774892D00AB8CFD /* CSVImporter */,
+				ED84964C1790A507009B61A4 /* IgrejasRioTests */,
 			);
 		};
 /* End PBXProject section */
@@ -662,6 +737,14 @@
 				ED84964317908AB7009B61A4 /* separador2@2x.png in Resources */,
 				ED84964617908DF9009B61A4 /* detail-igreja.png in Resources */,
 				ED84964717908DF9009B61A4 /* detail-igreja@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED84964A1790A507009B61A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8496571790A507009B61A4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +817,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		ED84964B1790A507009B61A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -783,6 +879,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED8496481790A507009B61A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8496611790A598009B61A4 /* NFEventMatchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDB202A01774892D00AB8CFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -809,6 +913,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED8496631790AA32009B61A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED3B144D177485AD00213826 /* IgrejasRio */;
+			targetProxy = ED8496621790AA32009B61A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED8496551790A507009B61A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED8496561790A507009B61A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ED3B1469177485AD00213826 /* Debug */ = {
@@ -891,6 +1014,40 @@
 			};
 			name = Release;
 		};
+		ED84965C1790A507009B61A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IgrejasRio.app/IgrejasRio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IgrejasRioTests/IgrejasRioTests-Prefix.pch";
+				INFOPLIST_FILE = "IgrejasRioTests/IgrejasRioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		ED84965D1790A507009B61A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IgrejasRio.app/IgrejasRio";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IgrejasRioTests/IgrejasRioTests-Prefix.pch";
+				INFOPLIST_FILE = "IgrejasRioTests/IgrejasRioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		EDB202BA1774892E00AB8CFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */;
@@ -937,6 +1094,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		ED84965E1790A507009B61A4 /* Build configuration list for PBXNativeTarget "IgrejasRioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED84965C1790A507009B61A4 /* Debug */,
+				ED84965D1790A507009B61A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		EDB202BC1774892E00AB8CFD /* Build configuration list for PBXNativeTarget "CSVImporter" */ = {
 			isa = XCConfigurationList;

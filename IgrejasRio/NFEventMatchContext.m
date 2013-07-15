@@ -36,8 +36,6 @@
 
 - (NSInteger)_reverseWeekdayOrdinalWithCalendar:(NSCalendar *)calendar
 {
-    // TODO: Add unit tests for this
-
     // Find out what is the last weekday in the month of the reference date
     NSDateComponents *lastWeekdayComp = [NSDateComponents new];
     lastWeekdayComp.year = self.referenceDateComponents.year;
