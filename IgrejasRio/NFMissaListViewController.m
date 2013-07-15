@@ -202,54 +202,34 @@
 
 #pragma mark - Fetching from the database
 
-- (NSDate *)_searchLimitDateWithStartDate:(NSDate *)startDate
-{
-    NSDateComponents *components = [NSDateComponents new];
-    components.hour = 3;
-
-    return [self.calendar dateByAddingComponents:components toDate:startDate options:0];
-}
-
-- (uint16_t)_timeFromNSDate:(NSDate *)date
-{
-    NSDateComponents *components = [self.calendar components:NSHourCalendarUnit | NSMinuteCalendarUnit fromDate:date];
-    return components.hour * 100 + components.minute;
-}
-
 - (void)_updateEvents
 {
-    // TODO: Move more stuff into the the model, add unit tests
+    NSDate *now = [NSDate date];
 
     NSManagedObjectContext *moc = [NFCoreDataStackManager sharedManager].managedObjectContext;
+    NFEvent *firstMissa = [NFEvent firstMissaAfterDate:now calendar:self.calendar managedObjectContext:moc];
 
-    NSDate *startDate = [NSDate date];
-    NSDate *limitDate = [self _searchLimitDateWithStartDate:startDate];
+    if (!firstMissa) {
+        self.sections = [NSArray array];
+        return;
+    }
 
-    uint16_t startTime = [self _timeFromNSDate:startDate];
-    uint16_t limitTime = [self _timeFromNSDate:limitDate];
+    NSArray *nextMissas = [NFEvent nextMissasAfterEvent:firstMissa withSpan:3 * 60 date:now calendar:self.calendar managedObjectContext:moc];
+    NSAssert(nextMissas.count > 0, @"Expected at least one next missa");
+    NSAssert([nextMissas[0] isEqual:firstMissa], @"Expected the first missa to be the first event in the list");
 
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[NFEvent entityName]];
-
-    request.predicate = [NSPredicate predicateWithFormat:@"startTime >= %@ AND startTime <= %@ AND type == %@",
-                         @(startTime), @(limitTime), @(NFEventTypeMissa)];
-
-    NSMutableArray *matches = [[moc executeFetchRequest:request error:NULL] mutableCopy];
-
-    NFEventMatchContext *context = [[NFEventMatchContext alloc] initWithReferenceDate:startDate calendar:self.calendar];
-    [matches filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NFEvent *entry, NSDictionary *bindings) {
-        return [entry matchesWithContext:context];
-    }]];
-
-    // Find out the unique start times
-    NSArray *times = [matches valueForKeyPath:@"@distinctUnionOfObjects.startTime"];
-    times = [times sortedArrayUsingSelector:@selector(compare:)];
+    // Note that @distinctUnionOfObjects messes up the ordering,
+    // so we have to do it manually
+    NSMutableOrderedSet *times = [NSMutableOrderedSet orderedSetWithCapacity:3 * 60 / 15];
+    for (NFEvent *event in nextMissas) {
+        [times addObject:event.startTime];
+    }
 
     self.sections = [NSMutableArray arrayWithCapacity:times.count];
 
-    // Create the sections
     for (NSNumber *startTime in times) {
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"startTime == %@", startTime];
-        NSArray *filtered = [matches filteredArrayUsingPredicate:predicate];
+        NSArray *filtered = [nextMissas filteredArrayUsingPredicate:predicate];
 
         NSMutableArray *section = [NSMutableArray arrayWithCapacity:filtered.count];
         for (NFEvent *event in filtered) {
