@@ -217,7 +217,6 @@
 		ED8496541790A507009B61A4 /* IgrejasRioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IgrejasRioTests-Info.plist"; sourceTree = "<group>"; };
 		ED8496561790A507009B61A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED84965B1790A507009B61A4 /* IgrejasRioTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IgrejasRioTests-Prefix.pch"; sourceTree = "<group>"; };
-		ED84965F1790A598009B61A4 /* NFEventMatchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFEventMatchTests.h; sourceTree = "<group>"; };
 		ED8496601790A598009B61A4 /* NFEventMatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFEventMatchTests.m; sourceTree = "<group>"; };
 		EDB2025E177487DC00AB8CFD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EDB202A41774892D00AB8CFD /* CSVImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -432,7 +431,6 @@
 		ED8496521790A507009B61A4 /* IgrejasRioTests */ = {
 			isa = PBXGroup;
 			children = (
-				ED84965F1790A598009B61A4 /* NFEventMatchTests.h */,
 				ED8496601790A598009B61A4 /* NFEventMatchTests.m */,
 				ED8496531790A507009B61A4 /* Supporting Files */,
 			);

@@ -6,13 +6,14 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
+#import <SenTestingKit/SenTestingKit.h>
+
 #import "NFCoreDataStackManager.h"
-#import "NFEventMatchTests.h"
 #import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
 #import "NFYearlyEvent.h"
 
-@interface NFEventMatchTests ()
+@interface NFEventMatchTests : SenTestCase
 
 @property (strong, nonatomic) NSCalendar *calendar;
 
