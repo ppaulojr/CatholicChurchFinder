@@ -37,7 +37,7 @@
 
 - (NSStringEncoding)languageEncoding
 {
-    return NSMacOSRomanStringEncoding;
+    return NSUTF8StringEncoding;
 }
 
 - (NSString *)enteredIgrejaWithIndex:(NSUInteger)index
