@@ -10,6 +10,7 @@
 		50378128151C43E3BD2795B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B88B9D7454CFA9551953D /* libPods.a */; };
 		82C8CB47179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */; };
 		82C8CB49179489EE00C8F787 /* template.cs in Resources */ = {isa = PBXBuildFile; fileRef = 82C8CB48179489EE00C8F787 /* template.cs */; };
+		82C8CB4A1794933100C8F787 /* NFEventMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ED747BF9178B62BB00E6D242 /* NFEventMatchContext.m */; };
 		DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */; };
 		ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */; };
 		ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */; };
@@ -919,6 +920,7 @@
 				ED6B2F4417748BE300EA66D0 /* Model.xcdatamodeld in Sources */,
 				ED6BABA0177DC8CF002326C3 /* NSString+NFNormalizing.m in Sources */,
 				82C8CB47179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m in Sources */,
+				82C8CB4A1794933100C8F787 /* NFEventMatchContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
