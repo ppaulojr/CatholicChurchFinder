@@ -20,4 +20,8 @@ typedef NS_ENUM(NSInteger, NFEventType) {
 
 - (BOOL)matchesWithContext:(NFEventMatchContext *)context;
 
++ (NFEvent *)firstMissaAfterDate:(NSDate *)date
+                        calendar:(NSCalendar *)calendar
+            managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+
 @end
