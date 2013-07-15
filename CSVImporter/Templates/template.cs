@@ -70,7 +70,7 @@ namespace DataBoundApp1
             }
         }
         
-        %%LOAD%%
+        %%DATA%%
         
 
         

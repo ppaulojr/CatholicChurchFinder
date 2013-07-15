@@ -6,7 +6,11 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
+#import "NFIgreja.h"
 #import "NFCSharpCodeGeneratorLanguage.h"
+#import "NFMonthlyEvent.h"
+#import "NFWeeklyEvent.h"
+#import "NFYearlyEvent.h"
 
 @interface NFCSharpCodeGeneratorLanguage ()
 
@@ -76,31 +80,20 @@
     
     if (class == [NFWeeklyEvent class]) {
         before = @"\
-        Igreja.WeeklyEvent event = new Igreja.WeeklyEvent();\n\
-        event.weekday = %%weekday%%;\n\
+        Evento event = new Evento(-1,-1,-1,%%weekday%%,%%startTime%%,%%type%%);\n\
         ";
     } else if (class == [NFMonthlyEvent class]) {
         before = @"\
-        Igreja.MonthlyEvent event = new Igreja.MonthlyEvent();\n\
-        event.day = %%day%%;\n\
-        event.week = %%week%%;\n\
+        Evento event = new Evento(%%day%%,-1,%%week%%,-1,%%startTime%%,%%type%%);\n\
         ";
     } else if (class == [NFYearlyEvent class]) {
         before = @"\
-        Igreja.YearlyEvent event = new Igreja.YearlyEvent();\n\
-        event.day = %%day%%;\n\
-        event.month = %%month%%;\n\
+        Evento event = new Evento(%%day%%,%%month%%,-1,-1,%%startTime%%,%%type%%);\n\
         ";
     }
     
     NSString *common = @"\
-    event.endTime = %%endTime%%;\n\
-    event.observation = %%observation%%;\n\
-    event.startTime = %%startTime%%;\n\
-    event.type = %%type%%;\n\
-    event.igreja = %%igreja%%;\n\
-    mAllEvents.add(event);\n\
-    igreja.events.add(event);\n\
+    igreja.AddEvento(event);\n\
     }\n\
     ";
     

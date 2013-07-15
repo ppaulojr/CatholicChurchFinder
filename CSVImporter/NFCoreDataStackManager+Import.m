@@ -10,6 +10,7 @@
 #import "NFCoreDataStackManager+Import.h"
 #import "NFIgreja.h"
 #import "NFJavaCodeGeneratorLanguage.h"
+#import "NFCSharpCodeGeneratorLanguage.h"
 #import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
 #import "NFYearlyEvent.h"
@@ -265,7 +266,7 @@
 
     // Generate code for other platforms
     NFCodeGenerator *generator = [[NFCodeGenerator alloc] initWithLanguages:@[
-        [NFJavaCodeGeneratorLanguage new]
+        [NFJavaCodeGeneratorLanguage new], [NFCSharpCodeGeneratorLanguage new]
     ]];
     [generator generateForIgrejas:[igrejas allValues]];
 }
