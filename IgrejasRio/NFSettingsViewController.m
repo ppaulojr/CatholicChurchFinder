@@ -19,16 +19,11 @@
 
 @implementation NFSettingsViewController
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-
-    [self _selectMapType:[NFSettingsManager sharedManager].mapType];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    [self _selectMapType:[NFSettingsManager sharedManager].mapType];
 
     NSString *versionString = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     NSAssert(versionString, @"Unable to find the CFBundleShortVersionString");
