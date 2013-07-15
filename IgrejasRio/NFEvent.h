@@ -24,4 +24,10 @@ typedef NS_ENUM(NSInteger, NFEventType) {
                         calendar:(NSCalendar *)calendar
             managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
++ (NSArray *)nextMissasAfterEvent:(NFEvent *)event
+                         withSpan:(NSInteger)spanInMinutes
+                             date:(NSDate *)date
+                         calendar:(NSCalendar *)calendar
+             managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+
 @end

@@ -210,6 +210,50 @@
     [self.moc reset];
 }
 
+- (void)testNextMissasAfterEvent
+{
+    NFWeeklyEvent *event1 = [NFWeeklyEvent insertInManagedObjectContext:self.moc];
+    event1.weekdayValue = 6;
+    event1.startTimeValue = 2300;
+    event1.typeValue = NFEventTypeMissa;
+
+    NFWeeklyEvent *event2 = [NFWeeklyEvent insertInManagedObjectContext:self.moc];
+    event2.weekdayValue = 7;
+    event2.startTimeValue = 0030;
+    event2.typeValue = NFEventTypeMissa;
+
+    NFWeeklyEvent *event3 = [NFWeeklyEvent insertInManagedObjectContext:self.moc];
+    event3.weekdayValue = 7;
+    event3.startTimeValue = 1015;
+    event3.typeValue = NFEventTypeMissa;
+
+    NFWeeklyEvent *event4 = [NFWeeklyEvent insertInManagedObjectContext:self.moc];
+    event4.weekdayValue = 7;
+    event4.startTimeValue = 1245;
+    event4.typeValue = NFEventTypeMissa;
+
+    // This is the simplest case
+    NSDate *date = [self _dateWithYear:2013 month:05 day:18 hour:9 minute:53];
+    NSArray *nextMissas = [NFEvent nextMissasAfterEvent:event3 withSpan:3 * 60 date:date calendar:self.calendar managedObjectContext:self.moc];
+    NSArray *expectedMissas = @[event3, event4];
+    STAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas on the same day");
+
+    // A more complex situation is the next event being the following day
+    date = [self _dateWithYear:2013 month:05 day:17 hour:23 minute:49];
+    nextMissas = [NFEvent nextMissasAfterEvent:event2 withSpan:15 * 60 date:date calendar:self.calendar managedObjectContext:self.moc];
+    expectedMissas = @[event2, event3, event4];
+    STAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas on the following day");
+
+    // And an even more complex scenario is the events being spread across
+    // both the current and the following day
+    date = [self _dateWithYear:2013 month:05 day:17 hour:22 minute:32];
+    nextMissas = [NFEvent nextMissasAfterEvent:event1 withSpan:15 * 60 date:date calendar:self.calendar managedObjectContext:self.moc];
+    expectedMissas = @[event1, event2, event3, event4];
+    STAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas across both days");
+
+    [self.moc reset];
+}
+
 - (NSDate *)_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute
 {
     NSDateComponents *components = [NSDateComponents new];
