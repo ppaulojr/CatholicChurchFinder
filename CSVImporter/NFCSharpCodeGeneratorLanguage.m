@@ -102,22 +102,24 @@
 
 - (NSString *)replacementInSnippetForObject:(id)obj withKey:(NSString *)key
 {
+
     if (!obj) {
         return @"null";
     } else if ([key isEqualToString:@"type"]) {
         NFEventType type = [obj integerValue];
         switch (type) {
             case NFEventTypeConfissao:
-                return @"Igreja.Event.Type.Confissao";
+                return @"Evento.tipoEvt.confissao";
             case NFEventTypeMissa:
-                return @"Igreja.Event.Type.Missa";
+                return @"Evento.tipoEvt.missa";
         }
     } else if ([obj isKindOfClass:[NFIgreja class]]) {
         return @"igreja";
     } else if ([obj isKindOfClass:[NSDate class]]) {
         NSDate *date = (NSDate *)obj;
+        NSLog(@"%@",date);
         NSTimeInterval timeIntervalMS = [date timeIntervalSince1970] * 1000;
-        return [NSString stringWithFormat:@"new Date(%.0fL)", timeIntervalMS];
+        return [NSString stringWithFormat:@"new DateTime(%.0fL)", timeIntervalMS];
     } else if ([obj isKindOfClass:[NSString class]]) {
         NSString *escaped = [obj stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
         escaped = [obj stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"];
