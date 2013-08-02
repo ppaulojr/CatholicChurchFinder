@@ -30,6 +30,11 @@
     return @"template.java";
 }
 
+/**
+ *	Output Filename of the generated Java code
+ *
+ *	@return	return the filename in NSString format
+ */
 - (NSString *)outputFilename
 {
     return @"GeneratedDatabase.java";
@@ -40,6 +45,13 @@
     return NSMacOSRomanStringEncoding;
 }
 
+/**
+ *	Generate the prefix code of the method of each Church
+ *
+ *	@param	index	church index
+ *
+ *	@return	 the prefix of the method of this church.
+ */
 - (NSString *)enteredIgrejaWithIndex:(NSUInteger)index
 {
     self.totalIgrejas++;
@@ -47,6 +59,13 @@
     return [NSString stringWithFormat:@"    private void createIgreja%d() {\n", index];
 }
 
+/**
+ *	Generate the postfix code of the method of each Church
+ *
+ *	@param	index	church index (unused by now)
+ *
+ *	@return	the postfix of the method of this church.
+ */
 - (NSString *)leftIgrejaWithIndex:(NSUInteger)index
 {
     return @"    }\n\n";

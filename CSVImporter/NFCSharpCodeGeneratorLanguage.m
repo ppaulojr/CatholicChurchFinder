@@ -32,7 +32,7 @@
 
 - (NSString *)outputFilename
 {
-    return @"MainViewModel.cs";
+    return @"IgrejaDatabase.cs";
 }
 
 - (NSStringEncoding)languageEncoding
@@ -69,8 +69,9 @@
 - (NSString *)snippetForNewIgreja
 {
     return @"\
-    Igreja igreja = new IgrejaModel(int m_id, %%nome%%, %%paroco%%, %%endereco%%, %%telefones%%, %%normalizedBairro%%, %%email%%, %%site%%, %%latitude%%, %%longitude%%);\n\
-    this.Items.Add(igreja);\n\
+                IgrejaModel igreja = new IgrejaModel(%%nome%%, %%paroco%%, %%endereco%%, %%telefones%%, %%normalizedBairro%%, %%email%%, %%site%%, %%latitude%%, %%longitude%%);\n\
+                this.Items.Add(igreja);\n\
+                Evento evt; \n\
     ";
 }
 
@@ -80,29 +81,27 @@
     
     if (class == [NFWeeklyEvent class]) {
         before = @"\
-        Evento event = new Evento(-1,-1,-1,%%weekday%%,%%startTime%%,%%type%%);\n\
+                evt = new Evento(-1,-1,0,%%weekday%%,%%startTime%%,%%type%%);\n\
         ";
     } else if (class == [NFMonthlyEvent class]) {
         before = @"\
-        Evento event = new Evento(%%day%%,-1,%%week%%,-1,%%startTime%%,%%type%%);\n\
+                evt = new Evento(%%day%%,-1,%%week%%,-1,%%startTime%%,%%type%%);\n\
         ";
     } else if (class == [NFYearlyEvent class]) {
         before = @"\
-        Evento event = new Evento(%%day%%,%%month%%,-1,-1,%%startTime%%,%%type%%);\n\
+                evt = new Evento(%%day%%,%%month%%,-1,-1,%%startTime%%,%%type%%);\n\
         ";
     }
     
     NSString *common = @"\
-    igreja.AddEvento(event);\n\
-    }\n\
+        igreja.AddEvento(evt);\n\
     ";
     
-    return [NSString stringWithFormat:@"        {\n\%@%@", before, common];
+    return [NSString stringWithFormat:@"        \n\%@%@", before, common];
 }
 
 - (NSString *)replacementInSnippetForObject:(id)obj withKey:(NSString *)key
 {
-
     if (!obj) {
         return @"null";
     } else if ([key isEqualToString:@"type"]) {
