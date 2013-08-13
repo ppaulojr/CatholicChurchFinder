@@ -12,14 +12,36 @@
 
 - (NSString *)formattedTime
 {
+    int stH;
+    NSString * stAMPM;
+    int etH;
+    NSString * etAMPM;
+    if (self.startTimeValue > 1159) {
+        stAMPM = @"PM";
+        stH = self.startTimeValue / 100 - 12;
+    }
+    else
+    {
+        stAMPM = @"AM";
+        stH = self.startTimeValue / 100;
+    }
     // Note that this doesn't take into account the user's locale
     if (self.endTime) {
-        return [NSString stringWithFormat:@"%02d:%02d - %02d:%02d",
-                self.startTimeValue / 100, self.startTimeValue % 100,
-                self.endTimeValue / 100, self.endTimeValue % 100];
+        if (self.endTimeValue > 1159) {
+            etAMPM = @"PM";
+            etH = self.endTimeValue / 100 - 12;
+        }
+        else
+        {
+            etAMPM = @"AM";
+            etH = self.endTimeValue / 100;
+        }
+        return [NSString stringWithFormat:@"%d:%02d%@ - %d:%02d%@",
+                stH, self.startTimeValue % 100,
+                stAMPM,etH, self.endTimeValue % 100,etAMPM];
     } else {
-        return [NSString stringWithFormat:@"%02d:%02d",
-                self.startTimeValue / 100, self.startTimeValue % 100];
+        return [NSString stringWithFormat:@"%d:%02d%@",
+                stH, self.startTimeValue % 100,stAMPM];
     }
 }
 

@@ -1053,12 +1053,12 @@
 			baseConfigurationReference = 598E3167B82747C4BF0833E9 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Netfilter LTDA";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Igrejas/Igrejas-Prefix.pch";
 				INFOPLIST_FILE = "Igrejas/Igrejas-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "480A2F07-2D97-413B-BB3A-3B2989D9BC76";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

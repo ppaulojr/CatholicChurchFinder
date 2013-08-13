@@ -255,8 +255,15 @@
 {
     NFMissaListEntry *entry = ((NSArray *)self.sections[section])[0];
     int startTime = entry.event.startTimeValue;
+    if (startTime > 1159) {
+        return [NSString stringWithFormat:@"%d:%02dPM", startTime / 100 - 12, startTime % 100];
+    }
+    else
+    {
+        return [NSString stringWithFormat:@"%d:%02dAM", startTime / 100, startTime % 100];    
+    }
 
-    return [NSString stringWithFormat:@"%02d:%02d", startTime / 100, startTime % 100];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
