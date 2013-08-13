@@ -12,7 +12,7 @@
 
 + (CLLocation *)nf_defaultLocation
 {
-    return [[CLLocation alloc] initWithLatitude:-22.903534 longitude:-43.209572];
+    return [[CLLocation alloc] initWithLatitude:27.509642 longitude:-99.504461];
 }
 
 @end

@@ -13,7 +13,7 @@
 #import "NFTwitterTimelineLoader.h"
 #import "NFTwitterTimelineViewController.h"
 
-static NSString * const kScreenName = @"jmj_pt";
+static NSString * const kScreenName = @"@usccb";
 static NSString * const kScreenNameURLFormat = @"https://twitter.com/%@";
 static NSString * const kStatusURLFormat = @"https://twitter.com/%@/status/%@";
 
@@ -31,7 +31,7 @@ static NSString * const kStatusURLFormat = @"https://twitter.com/%@/status/%@";
 {
     [super viewDidLoad];
 
-    [self _showStatusWithText:@"Carregando tweets..."];
+    [self _showStatusWithText:@"Loading tweets..."];
 
     self.timelineLoader = [[NFTwitterTimelineLoader alloc] initWithTableView:self.tableView screenName:kScreenName];
     self.timelineLoader.delegate = self;
@@ -79,17 +79,17 @@ static NSString * const kStatusURLFormat = @"https://twitter.com/%@/status/%@";
     PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
 
     if ([NFTwitterIntegration canOpenTwitterApp]) {
-        [actionSheet addButtonWithTitle:@"Ver no app do Twitter" block:^{
+        [actionSheet addButtonWithTitle:@"Open in Twitter app" block:^{
             [NFTwitterIntegration openTwitterAppWithScreenName:kScreenName];
         }];
     }
 
-    [actionSheet addButtonWithTitle:@"Ver no Safari" block:^{
+    [actionSheet addButtonWithTitle:@"Open in Safari" block:^{
         NSString *url = [NSString stringWithFormat:kScreenNameURLFormat, kScreenName];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     }];
 
-    [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
+    [actionSheet setCancelButtonWithTitle:@"Cancel" block:nil];
 
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
@@ -102,7 +102,7 @@ static NSString * const kStatusURLFormat = @"https://twitter.com/%@/status/%@";
     if (success) {
         [self _hideStatus];
     } else if (loader.tweets.count == 0) {
-        [self _showStatusWithText:@"Houve um erro ao carregar os tweets. Verifique se você autorizou este app a acessar sua conta do Twitter no app Ajustes de seu aparelho e se você está conectado à Internet."];
+        [self _showStatusWithText:@"There was an error loading tweets. Check if you authorized this app to access your Twitter account in the Twitter settings in your device and check if you have Internet conection now."];
     }
 }
 

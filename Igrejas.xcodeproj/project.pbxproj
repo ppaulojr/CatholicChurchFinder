@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		50378128151C43E3BD2795B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B88B9D7454CFA9551953D /* libPods.a */; };
+		8226127317BA970900E0BA70 /* OrdinalNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8226127217BA970800E0BA70 /* OrdinalNumberFormatter.m */; };
+		8226127517BAA63C00E0BA70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8226127417BAA63B00E0BA70 /* StoreKit.framework */; };
+		8226127C17BAA8A900E0BA70 /* HolyRosary.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127617BAA8A900E0BA70 /* HolyRosary.png */; };
+		8226127D17BAA8A900E0BA70 /* HolyRosary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127717BAA8A900E0BA70 /* HolyRosary@2x.png */; };
+		8226127E17BAA8A900E0BA70 /* Neovulgata.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127817BAA8A900E0BA70 /* Neovulgata.png */; };
+		8226127F17BAA8A900E0BA70 /* Neovulgata@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127917BAA8A900E0BA70 /* Neovulgata@2x.png */; };
+		8226128017BAA8A900E0BA70 /* Orationis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127A17BAA8A900E0BA70 /* Orationis.png */; };
+		8226128117BAA8A900E0BA70 /* Orationis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127B17BAA8A900E0BA70 /* Orationis@2x.png */; };
 		82C8CB47179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */; };
 		82C8CB49179489EE00C8F787 /* template.cs in Resources */ = {isa = PBXBuildFile; fileRef = 82C8CB48179489EE00C8F787 /* template.cs */; };
 		82C8CB4A1794933100C8F787 /* NFEventMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ED747BF9178B62BB00E6D242 /* NFEventMatchContext.m */; };
 		DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */; };
-		ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */; };
-		ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */; };
+		ED021FA81784C69100E96B49 /* NFLaredoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFLaredoViewController.m */; };
+		ED021FAB1784C6C800E96B49 /* NFAppUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFAppUteisViewController.m */; };
 		ED040CF8177B71F80028B73D /* NFIgrejaEventsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */; };
 		ED0B88401785AC53003174F6 /* NFTwitterTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B883F1785AC53003174F6 /* NFTwitterTimelineViewController.m */; };
 		ED0B88431785AE8C003174F6 /* NFTwitterTimelineLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0B88421785AE8C003174F6 /* NFTwitterTimelineLoader.m */; };
@@ -135,15 +143,24 @@
 
 /* Begin PBXFileReference section */
 		598E3167B82747C4BF0833E9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8226127117BA969800E0BA70 /* OrdinalNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdinalNumberFormatter.h; sourceTree = "<group>"; };
+		8226127217BA970800E0BA70 /* OrdinalNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdinalNumberFormatter.m; sourceTree = "<group>"; };
+		8226127417BAA63B00E0BA70 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8226127617BAA8A900E0BA70 /* HolyRosary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HolyRosary.png; sourceTree = "<group>"; };
+		8226127717BAA8A900E0BA70 /* HolyRosary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HolyRosary@2x.png"; sourceTree = "<group>"; };
+		8226127817BAA8A900E0BA70 /* Neovulgata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Neovulgata.png; sourceTree = "<group>"; };
+		8226127917BAA8A900E0BA70 /* Neovulgata@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Neovulgata@2x.png"; sourceTree = "<group>"; };
+		8226127A17BAA8A900E0BA70 /* Orationis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orationis.png; sourceTree = "<group>"; };
+		8226127B17BAA8A900E0BA70 /* Orationis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orationis@2x.png"; sourceTree = "<group>"; };
 		82C8CB45179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCSharpCodeGeneratorLanguage.h; sourceTree = "<group>"; };
 		82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCSharpCodeGeneratorLanguage.m; sourceTree = "<group>"; };
 		82C8CB48179489EE00C8F787 /* template.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.cs; sourceTree = "<group>"; };
 		84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVImporter.xcconfig"; path = "Pods/Pods-CSVImporter.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B38B88B9D7454CFA9551953D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED021FA61784C69100E96B49 /* NFJMJ2013ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFJMJ2013ViewController.h; sourceTree = "<group>"; };
-		ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFJMJ2013ViewController.m; sourceTree = "<group>"; };
-		ED021FA91784C6C800E96B49 /* NFTelefonesUteisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTelefonesUteisViewController.h; sourceTree = "<group>"; };
-		ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTelefonesUteisViewController.m; sourceTree = "<group>"; };
+		ED021FA61784C69100E96B49 /* NFLaredoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFLaredoViewController.h; sourceTree = "<group>"; };
+		ED021FA71784C69100E96B49 /* NFLaredoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFLaredoViewController.m; sourceTree = "<group>"; };
+		ED021FA91784C6C800E96B49 /* NFAppUteisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFAppUteisViewController.h; sourceTree = "<group>"; };
+		ED021FAA1784C6C800E96B49 /* NFAppUteisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFAppUteisViewController.m; sourceTree = "<group>"; };
 		ED040CF6177B71F80028B73D /* NFIgrejaEventsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaEventsPanel.h; sourceTree = "<group>"; };
 		ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaEventsPanel.m; sourceTree = "<group>"; };
 		ED0B883E1785AC53003174F6 /* NFTwitterTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTwitterTimelineViewController.h; sourceTree = "<group>"; };
@@ -287,6 +304,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8226127517BAA63C00E0BA70 /* StoreKit.framework in Frameworks */,
 				ED0B88561786046C003174F6 /* QuartzCore.framework in Frameworks */,
 				ED0B88471785B9CD003174F6 /* Accounts.framework in Frameworks */,
 				ED0B88451785B478003174F6 /* Social.framework in Frameworks */,
@@ -364,6 +382,7 @@
 				EDFEE6601774EB4E002F886A /* MapKit.framework */,
 				ED0B88551786046C003174F6 /* QuartzCore.framework */,
 				ED0B88441785B478003174F6 /* Social.framework */,
+				8226127417BAA63B00E0BA70 /* StoreKit.framework */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
 				ED84964E1790A507009B61A4 /* SenTestingKit.framework */,
 			);
@@ -385,6 +404,12 @@
 		ED3B1458177485AD00213826 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8226127617BAA8A900E0BA70 /* HolyRosary.png */,
+				8226127717BAA8A900E0BA70 /* HolyRosary@2x.png */,
+				8226127817BAA8A900E0BA70 /* Neovulgata.png */,
+				8226127917BAA8A900E0BA70 /* Neovulgata@2x.png */,
+				8226127A17BAA8A900E0BA70 /* Orationis.png */,
+				8226127B17BAA8A900E0BA70 /* Orationis@2x.png */,
 				ED3B1467177485AD00213826 /* Default-568h@2x.png */,
 				ED3B1463177485AD00213826 /* Default.png */,
 				ED3B1465177485AD00213826 /* Default@2x.png */,
@@ -504,6 +529,8 @@
 				EDD33FB1177486E8000CDF87 /* NFYearlyEvent.m */,
 				ED6BAB9D177DC8CF002326C3 /* NSString+NFNormalizing.h */,
 				ED6BAB9E177DC8CF002326C3 /* NSString+NFNormalizing.m */,
+				8226127117BA969800E0BA70 /* OrdinalNumberFormatter.h */,
+				8226127217BA970800E0BA70 /* OrdinalNumberFormatter.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -577,8 +604,8 @@
 				ED5BB10C177B258E00C98CE9 /* NFIgrejaDetailViewController.m */,
 				ED50D50F17788B54000C0FB3 /* NFIgrejaListViewController.h */,
 				ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */,
-				ED021FA61784C69100E96B49 /* NFJMJ2013ViewController.h */,
-				ED021FA71784C69100E96B49 /* NFJMJ2013ViewController.m */,
+				ED021FA61784C69100E96B49 /* NFLaredoViewController.h */,
+				ED021FA71784C69100E96B49 /* NFLaredoViewController.m */,
 				EDF24ACC17830C6D00AEDC32 /* NFLicensesViewController.h */,
 				EDF24ACD17830C6D00AEDC32 /* NFLicensesViewController.m */,
 				ED167882177E1B540071BE43 /* NFMapViewController.h */,
@@ -587,8 +614,8 @@
 				EDD967B71779DE3D00F9FC93 /* NFMissaListViewController.m */,
 				EDC7A6A917821A4C00C9B659 /* NFSettingsViewController.h */,
 				EDC7A6AA17821A4C00C9B659 /* NFSettingsViewController.m */,
-				ED021FA91784C6C800E96B49 /* NFTelefonesUteisViewController.h */,
-				ED021FAA1784C6C800E96B49 /* NFTelefonesUteisViewController.m */,
+				ED021FA91784C6C800E96B49 /* NFAppUteisViewController.h */,
+				ED021FAA1784C6C800E96B49 /* NFAppUteisViewController.m */,
 				ED0B883E1785AC53003174F6 /* NFTwitterTimelineViewController.h */,
 				ED0B883F1785AC53003174F6 /* NFTwitterTimelineViewController.m */,
 			);
@@ -746,6 +773,12 @@
 				ED84964317908AB7009B61A4 /* separador2@2x.png in Resources */,
 				ED84964617908DF9009B61A4 /* detail-igreja.png in Resources */,
 				ED84964717908DF9009B61A4 /* detail-igreja@2x.png in Resources */,
+				8226127C17BAA8A900E0BA70 /* HolyRosary.png in Resources */,
+				8226127D17BAA8A900E0BA70 /* HolyRosary@2x.png in Resources */,
+				8226127E17BAA8A900E0BA70 /* Neovulgata.png in Resources */,
+				8226127F17BAA8A900E0BA70 /* Neovulgata@2x.png in Resources */,
+				8226128017BAA8A900E0BA70 /* Orationis.png in Resources */,
+				8226128117BAA8A900E0BA70 /* Orationis@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,8 +909,8 @@
 				EDF24ACE17830C6D00AEDC32 /* NFLicensesViewController.m in Sources */,
 				EDF24AD51783152500AEDC32 /* NFGoogleMapsIntegration.m in Sources */,
 				EDF24AD817831AC000AEDC32 /* NFWazeIntegration.m in Sources */,
-				ED021FA81784C69100E96B49 /* NFJMJ2013ViewController.m in Sources */,
-				ED021FAB1784C6C800E96B49 /* NFTelefonesUteisViewController.m in Sources */,
+				ED021FA81784C69100E96B49 /* NFLaredoViewController.m in Sources */,
+				ED021FAB1784C6C800E96B49 /* NFAppUteisViewController.m in Sources */,
 				ED0B88401785AC53003174F6 /* NFTwitterTimelineViewController.m in Sources */,
 				ED0B88431785AE8C003174F6 /* NFTwitterTimelineLoader.m in Sources */,
 				ED0B884A1785C283003174F6 /* NFTweetFormatter.m in Sources */,
@@ -886,6 +919,7 @@
 				ED0B88591786083B003174F6 /* NFAdBannerManager.m in Sources */,
 				ED0B885C178618FC003174F6 /* NFFacebookIntegration.m in Sources */,
 				ED747BFA178B62BB00E6D242 /* NFEventMatchContext.m in Sources */,
+				8226127317BA970900E0BA70 /* OrdinalNumberFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

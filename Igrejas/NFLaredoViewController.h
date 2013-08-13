@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NFJMJ2013ViewController : UITableViewController
+@interface NFLaredoViewController : UITableViewController
 
 @end

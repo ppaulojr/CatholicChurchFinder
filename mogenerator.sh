@@ -15,7 +15,7 @@ fi
 set -x
 
 "$MOGENERATOR" \
-    -m IgrejasRio/Model.xcdatamodeld/Model.xcdatamodel \
-    --machine-dir IgrejasRio/mogenerator \
-    --human-dir IgrejasRio \
+    -m Igrejas/Model.xcdatamodeld/Model.xcdatamodel \
+    --machine-dir Igrejas/mogenerator \
+    --human-dir Igrejas \
     --template-var arc=true

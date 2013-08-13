@@ -38,12 +38,14 @@
 {
     self = [super init];
     if (self) {
+        /*
         self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
         self.bannerView.delegate = self;
         self.bannerView.alpha = 0;
         self.bannerView.adUnitID = @"a151d5833b1b003";
         self.bannerView.rootViewController = rootViewController;
         [self.bannerView loadRequest:[GADRequest request]];
+         */
     }
     return self;
 }

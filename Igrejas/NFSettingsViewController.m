@@ -50,6 +50,19 @@
         [self _selectMapType:mapType];
         [NFSettingsManager sharedManager].mapType = mapType;
     }
+    else
+    {
+        switch (indexPath.row) {
+            case 2:
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.netfilter.com.br"]];
+                break;
+            case 3:
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.horariodemissa.com.br"]];
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 @end

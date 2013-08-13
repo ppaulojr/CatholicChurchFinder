@@ -62,7 +62,7 @@
     dispatch_once(&onceToken, ^{
         NSArray *dirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *baseDir = dirs[0];
-        path = [baseDir stringByAppendingPathComponent:@"IgrejasRio.sqlite"];
+        path = [baseDir stringByAppendingPathComponent:@"Igrejas.sqlite"];
     });
     return path;
 }

@@ -85,8 +85,8 @@
 
     NSMutableDictionary *addressDict = [@{
         (__bridge NSString *)kABPersonAddressStreetKey : endereco,
-        (__bridge NSString *)kABPersonAddressCityKey : @"Rio de Janeiro",
-        (__bridge NSString *)kABPersonAddressStateKey : @"Rio de Janeiro"
+        (__bridge NSString *)kABPersonAddressCityKey : @"",
+        (__bridge NSString *)kABPersonAddressStateKey : @"Texas"
     } mutableCopy];
 
     if (self.igreja.cep) {
@@ -105,18 +105,18 @@
 {
     PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
 
-    [actionSheet addButtonWithTitle:@"Ver no mapa" block:^{
+    [actionSheet addButtonWithTitle:NSLocalizedString(@"Open in map",@"") block:^{
         [[self _mapItemForIgreja] openInMapsWithLaunchOptions:nil];
     }];
 
-    [actionSheet addButtonWithTitle:@"Rota de carro" block:^{
+    [actionSheet addButtonWithTitle:@"Route by Car" block:^{
         MKMapItem *igrejaMapItem = [self _mapItemForIgreja];
         MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
         NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
         [MKMapItem openMapsWithItems:@[currentLocationMapItem, igrejaMapItem] launchOptions:launchOptions];
     }];
 
-    [actionSheet addButtonWithTitle:@"Rota à pé" block:^{
+    [actionSheet addButtonWithTitle:@"Walking Route" block:^{
         MKMapItem *igrejaMapItem = [self _mapItemForIgreja];
         MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
         NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeWalking};
@@ -124,18 +124,18 @@
     }];
 
     if ([NFGoogleMapsIntegration canOpenDirectionsInGoogleMaps]) {
-        [actionSheet addButtonWithTitle:@"Rota no Google Maps" block:^{
+        [actionSheet addButtonWithTitle:@"Google Maps Routing" block:^{
             [NFGoogleMapsIntegration openDirectionsInGoogleMapsWithIgreja:self.igreja];
         }];
     }
 
     if ([NFWazeIntegration canOpenDirectionsInWaze]) {
-        [actionSheet addButtonWithTitle:@"Rota no Waze" block:^{
+        [actionSheet addButtonWithTitle:@"Waze Routing" block:^{
             [NFWazeIntegration openDirectionsInWazeWithIgreja:self.igreja];
         }];
     }
 
-    [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
+    [actionSheet setCancelButtonWithTitle:@"Cancel" block:nil];
 
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
@@ -145,13 +145,13 @@
     PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
 
     for (NSTextCheckingResult *result in results) {
-        NSString *title = [NSString stringWithFormat:@"Ligar para %@", result.phoneNumber];
+        NSString *title = [NSString stringWithFormat:@"Call to %@", result.phoneNumber];
         [actionSheet addButtonWithTitle:title block:^{
             [[UIApplication sharedApplication] openURL:result.URL];
         }];
     }
 
-    [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
+    [actionSheet setCancelButtonWithTitle:@"Cancel" block:nil];
 
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
@@ -160,11 +160,11 @@
 {
     PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
 
-    [actionSheet addButtonWithTitle:@"Abrir link no navegador" block:^{
+    [actionSheet addButtonWithTitle:@"Open in Safari" block:^{
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.igreja.site]];
     }];
 
-    [actionSheet setCancelButtonWithTitle:@"Cancelar" block:nil];
+    [actionSheet setCancelButtonWithTitle:@"Cancel" block:nil];
 
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }

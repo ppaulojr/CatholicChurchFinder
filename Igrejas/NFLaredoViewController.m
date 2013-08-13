@@ -7,24 +7,24 @@
 //
 
 #import "NFFacebookIntegration.h"
-#import "NFJMJ2013ViewController.h"
+#import "NFLaredoViewController.h"
 
-static NSString *kURL = @"https://pt-br.facebook.com/jornadamundialdajuventude";
-static NSString *kProfileID = @"173659739788";
+static NSString *kURL = @"https://www.facebook.com/CatholicDioceseofLaredo";
+static NSString *kProfileID = @"117682098250535";
 
-@implementation NFJMJ2013ViewController
+@implementation NFLaredoViewController
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section * 100 + indexPath.row) {
         case 0: {
-            NSURL *url = [NSURL URLWithString:@"http://www.rio2013.com/"];
+            NSURL *url = [NSURL URLWithString:@"http://dioceseoflaredo.org"];
             [[UIApplication sharedApplication] openURL:url];
             [tableView deselectRowAtIndexPath:indexPath animated:YES];
             break;
         }
         case 1: {
-            NSURL *url = [NSURL URLWithString:@"http://www.horariodemissa.com.br/"];
+            NSURL *url = [NSURL URLWithString:@"http://www.vatican.va"];
             [[UIApplication sharedApplication] openURL:url];
             [tableView deselectRowAtIndexPath:indexPath animated:YES];
             break;

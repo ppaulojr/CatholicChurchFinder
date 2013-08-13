@@ -51,7 +51,7 @@
             NSFontAttributeName : [UIFont italicSystemFontOfSize:14],
             NSForegroundColorAttributeName : [UIColor grayColor]
         };
-        [label setAttributedText:[[NSAttributedString alloc] initWithString:@"(Não informado)" attributes:attrs]];
+        [label setAttributedText:[[NSAttributedString alloc] initWithString:@"(Not available)" attributes:attrs]];
     }
 }
 
@@ -89,7 +89,7 @@
         [endereco appendFormat:@"\n%@", igreja.bairro];
     }
     if (igreja.cep) {
-        [endereco appendFormat:@"\nCEP %@", igreja.cep];
+        [endereco appendFormat:@"\nZIP %@", igreja.cep];
     }
 
     // Create a link to the address in maps

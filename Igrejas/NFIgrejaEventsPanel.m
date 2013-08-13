@@ -11,6 +11,7 @@
 #import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
 #import "NFYearlyEvent.h"
+#import "OrdinalNumberFormatter.h"
 
 #define CMP(x, y) \
     if ((x) > (y)) { \
@@ -34,17 +35,17 @@
 
 
 static NSString * const weekdayNames[] = {
-    @"Domingo", @"Segunda", @"Terça", @"Quarta", @"Quinta", @"Sexta", @"Sábado"
+    @"Sunday", @"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday"
 };
 
 static NSString * const ordinalNamesM[] = {
-    @"Antepenúltimo", @"Penúltimo", @"Último", nil,
-    @"Primeiro", @"Segundo", @"Terceiro", @"Quarto", @"Quinto"
+    @"third last", @"second last", @"Último", nil,
+    @"1st", @"2nd", @"3rd", @"4th", @"5th"
 };
 
 static NSString * const ordinalNamesF[] = {
-    @"Antepenúltima", @"Penúltima", @"Última", nil,
-    @"Primeira", @"Segunda", @"Terceira", @"Quarta", @"Quinta"
+    @"third last", @"second last", @"Last", nil,
+    @"1st", @"2nd", @"3rd", @"4th", @"5th"
 };
 
 static BOOL weekdayIsM[] = {
@@ -90,7 +91,7 @@ static const int ordinalZero = 3;
         UILabel *label = [UILabel new];
         label.font = [UIFont italicSystemFontOfSize:14];
         label.textColor = [UIColor grayColor];
-        label.text = @"(Nenhum evento informado)";
+        label.text = @"(No event reported)";
         [label sizeToFit];
         [self addSubview:label];
         return;
@@ -298,7 +299,8 @@ static const int ordinalZero = 3;
 
         NFMonthlyEvent *firstEvent = bucket[0];
         if (firstEvent.weekValue == 0) {
-            pair.headerText = [NSString stringWithFormat:@"Todo dia %d:", firstEvent.dayValue];
+            OrdinalNumberFormatter * onf = [[OrdinalNumberFormatter alloc] init];
+            pair.headerText = [NSString stringWithFormat:@"Every %@:", [onf stringForObjectValue:[NSNumber numberWithInt:firstEvent.dayValue]]];
         } else {
             int weekdayIndex = firstEvent.dayValue - 1;
             NSString *weekday = weekdayNames[weekdayIndex];
@@ -344,7 +346,7 @@ static const int ordinalZero = 3;
     // Simply output them
     for (NFYearlyEvent *event in events) {
         NFIgrejaEventPair *pair = [NFIgrejaEventPair new];
-        pair.headerText = [NSString stringWithFormat:@"Todo dia %02d/%02d", event.dayValue, event.monthValue];
+        pair.headerText = [NSString stringWithFormat:@"Every %02d/%02d", event.monthValue, event.dayValue];
 
         NSString *text = [event formattedTime];
         if (event.observation) {

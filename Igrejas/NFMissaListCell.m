@@ -41,7 +41,7 @@ static NSNumberFormatter *numberFormatter;
 {
     self.titleLabel.text = event.igreja.nome;
     self.detailLabel.text = event.igreja.bairro;
-    self.distanceLabel.text = [[[self _numberFormatter] stringFromNumber:@(distance / 1000)] stringByAppendingString:@" km"];
+    self.distanceLabel.text = [[[self _numberFormatter] stringFromNumber:@(distance / 1609.344)] stringByAppendingString:@" miles"];
 }
 
 - (void)layoutSubviews

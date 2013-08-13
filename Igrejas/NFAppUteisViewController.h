@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <StoreKit/StoreKit.h>
 
-@interface NFTelefonesUteisViewController : UITableViewController
+
+@interface NFAppUteisViewController : UITableViewController <SKStoreProductViewControllerDelegate>
 
 @end
