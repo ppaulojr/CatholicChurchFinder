@@ -210,7 +210,7 @@
     NFEvent *firstMissa = [NFEvent firstMissaAfterDate:now calendar:self.calendar managedObjectContext:moc];
 
     if (!firstMissa) {
-        self.sections = [NSArray array];
+        self.sections = [NSMutableArray array];
         return;
     }
 
@@ -256,7 +256,7 @@
     NFMissaListEntry *entry = ((NSArray *)self.sections[section])[0];
     int startTime = entry.event.startTimeValue;
     if (startTime > 1159) {
-        return [NSString stringWithFormat:@"%d:%02dPM", startTime / 100 - 12, startTime % 100];
+        return [NSString stringWithFormat:@"%d:%02dPM", (startTime<1300)?12:(startTime / 100 - 12), startTime % 100];
     }
     else
     {

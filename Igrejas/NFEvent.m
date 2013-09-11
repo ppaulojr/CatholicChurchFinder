@@ -18,7 +18,7 @@
     NSString * etAMPM;
     if (self.startTimeValue > 1159) {
         stAMPM = @"PM";
-        stH = self.startTimeValue / 100 - 12;
+        stH = (self.startTimeValue<1300)?12:self.startTimeValue / 100 - 12;
     }
     else
     {
@@ -29,7 +29,7 @@
     if (self.endTime) {
         if (self.endTimeValue > 1159) {
             etAMPM = @"PM";
-            etH = self.endTimeValue / 100 - 12;
+            etH = (self.endTimeValue<1300)?12:self.endTimeValue / 100 - 12;
         }
         else
         {

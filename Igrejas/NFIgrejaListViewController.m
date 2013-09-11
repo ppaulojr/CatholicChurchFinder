@@ -102,23 +102,6 @@ typedef NS_ENUM(NSInteger, NFIgrejaListScope) {
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
-    NFAdBannerManager *adManager = [NFAdBannerManager sharedManagerWithRootViewController:self.tabBarController];
-
-    [adManager takeOverAdBannerWithAddBlock:^(UIView *adView) {
-        self.adView = adView;
-
-        [self.tableView addSubview:adView];
-        [self _adjustAdViewPosition];
-
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, adView.frame.size.height, 0);
-        self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    } removeBlock:^(UIView *adView) {
-        [adView removeFromSuperview];
-
-        self.tableView.contentInset = UIEdgeInsetsZero;
-        self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
-    }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

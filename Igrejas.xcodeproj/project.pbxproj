@@ -19,6 +19,7 @@
 		82C8CB47179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */; };
 		82C8CB49179489EE00C8F787 /* template.cs in Resources */ = {isa = PBXBuildFile; fileRef = 82C8CB48179489EE00C8F787 /* template.cs */; };
 		82C8CB4A1794933100C8F787 /* NFEventMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ED747BF9178B62BB00E6D242 /* NFEventMatchContext.m */; };
+		83591BC517E11A4F00197C06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83591BC417E11A4F00197C06 /* Images.xcassets */; };
 		DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */; };
 		ED021FA81784C69100E96B49 /* NFLaredoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFLaredoViewController.m */; };
 		ED021FAB1784C6C800E96B49 /* NFAppUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFAppUteisViewController.m */; };
@@ -155,6 +156,7 @@
 		82C8CB45179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCSharpCodeGeneratorLanguage.h; sourceTree = "<group>"; };
 		82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCSharpCodeGeneratorLanguage.m; sourceTree = "<group>"; };
 		82C8CB48179489EE00C8F787 /* template.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.cs; sourceTree = "<group>"; };
+		83591BC417E11A4F00197C06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVImporter.xcconfig"; path = "Pods/Pods-CSVImporter.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B38B88B9D7454CFA9551953D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED021FA61784C69100E96B49 /* NFLaredoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFLaredoViewController.h; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 				EDFEE6661774EC58002F886A /* Views */,
 				ED3B1458177485AD00213826 /* Supporting Files */,
 				EDF24ACF17830CD200AEDC32 /* Resources */,
+				83591BC417E11A4F00197C06 /* Images.xcassets */,
 			);
 			path = Igrejas;
 			sourceTree = "<group>";
@@ -719,6 +722,11 @@
 				CLASSPREFIX = NF;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = NetFilter;
+				TargetAttributes = {
+					ED3B144D177485AD00213826 = {
+						DevelopmentTeam = PWFMZR3KY6;
+					};
+				};
 			};
 			buildConfigurationList = ED3B1449177485AD00213826 /* Build configuration list for PBXProject "Igrejas" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -753,6 +761,7 @@
 				EDF24AD117830CD200AEDC32 /* licenses.html in Resources */,
 				EDF24ADF17836CB500AEDC32 /* Icon.png in Resources */,
 				EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */,
+				83591BC517E11A4F00197C06 /* Images.xcassets in Resources */,
 				EDF24AF417836F9500AEDC32 /* ico-igreja.png in Resources */,
 				EDF24AF517836F9500AEDC32 /* ico-igreja@2x.png in Resources */,
 				EDF24AF817836F9500AEDC32 /* ico-missas.png in Resources */,
@@ -1040,10 +1049,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 598E3167B82747C4BF0833E9 /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Igrejas/Igrejas-Prefix.pch";
 				INFOPLIST_FILE = "Igrejas/Igrejas-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1052,12 +1066,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 598E3167B82747C4BF0833E9 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Netfilter LTDA";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Igrejas/Igrejas-Prefix.pch";
 				INFOPLIST_FILE = "Igrejas/Igrejas-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "480A2F07-2D97-413B-BB3A-3B2989D9BC76";
 				WRAPPER_EXTENSION = app;
 			};

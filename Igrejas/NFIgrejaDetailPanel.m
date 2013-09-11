@@ -39,7 +39,14 @@
 - (void)awakeFromNib
 {
     // This removes the margins in the text view
-    self.observacaoTextView.contentInset = UIEdgeInsetsMake(-8, -8, -8, -8);
+    if ([self.observacaoTextView respondsToSelector:@selector(textContainer)])
+    {
+        self.observacaoTextView.textContainerInset = UIEdgeInsetsZero;
+        self.observacaoTextView.textContainer.lineFragmentPadding = 0.0f;
+    } else {
+        self.observacaoTextView.contentInset = UIEdgeInsetsMake(-8, -8, -8, -8);
+    }
+    
 }
 
 - (void)_setTextOrNil:(NSString *)textOrNil forLabel:(id)label

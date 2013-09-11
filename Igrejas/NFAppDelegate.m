@@ -17,9 +17,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     UINavigationBar *allNavBars = [UINavigationBar appearance];
-    allNavBars.tintColor = [UIColor colorWithRed:53/255.0 green:139/255.0 blue:171/255.0 alpha:1];
+    if ([allNavBars respondsToSelector:@selector(barTintColor)]) {
+        allNavBars.barTintColor = [UIColor colorWithRed:53/255.0 green:139/255.0 blue:171/255.0 alpha:1];
+    }
+    else
+    {
+        // iOS6
+        allNavBars.tintColor    = [UIColor colorWithRed:53/255.0 green:139/255.0 blue:171/255.0 alpha:1];
+    }
 
-    [Appirater setAppId:@"392291029"];
+    [Appirater setAppId:@"687898424"];
     [Appirater setDaysUntilPrompt:1];
     [Appirater setUsesUntilPrompt:3];
     [Appirater setSignificantEventsUntilPrompt:-1];
