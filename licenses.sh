@@ -18,7 +18,7 @@ if [ -z "$MARKDOWN" ]; then
     fi
 fi
 
-LICENSES_FILE="IgrejasRio/Resources/licenses.html"
+LICENSES_FILE="Igrejas/Resources/licenses.html"
 
 cat >"$LICENSES_FILE" <<EOD
 <!DOCTYPE html>
