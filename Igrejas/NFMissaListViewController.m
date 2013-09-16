@@ -97,22 +97,6 @@
     if (selection) {
         [self.tableView deselectRowAtIndexPath:selection animated:animated];
     }
-
-    NFAdBannerManager *adManager = [NFAdBannerManager sharedManagerWithRootViewController:self.tabBarController];
-
-    [adManager takeOverAdBannerWithAddBlock:^(UIView *adView) {
-        self.adView = adView;
-        [self.view addSubview:adView];
-
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, adView.frame.size.height, 0);
-        self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    } removeBlock:^(UIView *adView) {
-        self.adView = nil;
-        [adView removeFromSuperview];
-
-        self.tableView.contentInset = UIEdgeInsetsZero;
-        self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
-    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated
