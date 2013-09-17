@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		50378128151C43E3BD2795B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B88B9D7454CFA9551953D /* libPods.a */; };
 		8226127317BA970900E0BA70 /* OrdinalNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8226127217BA970800E0BA70 /* OrdinalNumberFormatter.m */; };
-		8226127517BAA63C00E0BA70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8226127417BAA63B00E0BA70 /* StoreKit.framework */; };
 		8226127C17BAA8A900E0BA70 /* HolyRosary.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127617BAA8A900E0BA70 /* HolyRosary.png */; };
 		8226127D17BAA8A900E0BA70 /* HolyRosary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127717BAA8A900E0BA70 /* HolyRosary@2x.png */; };
 		8226127E17BAA8A900E0BA70 /* Neovulgata.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127817BAA8A900E0BA70 /* Neovulgata.png */; };
@@ -146,7 +145,6 @@
 		598E3167B82747C4BF0833E9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		8226127117BA969800E0BA70 /* OrdinalNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdinalNumberFormatter.h; sourceTree = "<group>"; };
 		8226127217BA970800E0BA70 /* OrdinalNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdinalNumberFormatter.m; sourceTree = "<group>"; };
-		8226127417BAA63B00E0BA70 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8226127617BAA8A900E0BA70 /* HolyRosary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HolyRosary.png; sourceTree = "<group>"; };
 		8226127717BAA8A900E0BA70 /* HolyRosary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HolyRosary@2x.png"; sourceTree = "<group>"; };
 		8226127817BAA8A900E0BA70 /* Neovulgata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Neovulgata.png; sourceTree = "<group>"; };
@@ -306,7 +304,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8226127517BAA63C00E0BA70 /* StoreKit.framework in Frameworks */,
 				ED0B88561786046C003174F6 /* QuartzCore.framework in Frameworks */,
 				ED0B88471785B9CD003174F6 /* Accounts.framework in Frameworks */,
 				ED0B88451785B478003174F6 /* Social.framework in Frameworks */,
@@ -384,7 +381,6 @@
 				EDFEE6601774EB4E002F886A /* MapKit.framework */,
 				ED0B88551786046C003174F6 /* QuartzCore.framework */,
 				ED0B88441785B478003174F6 /* Social.framework */,
-				8226127417BAA63B00E0BA70 /* StoreKit.framework */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
 				ED84964E1790A507009B61A4 /* SenTestingKit.framework */,
 			);
@@ -724,6 +720,14 @@
 				ORGANIZATIONNAME = NetFilter;
 				TargetAttributes = {
 					ED3B144D177485AD00213826 = {
+						DevelopmentTeam = PWFMZR3KY6;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+					EDB202A31774892D00AB8CFD = {
 						DevelopmentTeam = PWFMZR3KY6;
 					};
 				};
@@ -1069,8 +1073,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Igrejas/Igrejas-Prefix.pch";
 				INFOPLIST_FILE = "Igrejas/Igrejas-Info.plist";
@@ -1120,11 +1124,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSVImporter/CSVImporter-Prefix.pch";
 				INFOPLIST_FILE = "CSVImporter/CSVImporter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1133,11 +1139,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSVImporter/CSVImporter-Prefix.pch";
 				INFOPLIST_FILE = "CSVImporter/CSVImporter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
