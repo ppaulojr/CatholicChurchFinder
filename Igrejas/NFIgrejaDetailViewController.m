@@ -147,7 +147,10 @@
     for (NSTextCheckingResult *result in results) {
         NSString *title = [NSString stringWithFormat:@"Call to %@", result.phoneNumber];
         [actionSheet addButtonWithTitle:title block:^{
-            [[UIApplication sharedApplication] openURL:result.URL];
+            NSString * phoneNumber = [[result.phoneNumber componentsSeparatedByCharactersInSet:
+                                      [[NSCharacterSet decimalDigitCharacterSet] invertedSet]]
+                                      componentsJoinedByString:@""];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"tel:" stringByAppendingString:phoneNumber]]];
         }];
     }
 
