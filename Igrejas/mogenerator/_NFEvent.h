@@ -131,8 +131,8 @@ extern const struct NFEventFetchedProperties {
 
 
 
-- (NSNumber*)primitiveType;
-- (void)setPrimitiveType:(NSNumber*)value;
+- (NSNumber*)primitiveTypeNumber;
+- (void)setPrimitiveTypeNumber:(NSNumber*)value;
 
 - (int16_t)primitiveTypeValue;
 - (void)setPrimitiveTypeValue:(int16_t)value_;
