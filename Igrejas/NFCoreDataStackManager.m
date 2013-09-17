@@ -41,7 +41,7 @@
         [psc addPersistentStoreWithType:NSSQLiteStoreType
                           configuration:nil
                                     URL:storeURL
-                                options:@{NSReadOnlyPersistentStoreOption : @NO, NSSQLitePragmasOption: @{@"journal_mode":@"DELETE"}}
+                                options:@{NSReadOnlyPersistentStoreOption : @YES, NSSQLitePragmasOption: @{@"journal_mode":@"DELETE"}}
                                   error:NULL];
     });
     return psc;
