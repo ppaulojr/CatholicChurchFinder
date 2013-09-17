@@ -21,13 +21,13 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-
     [self _selectMapType:[NFSettingsManager sharedManager].mapType];
 
     NSString *versionString = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     NSAssert(versionString, @"Unable to find the CFBundleShortVersionString");
     self.versionCell.detailTextLabel.text = versionString;
+    
+    [super viewDidLoad];
 }
 
 - (void)_selectMapType:(MKMapType)mapType

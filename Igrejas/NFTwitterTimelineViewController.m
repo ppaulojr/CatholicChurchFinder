@@ -29,13 +29,13 @@ static NSString * const kStatusURLFormat = @"https://twitter.com/%@/status/%@";
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-
     [self _showStatusWithText:@"Loading tweets..."];
 
     self.timelineLoader = [[NFTwitterTimelineLoader alloc] initWithTableView:self.tableView screenName:kScreenName];
     self.timelineLoader.delegate = self;
     self.tableView.dataSource = self.timelineLoader;
+    
+    [super viewDidLoad];
 }
 
 - (void)_showStatusWithText:(NSString *)text

@@ -29,11 +29,11 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-
     self.detailPanel = [NFIgrejaDetailPanel panel];
     self.detailPanel.delegate = self;
     [self.scrollView addSubview:self.detailPanel];
+    
+    [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -29,8 +29,6 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-
     // Create a managed object context for background access
     self.backgroundMOC = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
     self.backgroundMOC.persistentStoreCoordinator = [NFCoreDataStackManager sharedManager].persistentStoreCoordinator;
@@ -40,6 +38,8 @@
 
     // Track the user
     self.mapView.userTrackingMode = MKUserTrackingModeFollow;
+    
+    [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated

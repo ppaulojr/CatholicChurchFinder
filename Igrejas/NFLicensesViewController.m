@@ -18,10 +18,10 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-
     NSURL *htmlURL = [[NSBundle mainBundle] URLForResource:@"licenses" withExtension:@"html"];
     [self.webView loadRequest:[NSURLRequest requestWithURL:htmlURL]];
+    
+    [super viewDidLoad];
 }
 
 @end
