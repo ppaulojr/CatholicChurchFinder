@@ -67,7 +67,7 @@ const struct NFYearlyEventFetchedProperties NFYearlyEventFetchedProperties = {
 }
 
 - (void)setDayValue:(int16_t)value_ {
-	[self setDay:[NSNumber numberWithShort:value_]];
+	[self setDay:@(value_)];
 }
 
 - (int16_t)primitiveDayValue {
@@ -76,7 +76,7 @@ const struct NFYearlyEventFetchedProperties NFYearlyEventFetchedProperties = {
 }
 
 - (void)setPrimitiveDayValue:(int16_t)value_ {
-	[self setPrimitiveDay:[NSNumber numberWithShort:value_]];
+	[self setPrimitiveDay:@(value_)];
 }
 
 
@@ -93,7 +93,7 @@ const struct NFYearlyEventFetchedProperties NFYearlyEventFetchedProperties = {
 }
 
 - (void)setMonthValue:(int16_t)value_ {
-	[self setMonth:[NSNumber numberWithShort:value_]];
+	[self setMonth:@(value_)];
 }
 
 - (int16_t)primitiveMonthValue {
@@ -102,7 +102,7 @@ const struct NFYearlyEventFetchedProperties NFYearlyEventFetchedProperties = {
 }
 
 - (void)setPrimitiveMonthValue:(int16_t)value_ {
-	[self setPrimitiveMonth:[NSNumber numberWithShort:value_]];
+	[self setPrimitiveMonth:@(value_)];
 }
 
 

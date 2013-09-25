@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *parocoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *telefonesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *siteLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 @property (weak, nonatomic) IBOutlet NFIgrejaEventsPanel *missaEventsPanel;
 @property (weak, nonatomic) IBOutlet NFIgrejaEventsPanel *confissaoEventsPanel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *missaEventsPanelHeightConstraint;
@@ -170,6 +171,15 @@
             self.siteLabel.userInteractionEnabled = YES;
         }
     }
+    
+    if (igreja.email) {
+        // Add a gesture recognizer to open the link
+        NSDictionary *attrs = [self _attributesForLink];
+        self.emailLabel.attributedText = [[NSAttributedString alloc] initWithString:igreja.email attributes:attrs];
+        id recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_emailLinkTapped)];
+        [self.emailLabel addGestureRecognizer:recognizer];
+        self.emailLabel.userInteractionEnabled = YES;
+    }
 
     NSPredicate *missaPredicate = [NSPredicate predicateWithFormat:@"self.type == %@", @(NFEventTypeMissa)];
     [self.missaEventsPanel configureWithEvents:[igreja.eventSet filteredSetUsingPredicate:missaPredicate]];
@@ -222,6 +232,11 @@
 - (void)_siteLinkTapped
 {
     [self.delegate igrejaDetailPanelSiteLinkTapped:self];
+}
+
+- (void) _emailLinkTapped
+{
+    
 }
 
 @end

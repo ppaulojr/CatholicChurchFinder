@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 NetFilter. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 #import "NFCoreDataStackManager.h"
 #import "NFMonthlyEvent.h"
 #import "NFWeeklyEvent.h"
 #import "NFYearlyEvent.h"
 
-@interface NFEventMatchTests : SenTestCase
+@interface NFEventMatchTests : XCTestCase
 
 @property (strong, nonatomic) NSCalendar *calendar;
 
@@ -44,50 +44,50 @@
     NSDate *date = [self _dateWithYear:2013 month:5 day:18];
     NFEventMatchContext *context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertEquals(context.referenceDateComponents.day, 18, nil);
-    STAssertEquals(context.referenceDateComponents.month, 5, nil);
-    STAssertEquals(context.referenceDateComponents.weekday, 7, nil);
-    STAssertEquals(context.reverseWeekdayOrdinal, -2, nil);
+    XCTAssertEqual(context.referenceDateComponents.day, 18);
+    XCTAssertEqual(context.referenceDateComponents.month, 5);
+    XCTAssertEqual(context.referenceDateComponents.weekday, 7);
+    XCTAssertEqual(context.reverseWeekdayOrdinal, -2);
 
     date = [self _dateWithYear:2013 month:5 day:25];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertEquals(context.referenceDateComponents.day, 25, nil);
-    STAssertEquals(context.referenceDateComponents.month, 5, nil);
-    STAssertEquals(context.referenceDateComponents.weekday, 7, nil);
-    STAssertEquals(context.reverseWeekdayOrdinal, -1, nil);
+    XCTAssertEqual(context.referenceDateComponents.day, 25);
+    XCTAssertEqual(context.referenceDateComponents.month, 5);
+    XCTAssertEqual(context.referenceDateComponents.weekday, 7);
+    XCTAssertEqual(context.reverseWeekdayOrdinal, -1);
 
     date = [self _dateWithYear:2013 month:5 day:24];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertEquals(context.referenceDateComponents.day, 24, nil);
-    STAssertEquals(context.referenceDateComponents.month, 5, nil);
-    STAssertEquals(context.referenceDateComponents.weekday, 6, nil);
-    STAssertEquals(context.reverseWeekdayOrdinal, -2, nil);
+    XCTAssertEqual(context.referenceDateComponents.day, 24);
+    XCTAssertEqual(context.referenceDateComponents.month, 5);
+    XCTAssertEqual(context.referenceDateComponents.weekday, 6);
+    XCTAssertEqual(context.reverseWeekdayOrdinal, -2);
 
     date = [self _dateWithYear:2013 month:5 day:31];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertEquals(context.referenceDateComponents.day, 31, nil);
-    STAssertEquals(context.referenceDateComponents.month, 5, nil);
-    STAssertEquals(context.referenceDateComponents.weekday, 6, nil);
-    STAssertEquals(context.reverseWeekdayOrdinal, -1, nil);
+    XCTAssertEqual(context.referenceDateComponents.day, 31);
+    XCTAssertEqual(context.referenceDateComponents.month, 5);
+    XCTAssertEqual(context.referenceDateComponents.weekday, 6);
+    XCTAssertEqual(context.reverseWeekdayOrdinal, -1);
 
     date = [self _dateWithYear:2013 month:1 day:1];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertEquals(context.referenceDateComponents.day, 1, nil);
-    STAssertEquals(context.referenceDateComponents.month, 1, nil);
-    STAssertEquals(context.referenceDateComponents.weekday, 3, nil);
-    STAssertEquals(context.reverseWeekdayOrdinal, -5, nil);
+    XCTAssertEqual(context.referenceDateComponents.day, 1);
+    XCTAssertEqual(context.referenceDateComponents.month, 1);
+    XCTAssertEqual(context.referenceDateComponents.weekday, 3);
+    XCTAssertEqual(context.reverseWeekdayOrdinal, -5);
 
     date = [self _dateWithYear:2013 month:12 day:31];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertEquals(context.referenceDateComponents.day, 31, nil);
-    STAssertEquals(context.referenceDateComponents.month, 12, nil);
-    STAssertEquals(context.referenceDateComponents.weekday, 3, nil);
-    STAssertEquals(context.reverseWeekdayOrdinal, -1, nil);
+    XCTAssertEqual(context.referenceDateComponents.day, 31);
+    XCTAssertEqual(context.referenceDateComponents.month, 12);
+    XCTAssertEqual(context.referenceDateComponents.weekday, 3);
+    XCTAssertEqual(context.reverseWeekdayOrdinal, -1);
 }
 
 - (void)testWeeklyEventMatch
@@ -98,12 +98,12 @@
     NSDate *date = [self _dateWithYear:2013 month:5 day:18];
     NFEventMatchContext *context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertTrue([event matchesWithContext:context], @"Weekly event failed to match context");
+    XCTAssertTrue([event matchesWithContext:context], @"Weekly event failed to match context");
 
     date = [self _dateWithYear:2013 month:1 day:1];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertFalse([event matchesWithContext:context], @"Weekly event incorrectly matched context");
+    XCTAssertFalse([event matchesWithContext:context], @"Weekly event incorrectly matched context");
 
     [self.moc reset];
 }
@@ -116,12 +116,12 @@
     NSDate *date = [self _dateWithYear:2013 month:5 day:15];
     NFEventMatchContext *context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertTrue([event matchesWithContext:context], @"Monthly event failed to match context");
+    XCTAssertTrue([event matchesWithContext:context], @"Monthly event failed to match context");
 
     date = [self _dateWithYear:2013 month:5 day:18];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertFalse([event matchesWithContext:context], @"Monthly event incorrectly matched context");
+    XCTAssertFalse([event matchesWithContext:context], @"Monthly event incorrectly matched context");
 
     [self.moc reset];
 }
@@ -135,12 +135,12 @@
     NSDate *date = [self _dateWithYear:2013 month:5 day:18];
     NFEventMatchContext *context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertTrue([event matchesWithContext:context], @"Monthly event failed to match context");
+    XCTAssertTrue([event matchesWithContext:context], @"Monthly event failed to match context");
 
     date = [self _dateWithYear:2013 month:5 day:25];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertFalse([event matchesWithContext:context], @"Monthly event incorrectly matched context");
+    XCTAssertFalse([event matchesWithContext:context], @"Monthly event incorrectly matched context");
 
     [self.moc reset];
 }
@@ -154,12 +154,12 @@
     NSDate *date = [self _dateWithYear:2013 month:5 day:18];
     NFEventMatchContext *context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertTrue([event matchesWithContext:context], @"Yearly event failed to match context");
+    XCTAssertTrue([event matchesWithContext:context], @"Yearly event failed to match context");
 
     date = [self _dateWithYear:2013 month:5 day:20];
     context = [[NFEventMatchContext alloc] initWithReferenceDate:date calendar:self.calendar];
 
-    STAssertFalse([event matchesWithContext:context], @"Yearly event incorrectly matched context");
+    XCTAssertFalse([event matchesWithContext:context], @"Yearly event incorrectly matched context");
 
     [self.moc reset];
 }
@@ -191,22 +191,22 @@
     // This matches event3
     NSDate *date = [self _dateWithYear:2013 month:05 day:18 hour:9 minute:35];
     NFEvent *event = [NFEvent firstMissaAfterDate:date calendar:self.calendar managedObjectContext:self.moc];
-    STAssertEqualObjects(event, event3, @"Failed to find event at 1830, found instead event at %04d", event.startTimeValue);
+    XCTAssertEqualObjects(event, event3, @"Failed to find event at 1830, found instead event at %04d", event.startTimeValue);
 
     // No longer matches event3, as the reverse weekday ordinal doesn't match
     date = [self _dateWithYear:2013 month:05 day:25 hour:9 minute:35];
     event = [NFEvent firstMissaAfterDate:date calendar:self.calendar managedObjectContext:self.moc];
-    STAssertNil(event, @"Incorrectly found event at %04d", event.startTimeValue);
+    XCTAssertNil(event, @"Incorrectly found event at %04d", event.startTimeValue);
 
     // Match event4 first because of the time
     date = [self _dateWithYear:2013 month:05 day:18 hour:22 minute:42];
     event = [NFEvent firstMissaAfterDate:date calendar:self.calendar managedObjectContext:self.moc];
-    STAssertEqualObjects(event, event4, @"Failed to find event at 2345, found instead event at %04d", event.startTimeValue);
+    XCTAssertEqualObjects(event, event4, @"Failed to find event at 2345, found instead event at %04d", event.startTimeValue);
 
     // Catch this corner case where the next event is on the following day
     date = [self _dateWithYear:2013 month:05 day:17 hour:23 minute:55];
     event = [NFEvent firstMissaAfterDate:date calendar:self.calendar managedObjectContext:self.moc];
-    STAssertEqualObjects(event, event1, @"Failed to find event at 0005, found instead event at %04d", event.startTimeValue);
+    XCTAssertEqualObjects(event, event1, @"Failed to find event at 0005, found instead event at %04d", event.startTimeValue);
 
     [self.moc reset];
 }
@@ -237,20 +237,20 @@
     NSDate *date = [self _dateWithYear:2013 month:05 day:18 hour:9 minute:53];
     NSArray *nextMissas = [NFEvent nextMissasAfterEvent:event3 withSpan:3 * 60 date:date calendar:self.calendar managedObjectContext:self.moc];
     NSArray *expectedMissas = @[event3, event4];
-    STAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas on the same day");
+    XCTAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas on the same day");
 
     // A more complex situation is the next event being the following day
     date = [self _dateWithYear:2013 month:05 day:17 hour:23 minute:49];
     nextMissas = [NFEvent nextMissasAfterEvent:event2 withSpan:15 * 60 date:date calendar:self.calendar managedObjectContext:self.moc];
     expectedMissas = @[event2, event3, event4];
-    STAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas on the following day");
+    XCTAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas on the following day");
 
     // And an even more complex scenario is the events being spread across
     // both the current and the following day
     date = [self _dateWithYear:2013 month:05 day:17 hour:22 minute:32];
     nextMissas = [NFEvent nextMissasAfterEvent:event1 withSpan:15 * 60 date:date calendar:self.calendar managedObjectContext:self.moc];
     expectedMissas = @[event1, event2, event3, event4];
-    STAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas across both days");
+    XCTAssertEqualObjects(nextMissas, expectedMissas, @"Failed to find next missas across both days");
 
     [self.moc reset];
 }

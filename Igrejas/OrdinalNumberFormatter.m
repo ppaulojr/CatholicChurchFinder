@@ -24,7 +24,7 @@
     if ([scanner scanInteger:&integerNumber]){
         isSuccessful = YES;
         if (anObject) {
-            *anObject = [NSNumber numberWithInteger:integerNumber];
+            *anObject = @(integerNumber);
         }
     } else {
         if (error) {

@@ -300,7 +300,7 @@ static const int ordinalZero = 3;
         NFMonthlyEvent *firstEvent = bucket[0];
         if (firstEvent.weekValue == 0) {
             OrdinalNumberFormatter * onf = [[OrdinalNumberFormatter alloc] init];
-            pair.headerText = [NSString stringWithFormat:@"Every %@:", [onf stringForObjectValue:[NSNumber numberWithInt:firstEvent.dayValue]]];
+            pair.headerText = [NSString stringWithFormat:@"Every %@:", [onf stringForObjectValue:@((int)firstEvent.dayValue)]];
         } else {
             int weekdayIndex = firstEvent.dayValue - 1;
             NSString *weekday = weekdayNames[weekdayIndex];

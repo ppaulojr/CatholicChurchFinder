@@ -61,7 +61,7 @@ const struct NFWeeklyEventFetchedProperties NFWeeklyEventFetchedProperties = {
 }
 
 - (void)setWeekdayValue:(int16_t)value_ {
-	[self setWeekday:[NSNumber numberWithShort:value_]];
+	[self setWeekday:@(value_)];
 }
 
 - (int16_t)primitiveWeekdayValue {
@@ -70,7 +70,7 @@ const struct NFWeeklyEventFetchedProperties NFWeeklyEventFetchedProperties = {
 }
 
 - (void)setPrimitiveWeekdayValue:(int16_t)value_ {
-	[self setPrimitiveWeekday:[NSNumber numberWithShort:value_]];
+	[self setPrimitiveWeekday:@(value_)];
 }
 
 

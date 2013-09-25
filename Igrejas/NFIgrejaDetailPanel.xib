@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A558" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A584" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="9" customClass="NFIgrejaDetailPanel">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="830"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="990"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SAGRADA FAMÍLIA" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="249" translatesAutoresizingMaskIntoConstraints="NO" id="10">
@@ -77,7 +77,7 @@ CEP: 21930-126</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MASSES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="135">
-                    <rect key="frame" x="20" y="389" width="78" height="23"/>
+                    <rect key="frame" x="20" y="451" width="78" height="23"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="78" id="645"/>
@@ -87,7 +87,7 @@ CEP: 21930-126</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CONFESSIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="323">
-                    <rect key="frame" x="20" y="509" width="137" height="23"/>
+                    <rect key="frame" x="20" y="571" width="137" height="23"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -98,7 +98,7 @@ CEP: 21930-126</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="OBSERVATIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="469">
-                    <rect key="frame" x="20" y="603" width="151" height="23"/>
+                    <rect key="frame" x="20" y="665" width="151" height="23"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -127,7 +127,7 @@ CEP: 21930-126</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="435" customClass="NFIgrejaEventsPanel">
-                    <rect key="frame" x="20" y="420" width="280" height="43"/>
+                    <rect key="frame" x="20" y="482" width="280" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -135,7 +135,7 @@ CEP: 21930-126</string>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="454" customClass="NFIgrejaEventsPanel">
-                    <rect key="frame" x="20" y="540" width="280" height="43"/>
+                    <rect key="frame" x="20" y="602" width="280" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -143,7 +143,7 @@ CEP: 21930-126</string>
                     </constraints>
                 </view>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="482">
-                    <rect key="frame" x="20" y="634" width="280" height="113"/>
+                    <rect key="frame" x="20" y="696" width="280" height="113"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="113" id="496"/>
@@ -158,11 +158,11 @@ CEP: 21930-126</string>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="separador1.png" translatesAutoresizingMaskIntoConstraints="NO" id="532">
-                    <rect key="frame" x="0.0" y="483" width="320" height="6"/>
+                    <rect key="frame" x="0.0" y="545" width="320" height="6"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="separador2.png" translatesAutoresizingMaskIntoConstraints="NO" id="543">
-                    <rect key="frame" x="0.0" y="363" width="320" height="6"/>
+                    <rect key="frame" x="0.0" y="425" width="320" height="6"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detail-igreja.png" translatesAutoresizingMaskIntoConstraints="NO" id="561">
@@ -172,6 +172,19 @@ CEP: 21930-126</string>
                         <constraint firstAttribute="width" constant="23" id="574"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-lt-0KO">
+                    <rect key="frame" x="20" y="362" width="280" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="teste@teste.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0T-rl-l1A">
+                    <rect key="frame" x="20" y="384" width="280" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -210,7 +223,6 @@ CEP: 21930-126</string>
                 <constraint firstItem="112" firstAttribute="top" secondItem="104" secondAttribute="bottom" constant="4" id="582"/>
                 <constraint firstItem="119" firstAttribute="top" secondItem="112" secondAttribute="bottom" constant="20" id="583"/>
                 <constraint firstItem="128" firstAttribute="top" secondItem="119" secondAttribute="bottom" constant="4" id="588"/>
-                <constraint firstItem="543" firstAttribute="top" secondItem="128" secondAttribute="bottom" constant="20" id="597"/>
                 <constraint firstItem="135" firstAttribute="leading" secondItem="9" secondAttribute="leading" constant="20" symbolic="YES" id="599"/>
                 <constraint firstItem="135" firstAttribute="top" secondItem="543" secondAttribute="bottom" constant="20" id="600"/>
                 <constraint firstItem="435" firstAttribute="top" secondItem="135" secondAttribute="bottom" constant="8" symbolic="YES" id="606"/>
@@ -220,11 +232,19 @@ CEP: 21930-126</string>
                 <constraint firstItem="469" firstAttribute="top" secondItem="454" secondAttribute="bottom" constant="20" id="630"/>
                 <constraint firstItem="482" firstAttribute="top" secondItem="469" secondAttribute="bottom" constant="8" symbolic="YES" id="634"/>
                 <constraint firstItem="561" firstAttribute="top" secondItem="9" secondAttribute="top" constant="20" symbolic="YES" id="635"/>
+                <constraint firstAttribute="trailing" secondItem="fy7-lt-0KO" secondAttribute="trailing" constant="20" id="4Fu-fH-NWr"/>
+                <constraint firstAttribute="trailing" secondItem="k0T-rl-l1A" secondAttribute="trailing" constant="20" id="Dna-kF-zTt"/>
+                <constraint firstItem="fy7-lt-0KO" firstAttribute="leading" secondItem="9" secondAttribute="leading" constant="20" id="Krk-0a-TLC"/>
+                <constraint firstItem="k0T-rl-l1A" firstAttribute="top" secondItem="fy7-lt-0KO" secondAttribute="bottom" constant="4" id="SFi-81-v8g"/>
+                <constraint firstItem="543" firstAttribute="top" secondItem="k0T-rl-l1A" secondAttribute="bottom" constant="24" id="dAK-sI-Hcc"/>
+                <constraint firstItem="fy7-lt-0KO" firstAttribute="top" secondItem="128" secondAttribute="bottom" constant="19" id="daV-8H-XJA"/>
+                <constraint firstItem="k0T-rl-l1A" firstAttribute="leading" secondItem="9" secondAttribute="leading" constant="20" id="vma-JF-vlK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="confissaoEventsPanel" destination="454" id="465"/>
                 <outlet property="confissaoEventsPanelHeightConstraint" destination="455" id="467"/>
+                <outlet property="emailLabel" destination="k0T-rl-l1A" id="wKT-MH-cHr"/>
                 <outlet property="enderecoLabel" destination="41" id="349"/>
                 <outlet property="lastView" destination="482" id="494"/>
                 <outlet property="missaEventsPanel" destination="435" id="464"/>
