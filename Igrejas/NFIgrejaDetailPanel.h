@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MessageUI/MessageUI.h>
 
 #import "NFIgreja.h"
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
@@ -38,5 +38,7 @@
 - (void)igrejaDetailPanel:(NFIgrejaDetailPanel *)panel phoneLinkTappedWithTextCheckingResults:(NSArray *)results;
 
 - (void)igrejaDetailPanelSiteLinkTapped:(NFIgrejaDetailPanel *)panel;
+
+- (void)igrejaDetailPanelEmailLinkTapped:(NFIgrejaDetailPanel*)panel emailTapped:(NSString *) email;
 
 @end

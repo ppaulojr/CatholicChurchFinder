@@ -236,7 +236,7 @@
 
 - (void) _emailLinkTapped
 {
-    
+    [self.delegate igrejaDetailPanelEmailLinkTapped:self emailTapped:self.emailLabel.text];
 }
 
 @end

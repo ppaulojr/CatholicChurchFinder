@@ -172,4 +172,19 @@
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
 
+- (void) igrejaDetailPanelEmailLinkTapped:(NFIgrejaDetailPanel *)panel emailTapped:(NSString *)email
+{
+    MFMailComposeViewController * mfmc = [[MFMailComposeViewController alloc] init];
+    mfmc.mailComposeDelegate = self;
+    [mfmc setToRecipients:@[email]];
+    [self presentViewController:mfmc animated:YES completion:Nil];
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissViewControllerAnimated:YES completion:Nil];
+}
+
+
+
 @end

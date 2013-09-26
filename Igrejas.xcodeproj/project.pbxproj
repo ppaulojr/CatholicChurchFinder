@@ -19,6 +19,7 @@
 		82C8CB49179489EE00C8F787 /* template.cs in Resources */ = {isa = PBXBuildFile; fileRef = 82C8CB48179489EE00C8F787 /* template.cs */; };
 		82C8CB4A1794933100C8F787 /* NFEventMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ED747BF9178B62BB00E6D242 /* NFEventMatchContext.m */; };
 		83591BC517E11A4F00197C06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83591BC417E11A4F00197C06 /* Images.xcassets */; };
+		9F0BE6C017F3989800D05D2B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0BE6BF17F3989800D05D2B /* MessageUI.framework */; };
 		DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */; };
 		ED021FA81784C69100E96B49 /* NFLaredoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFLaredoViewController.m */; };
 		ED021FAB1784C6C800E96B49 /* NFAppUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFAppUteisViewController.m */; };
@@ -155,6 +156,7 @@
 		82C8CB48179489EE00C8F787 /* template.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.cs; sourceTree = "<group>"; };
 		83591BC417E11A4F00197C06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVImporter.xcconfig"; path = "Pods/Pods-CSVImporter.xcconfig"; sourceTree = SOURCE_ROOT; };
+		9F0BE6BF17F3989800D05D2B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B38B88B9D7454CFA9551953D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED021FA61784C69100E96B49 /* NFLaredoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFLaredoViewController.h; sourceTree = "<group>"; };
 		ED021FA71784C69100E96B49 /* NFLaredoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFLaredoViewController.m; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0BE6C017F3989800D05D2B /* MessageUI.framework in Frameworks */,
 				ED0B88561786046C003174F6 /* QuartzCore.framework in Frameworks */,
 				ED0B88471785B9CD003174F6 /* Accounts.framework in Frameworks */,
 				ED0B88451785B478003174F6 /* Social.framework in Frameworks */,
@@ -367,6 +370,7 @@
 		ED3B1450177485AD00213826 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F0BE6BF17F3989800D05D2B /* MessageUI.framework */,
 				EE949FE71CAC43668C92A901 /* libPods-CSVImporter.a */,
 				B38B88B9D7454CFA9551953D /* libPods.a */,
 				ED0B88461785B9CD003174F6 /* Accounts.framework */,

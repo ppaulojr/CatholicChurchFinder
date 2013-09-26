@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
 #import "NFIgreja.h"
 
-@interface NFIgrejaDetailViewController : UIViewController
+@interface NFIgrejaDetailViewController : UIViewController <MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, strong) NFIgreja *igreja;
 
