@@ -75,7 +75,7 @@ const struct NFEventFetchedProperties NFEventFetchedProperties = {
 }
 
 - (void)setEndTimeValue:(int16_t)value_ {
-	[self setEndTime:@(value_)];
+	[self setEndTime:[NSNumber numberWithShort:value_]];
 }
 
 - (int16_t)primitiveEndTimeValue {
@@ -84,7 +84,7 @@ const struct NFEventFetchedProperties NFEventFetchedProperties = {
 }
 
 - (void)setPrimitiveEndTimeValue:(int16_t)value_ {
-	[self setPrimitiveEndTime:@(value_)];
+	[self setPrimitiveEndTime:[NSNumber numberWithShort:value_]];
 }
 
 
@@ -108,7 +108,7 @@ const struct NFEventFetchedProperties NFEventFetchedProperties = {
 }
 
 - (void)setStartTimeValue:(int16_t)value_ {
-	[self setStartTime:@(value_)];
+	[self setStartTime:[NSNumber numberWithShort:value_]];
 }
 
 - (int16_t)primitiveStartTimeValue {
@@ -117,7 +117,7 @@ const struct NFEventFetchedProperties NFEventFetchedProperties = {
 }
 
 - (void)setPrimitiveStartTimeValue:(int16_t)value_ {
-	[self setPrimitiveStartTime:@(value_)];
+	[self setPrimitiveStartTime:[NSNumber numberWithShort:value_]];
 }
 
 
@@ -134,16 +134,16 @@ const struct NFEventFetchedProperties NFEventFetchedProperties = {
 }
 
 - (void)setTypeValue:(int16_t)value_ {
-	[self setType:@(value_)];
+	[self setType:[NSNumber numberWithShort:value_]];
 }
 
 - (int16_t)primitiveTypeValue {
-	NSNumber *result = [self primitiveTypeNumber];
+	NSNumber *result = [self primitiveType];
 	return [result shortValue];
 }
 
 - (void)setPrimitiveTypeValue:(int16_t)value_ {
-	[self setPrimitiveTypeNumber:@(value_)];
+	[self setPrimitiveType:[NSNumber numberWithShort:value_]];
 }
 
 

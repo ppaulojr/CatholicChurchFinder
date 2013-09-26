@@ -86,10 +86,17 @@
     [self _reset];
 
     self.nomeLabel.text = [igreja.nome uppercaseString];
+    NSString * obs = nil;
+    if (igreja.secretaria) {
+        obs = [NSString stringWithFormat:@"Office Hours:\n%@\n%@",igreja.secretaria,igreja.observacao];
+    } else {
+        obs = igreja.observacao;
+    }
+    
     [self _setTextOrNil:igreja.paroco forLabel:self.parocoLabel];
     [self _setTextOrNil:igreja.telefones forLabel:self.telefonesLabel];
     [self _setTextOrNil:igreja.site forLabel:self.siteLabel];
-    [self _setTextOrNil:igreja.observacao forLabel:self.observacaoTextView];
+    [self _setTextOrNil:obs forLabel:self.observacaoTextView];
 
     // Compose the address
     NSMutableString *endereco = [igreja.endereco mutableCopy];
@@ -207,7 +214,7 @@
     size = [self.confissaoEventsPanel sizeThatFits:self.bounds.size];
     self.confissaoEventsPanelHeightConstraint.constant = size.height;
 
-    size = self.observacaoTextView.contentSize;
+    size = [self.observacaoTextView sizeThatFits:self.bounds.size];
     self.observacaoTextViewHeightConstraint.constant = size.height;
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="13A569" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="iOS 7.0">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="13A584" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="iOS 7.0">
     <entity name="Event" representedClassName="NFEvent" isAbstract="YES" syncable="YES">
         <attribute name="endTime" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
         <attribute name="observation" optional="YES" attributeType="String" syncable="YES"/>
@@ -20,6 +20,7 @@
         <attribute name="normalizedNome" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="observacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="paroco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secretaria" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="site" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telefones" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="event" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="igreja" inverseEntity="Event" syncable="YES"/>

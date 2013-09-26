@@ -16,6 +16,7 @@ const struct NFIgrejaAttributes NFIgrejaAttributes = {
 	.normalizedNome = @"normalizedNome",
 	.observacao = @"observacao",
 	.paroco = @"paroco",
+	.secretaria = @"secretaria",
 	.site = @"site",
 	.telefones = @"telefones",
 };
@@ -115,7 +116,7 @@ const struct NFIgrejaFetchedProperties NFIgrejaFetchedProperties = {
 }
 
 - (void)setLatitudeValue:(double)value_ {
-	[self setLatitude:@(value_)];
+	[self setLatitude:[NSNumber numberWithDouble:value_]];
 }
 
 - (double)primitiveLatitudeValue {
@@ -124,7 +125,7 @@ const struct NFIgrejaFetchedProperties NFIgrejaFetchedProperties = {
 }
 
 - (void)setPrimitiveLatitudeValue:(double)value_ {
-	[self setPrimitiveLatitude:@(value_)];
+	[self setPrimitiveLatitude:[NSNumber numberWithDouble:value_]];
 }
 
 
@@ -141,7 +142,7 @@ const struct NFIgrejaFetchedProperties NFIgrejaFetchedProperties = {
 }
 
 - (void)setLongitudeValue:(double)value_ {
-	[self setLongitude:@(value_)];
+	[self setLongitude:[NSNumber numberWithDouble:value_]];
 }
 
 - (double)primitiveLongitudeValue {
@@ -150,7 +151,7 @@ const struct NFIgrejaFetchedProperties NFIgrejaFetchedProperties = {
 }
 
 - (void)setPrimitiveLongitudeValue:(double)value_ {
-	[self setPrimitiveLongitude:@(value_)];
+	[self setPrimitiveLongitude:[NSNumber numberWithDouble:value_]];
 }
 
 
@@ -186,6 +187,13 @@ const struct NFIgrejaFetchedProperties NFIgrejaFetchedProperties = {
 
 
 @dynamic paroco;
+
+
+
+
+
+
+@dynamic secretaria;
 
 
 

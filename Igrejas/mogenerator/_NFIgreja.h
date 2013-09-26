@@ -17,6 +17,7 @@ extern const struct NFIgrejaAttributes {
 	__unsafe_unretained NSString *normalizedNome;
 	__unsafe_unretained NSString *observacao;
 	__unsafe_unretained NSString *paroco;
+	__unsafe_unretained NSString *secretaria;
 	__unsafe_unretained NSString *site;
 	__unsafe_unretained NSString *telefones;
 } NFIgrejaAttributes;
@@ -29,6 +30,7 @@ extern const struct NFIgrejaFetchedProperties {
 } NFIgrejaFetchedProperties;
 
 @class NFEvent;
+
 
 
 
@@ -186,6 +188,16 @@ extern const struct NFIgrejaFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString* secretaria;
+
+
+
+//- (BOOL)validateSecretaria:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSString* site;
 
 
@@ -302,6 +314,12 @@ extern const struct NFIgrejaFetchedProperties {
 
 - (NSString*)primitiveParoco;
 - (void)setPrimitiveParoco:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveSecretaria;
+- (void)setPrimitiveSecretaria:(NSString*)value;
 
 
 

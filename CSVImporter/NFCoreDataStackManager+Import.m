@@ -106,7 +106,7 @@
     NSMutableDictionary *igrejas = [NSMutableDictionary dictionary];
 
     parserDelegate.lineBlock = ^(NSArray *fields) {
-        NSAssert(fields.count == 21, @"Expected 21 fields, got %d", fields.count);
+        NSAssert(fields.count == 22, @"Expected 22 fields, got %d", fields.count);
 
         // Skip the header
         if ([fields[0] isEqualToString:@"id_igreja"]) {
@@ -125,7 +125,8 @@
         igreja.longitudeValue = [fields[12] doubleValue];
         igreja.site = [self stringOrNilWithImportedString:fields[15]];
         igreja.email = [self stringOrNilWithImportedString:fields[16]];
-        igreja.lastModified = [self dateWithImportedString:fields[20]];
+        igreja.secretaria = [self stringOrNilWithImportedString:fields[20]];
+        igreja.lastModified = [self dateWithImportedString:fields[21]];
 
         igreja.normalizedNome = [self stringByNormalizingImportedString:igreja.nome];
         igreja.normalizedBairro = [self stringByNormalizingImportedString:igreja.bairro];
