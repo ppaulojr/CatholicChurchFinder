@@ -88,7 +88,11 @@
     self.nomeLabel.text = [igreja.nome uppercaseString];
     NSString * obs = nil;
     if (igreja.secretaria) {
-        obs = [NSString stringWithFormat:@"Office Hours:\n%@\n%@",igreja.secretaria,igreja.observacao];
+        if (igreja.observacao) {
+            obs = [NSString stringWithFormat:@"Office Hours:\n%@\n%@",igreja.secretaria,igreja.observacao];
+        } else {
+            obs = [NSString stringWithFormat:@"Office Hours:\n%@",igreja.secretaria];
+        }
     } else {
         obs = igreja.observacao;
     }
