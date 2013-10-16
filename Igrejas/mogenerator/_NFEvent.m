@@ -138,12 +138,12 @@ const struct NFEventFetchedProperties NFEventFetchedProperties = {
 }
 
 - (int16_t)primitiveTypeValue {
-	NSNumber *result = [self primitiveType];
+	NSNumber *result = [self m_primitiveType];
 	return [result shortValue];
 }
 
 - (void)setPrimitiveTypeValue:(int16_t)value_ {
-	[self setPrimitiveType:[NSNumber numberWithShort:value_]];
+	[self setMprimitiveType:[NSNumber numberWithShort:value_]];
 }
 
 
