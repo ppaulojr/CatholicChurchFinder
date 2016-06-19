@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
-abstract_target 'iOrchid' do
+abstract_target 'Igrejas' do
         # key tools
         # Evaluate if we can go to AFNetworking 2.6.x
         pod 'AFNetworking'
