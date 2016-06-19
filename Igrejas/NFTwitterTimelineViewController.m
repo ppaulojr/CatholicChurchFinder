@@ -79,12 +79,12 @@ static NSString * const kStatusURLFormat = @"https://twitter.com/%@/status/%@";
     PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
 
     if ([NFTwitterIntegration canOpenTwitterApp]) {
-        [actionSheet addButtonWithTitle:@"Open in Twitter app" block:^{
+        [actionSheet addButtonWithTitle:@"Open in Twitter app" block:^(NSInteger buttonIndex){
             [NFTwitterIntegration openTwitterAppWithScreenName:kScreenName];
         }];
     }
 
-    [actionSheet addButtonWithTitle:@"Open in Safari" block:^{
+    [actionSheet addButtonWithTitle:@"Open in Safari" block:^(NSInteger buttonIndex){
         NSString *url = [NSString stringWithFormat:kScreenNameURLFormat, kScreenName];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     }];

@@ -12,7 +12,6 @@
 
 + (instancetype)sharedManagerWithRootViewController:(UIViewController *)rootViewController;
 
-- (void)takeOverAdBannerWithAddBlock:(void (^)(UIView *))addBlock removeBlock:(void (^)(UIView *))removeBlock;
 
 @end
 

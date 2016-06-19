@@ -104,19 +104,20 @@
 - (void)igrejaDetailPanelAddressLinkTapped:(NFIgrejaDetailPanel *)panel
 {
     PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
+    
 
-    [actionSheet addButtonWithTitle:NSLocalizedString(@"Open in map",@"") block:^{
+    [actionSheet addButtonWithTitle:NSLocalizedString(@"Open in map",@"") block:^(NSInteger buttonIndex){
         [[self _mapItemForIgreja] openInMapsWithLaunchOptions:nil];
     }];
 
-    [actionSheet addButtonWithTitle:@"Route by Car" block:^{
+    [actionSheet addButtonWithTitle:@"Route by Car" block:^(NSInteger buttonIndex){
         MKMapItem *igrejaMapItem = [self _mapItemForIgreja];
         MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
         NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
         [MKMapItem openMapsWithItems:@[currentLocationMapItem, igrejaMapItem] launchOptions:launchOptions];
     }];
 
-    [actionSheet addButtonWithTitle:@"Walking Route" block:^{
+    [actionSheet addButtonWithTitle:@"Walking Route" block:^(NSInteger buttonIndex){
         MKMapItem *igrejaMapItem = [self _mapItemForIgreja];
         MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
         NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeWalking};
@@ -124,13 +125,13 @@
     }];
 
     if ([NFGoogleMapsIntegration canOpenDirectionsInGoogleMaps]) {
-        [actionSheet addButtonWithTitle:@"Google Maps Routing" block:^{
+        [actionSheet addButtonWithTitle:@"Google Maps Routing" block:^(NSInteger buttonIndex){
             [NFGoogleMapsIntegration openDirectionsInGoogleMapsWithIgreja:self.igreja];
         }];
     }
 
     if ([NFWazeIntegration canOpenDirectionsInWaze]) {
-        [actionSheet addButtonWithTitle:@"Waze Routing" block:^{
+        [actionSheet addButtonWithTitle:@"Waze Routing" block:^(NSInteger buttonIndex){
             [NFWazeIntegration openDirectionsInWazeWithIgreja:self.igreja];
         }];
     }
@@ -146,7 +147,7 @@
 
     for (NSTextCheckingResult *result in results) {
         NSString *title = [NSString stringWithFormat:@"Call to %@", result.phoneNumber];
-        [actionSheet addButtonWithTitle:title block:^{
+        [actionSheet addButtonWithTitle:title block:^(NSInteger buttonIndex){
             NSString * phoneNumber = [[result.phoneNumber componentsSeparatedByCharactersInSet:
                                       [[NSCharacterSet decimalDigitCharacterSet] invertedSet]]
                                       componentsJoinedByString:@""];
@@ -163,7 +164,7 @@
 {
     PSPDFActionSheet *actionSheet = [[PSPDFActionSheet alloc] initWithTitle:nil];
 
-    [actionSheet addButtonWithTitle:@"Open in Safari" block:^{
+    [actionSheet addButtonWithTitle:@"Open in Safari" block:^(NSInteger buttonIndex){
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.igreja.site]];
     }];
 
