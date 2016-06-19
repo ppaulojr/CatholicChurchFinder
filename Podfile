@@ -1,10 +1,13 @@
-platform :ios, '6.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+abstract_target 'iOrchid' do
+        # key tools
+        # Evaluate if we can go to AFNetworking 2.6.x
+        pod 'AFNetworking'
+	pod 'Appirater'
+	pod 'PSAlertView'
 
-pod 'AdMob', '6.4.2'
-pod 'AFNetworking', '1.2.1'
-pod 'Appirater', '1.0.3'
-pod 'PSAlertView', '1.1'
-
-target :CSVImporter, :exclusive => true do
-    pod 'CHCSVParser', :podspec => './Podspecs/CHCSVParser-2.0.7.podspec'
+	target :CSVImporter do
+    		pod 'CHCSVParser', :podspec => './Podspecs/CHCSVParser-2.0.7.podspec'
+	end
 end

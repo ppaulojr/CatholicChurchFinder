@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50378128151C43E3BD2795B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B88B9D7454CFA9551953D /* libPods.a */; };
+		55606D814F2EC473859C5965 /* libPods-iOrchid-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBBF9A0430B79F1189275B7 /* libPods-iOrchid-CSVImporter.a */; };
 		8226127317BA970900E0BA70 /* OrdinalNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8226127217BA970800E0BA70 /* OrdinalNumberFormatter.m */; };
 		8226127C17BAA8A900E0BA70 /* HolyRosary.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127617BAA8A900E0BA70 /* HolyRosary.png */; };
 		8226127D17BAA8A900E0BA70 /* HolyRosary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127717BAA8A900E0BA70 /* HolyRosary@2x.png */; };
@@ -142,7 +142,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		598E3167B82747C4BF0833E9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		3EBBF9A0430B79F1189275B7 /* libPods-iOrchid-CSVImporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOrchid-CSVImporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		637333D6F42CD78F57225627 /* Pods-iOrchid-CSVImporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOrchid-CSVImporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOrchid-CSVImporter/Pods-iOrchid-CSVImporter.release.xcconfig"; sourceTree = "<group>"; };
 		8226127117BA969800E0BA70 /* OrdinalNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdinalNumberFormatter.h; sourceTree = "<group>"; };
 		8226127217BA970800E0BA70 /* OrdinalNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdinalNumberFormatter.m; sourceTree = "<group>"; };
 		8226127617BAA8A900E0BA70 /* HolyRosary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HolyRosary.png; sourceTree = "<group>"; };
@@ -155,9 +156,9 @@
 		82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCSharpCodeGeneratorLanguage.m; sourceTree = "<group>"; };
 		82C8CB48179489EE00C8F787 /* template.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.cs; sourceTree = "<group>"; };
 		83591BC417E11A4F00197C06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVImporter.xcconfig"; path = "Pods/Pods-CSVImporter.xcconfig"; sourceTree = SOURCE_ROOT; };
 		9F0BE6BF17F3989800D05D2B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B38B88B9D7454CFA9551953D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6BEA0F5315698655007625 /* Pods-iOrchid-CSVImporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOrchid-CSVImporter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOrchid-CSVImporter/Pods-iOrchid-CSVImporter.debug.xcconfig"; sourceTree = "<group>"; };
 		ED021FA61784C69100E96B49 /* NFLaredoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFLaredoViewController.h; sourceTree = "<group>"; };
 		ED021FA71784C69100E96B49 /* NFLaredoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFLaredoViewController.m; sourceTree = "<group>"; };
 		ED021FA91784C6C800E96B49 /* NFAppUteisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFAppUteisViewController.h; sourceTree = "<group>"; };
@@ -315,7 +316,6 @@
 				ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */,
 				ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */,
 				ED3B1456177485AD00213826 /* CoreGraphics.framework in Frameworks */,
-				50378128151C43E3BD2795B0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,12 +338,22 @@
 				EDB202A61774892D00AB8CFD /* Foundation.framework in Frameworks */,
 				EDB202A71774892D00AB8CFD /* CoreGraphics.framework in Frameworks */,
 				DAA29F812DDE4635A6292BC6 /* libPods-CSVImporter.a in Frameworks */,
+				55606D814F2EC473859C5965 /* libPods-iOrchid-CSVImporter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EFB65644C1B71FAC7527108 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE6BEA0F5315698655007625 /* Pods-iOrchid-CSVImporter.debug.xcconfig */,
+				637333D6F42CD78F57225627 /* Pods-iOrchid-CSVImporter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED3B1445177485AC00213826 = {
 			isa = PBXGroup;
 			children = (
@@ -352,8 +362,7 @@
 				EDB202A81774892D00AB8CFD /* CSVImporter */,
 				ED3B1450177485AD00213826 /* Frameworks */,
 				ED3B144F177485AD00213826 /* Products */,
-				84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */,
-				598E3167B82747C4BF0833E9 /* Pods.xcconfig */,
+				3EFB65644C1B71FAC7527108 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -383,6 +392,7 @@
 				ED0B88551786046C003174F6 /* QuartzCore.framework */,
 				ED0B88441785B478003174F6 /* Social.framework */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
+				3EBBF9A0430B79F1189275B7 /* libPods-iOrchid-CSVImporter.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -656,11 +666,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED3B146B177485AD00213826 /* Build configuration list for PBXNativeTarget "Igrejas" */;
 			buildPhases = (
-				121BB6622E4643B990E5D62B /* Check Pods Manifest.lock */,
 				ED3B144A177485AD00213826 /* Sources */,
 				ED3B144B177485AD00213826 /* Frameworks */,
 				ED3B144C177485AD00213826 /* Resources */,
-				BF97FFFA78CD4A558C470A75 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -694,11 +702,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDB202BC1774892E00AB8CFD /* Build configuration list for PBXNativeTarget "CSVImporter" */;
 			buildPhases = (
-				4BB27C7C4C8D465E8DE30D73 /* Check Pods Manifest.lock */,
+				4BB27C7C4C8D465E8DE30D73 /* [CP] Check Pods Manifest.lock */,
 				EDB202A01774892D00AB8CFD /* Sources */,
 				EDB202A11774892D00AB8CFD /* Frameworks */,
 				EDB202A21774892D00AB8CFD /* Resources */,
-				B7B62FBE480A4E41BBC324AD /* Copy Pods Resources */,
+				B7B62FBE480A4E41BBC324AD /* [CP] Copy Pods Resources */,
+				256931592B402C2815CC97EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -716,7 +725,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = NF;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = NetFilter;
 				TargetAttributes = {
 					ED3B144D177485AD00213826 = {
@@ -817,61 +826,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		121BB6622E4643B990E5D62B /* Check Pods Manifest.lock */ = {
+		256931592B402C2815CC97EC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOrchid-CSVImporter/Pods-iOrchid-CSVImporter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BB27C7C4C8D465E8DE30D73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 		};
-		4BB27C7C4C8D465E8DE30D73 /* Check Pods Manifest.lock */ = {
+		B7B62FBE480A4E41BBC324AD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-		};
-		B7B62FBE480A4E41BBC324AD /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CSVImporter-resources.sh\"\n";
-		};
-		BF97FFFA78CD4A558C470A75 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOrchid-CSVImporter/Pods-iOrchid-CSVImporter-resources.sh\"\n";
 		};
 		ED84964B1790A507009B61A4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1007,6 +1003,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1018,7 +1015,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1042,7 +1039,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1051,7 +1048,6 @@
 		};
 		ED3B146C177485AD00213826 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 598E3167B82747C4BF0833E9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1061,16 +1057,16 @@
 				GCC_PREFIX_HEADER = "Igrejas/Igrejas-Prefix.pch";
 				INFOPLIST_FILE = "Igrejas/Igrejas-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.netfilter.igrejaslaredo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos7.0;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		ED3B146D177485AD00213826 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 598E3167B82747C4BF0833E9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1081,10 +1077,11 @@
 				INFOPLIST_FILE = "Igrejas/Igrejas-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.netfilter.igrejaslaredo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "480A2F07-2D97-413B-BB3A-3B2989D9BC76";
-				SDKROOT = iphoneos7.0;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1100,6 +1097,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IgrejasTests/IgrejasTests-Prefix.pch";
 				INFOPLIST_FILE = "IgrejasTests/IgrejasTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.netfilter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -1116,6 +1114,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IgrejasTests/IgrejasTests-Prefix.pch";
 				INFOPLIST_FILE = "IgrejasTests/IgrejasTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.netfilter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -1123,13 +1122,14 @@
 		};
 		EDB202BA1774892E00AB8CFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */;
+			baseConfigurationReference = DE6BEA0F5315698655007625 /* Pods-iOrchid-CSVImporter.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSVImporter/CSVImporter-Prefix.pch";
 				INFOPLIST_FILE = "CSVImporter/CSVImporter-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.netfilter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1138,13 +1138,14 @@
 		};
 		EDB202BB1774892E00AB8CFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84D4C8D5036043E092B4300C /* Pods-CSVImporter.xcconfig */;
+			baseConfigurationReference = 637333D6F42CD78F57225627 /* Pods-iOrchid-CSVImporter.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSVImporter/CSVImporter-Prefix.pch";
 				INFOPLIST_FILE = "CSVImporter/CSVImporter-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.netfilter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

@@ -27,7 +27,7 @@ cat >"$LICENSES_FILE" <<EOD
     <style type="text/css">
 body {
     background: transparent;
-    font-family: "Helvetica Neue", "Helvetica";
+    font-family: "Helvetica Neue", "Helvetica","Arial";
     font-size: 80%;
 }
 
