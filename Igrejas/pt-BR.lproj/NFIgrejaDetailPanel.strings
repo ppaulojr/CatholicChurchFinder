@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "SAGRADA FAMÍLIA"; ObjectID = "10"; */
+"10.text" = "SAGRADA FAMÍLIA";
+
+/* Class = "UILabel"; text = "Address:"; ObjectID = "13"; */
+"13.text" = "Endereço:";
+
+/* Class = "UILabel"; text = "Rua Morro do Ouro, 231\nRibeira - Ilha do Governador - Rio de Janeiro - RJ\nCEP: 21930-126"; ObjectID = "41"; */
+"41.text" = "Rua Morro do Ouro, 231\nRibeira - Ilha do Governador - Rio de Janeiro - RJ\nCEP: 21930-126";
+
+/* Class = "UILabel"; text = "Pastor:"; ObjectID = "92"; */
+"92.text" = "Pároco:";
+
+/* Class = "UILabel"; text = "Pe. Carlos Gómez Saiz"; ObjectID = "98"; */
+"98.text" = "Pe. Carlos Gómez Saiz";
+
+/* Class = "UILabel"; text = "Phone:"; ObjectID = "104"; */
+"104.text" = "Telefone:";
+
+/* Class = "UILabel"; text = "(21) 3396-3292"; ObjectID = "112"; */
+"112.text" = "(21) 3396-3292";
+
+/* Class = "UILabel"; text = "Website:"; ObjectID = "119"; */
+"119.text" = "Website:";
+
+/* Class = "UILabel"; text = "http://www.teste.com.br/"; ObjectID = "128"; */
+"128.text" = "http://www.teste.com.br/";
+
+/* Class = "UILabel"; text = "MASSES"; ObjectID = "135"; */
+"135.text" = "MISSAS";
+
+/* Class = "UILabel"; text = "CONFESSIONS"; ObjectID = "323"; */
+"323.text" = "CONFISSÕES";
+
+/* Class = "UILabel"; text = "OBSERVATIONS"; ObjectID = "469"; */
+"469.text" = "OBSERVAÇÕES";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "482"; */
+"482.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "E-Mail"; ObjectID = "fy7-lt-0KO"; */
+"fy7-lt-0KO.text" = "E-Mail";
+
+/* Class = "UILabel"; text = "teste@teste.com"; ObjectID = "k0T-rl-l1A"; */
+"k0T-rl-l1A.text" = "teste@teste.com";

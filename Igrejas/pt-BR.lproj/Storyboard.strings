@@ -1,0 +1,147 @@
+
+/* Class = "UILabel"; text = "Facebook Laredo's Diocese"; ObjectID = "1re-FY-wKD"; */
+"1re-FY-wKD.text" = "Facebook da Diocese";
+
+/* Class = "UILabel"; text = "Hybrid"; ObjectID = "2SJ-Eq-i3W"; */
+"2SJ-Eq-i3W.text" = "Híbrido";
+
+/* Class = "UILabel"; text = "137,5 km"; ObjectID = "3Sm-lW-RnO"; */
+"3Sm-lW-RnO.text" = "137,5 km";
+
+/* Class = "UILabel"; text = "Twitter @usccb"; ObjectID = "3oP-wk-PW0"; */
+"3oP-wk-PW0.text" = "Twitter da Diocese";
+
+/* Class = "UINavigationItem"; title = "Masses"; ObjectID = "3rz-3I-aDh"; */
+"3rz-3I-aDh.title" = "Missas";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "53p-8V-GUc"; */
+"53p-8V-GUc.title" = "Configurações";
+
+/* Class = "UILabel"; text = "Vatican Website"; ObjectID = "6LP-8k-vuO"; */
+"6LP-8k-vuO.text" = "Vaticano Site";
+
+/* Class = "UITableViewSection"; footerTitle = "The data contained in this application are from the portal horariodemissa.com.br and we recommend that whenever necessary to confirm the schedule by calling the parishes or chapels."; ObjectID = "9DQ-OL-Qr1"; */
+"9DQ-OL-Qr1.footerTitle" = "Os dados contidos nesta aplicação são do site horariodemissa.com.br recomendamos que quando necessário confirme ligando para a paróquia ou capela.";
+
+/* Class = "UITableViewSection"; headerTitle = "App"; ObjectID = "9DQ-OL-Qr1"; */
+"9DQ-OL-Qr1.headerTitle" = "App";
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "Bib-dg-dgs"; */
+"Bib-dg-dgs.text" = "Versão";
+
+/* Class = "UILabel"; text = "Centro"; ObjectID = "DcW-2C-0oL"; */
+"DcW-2C-0oL.text" = "Centro";
+
+/* Class = "UINavigationItem"; title = "Licenses"; ObjectID = "ECj-4i-cC8"; */
+"ECj-4i-cC8.title" = "Licenças";
+
+/* Class = "UILabel"; text = "Neste sábado acontecerá uma grande festa para receber os #SímbolosdaJMJ no RJ! Vai ficar de fora? Veja as atrações: http://goo.gl/gjbc0 "; ObjectID = "EMI-Ej-qZV"; */
+"EMI-Ej-qZV.text" = "Neste sábado acontecerá uma grande festa para receber os #SímbolosdaJMJ no RJ! Vai ficar de fora? Veja as atrações: http://goo.gl/gjbc0 ";
+
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "FZV-UK-qGF"; */
+"FZV-UK-qGF.title" = "Map";
+
+/* Class = "UITableViewSection"; footerTitle = "hybrid: map over satellite images."; ObjectID = "Gsx-jv-IYR"; */
+"Gsx-jv-IYR.footerTitle" = "híbrido: mapa sobre imagem de satellite.";
+
+/* Class = "UITableViewSection"; headerTitle = "Map Type"; ObjectID = "Gsx-jv-IYR"; */
+"Gsx-jv-IYR.headerTitle" = "Tipo Mapa";
+
+/* Class = "UILabel"; text = "Latin Edition"; ObjectID = "HdX-l6-qn5"; */
+"HdX-l6-qn5.text" = "Edição Latina";
+
+/* Class = "UISearchBar"; L56-vR-t0s.scopeButtonTitles[0] = "Tudo"; ObjectID = "L56-vR-t0s"; */
+"L56-vR-t0s.scopeButtonTitles[0]" = "Tudo";
+
+/* Class = "UISearchBar"; L56-vR-t0s.scopeButtonTitles[1] = "Nome"; ObjectID = "L56-vR-t0s"; */
+"L56-vR-t0s.scopeButtonTitles[1]" = "Nome";
+
+/* Class = "UISearchBar"; L56-vR-t0s.scopeButtonTitles[2] = "Bairro"; ObjectID = "L56-vR-t0s"; */
+"L56-vR-t0s.scopeButtonTitles[2]" = "Bairro";
+
+/* Class = "UITabBarItem"; title = "Churches"; ObjectID = "NBs-YY-F2L"; */
+"NBs-YY-F2L.title" = "Igrejas";
+
+/* Class = "UILabel"; text = "1.2.3"; ObjectID = "Tae-sv-zha"; */
+"Tae-sv-zha.text" = "1.2.3";
+
+/* Class = "UILabel"; text = "137,5 km"; ObjectID = "TfK-ID-coN"; */
+"TfK-ID-coN.text" = "137,5 km";
+
+/* Class = "UILabel"; text = "Orationis"; ObjectID = "Ybs-LQ-VLC"; */
+"Ybs-LQ-VLC.text" = "Orationis";
+
+/* Class = "UILabel"; text = "Holy Bible"; ObjectID = "YtL-K7-LXq"; */
+"YtL-K7-LXq.text" = "Bíblia Sagrada";
+
+/* Class = "UITableViewSection"; footerTitle = "The Roman Catholic Diocese of Laredo (Latin: Dioecesis Laredanus) is a Roman Catholic diocese located in Laredo, Texas. It was founded on July 3, 2000. The San Agustin Cathedral is the Mother Church of the Diocese of Laredo. "; ObjectID = "Z1i-8G-6RK"; */
+"Z1i-8G-6RK.footerTitle" = "Igrejas do Brasil ";
+
+/* Class = "UITableViewSection"; headerTitle = "Laredo's Diocese"; ObjectID = "Z1i-8G-6RK"; */
+"Z1i-8G-6RK.headerTitle" = "Dioceses do Brasil";
+
+/* Class = "UITabBarItem"; title = "Masses"; ObjectID = "apu-BJ-5Vr"; */
+"apu-BJ-5Vr.title" = "Missas";
+
+/* Class = "UILabel"; text = "After the Mass"; ObjectID = "dDz-bz-xcc"; */
+"dDz-bz-xcc.text" = "Depois da Missa";
+
+/* Class = "UINavigationItem"; title = "Twitter"; ObjectID = "eQS-jy-GqU"; */
+"eQS-jy-GqU.title" = "Twitter";
+
+/* Class = "UILabel"; text = "Catedral Metropolitana de São Sebastião"; ObjectID = "f6R-SD-THL"; */
+"f6R-SD-THL.text" = "Catedral Metropolitana de São Sebastião";
+
+/* Class = "UINavigationItem"; title = "Apps"; ObjectID = "gok-OD-sRz"; */
+"gok-OD-sRz.title" = "Apps";
+
+/* Class = "UITableViewSection"; headerTitle = "Redes sociais"; ObjectID = "gw4-lx-XsZ"; */
+"gw4-lx-XsZ.headerTitle" = "Redes sociais";
+
+/* Class = "UILabel"; text = "Default"; ObjectID = "jM8-RP-Kpm"; */
+"jM8-RP-Kpm.text" = "Default";
+
+/* Class = "UILabel"; text = "Catedral Metropolitana de São Sebastião"; ObjectID = "knS-V3-hWb"; */
+"knS-V3-hWb.text" = "Catedral Metropolitana de São Sebastião";
+
+/* Class = "UINavigationItem"; title = "Laredo"; ObjectID = "kw8-5u-Jk8"; */
+"kw8-5u-Jk8.title" = "Rio";
+
+/* Class = "UINavigationItem"; title = "Churches"; ObjectID = "mhb-jd-hxO"; */
+"mhb-jd-hxO.title" = "Igrejas";
+
+/* Class = "UITableViewSection"; headerTitle = "Useful Apps"; ObjectID = "nJJ-DO-EhS"; */
+"nJJ-DO-EhS.headerTitle" = "Aplicações úteis";
+
+/* Class = "UILabel"; text = "Laredo's Diocese Website"; ObjectID = "nrY-z2-W1E"; */
+"nrY-z2-W1E.text" = "Site da Diocese";
+
+/* Class = "UILabel"; text = "HorariodeMissa.com"; ObjectID = "oRx-fR-BCy"; */
+"oRx-fR-BCy.text" = "HorariodeMissa.com";
+
+/* Class = "UITabBarItem"; title = "Laredo"; ObjectID = "qq0-aa-9Cz"; */
+"qq0-aa-9Cz.title" = "Rio";
+
+/* Class = "UILabel"; text = "Licenses"; ObjectID = "sGc-38-X8T"; */
+"sGc-38-X8T.text" = "Licenças";
+
+/* Class = "UILabel"; text = "Your voice companion"; ObjectID = "u1u-zo-b80"; */
+"u1u-zo-b80.text" = "Seu companheiro de oração";
+
+/* Class = "UILabel"; text = "Holy Rosary"; ObjectID = "uw7-Ia-697"; */
+"uw7-Ia-697.text" = "Santo Rosário";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "vBF-In-nQF"; */
+"vBF-In-nQF.title" = "Mapa";
+
+/* Class = "UILabel"; text = "Developer: Netfilter Ltda"; ObjectID = "vk2-cU-fz0"; */
+"vk2-cU-fz0.text" = "Desenvolvedor: Netfilter Ltda";
+
+/* Class = "UILabel"; text = "Centro"; ObjectID = "wPS-H4-610"; */
+"wPS-H4-610.text" = "Centro";
+
+/* Class = "UILabel"; text = "Useful Apps"; ObjectID = "wpP-Fy-XkN"; */
+"wpP-Fy-XkN.text" = "Aplicações Úteis";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "wz4-gj-pks"; */
+"wz4-gj-pks.title" = "Configurações";

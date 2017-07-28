@@ -1,229 +1,1241 @@
 "id_igreja";"nome";"paroco";"endereco";"bairro";"cidade";"uf";"pais";"cep";"telefones";"observacao";"latitude";"longitude";"src_missas";"src_confissoes";"url";"email";"diocese";"hash";"hash_matriz";"secretaria";"last_modified"
-198471;"Blessed Sacrament Church";"Fr.Wojciech Przystasz";"2219 Galveston St.";"Laredo";"Laredo";"TX";"USA";78043;"(956) 722-1231";"Confession also by appointment call at least 1 day in advance";27.510704;-99.473683;"Dom 8:00 (Español) 
-Dom 10:00, 12:00, 17:00 (English)
-1o Sab 9h (English)
-Sab 18:00 (English)
-Seg a Sex 7:00 e 18h (English)
-Qua 9h (English)
-1a Sex 17h30 (English)";"Sab 16h30 as 17h30";"http://home.catholicweb.com/Blessed_Sacrament";"blessedsacrament@prodigy.net";"Laredo";"A3wSn";NULL;"Monday- Friday 8:00 a.m. - 12:00p.m. and 1:00p.m. - 5:00p.m.";"2013-10-11 18:26:32"
-198472;"San Agustín Cathedral";"Fr. Francisco Hernandez";"201 San Agustin Av";"Laredo";"Laredo";"TX";"USA";78040;"(956) 722-1382";"Civil Holidays & Catholic Holidays Bilingual
-Diocese of Laredo Cathedral
-Confession also by appointment";27.5021688;-99.5057107;"Dom 8h 11h30  18h30 (Español)
-Dom 9:30 (English)
-Sab 17h30  (Bilingual)
-Seg a Sex 12h05 (Español)";"Seg a Sex 11:40
-Sab 17h";"http://www.sanagustincathedral.com";"san_agustine@sbcglobal.net";"Laredo";"mNgsK";NULL;"Monday to Friday from 9:30 to 12:00p.m. and from 2:00 to 5:30p.m.";"2013-10-15 18:31:39"
-198473;"Christ the King Catholic Church";"Rev.Jose Luis Balderas";"1105 Tilden";"Laredo";"Laredo";"TX";"USA";78040;"(956) 723-4267";"Mission: San Carlos, Laredo";27.5057002;-99.4875975;"Sab 17h (English) 
-Dom 10:00 (Spanish)
-Dom 12:00 (English)
-Dom 18:00 (Spanish) 
-Ter a Sex 18h (Adoration Chapel)";"Sab das 15h30 as 16h30";"";"frbalderas@dioceseoflaredo.org";"Laredo";"OhRHr";NULL;"Monday- Friday 9:00a.m.-12:30 p.m. a 2:00p.m.- 6:00p.m.";"2013-09-26 17:29:04"
-198474;"Sacred Heart Catholic Church";"Reverend Miguel Ortiz Uribe";"618 E zavala St";"Crystal City";"Crystal City";"TX";"USA";78839;"(830) 374-3148";"Holy Day of Obligation: 7:00 am bilingual 7:00 pm bilingual
-Confessions by appointment also.";28.682274;-99.8296421;"Sab 18h (Español)
-Dom 7h (Español)
-Dom 9:00 (English)
-Dom 11:00 (Español)
-Seg, Qua  7:00 (Bilingual)
-Qui e Sex 19h (Bilingual)
-Sab 8:00 (Español)";"Sab 17h30
-Dom 6h30
-Dom 8:30
-Dom 10:30
-Seg, Qua  6h30
-Qui e Sex 18h30
-Sab 7:30";"";"sacredheartchurchcc@yahoo.com";"Laredo";"11BhO";NULL;"Monday- Friday 8:00a.m-5:00p.m.";"2013-10-15 18:31:39"
-198475;"San Carlos Mission";"Rev. José Luis Balderas, Pastor";"Hwy 359";"Laredo";"Laredo";"TX";"USA";"";"(956) 723-4267";"Mother Parish: Christ the King, Laredo
-Confessions also by appointment";27.4855118;-99.3356797;"Domingo: 11:00 (Español)";"Dom 10h30";"";"frbalderas@dioceseoflaredo.org";"Laredo";"dKw6v";NULL;"Monday- Friday 9:00a.m.-12:30 p.m. a 2:00p.m.- 6:00p.m.";"2013-10-15 18:31:39"
-198476;"San Martin de Porres Church";"Rev. Salvador Pedroza";"1704 Sandman St.";"Laredo";"Laredo";"TX";"USA";78041;"(956) 723-5215";"Weekday's mass at the Chapel
-Mission: Santa Teresita, Laredo Holy Hour: Thursday at 6:00 p.m.";27.542005;-99.473231;"Sab 18:30 (English)
-Dom 8:30 (Español)
-Dom 16h30 (Español)
-Dom 10:30 12:30 18:30 (English)
-Seg Ter Qua Sex 17h30 (English)
-Qui 17h30 (Spanish)";"Sab 17h as 18h";"";"sanmartinidalia@hotmail.com";"Laredo";"FegWS";NULL;"Monday -Friday 9:00a.m. -12:00 p.m., 1:00p.m.- 5:30p.m.";"2013-10-15 18:31:39"
-198477;"Santa Teresita Mission";"Fr. Salvador Pedroza";"Near Ranchitos Las Lomas Hwy 59";"Laredo";"Laredo";"TX";"USA";"";"(956) 723-5215";"Holy days of Obligation 6:00 pm";27.6350977;-99.1918947;"Dom 10:30 (Español)
-Qui 18h (Español)";"Dom 10h
-Qui 17h30";"";"sanmartinidalia@hotmail.com";"Laredo";"ryQvz";NULL;"Monday -Friday 9:00a.m. -12:00 p.m., 1:00p.m.- 5:30p.m.";"2013-10-15 18:31:39"
-198478;"Santa Margarita de Escocia Church";"Rev. Alirio Corrales Gómez";"320 Segovia Dr.";"Laredo";"Laredo";"TX";"USA";78046;"(956) 724-9669";"Monday- Friday Confessions by appointment only";27.4387388;-99.4927183;"Dom 9:30 12:30 18:30  (Español)
-Ter a Sex 8:30 (Español)";"Dom 9:00 12:00 18:00
-Ter a Sex 8:00";"";"stmargaritachurch@att.net";"Laredo";"UIBLW";NULL;"Monday- Friday 9:00 a.m. - 2:00p.m.";"2013-10-15 18:31:39"
-198479;"St. John Neumann Church";"Rev. Daniel Ramírez-Portugal";"102 W. Hillside Rd";"Laredo";"Laredo";"TX";"USA";78041;"(956) 726-9488";"Eucharistic Adoration:
-Every 1st Friday of each month in the Chapel: 6:30PM
-If Monday is a holyday the Mass is 9am.";27.547204;-99.491865;"Sab 18h (Español)
-Dom 9h 11h 13h
-Dom 18h (Español)
-seg a sex 12h05 (English)";"Sab 16h30 as 17h30
-Seg a Sex 11h45 as 12h";"";"sjnccl_ro@yahoo.com";"Laredo";"6bvl3";NULL;"Monday- Friday 8:30a.m. -12:00p.m. 2:00p.m. -5:30p.m.";"2013-10-15 19:11:56"
-198480;"St. Peter the Apostole Catholic Church";"Rev. Fr. Toribio Guerrero";"1510 Matamoros St";"Laredo";"Laredo";"TX";"USA";78040;"(956) 723-6301";"";27.50679;-99.510896;"Sab 18:30 (English)
-Dom 9:00  (Español)
-Dom 11:00  (English)
-Seg, Ter, Qui, Sex 8:00 (Español)
-Qui 9:30 (St. Peter Memorial School Mass)";"Sab 18h
-Dom 8h30
-Dom 10h30
-Seg Ter Qui Sex 7h30";"";"saitpeterlaredo@gmail.com";"Laredo";"ivgAa";NULL;"Monday-Friday, 9:00 a.m. to 1:00 p.m.";"2013-10-15 19:11:56"
-198481;"Immaculate Heart of Mary Catholic Church";"Fr. Noel Davis, Pastor";"400 Santa Fe St.";"Encinal";"Encinal";"TX";"USA";78019;"(956) 948-5328";"Holy Day of Obligation: 6:30 pm (English)
-Confession: 30 min before the Mass or by appointment.";28.0406684;-99.3578838;"Dom 8:30 (English)
-Sab 18:30 (Spanish)";"";"";"ihmcce@yahoo.com";"Laredo";"LFQa7";NULL;"Monday - Wednesday 10:00a.m. -12:00 p.m.  3:00p.m. -5:00p.m.";"2013-10-11 18:26:32"
-198482;"St. Agnes Mission";"Fr. Flavio Sanchez, OFM";"324 Linder St";"Mirando City";"Mirando City";"TX";"USA";"";"(361) 527-3865";"Mother parish Our Lady of Guadalupe, Hebbronville";27.4410998;-99.0031305;"Dom 9h30 (English)
-Ter 18h (Español)";"Dom 9:00
-Dom 10h30";"";"gpeheb@hotmail.com";"Laredo";"xZAze";NULL;"Monday, Tuesday, Thursday & Friday: 9:00 a.m.-2:00p.m.; Wednesday: 9:00a.m.- 6:00p.m.";"2013-10-15 19:11:56"
-198483;"St. Joseph Catholic Church";"Fr. Gustavo Ortega Rodriguez, OFM";"620 W Benson St";"La Pryor";"La Pryor";"TX";"USA";78872;"(830) 365-4107";"Holy Day of Obligation: 7:00 am bilingual 7:00 pm bilingual
-Eucharistic Adoration Thursday 6:30- 7:30";28.9410814;-99.8497801;"Sab 18h (Español)
-Dom 11h (Bilingual)
-Seg 7:30 (English)
-Qua  Qui 18h (Español)
-Sex 7:30  (English)";"Qui 18h30
-Sab 17h30";"";"frgusortega@dioceseoflaredo.org";"Laredo";"ZsvPB";NULL;"Tuesday-Saturday 9:00a.m.-5p.m. Office Closed on Monday";"2013-10-15 19:11:56"
-198484;"St. Patrick Catholic Mission";"Fr. Gustavo Ortega Rodriguez, OFM";"Old Loma vista Av";"Batesville";"Batesville";"TX";"USA";78829;"(830) 365-4107";"Mother Parish St Joseph, La Pryor";28.9410074;-99.6091606;"Dom  9:00 (Bilingual)
-Ter 18h (Bilingual)";"Dom 8:30
-Ter 18h30";"";"frgusortega@dioceseoflaredo.org";"Laredo";"CCfoi";NULL;"Tuesday-Saturday 9:00a.m.-5p.m. Office Closed on Monday";"2013-10-15 19:11:56"
-198485;"Santa Rita de Casia Catholic Church";"Rev. Janusz Glabinski Pastor";"1001 Espejo Molina";"Rio Bravo";"Rio Bravo";"TX";"USA";78046;"(956) 725-7215";"";27.3627366;-99.4623921;"Ter Qui Sab 18h (Español)
-Dom 8h 12h (Español)";"Ter Qui Sab 17h30";"";"santarita.m.ission@yahoo.com";"Laredo";"oWQEF";NULL;"Wednesday- Friday 5:00 p.m. to 7:00p.m.";"2013-10-15 18:31:39"
-198486;"Our Lady of Lourdes Catholic Church";"Fr. Agustin Escalante";"1609 Glenn St.";"Zapata";"Zapata";"TX";"USA";78076;"(956) 765-4216";"Confessions also before all weekday Masses or by appointment.";26.9114224;-99.2721835;"Sab 17:00 (English)
-Dom 8:00 (Español)
-Dom 11h (English)
-Dom 17:00 (Español)
-Seg a Sex 18h (Español)";"Qui 16:30 as 18h";"";"fraescalante@dioceseoflaredo.org";"Laredo";"QqAdm";NULL;"Monday- Friday 9:00 a.m. -6:00p.m.";"2013-10-11 18:26:32"
-198487;"Our Lady of Guadalupe Church";"Fr. Juan Ayala Jr., OMI";"1718 San Jorge Avenue";"Laredo";"Laredo";"TX";"USA";78040;"(956) 723-6954";"Civil Holidays & Catholic Holidays Bilingual Mass";27.514437;-99.4997592;"Dom 8:00 (Español) 
-Dom 10:00  (Español)
-Dom 11:30 (English)
-Dom 17:30 (Español)
-sab 17:30 (Español) 
-Ter Qui 17h30 (English)
-Seg Qua Sex 17:30 (Español)";"Sab das 16h as 17h";"http://www.ologlaredo.org";"frayala@dioceseoflaredo.org";"Laredo";"39v3J";NULL;"Monday-Friday 8:ooa.m.-5:oop.m.";"2013-09-26 18:16:37"
-198488;"Our Lady of Guadalupe Catholic Church";"Fr. Flavio Sanchez, OFM";"504 E. Santa Clara, St.";"Hebbronville";"Hebbronville";"TX";"USA";78361;"(361) 527-3865";"Confession: Before Mass and/or by appointment.";27.308395;-98.6736598;"Dom 8:00 11:00  (English) 
-Seg a Sab 7:00  (Español) 
-Seg a Sab 18:00 (English)";"";"";"gpeheb@hotmail.com";"Laredo";"fTfSq";NULL;"Monday- Friday 9:00a.m.-5:00p.m.";"2013-10-11 18:26:32"
-198489;"Sacred Heart Catholic Church";"Rev. Francisco Stodola";"307 S. Main St.";"Cotulla";"Cotulla";"TX";"USA";78014;"(830) 879-2658";"";28.4327363;-99.2344588;"Sab 18h (English)
-Dom 8:00 (Español)
-Dom 10h (English)
-Qua 18h (Bilingual) 
-Qui e Sex 18h (Español)";"Sab 17h30 (English)
-Dom 7:30 (Español)";"";"sagradocorazon@sbcglobal.net";"Laredo";"HnPsN";NULL;"Monday to Friday 9a.m. to 1:00 p.m.";"2013-10-15 18:31:39"
-198491;"Immaculate Conception Catholic Church";"Fr. Oscar Martinez";"579 Crockett St.";"Asherton";"Asherton";"TX";"USA";78827;"(830) 468-3343";"Missions: St Michael , Big wells  St Henry, Catarina
-Mass: Holy Days 7:00pm (Bilingual)";28.4475166;-99.7637649;"Ter a Sex 19h00 (Español)
-Sab 18h (Español) 
-Dom 9h (Bilingual)";"Sab 17h";"";"iccherrera@hotmail.com";"Laredo";"WQuhR";NULL;"Monday.-Friday. 9:00-12:00 p.m. 1:00-3:00 p.m.";"2013-10-11 18:26:32"
-198492;"St. Michael Mission";"Rev. Oscar Martinez";"250 Commerce St.";"Big Wells";"Big Wells";"TX";"USA";78830;"(830) 457-2693";"Mother Parish Immaculate Conception Asherton";28.5716993;-99.5689898;"Dom 9h  (English)";"Dom 8:30";"";"iccherrera@hotmail.com";"Laredo";"8kf6y";NULL;"Monday.-Friday. 9:00-12:00 p.m. 1:00-3:00 p.m.";"2013-10-15 19:11:56"
-198493;"St. Henry Mission";"Rev. Oscar Martinez";"US 83 and San Jacinto";"Catarina";"Catarina";"TX";"USA";78836;"(830) 457-2693";"Confessions by appointment";28.3430459;-99.6139981;"Dom 13:00 (Español)";"";"";"iccherrera@hotmail.com";"Laredo";"l4PWV";NULL;"Monday.-Friday. 9:00-12:00 p.m. 1:00-3:00 p.m.";"2013-10-15 19:11:56"
-198494;"Our Lady of Guadalupe Catholic Church";"Fr. Jerzy Krzywda";"1003 N. 6th St.";"Carrizo Springs";"Carrizo Springs";"TX";"USA";78834;"(830) 876-2239";"Confessions: 30 minutes before mass by appointment";28.5299842;-99.8577561;"Dom  9:00 (Biligual)
-Dom 11:00 (English)
-Sab 18h (Español) 
-Ter e Qua 8h (Bilingual)
-Qui e Sex 18h (English)";"";"";"ologuadalupe@sbcglobal.net";"Laredo";"NO9w2";NULL;"Monday, Tuesday, Thursday & Friday: 9:00 a.m.-2:00p.m.; Wednesday: 9:00a.m.- 6:00p.m.";"2013-10-11 18:26:32"
-198496;"Divine Mercy Church";"Rev. Michael A. De Leon";"9350 Amber Ave";"Laredo";"Laredo";"TX";"USA";78045;"(956) 726-0210";"For Confession at other times, please call for an appointment";27.5957426;-99.4862855;"Ter a Sex 18h30 (Español)
-Sab 17h (English)
-Dom 9h 10h30 (English)
-Dom 12h 17h (Español)";"Sab 16h as 16h45";"";"divine_mercy@msn.com";"Laredo";"c1el6";NULL;"Monday- Friday 9:00a.m - 12:00 p.m., 1:00p.m.-5 p.m.";"2013-10-11 18:26:32"
-198497;"Holy Family Church";"Fr. Nolasco Hinojosa";"2702 Stone Ave";"Laredo";"Laredo";"TX";"USA";78040;"(956) 724-6881";"Confessions: 30 minutes before mass by appointment";27.5204851;-99.4834609;"Dom 10:00 (Español)
-Dom 12:00 (English)
-Sab 16:30 (Español)
-Ter Qui Sab 8h (Español)
-Qua e Sex 8h (English)";"";"";"hfccl_oc@yahoo.com";"Laredo";"ELPAd";NULL;"Monday- Friday 9:00 a.m. - 12:00p.m. and 1:30p.m. - 3:30p.m.";"2013-10-11 18:26:32"
-198498;"Holy Redeemer Church";"Rev.Fr.Francisco Leon,O.S.A.";"1602 Garcia St.";"Laredo";"Laredo";"TX";"USA";78040;"(956) 723-7171";"Mission: Santa Cruz, Laredo
-Confessions also 30 minutes before Mass or by appointment";27.5135626;-99.5118463;"Dom 8:00 (Español)
-Dom 9:30 (English) 
-Dom 12:00 (Español) 
-Dom 17:30 (Español) 
-Ter a Qui 8h15 (Español)
-Sex e Sab 18h30 (Español)";"Sab 17:00";"";"holyredeemer@laredohrc.org";"Laredo";"qf9aA";NULL;"Monday.-Friday. 9:00-12:00 p.m. 1:00-5:30 p.m.";"2013-10-11 18:26:32"
-198499;"San Francisco Javier Catholic Church";"Fr. William. Davis, OMI";"2502 Zaragoza St.";"Laredo";"Laredo";"TX";"USA";78040;"(956) 723-3850";"";27.5022785;-99.5203879;"Sab 17:30 (Español) 
-Dom 10h (Español) 
-Dom 11:15 (English) 
-Seg a Qui 19:00 (Español) 
-1a Sex 19h (Español)";"Seg a Qui 18h30
-Sab 16h (by Appointment)";"";"chaqui6@aol.com";"Laredo";"Sytzh";NULL;"Monday- Friday 9:00a.m. -12:00 p.m. 2:00p.m. - 5:00p.m.";"2013-10-15 18:31:39"
-198500;"San Luis Rey Church";"Fr. Michael Gergen, SDB";"3502 Sanders Ave.";"Laredo";"Laredo";"TX";"USA";78040;"(956) 723-6587";"";27.5278255;-99.4948066;"Dom 8:00   (Español) 
-Dom 9:30  (Español)
-Dom 12:30  (Español)
-Dom 18:30  (Español) 
-Dom 20:00 (Español)
-Dom 11:00 (English) 
-Sab 7:30  (Español)
-Seg a Sex 7:30  (Español)
-Seg a Sex 18:30 (Español)";"Ter e Qui 18h as 18h30
-Sab das 10h as 11h";"";"sanluisreychurch@yahoo.com";"Laredo";"5IePE";NULL;"Monday- Friday 9:00 a.m. - 6:00p.m. Saturday 9:00 a.m. - 1:00p.m.";"2013-10-15 18:31:39"
-198501;"Santo Niño Catholic Church";"Rev. Santiago Domingo Pastor";"28011 Cross";"Laredo";"Laredo";"TX";"USA";78046;"(956) 724-6638";"";27.4685306;-99.4715053;"Seg a Sex 19:00 (Español)
-Sab 17:00 (Español)
-Dom 9:00, 11:00 17h (Español)";"Sab 16:40
-Dom 8:40, 10:40 16h40";"";"santoniniomission@prodigy.net";"Laredo";"hcOol";NULL;"Monday- Friday 9:00a.m.- 1:00p.m. 2:00p.m. 5:00p.m.";"2013-10-15 19:11:56"
-198502;"St. Frances Cabrini Church";"Rev. J. Alfredo Gaytan, S.O.L.T";"3018 Davis Ave";"Laredo";"Laredo";"TX";"USA";78040;"(956) 722-2919";"";27.5265728;-99.5110457;"Domingo 8:00 (Español) 
-Dom 10:00  (English) 
-Dom 12:00  (Español) 
-Dom 18:30 (Bilingual)
-Ter a Sex 18h30 (Español)
-Sab 18h30 (Español)";"Sab: 18:00";"";"mothercabrinichurch@bizlaredo.rr.com";"Laredo";"Jw9EI";NULL;"Monday-Friday 9:00 a.m. a 12:45 p.m. 2:00 p.m. 6:00 p.m.";"2013-10-15 19:11:56"
-198503;"St. Joseph Church";"Fr. Leszek J. Waclawik";"109 N. Meadow Ave";"Laredo";"Laredo";"TX";"USA";78040;"(956) 723-4172";"";27.4965779;-99.4803669;"Dom 8:00 (Español) 
-Dom 10h (English) 
-Sabado 18:00 (Español)
-Seg a Sex 8h30 (Español)
-1o Sab 8h30 (Español)";"Seg a Sex das 8:00 as 8:25 
-Sab das 17h as 17h50";"";"sanjoselaredo@yahoo.com";"Laredo";"wFtdp";NULL;"Monday to Friday:9:30A.M- 12:30 p.m. and 1:30- 6:00P.M.";"2013-10-15 19:11:56"
-198504;"Sagrado Corazon de Jesus Mission";"Rev.Jose Maria Guevara";"Las Tiendas Ranch Road 3338 - Ranchos Peñitas West";"Laredo";"Laredo";"TX";"USA";78045;"(956) 722-2280";"St Jude Mother Parish
-Sunday Rosary at 10:30AM";27.6999153;-99.6035063;"Dom 11:00 (Español)";"";"";"stjudeoflaredo@gmail.com";"Laredo";"YZe3M";NULL;"Mondaydy -Friday 9:00 a.m. - 1:00 p.m., 2:00 p.m. - 5:30 p.m.";"2013-10-15 19:11:56"
-198505;"Santa Cruz Mission";"Rev.Fr.Francisco Leon,O.S.A.";"2002 Lee Avenue";"Laredo";"Laredo";"TX";"USA";78040;"(956) 723-7171";"";27.5175419;-99.5202474;"Domingo 9:30
-Qua 18h";"";"";"holyredeemer@laredohrc.org";"Laredo";"AtOSt";NULL;"Monday.-Friday. 9:00-12:00 p.m. 1:00-5:00 p.m.";"2013-09-26 18:16:37"
-198506;"St. Jude Church";"Rev.Jose Maria Guevara";"2031 Lowry Rd.";"Laredo";"Laredo";"TX";"USA";78045;"(956) 722-2280";"Saturday Rosary 6PM
-Sunday Rosary 6PM
-Monday to Friday Rosary 6:30 PM";27.585545;-99.513565;"Sab: 18:30 (English) 
-Dom 8:00 (Español)
-Dom 10:00 (Bilingual) 
-Dom 12:00 (Español) 
-Dom 18:30 (Español)
-Seg a Sex 19:00 (Español)";"Seg a Sex 18:30";"";"stjudeoflaredo@gmail.com";"Laredo";"nD8sQ";NULL;"Monday -Friday 9:00 a.m. - 1:00 p.m., 2:00 p.m. - 5:30 p.m.";"2013-10-15 19:11:56"
-198507;"St. Patrick Church";"Fr. Wojciech Kosowicz,PhD";"555 E. Del Mar Blvd.";"Laredo";"Laredo";"TX";"USA";78041;"(956) 722-6215";"";27.5711018;-99.4814817;"Sab 17h (English) 
-Dom 8:00 (Español) 
-Dom 10:00 (English)
-Dom 12:00 (English)
-Dom 14:00 (Español - niños)
-Dom 16:00 (Español)
-Dom 18:00 (English) 
-Seg a Sex 7:00 (Español) 
-Seg a Sex 18:00 (English)";"Sab 16h as 17h
-Dom 8:30 (Español) 
-Dom 10:00 11:30 (English)
-Dom 15:30 (Español)
-Dom 17:30 (English) 
-Seg a Sex 6:30 (Español) 
-Seg a Sex 17:30 (English)";"";"stpatlaredotx@yahoo.com";"Laredo";"PWtHx";NULL;"Monday-Friday, 8:00 a.m.-12 p.m. and 1:30 p.m.-5:30 p.m.";"2013-10-15 19:11:56"
-198508;"St. Vincent de Paul Church";"Fr. Leonel Martinez, OSA";"2710 Boulanger St.";"Laredo";"Laredo";"TX";"USA";78043;"(956) 722-3034";"Confession 30 minutes before mass by appointment";27.4869733;-99.4676407;"Sab 19h (Español)
-Dom 8h (Español)
-Dom 11h30 (Español)
-Dom 13h (Español)
-Ter a Sex 19h (Español)";"";"";"svlaredo@sbcglobal.net";"Laredo";"1qdhU";NULL;"Monday - Friday  9:30 a.m. -12:30p.m. 2:00p.m. - 5:00p.m.";"2013-10-15 19:11:56"
-198509;"Immaculate Chapel";"";"202 W Draper St.";"Hebbronville";"Hebbronville";"TX";"USA";78361;"(361) 527-3865";"Mother parish Our Lady of Guadalupe , Hebbronville";27.3028582;-98.6797832;"Dom 17h (Español)";"Dom 16:30";"";"gpeheb@hotmail.com";"Laredo";"eAO71";NULL;"Monday, Tuesday, Thursday & Friday: 9:00 a.m.-2:00p.m.; Wednesday: 9:00a.m.- 6:00p.m.";"2013-09-26 18:16:37"
-198510;"St. Bridget Mission";"Fr. Flavio Sanchez, OFM";"Welhousen St.";"Oilton";"Oilton";"TX";"USA";78371;"(361) 527-3865";"Mother parish Our Lady of Guadalupe , Hebbronville";27.5927987;-98.961935;"Dom 8h (Bilingual)
-Ter 18h (Bilingual)";"Dom 7h30
-Ter 17h30";"";"gpeheb@hotmail.com";"Laredo";"GU8WY";NULL;"Monday, Tuesday, Thursday & Friday: 9:00 a.m.-2:00p.m.; Wednesday: 9:00a.m.- 6:00p.m.";"2013-10-15 19:11:56"
-198511;"Sacred Heart Mission";"Fr. Flavio Sanchez, OFM";"211 N. Avenue G. 4th St.";"Bruni";"Bruni";"TX";"USA";78344;"(361) 527-3865";"Mother parish Our Lady of Guadalupe, Hebbronville";27.4277984;-98.8351964;"Dom 11:00 (English)
-Qua 18h (Bilingual)";"Dom 10h30
-Qua 17h30";"";"gpeheb@hotmail.com";"Laredo";"snsw5";NULL;"Monday, Tuesday, Thursday & Friday: 9:00 a.m.-2:00p.m.; Wednesday: 9:00a.m.- 6:00p.m.";"2013-10-15 18:31:39"
-198512;"Santa Monica Catholic Mission";"Rev. Janusz Glabinski Pastor";"507 Morales";"El Cenizo";"El Cenizo";"TX";"USA";78046;"(956) 725-7215";"";27.3313839;-99.5026882;"Qua e Sex 19h (Español)
-Dom 10h (Español)";"Ter, Qui e Sab 18h00
-Dom 7h30 11h30";"";"santaritamission@yahoo.com";"Laredo";"V7dLc";NULL;"Wednesday- Friday 5:00 p.m. to 7:00p.m.";"2013-10-15 19:11:56"
-198513;"Santa Anna Catholic Mission";"Fr. Agustin Escalante";"4th Street";"Falcon";"Falcon";"TX";"USA";78076;"(956) 765-4216";"Mother Parish Our Lady of Lourdes";26.63816;-99.095309;"Dom 11h30  (Español)";"Dom 11h";"";"fraescalante@dioceseoflaredo.org";"Laredo";"7RNl9";NULL;"Monday- Friday 9:00 a.m. -6:00p.m.";"2013-10-15 18:31:39"
-198514;"Our Lady of Refuge Catholic Mission";"Father Joseph Bennedict Aluthwatte";"Washington Avenue and Laredo St";"San Ygnacio";"San Ygnacio";"TX";"USA";78067;"(956) 765-4216";"Mother Parish Our Lady of Lourdes";27.0445043;-99.4413091;"Sab 18h";"";"";"olorchurch@sbcglobal.net";"Laredo";"jl8Ag";NULL;"Monday-Friday, 9:00a.m.-6:00p.m.";"2013-09-26 17:29:09"
-198515;"San Pedro Mission";"Fr. Agustin Escalante";"Ave D and 3rd St.";"Lopeño";"Lopeño";"TX";"USA";78564;"(956) 723-6301";"Mother Parish Our Lady of Lourdes";26.7104452;-99.1090657;"Dom 10h30  (Español)";"Dom 10h";"";"fraescalante@dioceseoflaredo.org";"Laredo";"M4saD";NULL;"Monday- Friday 9:00 a.m. -6:00p.m.";"2013-10-15 18:31:39"
-198522;"Nuestra Señora de Rosario Church";"Fr. Jan Ziemniak";"420 Sierra Blvd";"Laredo";"Laredo";"TX";"USA";78046;"(956) 753-8764";"";27.445642;-99.471736;"Sab 18:30 (Español) 
-Dom 8:30 (Español) 
-Dom 11:00 (Español) 
-Dom 18:30 (Español) 
-Seg a Sex 18h30 (Español)";"Seg a Sex 18h";"";"nsdr420@yahoo.com";"Laredo";"gJ7Sw";NULL;"Monday- Friday 3:00 p.m. to 7:00p.m.";"2013-10-11 18:26:32"
-198523;"Nuestra Señora del Refugio Mission";"Fr. Agustin Escalante";"Washington Avenue and Laredo St";"San Ygnacio";"San Ygnacio";"TX";"USA";78067;"(956) 765-4216";"";27.044363;-99.441172;"Sab 18h30 (Español)";"Sab 18h00";"";"fraescalante@dioceseoflaredo.org";"Laredo";"IcrsT";NULL;"Monday- Friday 9:00 a.m. -6:00p.m.";"2013-09-26 18:16:37"
-198524;"Our Lady of Guadalupe Mission";"Fr. James A. Loiacono, O.M.I.";"Crockett Avenue";"Quemado";"Quemado";"TX";"USA";78877;"(830) 773-8451";"";28.950579;-100.623329;"Dom 9:00 (Bilingual)";"Dom 8h30";"";"olorchurch@sbcglobal.net";"Laredo";"uwcI0";NULL;"Monday-Friday, 9:00a.m.-6:00p.m.";"2013-09-26 18:16:37"
-198525;"Our Lady of Lourdes Mission";"Fr. James A. Loiacono, O.M.I.";"3009 Del Rio Blvd, Seco Mines";"Seco Mines";"Eagle Pass";"TX";"USA";78852;"(830) 773-8451";"Mother Parish Our Lady of Refuge, Eagle Pass";28.750005;-100.497549;"Sab 18h (Español) 
-Dom 12:30  (Español)";"Sab 17h30
-Dom 12:00";"";"olorchurch@sbcglobal.net";"Laredo";"XGMhX";NULL;"Monday-Friday, 9:00a.m.-6:00p.m.";"2013-10-11 18:26:32"
-198526;"Our Lady of San Juan Mission";"Fr. Paul Wilhelm, O.M.I.";"100 Rancho Grande St";"El Indio";"El Indio";"TX";"USA";78860;"(830) 773-2451";"";28.511322;-100.310873;"Sab 9:00 (Español)";"Sab 8h30";"";"sacoraeptx@wcsonline.net";"Laredo";"9a774";NULL;"Monday- Friday 8:00a.m. -5:00p.m.";"2013-09-26 18:16:37"
-198527;"St. Joseph Church";"Fr. Richard Kulwiec, O.M.I";"800 Comal St.";"Eagle Pass";"Eagle Pass";"TX";"USA";78852;"(830) 773-6114";"";28.717414;-100.491045;"Sab  18:30  (Español) 
-Dom 9:00 (Español) 
-Dom 11:00 (English) 
-Dom 12:30 (English)  
-Ter a Sex 18h30 (Español)";"Sab das 17:00 as 18:00";"";"stjosephcath-ch@att.net";"Laredo";"ltrWb";NULL;"Monday- Friday 9:00 a.m. - 1:00p.m.";"2013-09-26 18:16:37"
-198532;"Sacred Heart Church";"Fr. Paul Wilhelm, O.M.I.";"2055 William St";"Eagle Pass";"Eagle Pass";"TX";"USA";78852;"(830) 773-2451";"Mission: Our Lady of San Juan, El Indio";28.7042342;-100.4865027;"Sab: 17:30  (Español) 
-Dom: 8:00 (Español) 
-Dom 10:00 (English) 
-Dom 12:00 (Español) 
-Dom 17:30 (Español) 
-Seg a Sex 8:30 (Español)";"Sab 16h";"";"sacoraeptx@wcsonline.net";"Laredo";"rUbaG";NULL;"Monday- Friday 9:00 a.m.-6:00p.m.";"2013-09-26 17:29:10"
+198848;"Paróquia Cristo Libertador";"Pe. Mário";"Rua Caminho da Bica, 20";"Realengo";"Rio de Janeiro";"Ri";"Brazil";"20943-190";"";"";0;0;"Segunda:19h 
+Sexta-feira: 08h 
+Sábado: 17h 
+Domingo: 08h e 18h";"";"";"";"Rio de Janeiro";"A99iS";NULL;"";"2015-06-02 00:23:47"
+22;"Catedral Metropolitana de São Sebastião do Rio de Janeiro";"Monsenhor Joel Portella";"Av. República do Chile, 245";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20031-170";"(21) 2240-2669";"";-22.909295;-43.180751;"Seg a Sex 12:00
+Sab e Dom 10:00";"";"http://www.catedral.com.br";"";"Rio de Janeiro";"b0T3i";NULL;"";"2016-08-15 16:08:17"
+23;"Anunciação a Nossa Senhora";"Pe. Boguslaw Batkiewicz";"Rua Frei Pinto, 27";"Riachuelo";"Rio de Janeiro";"RJ";"Brasil";"20950-140";"(21) 2501-0299";"";-22.90248;-43.252684;"Seg a Sex 07:30
+Sab 08:00
+Dom 07:30 09:30 18:00";"";"";"";"Rio de Janeiro";"DKDTF";NULL;NULL;"2012-12-29 13:22:16"
+24;"Apóstolo São Pedro";"Pe. Ludendorff Cohen Couto";"Rua Antônio Saraiva, 23";"Cavalcante";"Rio de Janeiro";"RJ";"Brasil";"21370-250";"(21) 3296-8650";"";-22.872496;-43.313668;"Seg Qui Sex 18:00
+Sab 17:00
+Dom 7:30 12:00 18:00";"";"";"";"Rio de Janeiro";"pdxsm";NULL;NULL;"2012-12-29 13:22:16"
+25;"Bom Jesus da Penha";"Pe. José Everaldo Germano da Silva, SCJ";"Av. Brás de Pina, 181";"Penha";"Rio de Janeiro";"RJ";"Brasil";"21070-031";"(21) 2560-3618, (21) 2564-0430";"";-22.841446;-43.279734;"Dom 7:00 8:30 10:00 18:00
+Seg 7:00 19:30
+Ter Qui Sex 07:00 09:00 19:30
+Qua 07:00 09:00
+Sab 07:00 09:00 18:00
+1a Sex 15:30
+1o Sab 12:00";"";"http://www.paroquiabomjesus.com";"";"Rio de Janeiro";"RxiIJ";NULL;"";"2015-04-04 15:57:19"
+26;"Bom Pastor";"Pe. Álvaro Inacio";"Rua Bom Pastor, 481";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20521-020";"(21) 2284-0936";"";-22.9303842;-43.232701;"Seg, qua, qui, sex 8h
+sábado 18h
+domingo 10h, 19h
+domingo 8h30 (Capela São Sebastião na Comunidade do Salgueiro)";"sexta-feira 17h às 19h (Aconselhamento e confissões - Marcar com a secretária)";"http://www.obompastor.org.br";"";"Rio de Janeiro";"4HShq";NULL;"";"2017-04-26 11:32:09"
+27;"Bom Pastor e Nossa Senhora de Fátima";"Pe. Gilson de Oliveira e Silva";"Rua Vitor Alves, 404";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23080-180";"(21) 2413-5656";"";-22.899109;-43.563316;"Ter 19:30 (capela)
+Qua 19:30
+Dom 07:00 07:30 19:00 
+Dom 09:00 (capela)
+";"";"http://sites.uol.com.br/paroquiabpnsf";"";"Rio de Janeiro";"gbD7N";NULL;NULL;"2013-01-12 13:29:42"
+28;"Coração Eucarístico de Jesus";"Pe. Givanildo Luiz de Andrade";"Rua Coração Eucarístico, 260";"Santíssimo";"Rio de Janeiro";"RJ";"Brasil";"23010-170";"(21) 2404-2064";"";-22.880844;-43.509653;"Seg Qua Sex 19:00
+Dom 07:00 09:00 19:00";"";"";"";"Rio de Janeiro";"IuxWu";NULL;NULL;"2013-01-12 13:29:42"
+29;"Cristo Operário e Santo Cura d'Ars";"Pe. José Carlos Lino de Souza";"Av. Etiópia, s/n";"Vila Kennedy";"Rio de Janeiro";"RJ";"Brasil";"21852-010";"(21) 3467-2766";"";-22.856345;-43.489834;"Seg a Qui 19:00
+Sab 19:00
+Dom 07:00 09:00 19:00";"";"";"";"Rio de Janeiro";"vEhwR";NULL;NULL;"2013-01-12 13:29:42"
+30;"Cristo Redentor";"Pe. Adam Folta, SVD";"Rua das Laranjeiras, 519";"Laranjeiras";"Rio de Janeiro";"RJ";"Brasil";"22240-005";"(21) 2558-5179";"";-22.938502;-43.192774;"Seg a Sab 08:00 18:00
+Dom 09:00 11:00 19:00";"Sexta 16h às 18h";"http://www.cristoredentor-rj.com.br";"adam@cristoredentor-rj.com.br";"Rio de Janeiro";"XYSLy";NULL;"";"2015-06-05 12:47:38"
+31;"Cristo Rei";"Pe. Niraldo Lopes de Carvalho";"Rua Oliveira Figueiredo, 78";"Vaz Lobo";"Rio de Janeiro";"RJ";"Brasil";"21361-070";"(21) 3351-3696";"";-22.856942;-43.328347;"Seg Qui 18:30
+Ter Sab 08:00
+Dom 7:00 9:00 11:00 19:00";"";"";"";"Rio de Janeiro";"9sClV";NULL;NULL;"2013-01-12 13:29:42"
+32;"Cristo Ressuscitado";"Pe. Carlos Alberto Munhoz Cavalcante";"Estrada Porto Nacional, Lt. 13 casa 08";"Padre Miguel";"Rio de Janeiro";"RJ";"Brasil";"21870-380";"(21) 3309-3015";"";-22.8654965;-43.4596643;"Dom 07:00 09:30 19:00
+Seg Sex 07:30";"";"";"";"Rio de Janeiro";"mBxB2";NULL;NULL;"2013-01-12 13:29:42"
+33;"Santuário da Divina Misericórdia";"Pe. Jan Sopicki (João), SAC";"Rua Divina Misericórdia, s/n";"Vila Valqueire";"Rio de Janeiro";"RJ";"Brasil";"21321-58";"(21) 2453-3684";"";-22.885362;-43.370262;"Domingo 07h, 08:30h, 10h, 19h
+Sábado 07h, 18h
+Segunda 07h, 19h
+Terça 07h
+Quarta 07h, 19h
+Quinta 07h, 19h
+Sexta 07h
+sexta 15h (Missa da Misericórdia)";"";"";"";"Rio de Janeiro";"OVhaZ";NULL;"";"2014-05-21 18:34:03"
+34;"Paróquia Divino Espírito Santo";"Pe. Carlos Alberto Rigues Pontes";"Rua Itacorovi, 115";"Realengo";"Rio de Janeiro";"RJ";"Brasil";"21765-450";"(21) 3331-2843";"";-22.8927885;-43.4352981;"Seg e Sex 19:00
+1a Sex 08:00
+Dom 07:00 09:00 19:00";"";"";"";"Rio de Janeiro";"0pS06";NULL;NULL;"2013-06-21 15:58:03"
+35;"Divino Espírito Santo e São João Batista";"Pe. Cláudio dos Santos";"Rua Felipe Camarão, 12";"Maracanã";"Rio de Janeiro";"RJ";"Brasil";"20510-011";"(21) 2567-9056";"";-22.91358;-43.235863;"Seg 07:00 19:00
+Qua a Sex 07:00 19:00
+Dom 07:30 09:30 18:00";"";"http://www.divinoespiritosantorj.org.br";"";"Rio de Janeiro";"d9CPd";NULL;NULL;"2012-12-29 20:28:12"
+36;"Paróquia Divino Salvador";"Leomar Deon, SDS";"Rua Divino Salvador, 153";"Piedade";"Rio de Janeiro";"RJ";"Brasil";"20576-210";"(21) 2596-5138";"";-22.8878977;-43.3107066;"Seg a Sex 07:00 as 19:00
+Sab 07:00 17:00
+Dom 07:00 08:30 10:30 18:00";"";"";"";"Rio de Janeiro";"FSwpA";NULL;"";"2016-10-27 17:46:12"
+37;"Imaculada Conceição (Basílica Menor)";"Pe. Marcos William Bernardo";"Praia de Botafogo, 266";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22250-04";"(21) 2551-7948";"";-22.9481964;-43.1820135;"Seg a Sexta 07:00 08:00 12:00 18:00
+Sab 07:00 08:00 18:00
+Dom 07:30 09:00 10:30 12:00 16:30 18:00 19:30";"";"";"";"Rio de Janeiro";"rmhEh";NULL;"";"2015-03-10 16:51:22"
+38;"Imaculada Conceição";"Pe. André Vilar de Moraes Martins";"Rua Humberto Cozzo, 41";"Recreio dos Bandeirantes";"Rio de Janeiro";"RJ";"Brasil";"22795-260";"(21) 2497-9050, (21) 2497-9059";"Confissões e Direção Espiritual (ligar sempre um dia antes para confirmar os horários) 
+
+Confissões com Pe. Vitor - 2ª, 6ª feira e Sáb - marcar na secretaria";-23.017327;-43.46171;"Seg 19:00
+Ter 08:00
+Qua 08:00 19:00
+Qui Sex 08:00 18:00
+Sab 16:00 18:00
+Dom 7:00 9:00 11:00 18:00 20:00
+Dom 8h (São Tarcísio)
+Dom 10h (Santa Paulina)
+Dom 19h (Colégio Ressurreição)";"terça-feira: 9h30 às 12h (Pe. Marcio)
+quarta-feira:  9h30 às 12h (Pe. Marcio)
+sexta-feira: das 14h30 às 17h (Pe. Marcio)
+quarta-feira: 19h30 às 21h (Pe. André)
+quinta-feira: das 9h30 às 12h (Pe. André)";"http://imaculadarecreio.org.br";"secretaria@imaculadarecreio.org.br";"Rio de Janeiro";"U6ReE";NULL;"2ª e 4ª a Sáb - das 8h às 12h / das 13h às 20h30
+3ª - das 8h às 12h
+
+Atendimento Telefônico
+2ª a 6ª - das 8h30 às 12h / das 14h às 19h
+Sáb. das 8h às 12h
+3ª a partir das 12h";"2013-11-15 11:57:16"
+39;"Imaculada Conceição e São Sebastião";"Pe João Vicente de Padua";"Rua Catulo Cearense, 26";"Engenho de Dentro";"Rio de Janeiro";"RJ";"Brasil";"20730-320";"(21) 2599-9900";"";-22.904804;-43.29749;"Domingos: 7:00, 8:30, 10:00, 18:00h
+seg, qua, qui, sexta: 19:00h
+sábados: 18:00h";"quinta-feira 9h 
+sábado 9h";"";"piacss@gmail.com";"Rio de Janeiro";"6QC3l";NULL;"";"2017-07-17 15:05:34"
+40;"Basílica Menor do Imaculado Coração de Maria";"Pe. Fernando Mazula, CMF";"Rua Coração de Maria, 66";"Méier";"Rio de Janeiro";"RJ";"Brasil";"20775-050";"(21) 2501-3553";"";-22.897858;-43.279552;"Seg a Sex 07:00 10:00 19:00 
+Sab 07:00 10:00 17:00
+Dom 07:00 08:30 10:00 18:00 20:00";"Seg a Sex 09:00 as 10:00";"";"";"Rio de Janeiro";"ijwTI";NULL;NULL;"2013-08-27 13:18:44"
+41;"Jesus Bom Pastor";"Pe. Benedito Jales Dantas";"Rua Sancho de Faro, 680";"Anchieta";"Rio de Janeiro";"RJ";"Brasil";"21625-400";"(21) 2455-4594";"";-22.832749;-43.403292;"Seg 19:00
+Dom 07:00 10:00 19:00";"";"";"";"Rio de Janeiro";"L3gsp";NULL;NULL;"2012-12-29 13:22:16"
+42;"Jesus de Nazaré";"Pe. Eduardo Cardoso de Carvalho";"Rua Ivanildo Alves, 83";"Parque Maré - Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21043-230";"(21) 2573-0389";"";-22.8584716;-43.2418732;"Dom 08:00 10:00 18:00
+Qua Sex 19:00
+";"Qua Sex 20:00";"";"";"Rio de Janeiro";"xNRIM";NULL;NULL;"2013-01-12 13:29:42"
+43;"Jesus Divino Mestre";"Pe. Fernando Quelho Barbosa";"Rua Velinda Maurício da Fonseca, 66";"Cachambi";"Rio de Janeiro";"RJ";"Brasil";"20785-210";"(21) 2281-6344";"";-22.891709;-43.267026;"Seg 18:00
+Dom 07:00 09:30 18:00
+";"";"";"";"Rio de Janeiro";"ZhBht";NULL;NULL;"2013-01-12 13:29:42"
+44;"Jesus Ressuscitado";"Pe. José Rosa Afonso";"Travessa da Amizade, 168";"Vila da Penha";"Rio de Janeiro";"RJ";"Brasil";"21221-37";"(21) 3391-3810";"";-22.8403078;-43.3119228;"Dom 8h 10h30 18h
+Seg a Qua 19:00
+Qui 07h30
+Sex 19:00
+Sab 07h30 18h";"";"";"";"Rio de Janeiro";"C0w7Q";NULL;"";"2015-10-20 11:38:18"
+45;"Jesus Sacramentado";"Padre Thiago Faria Cardoso";"Rua Gonçalves dos Santos, 39";"Penha Circular";"Rio de Janeiro";"RJ";"Brasil";"21210-300";"(21) 2485-2790";"Terça feira terço dos homens
+Nas quintas-feiras, terminada a missa, tem adoração ao Santíssimo Sacramento.
+
+Na primeira quinta feira do mês, missa pelos enfermos com a distribuição das pílulas de Frei Galvão 16:00h precedida pela recitação do terço da misericórdia, não tendo missa e adoração à noite.";-22.839354;-43.295592;"Domingo 7:00, 9:00
+Dom 18:00 (19:00 no horário de verão)
+Segunda 19:00
+Quinta 19:00 (Exceto primeira quinta-feira do mês)
+1a Quinta 16:00
+Sexta 8:00
+Sábado 18:00 (19:00 no horário de verão)";"quinta  15:30 às 17:00 (ou marcando com o padre)";"";"";"Rio de Janeiro";"oKgWx";NULL;"segunda-feira, quarta-feira a sexta feira de 8:00 às 12:00 e das 14:00 às 20:00";"2013-12-29 12:57:16"
+46;"Paróquia Jesus Salvador do Mundo";"Pe. Michel Bernardo";"Rua das Pitombeiras, 554";"Paciência";"Rio de Janeiro";"RJ";"Brasil";"23585-245";"(21) 3409-1599";"";-22.928155;-43.636024;"Segunda  19h
+Quarta 19h
+Quinta 19h
+Sexta 19h
+Domingo 07h, 10h e 19h";"Sex 19:00";"";"paroquiajsm-rj@hotmail.com";"Rio de Janeiro";"QeQwU";NULL;"";"2014-02-23 17:04:25"
+47;"Maria Mãe da Igreja e São Judas Tadeu";"";"Rua Mario Coutinho, 195";"Padre Miguel";"Rio de Janeiro";"RJ";"Brasil";"21720-44";"(21) 2401-5890";"";-22.865474;-43.449755;"Dom 07h 09h 11h 19h
+Seg Qua Qui Sex 19h30
+Sábado 17h30";"meia hora antes das Missas";"";"";"Rio de Janeiro";"2yBM1";NULL;"";"2015-10-30 17:13:23"
+48;"Paróquia Menino Jesus de Praga";"Padre Márcio Ferreira Dos Santos";"Av. do Corretor, 27";"Bangu";"Rio de Janeiro";"RJ";"Brasil";"21842-340";"(21) 2401-9853";"Grupo de Estudo do YouCat:
+Todo 2º e 4º Sábado do mês às 19h
+
+Adoração Jovem:
+1º Sábado às 20h
+
+Terço dos Homens:
+Toda Sexta às 20h";-22.8678083;-43.4775574;"Domingo: 07:00, 09:00, 19:00
+Segunda-feira: 19:00
+Quinta-feira: 19:00
+Sábado: 19:00
+1a Sexta-feira: 08:00";"segunda, quinta e sexta de 16h às 18h";"http://paroquiameninojesusrj.org/";"secretaria@paroquiameninojesusrj.org";"Rio de Janeiro";"fHvlY";NULL;"Segunda a Sexta das 08:00 até 18:00
+Sábado de 08:00 às 12:00";"2015-09-18 16:49:40"
+49;"Nossa Senhora Aparecida";"Pe. João Custódio da Silva";"Estrada do Mato Alto, 5.027";"Guaratiba";"Rio de Janeiro";"RJ";"Brasil";"23030-320";"(21) 2410-7049";"";-22.962742;-43.585324;"Sab 19:00
+Dom 07:00 10:00";"";"";"";"Rio de Janeiro";"HbgB5";NULL;NULL;"2012-12-29 13:22:16"
+50;"Nossa Senhora Aparecida";"Pe. Sebastião Joaquim da Silva";"Rua Maragogipe, 37 - Batã";"Realengo";"Rio de Janeiro";"RJ";"Brasil";"21730-300";"(21) 2403-7666";"";-22.863996;-43.427266;"1a Sex 19:30
+Sex 15:00
+Seg Qua Sab 19:30
+Dom 07:00 09:00 19:30";"Sex 16:00 as 18:00";"";"";"Rio de Janeiro";"tvQac";NULL;NULL;"2012-12-29 13:22:16"
+51;"Paróquia Nossa Senhora Aparecida";"Pe. Sebastião Gonçalves da Silveira";"Av. Bagaxá, Qd. 64, Lt. 03";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23066-450";"(21) 3313-8465";"";-22.8944832;-43.604309;"Seg Qua Sex 18:00
+Última Qui 10:00
+1a Sex 08:00
+Sab 08:00
+Dom 07:00 10:00 19:30";"";"";"";"Rio de Janeiro";"WFB09";NULL;NULL;"2013-06-21 16:05:47"
+52;"Paróquia Nossa Senhora Aparecida";"Pe. Gilvan André da Silva";"Estrada Governador Chagas Freitas, 520";"Ilha do Governador";"Rio de Janeiro";"RJ";"Brasil";"21920-330";"(21) 3975-1987";"";-22.7962622;-43.2066295;"Seg Ter Qui Sex 19:00
+Qua 7:30
+Sab 18:00
+Dom 08:00 10:00 19:00";"Ter a Sex 16:00 as 18:00";"";"";"Rio de Janeiro";"8YvPg";NULL;NULL;"2013-07-09 15:24:45"
+53;"Nossa Senhora Aparecida";"Pe. Aldo de Souto Santos";"Rua do Alho, 43";"Marcílio Dias - Penha Circular";"Rio de Janeiro";"RJ";"Brasil";"21011-00";"(21) 2584-3343";"";-22.8146498;-43.2790111;"Seg a Sab 18:30
+Ultima Qui 19:30
+Dom 10:00 18:00";"Sab 09:00 as 11:00";"";"";"Rio de Janeiro";"ksfpD";NULL;NULL;"2013-01-12 13:28:33"
+54;"Paróquia Nossa Senhora Auxiliadora";"Pe. Gregório Batista, SDB";"Rua Darci Vargas, 12";"Jacaré";"Rio de Janeiro";"RJ";"Brasil";"20972-010";"(21) 2241-1524";"";-22.976061;-43.695835;"Seg a Sab 19:00 (Na Igreja)
+Dom 07:00 09:00 19:00 (Na Igreja)
+
+Sab 17:30 (Capela Nossa Senhora da Paz)
+Dom 09:00 (Capela Santa Rita)
+Dom 18:00 (Capela Nossa Senhora Aparecida)";"";"";"";"Rio de Janeiro";"NCQEk";NULL;NULL;"2013-06-27 16:06:08"
+55;"Nossa Senhora da Ajuda";"Pe. Isidoro Ludwig, MSF";"Praça Calcutá, 23";"Freguesia - Ilha do Governador";"Rio de Janeiro";"RJ";"Brasil";"21910-01";"(21) 3396-1058";"";-22.793704;-43.171042;"Ter Qua Sex 19:00
+Qui 07:30
+Dom 07:00 09:00 11:00 19:00";"";"";"";"Rio de Janeiro";"zWAeH";NULL;NULL;"2013-01-12 13:29:42"
+56;"Nossa Senhora da Apresentação";"Pe. Renato Martins Gonçalves";"Praça Nossa Senhora da Apresentação, 272";"Irajá";"Rio de Janeiro";"RJ";"Brasil";"21231-220";"(21) 2471-9014";"";-22.831036;-43.326658;"Seg Qua Qui Sex 19:00
+1a Sex 07:00
+Sab 16:30 18:00
+Dom 07:00 09:00 19:00";"";"";"";"Rio de Janeiro";"bpv3o";NULL;"";"2014-11-15 16:51:04"
+57;"Nossa Senhora da Assunção";"Pe. José Eugenio Evangelista Moura Souza";"Praça Mario Saraiva, s/n";"Jardim Sulacap";"Rio de Janeiro";"RJ";"Brasil";"21741-100";"(21) 3357-5150";"";-22.887251;-43.394921;"Seg Qua 19:00
+Dom 08:00 10:30 19:00";"";"";"";"Rio de Janeiro";"E9fTL";NULL;NULL;"2013-01-12 13:29:42"
+58;"Nossa Senhora da Boa Esperança";"Pe. José Elson Barroso Cordeiro";"Rua Petrolina, 52";"Honório Gurgel";"Rio de Janeiro";"RJ";"Brasil";"21555-240";"(21) 3390-5625";"";-22.852004;-43.357997;"Seg Ter Qua Qui 18:30
+Sab 18:00
+Dom 07:00 09:00 18:00";"";"";"";"Rio de Janeiro";"qTPss";NULL;NULL;"2013-01-12 13:29:42"
+59;"Nossa Senhora da Boa Viagem";"Pe. Fr. João Fernandes Reinert, OFM";"Estrada da Gávea, 445";"Rocinha";"Rio de Janeiro";"RJ";"Brasil";"22451-265";"(21) 3322-5525";"";-22.991395;-43.253429;"";"";"";"";"Rio de Janeiro";"SnAIP";NULL;NULL;"2013-01-12 13:29:42"
+60;"Paróquia Nossa Senhora da Cabeça";"Pe. Jefferson Merighetti";"Rua Belisário Pena, 420";"Penha";"Rio de Janeiro";"RJ";"Brasil";"21020-010";"(21) 2573-9098";"facebook.com/nscabeca
+twitter:  @nscabeca
+flickr.com/nscabeca
+
+Vigário: Frei Paulo Mossolini
+Diáconos: José Vaz e Mário Higashi";-22.8318294;-43.2746379;"Seg 19:00
+Ter 19h
+Sex 08:00
+Qui 19:00
+Sab 08:00 17:00
+Dom 07:00 8:30 11:30 18:00
+Sexta 19h (Capela Sagrada Família)
+Sáb 18:30 (Capela Sagrada Família)
+Dom 10h (Capela Sagrada Família)";"quinta 17h às 19:30
+segundas das 18h às 19h";"http://www.nscabeca.com.br";"paroquia@nscabeca.com.br";"Rio de Janeiro";"56uhw";NULL;"segunda a sábado de 8:30 à 17:00 (almoço 12h às 13h)
+quarta-feira: FOLGA PAROQUIAL
+domingo: 8:00 às 12:00";"2015-03-24 19:19:20"
+61;"Nossa Senhora da Candelária";"Mons. Elia Volpi";"Praça Pio X";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20040-020";"(21) 2233-2324";"";-22.900831;-43.177819;"Seg a Sex 12:15
+Dom 10:30 12:00";"";"";"";"Rio de Janeiro";"hQf7T";NULL;NULL;"2012-12-29 13:22:16"
+62;"Nossa Senhora da Conceição";"Pe. Jorge Pereira Bispo";"Pc D Romualdo, 11";"Santa Cruz";"Rio de Janeiro";"RJ";"Brasil";"23515-100";"(21) 3395-0260";"";-22.919741;-43.685138;"Seg Ter Qua 19:00
+Qui 16:00
+Sex 7:30
+Dom 07:30 10:00 19:00";"Segunda-feira: das 15h as 18h
+Quarta-feira: das 15h as 17h
+Sexta-feira: das 14h as 18h";"http://www.pnsc.org.br";"";"Rio de Janeiro";"JkPX0";NULL;NULL;"2013-08-11 18:57:30"
+63;"Nossa Senhora da Conceição";"Pe. Barnabé Cunha";"Rua Monsenhor Amorim, 34";"Engenho Novo";"Rio de Janeiro";"RJ";"Brasil";"20961-110";"(21) 2261-0313";"";-22.9017057;-43.2658375;"Domingo: 07:00, 08:30, 10:00, 18:30
+Segunda-feira: 07:00
+Segunda 18:00 (capela das almas)
+Terça-feira: 07:00
+Quarta 19:00
+Quinta-feira: 07:00
+Quinta 18:00 (capela do Santíssimo)
+Sexta-feira: 07:00
+Sábado: 07:00, 18:00";"";"";"";"Rio de Janeiro";"w49wX";NULL;"";"2015-02-12 20:38:57"
+64;"Nossa Senhora da Conceição";"Pe. João Geraldo Machado Bellocchio";"Rua Marquês de São Vicente, 19";"Gávea";"Rio de Janeiro";"RJ";"Brasil";"22451-041";"(21) 3268-8021";"";-22.975181;-43.227269;"Seg a Sab 18:00
+Dom 09:00 11:30 18:00
+";"";"";"";"Rio de Janeiro";"YNuM4";NULL;NULL;"2013-01-12 13:29:42"
+65;"Paróquia Nossa Senhora da Conceição";"Mons. Luiz Artur Marques de Barros Falcão";"Av. Santa Cruz, 1125";"Realengo";"Rio de Janeiro";"RJ";"Brasil";"21710-231";"(21) 3331-0371";"";-22.8780183;-43.4343418;"Seg Qua Qui Sex 19:00
+Sab 17:00
+Dom 07:00 09:00 18:30";"sexta-feira 9:00h as 11:00h e 15:00h as 17:00h";"http://www.paroquiansconceicao.org.br";"";"Rio de Janeiro";"Ahelb";NULL;"Segunda a Sexta das 08h às 17h
+Sábado das 08h às 12h";"2015-02-12 19:30:25"
+66;"Paróquia Nossa Senhora da Conceição";"Pe. Pedro Nunes de Almeida";"Rua Conde de Bonfim, 987";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20530-000";"(21) 2238-9672";"";-22.939054;-43.247894;"Seg 18:30
+Ter a Sab 17:00
+Dom 08:00 10:00 18:30";"";"";"";"Rio de Janeiro";"n1PB8";NULL;"";"2016-10-05 21:32:42"
+67;"Nossa Senhora da Conceição";"Pe. Antônio Aidno Lucena de Noronha";"Av. Ernani Cardoso, 418";"Campinho";"Rio de Janeiro";"RJ";"Brasil";"21310-310";"(21) 2452-1176";"";-22.882744;-43.340827;"Seg Qua Sex 18:00
+Dom 07:00 10:00 18:00";"";"";"";"Rio de Janeiro";"PL9af";NULL;NULL;"2013-01-12 13:29:42"
+68;"Nossa Senhora da Conceição";"Pe. José Peekkunnel Francis (Kalapura)";"Rua Carvalho Moutinho, 220";"Ramos";"Rio de Janeiro";"RJ";"Brasil";"21031-220";"";"";-22.847717;-43.256026;"";"";"";"";"Rio de Janeiro";"1eu0C";NULL;NULL;"2013-01-12 13:29:42"
+69;"Nossa Senhora da Conceição";"Pe. João Paulo Pinto dos Santos Batista";"Estrada do Magarça, 292";"Monteiro - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23035-380";"(21) 3316-3505";"";-22.934057;-43.576552;"";"";"";"";"Rio de Janeiro";"dyePj";NULL;NULL;"2013-01-12 13:29:42"
+70;"Nossa Senhora da Conceição";"Pe. Walter Vieira Neto";"Rua Rodolfo de Melo, 2";"São Vítor - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23092-090";"(21) 2412-7440";"";-22.8761066;-43.5301722;"Seg, qua, Qui, sex 19h30
+Dom 07:00 09:00 19:00";"Qua 08:00 às 18h";"";"";"Rio de Janeiro";"GIOpG";NULL;"";"2015-01-07 18:13:51"
+71;"Paróquia Nossa Senhora da Conceição";"Pe. Alan Soares Delgado";"Praça Sargento Fabio Pavani, 44";"Pavuna";"Rio de Janeiro";"RJ";"Brasil";"21520-680";"(21) 2474-1203";"Confissões a combinar com o padre ou antes e depois das missas se houver disponibilidade do mesmo.
+
+ No dia 07 de Março de 2015, o Eminentíssimo Sr., Cardeal Arcebispo Dom Orani João Tempesta, O.Cist, oficiou solenemente a Missa da Dedicação dessa Paróquia e do seu altar, com grande quantidade de fieis e visitantes.";-22.8046886;-43.3540965;"Domingo: 7h20, 9h30 e 18h
+Segunda: 19h
+Sexta: 8h
+1a Sexta  19h";"";"http://paroquiaconceicaopavuna.org.br";"paroquiaconceicao@yahoo.com.br";"Rio de Janeiro";"sc9En";NULL;"";"2015-03-18 22:07:56"
+72;"Nossa Senhora da Conceição Aparecida";"Pe. Jorge André Pimentel Gouvêa";"Rua Ferreira de Andrade, 103";"Cachambi";"Rio de Janeiro";"RJ";"Brasil";"20780-200";"(21) 2281-3545";"Confissões também antes das Missas";-22.894671;-43.272872;"Seg, qua, qui, sex: 7h, 18h
+Sáb: 7h, 17h
+Dom: 8h30, 10h30, 18h";"Seg 16:30";"";"";"Rio de Janeiro";"UvteK";NULL;"";"2014-06-30 18:11:31"
+73;"Paroquia N S da conceição Aparecida";"Pe Luciano de Moura Mirom";"Rua Alcantil, 140";"Paciência";"Rio de Janeiro";"RJ";"Brasil";"23587-100";"(21) 2409-6964";"Confissões também qualquer dia da semana com hora marcada na secretaria.";-22.917131;-43.623296;"Domingo 07:00, 09:00 e 19:00
+Segunda 19:00
+1a sexta-feira 19:00";"domingo 17:00 às 19:00";"http://pnsconceicaoaparecida.com.br";"";"Rio de Janeiro";"7Fe3r";NULL;"";"2014-02-13 18:59:35"
+74;"Paróquia Nossa Senhora da Conceição e Santo Antônio";"Pe. Josué Bisker";"Estrada do Guandu, 401";"Guandu do Sena - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23097-200";"(21) 2413-7474";"Confissões: Ligar para combinar com o padre.";-22.84412;-43.519608;"Seg Ter Qui Sex 19:00
+Sab 17:00
+Dom 07:30 19h (Matriz)
+Dom 10:00 19h (Capela)";"";"";"ncsaguandu@gmail.com";"Rio de Janeiro";"jZOTO";NULL;NULL;"2013-05-01 21:51:29"
+75;"Nossa Senhora da Conceição e São José";"Mons. Gustavo José Cruz Auler";"Av. Amaro Cavalcante, 1.761";"Engenho de Dentro";"Rio de Janeiro";"RJ";"Brasil";"20735-042";"(21) 2269-9595";"";-22.895739;-43.293271;"Seg qua e sex 7h 19h
+ter 19h
+qui 18h
+sab 9h
+1o sabado 16h (Missa da Saúde)
+domingo 6:30 8h 10h 18h";"Sex das 8h às 11h (Ou combinar com o padre)";"";"";"Rio de Janeiro";"Lt8sv";NULL;"";"2015-10-08 14:13:45"
+76;"Nossa Senhora da Conceição e São Justino";"Pe. José Silvino Santos, SDV";"Rua Iramaia, 87";"Parada de Lucas";"Rio de Janeiro";"RJ";"Brasil";"21010-050";"(21) 2485-4728";"";-22.81711;-43.299478;"";"";"";"";"Rio de Janeiro";"yCtIS";NULL;NULL;"2013-01-11 18:32:25"
+77;"Paróquia Nossa Senhora da Consolação e Correia";"Pe. Fr. José Rodriguez Álvarez, OSA";"Rua Barão do Bom Retiro, 909";"Engenho Novo";"Rio de Janeiro";"RJ";"Brasil";"20715-003";"(21) 2581-9971";"<strong>Atenção: Devido à festa, neste domingo 07/06/2014 a Missa das 19h será às 17h</strong>";-22.911086;-43.26866;"Domingo: 08h, 10:30 e 19h
+Segunda-feira: 19h
+qua 17h
+qui e sex 7h30 19h
+Sab 19h";"";"";"";"Rio de Janeiro";"aWdhz";NULL;"";"2014-06-02 19:39:51"
+78;"Paróquia Nossa Senhora Consolata";"Pe. Gilmar Souza da Silva, Nds";"Rua São Luiz Gonzaga, 1.860";"Benfica";"Rio de Janeiro";"RJ";"Brasil";"20910-064";"(21) 3860-5519";"";-22.895809;-43.237147;"Domingo 7h 9h 19h
+Domingo 8h (N.Sa. das Graças - Arará)
+Domingo 17h (Capela N.Sa. de Todos os Pobres - Telégrafo)
+Domingo 10h30 (Capela N.Sa. da Glória - Mangueira)
+Seg Qua  Sex 19:30h 
+Sábado 17h (Capela N.Sa. Fátima - Erédia)
+Sábado 19h (Capela São Pedro - Vila Previdência)
+
+
+
+3ª Qua 19h30 (Missa de cura e libertação)";"";"";"";"Rio de Janeiro";"CqO7W";NULL;"";"2015-10-21 16:18:48"
+79;"Nossa Senhora da Divina Providência";"Pe. Geraldo Majela Silva";"Rua Lopes Quintas, 274";"Jardim Botânico";"Rio de Janeiro";"RJ";"Brasil";"22460-010";"(21) 2294-5648";"";-22.964335;-43.221012;"Seg a Sex 06:30 18:30
+Sab 07:00 17:00
+Dom 09:00 11:00 18:00 19:30";"";"";"";"Rio de Janeiro";"pA8X3";NULL;"";"2015-08-29 16:31:55"
+80;"Nossa Senhora da Esperança";"Pe. Francisco Beffa";"Rua Conde de Irajá, 465";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22271-020";"(21) 2538-2215";"";-22.956398;-43.194805;"Ter a Sab 18:00
+Dom 09:00 11:00 18:30
+1a Sex 08:00";"";"";"";"Rio de Janeiro";"RTswa";NULL;NULL;"2012-12-29 13:22:16"
+81;"Matriz de Nossa Senhora da Glória";"Pe.Geovane Ferreira";"Largo do Machado, s/n";"Laranjeiras";"Rio de Janeiro";"RJ";"Brasil";"22221-020";"(21) 2225-0735";"Todas as Segundas-feiras, de 10h às 15h, a Igreja fecha para faxina.
+
+
+Confissões no Sábado e Domingo: conforme disponibilidade dos padres";-22.930968;-43.1783;"Segunda a Sexta 7h30 9h 12h 17h 18h
+Sab 7h30 9h 15h 17h
+Domingo  7h30  9h   10h30 12h 17h 18h30 20h";"Segunda-feira: das 15h às 17h
+Terça a Sexta-feira das 9h30 às 11h e das 15h às 17h";"http://www.nsdagloria.com/";"";"Rio de Janeiro";"3ndM7";NULL;"Segunda-feira:
+8h às 10h | 15h às 18h
+
+De Terça a Sexta-feira:
+8h às 13h | 14h às 18h
+
+Sábado:
+8h às 13h | 14h30 às 18h30
+
+Domingo:
+8h às 13h | 16h às 21h";"2015-11-16 21:34:11"
+82;"Paróquia Nossa Senhora da Glória";"Pe. Sebastião Moreira Ramos, SDV";"Rua Ipameri, 66";"Cordovil";"Rio de Janeiro";"RJ";"Brasil";"21012-170";"(21) 2485-2579";"";-22.823728;-43.292514;"Seg a Sex 18:00
+Dom 07:00 09:00 18:00";"meia hora antes da Missa";"";"";"Rio de Janeiro";"g7Nle";NULL;NULL;"2013-05-10 12:01:21"
+83;"Paróquia Nossa Senhora da Glória";"Pe. José Eliomar de Almeida Soares, SJC";"Praça Santa Cruz, 26";"Santa Cruz";"Rio de Janeiro";"RJ";"Brasil";"23520-240";"(21) 3395-0753";"";-22.936049;-43.666528;"Qui 07:00 19:00
+Sab 18:00
+Dom 07:00 19:00";"Qui 15:00";"";"";"Rio de Janeiro";"IR8BB";NULL;NULL;"2013-05-10 12:01:12"
+84;"Paróquia Nossa Senhora da Guia";"Pe. Jorge Emílio Lutz Mazzini, SVC";"Rua Lins de Vasconcelos, 699";"Lins de Vasconcelos";"Rio de Janeiro";"RJ";"Brasil";"20710-130";"(21) 2597-2497";"Nesta paróquia você encontra a atuação do Movimento de Vida Cristã (MVC).";-22.912091;-43.286794;"Segunda a sexta: 19h
+1a Sexta 8:00
+Domingo: 8h, 10h e 19h";"Seg a Sex 18h30
+Dom 7h30 9h30 18h30";"http://www.senhoradaguia.org.br/";"";"Rio de Janeiro";"uksai";NULL;NULL;"2013-05-21 18:53:44"
+85;"Nossa Senhora da Lapa";"Pe. Walnei de Moura Antunes";"Rua Albino Paiva, 365";"Senador Camará";"Rio de Janeiro";"RJ";"Brasil";"21830-490";"(21) 3159-4501";"";-22.879186;-43.486394;"Seg Qui 08:00
+Qua Sex 19:00
+Dom 07:00 10:00 19:00";"Qui após a missa";"";"";"Rio de Janeiro";"X4d0F";NULL;NULL;"2012-12-29 13:22:16"
+86;"Nossa Senhora da Luz";"Pe. Sérgio Ricardo Conceição de Souza";"Rua Ana Néri, 1.114";"Rocha";"Rio de Janeiro";"RJ";"Brasil";"20960-005";"(21) 2241-0671";"";-22.900497;-43.246501;"";"";"";"";"Rio de Janeiro";"9ONPm";NULL;NULL;"2013-01-11 18:32:25"
+87;"Nossa Senhora da Luz";"Pe. Marcelo de Assis Paiva";"Estrada das Furnas, 220";"Alto da Boa Vista";"Rio de Janeiro";"RJ";"Brasil";"20531-570";"(21) 2492-2144";"";-22.9612676;-43.2730287;"domingo 09:00 e 11:00";"";"";"";"Rio de Janeiro";"li7pJ";NULL;"";"2014-03-09 22:23:41"
+88;"Our Lady of Mercy - Catholic Parish";"Pe. André Sampaio de Oliveira";"Rua Visconde de Caravelas, 48";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22271-030";"(21) 2266-8273, (21) 2266-8297";"Missa Domingo 9:30 em Inglês.";-22.956347;-43.193688;"Dom 9:30 (Em Inglês), 19:00";"";"http://www.olmrio.com/chapelolm_eng.html";"";"Rio de Janeiro";"O1sEq";NULL;NULL;"2012-12-29 13:22:16"
+89;"Nossa Senhora da Paz";"Mons. Manuel Moreira Vieira";"Rua Visconde de Pirajá, 339";"Ipanema";"Rio de Janeiro";"RJ";"Brasil";"22410-003";"(21) 2523-4543";"";-22.984219;-43.205222;"Seg 07:30 17:30
+Ter a Sex 06:30 07:30 08:30 10:00 12:00 17:30 18:30
+Sab 06:30 07:30 08:30 10:00 16:30 18:00
+Dom 07:00 08:30 10:00 11:30 12:30 16:30 18:00 19:30 21:00";"Ter a Sex 09:00 as 12:00 15:00 as 18:00
+Sab 09:00 as 12:00";"http://www.nspaz.org.br";"";"Rio de Janeiro";"0LceN";NULL;NULL;"2012-12-29 20:28:12"
+90;"Nossa Senhora da Paz";"Pe. Alessandro Manoel dos Santos";"Rua Dois, 2";"Conjunto Campinho - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23067-040";"(21) 3404-3428";"";-22.8829502;-43.6154629;"";"";"";"";"Rio de Janeiro";"cfN3u";NULL;NULL;"2013-01-11 18:32:25"
+91;"Nossa Senhora da Paz";"Pe Charles Pierre";"Estrada do Mendanha, 6.582";"Serrinha - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23097-006";"(21)3426-6176";"";-22.8444;-43.549583;"Domingo 8h30 e 18h";"";"www.facebook.com/nossasenhoradapazserrinha";"";"Rio de Janeiro";"Ez7TR";NULL;"";"2015-10-28 11:56:12"
+92;"Nossa Senhora da Paz";"Pe. João Damasceno da Cruz Filho";"Rua da Paz, 7";"Parque União - Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21044-430";"(21)2590-0885";"";-22.852027;-43.2459105;"Ter a Sex 19:00
+Sab 19:30
+Dom 07:30 09:30 17:00 19:00";"meia hora antes da Missa";"";"";"Rio de Janeiro";"rIrsy";NULL;NULL;"2013-01-12 13:29:42"
+93;"Nossa Senhora da Piedade";"Pe. Daniel Rodrigues Mourão";"Rua Clarimundo de Melo, 222";"Piedade";"Rio de Janeiro";"RJ";"Brasil";"20740-322";"(21) 2595-8969";"";-22.896109;-43.308349;"Seg Qui 18:00
+Qua Sex 19:00
+Sab 19:00
+Dom 07:00 09:00 19:00";"";"";"";"Rio de Janeiro";"TccIV";NULL;NULL;"2012-12-29 13:22:16"
+94;"Nossa Senhora da Salette";"Pe. Marcos Antônio Pereira de Queiroz, MS";"Rua Catumbi, 78";"Catumbi";"Rio de Janeiro";"RJ";"Brasil";"20251-440";"(21) 2502-1564";"";-22.916152;-43.195484;"Ter Qua Sex 07:00 18:00 19:00
+Qui 07:00 18:00 
+Sab 07:00 17:00
+Dom 07:00 09:30 18:00
+";"";"http://www.nsrasalette.org.br";"";"Rio de Janeiro";"5wMi2";NULL;NULL;"2013-01-12 13:29:42"
+95;"Nossa Senhora da Saúde";"Pe. Carlos Alberto Nascimento";"Rua General Olivio Uzeda, 231";"Curicica";"Rio de Janeiro";"RJ";"Brasil";"22780-500";"(21) 2441-2513";"";-22.957177;-43.386651;"Seg Qua Sex 19:00
+Dom 07:30 09:30 19:00
+";"";"";"";"Rio de Janeiro";"iG77Z";NULL;NULL;"2012-12-29 13:22:16"
+96;"Nossa Senhora da Vitória";"Mons. Joel Portella Amado";"Rua Des. José Maria Ortigão Sampaio, 55";"Alfabarra 2 - Barra da Tijuca";"Rio de Janeiro";"RJ";"Brasil";"22795-245";"(21) 2433-3764";"";-23.0086641;-43.3686819;"Qua Sex 19:30
+Sab 18:00
+Dom 09:00 20:30
+
+Sab 19:30 (Colégio Anglo-Americano)";"";"http://www.nsv.org.br";"";"Rio de Janeiro";"KZrX6";NULL;"";"2015-03-16 20:03:21"
+97;"Nossa Senhora das Dores";"Pe. Fr. Paulo Sérgio M. Angeloni, OSM";"Av. Paulo de Frontin, 500";"Rio Comprido";"Rio de Janeiro";"RJ";"Brasil";"20261-242";"(21) 2273-5143";"";-22.924282;-43.209815;"Seg a Sab 07:30 19:00
+Dom  07:30 09:00 11:00 19:00";"";"";"";"Rio de Janeiro";"wtbwd";NULL;"";"2017-03-05 12:00:04"
+98;"Paróquia Nossa Senhora das Dores";"Pe. Jorge Carrera";"Rua Palmeiras do Norte, 257";"Inhaúma";"Rio de Janeiro";"RJ";"Brasil";"21051-400";"(21) 2260-3571";"";-22.87235;-43.270541;"Seg Qua Sex 19:00
+Dom 08:00 10:00 18:00";"";"";"";"Rio de Janeiro";"ZDMMA";NULL;NULL;"2013-08-11 18:55:49"
+99;"Nossa Senhora das Dores e São Judas Tadeu";"Pe. Luiz Cláudio Baraúna Pessanha";"Estrada do Engenho Novo, 270";"Anchieta";"Rio de Janeiro";"RJ";"Brasil";"21620-240";"(21) 3339-4561";"Casa 12";-22.8257407;-43.4053715;"Dom 07:00 10:00 19:00
+1a Sex 19:00";"";"";"";"Rio de Janeiro";"BX6lh";NULL;NULL;"2012-12-29 13:22:16"
+100;"Nossa Senhora das Graças";"Pe. Fr. André Ricardo Zago, OSA";"Rua Capitão Rubens, 55";"Marechal Hermes";"Rio de Janeiro";"RJ";"Brasil";"21610-290";"(21) 3390-6837";"Ramal 200";-22.865948;-43.373807;"Seg Qua Qui Sex 08:00 19:00
+Sab 08:00 17:00
+Dom 07:00 09:00 19:00
+";"";"http://www.dasgracas.com.br";"";"Rio de Janeiro";"nqrBE";NULL;NULL;"2012-12-29 20:55:01"
+101;"Nossa Senhora das Graças";"Pe. José Brito Terceiro";"Rua Fernando Esquerdo, 370";"Maria da Graça";"Rio de Janeiro";"RJ";"Brasil";"20785-370";"(21) 2241-0723";"";-22.883659;-43.265229;"Seg Qua Qui Sex 19:00
+Sab 18:00
+Dom 08:00 10h30 18:00";"";"";"";"Rio de Janeiro";"QAbal";NULL;"";"2016-08-24 07:46:57"
+102;"Nossa Senhora das Graças";"Pe. Luiz Carlos Pereira";"Rua Benedito Lacerda, Q. 2 L. 11";"Vila Nova - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23071-340";"(21) 3394-3383";"";-22.88971;-43.579577;"Ter Qui 18:30
+Sex 18:00
+Dom 07:30 19:00
+4a Sex 17:30 (Enfermos)
+3o Dom 09:30 (Catequese)
+";"";"http://www.paroquiadasgracas.com";"";"Rio de Janeiro";"2UM0I";NULL;NULL;"2013-01-12 13:29:42"
+103;"Paróquia Nossa Senhora das Mercês";"Frei Fernando Henrique Marques Brito";"Rua Roberto Silva, 76";"Ramos";"Rio de Janeiro";"RJ";"Brasil";"21060-230";"(21) 2564-8291";"Confissões: Segunda a Sábado após a missa das 7h";-22.856644;-43.259487;"Domingo	07h 08h30 10h 18h
+Seg Qui Sex	07h e 19h
+Ter 07h
+Qua 07h
+Sábado:	07h e 17h";"";"";"pascom.pnsmercesrj@gmail.com";"Rio de Janeiro";"eo6Pp";NULL;"";"2015-10-09 10:38:32"
+104;"Nossa Senhora de Copacabana e Santa Rosa de Lima";"Mons. Aroldo da Silva Ribeiro";"Rua Hilário de Gouveia, 36";"Copacabana";"Rio de Janeiro";"RJ";"Brasil";"22040-020";"(21) 2548-5095";"";-22.969062;-43.183349;"Seg Sex 16:30 18:00 19:00
+Ter 07:00 16:30 19:00
+Qua Qui 18:00 19:00
+Sab 16:00 17:30 19:00
+Dom 07:00 08:30 10:00 12:00 16:00 17:30 19:00 20:30
+Seg Qua Qui Sex Sab 7:00, 8:00, 9:00, 10:00,  11:00, 12:00
+Dom 11:30 (Missa em Inglês)";"seg, qua, qui, sex, sáb 9h às 12h e 16h às 19h";"http://paroquianscopacabana.wordpress.com/";"pascomnsadecopacabana@gmail.com";"Rio de Janeiro";"H7qpM";NULL;"Funciona no horário comercial, exceto terça-feira.";"2015-01-10 19:56:24"
+105;"Nossa Senhora de Fátima";"Pe. Carlos Alberto Pinto";"Rua Mambarés, 68";"Marechal Hermes";"Rio de Janeiro";"RJ";"Brasil";"21557-060";"(21) 3390-7526";"";-22.855922;-43.372866;"Dom 07:30 09:30 18:00
+Seg 19:00
+";"";"";"";"Rio de Janeiro";"tRbEt";NULL;NULL;"2013-01-12 13:29:42"
+106;"Nossa Senhora de Fátima";"Pe. Fábio Macereau dos Santos";"Estrada de Maracaí, 305";"Furnas";"Rio de Janeiro";"RJ";"Brasil";"20531-690";"(21) 3152-5848";"";-22.97391;-43.283563;"Seg Qua Sex 07:30 
+Sab 08:00 17:00
+Dom 07:30 19:00";"Sex Dom 17:00";"";"";"Rio de Janeiro";"VlLeQ";NULL;NULL;"2012-12-29 13:22:16"
+107;"Nossa Senhora de Fátima";"Pe. Paulo César Magalhães, PODP";"Rua Riachuelo, 367";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20230-012";"(21) 2232-3640";"";-22.912522;-43.191949;"Seg a Sab 08:00 19:00
+Dom 07:30 09:30 11:00 19:00";"Ter a Sex 9:30 as 11:00 14:00 as 16:00";"";"";"Rio de Janeiro";"8563x";NULL;NULL;"2012-12-29 13:22:16"
+108;"Nossa Senhora de Fátima";"Pe. Fr. Jorge Fernando da Silva Coelho, OFMConv";"Estrada dos Vieiras, 90";"Paciência";"Rio de Janeiro";"RJ";"Brasil";"23587-610";"(21) 2409-6996";"";-22.917284;-43.63218;"Seg Qua 19:00
+Dom 07:30 09:30 18:00
+";"";"";"";"Rio de Janeiro";"kOqTU";NULL;NULL;"2012-12-29 13:22:16"
+109;"Paróquia Nossa Senhora de Fátima";"Pe. João Jefferson Chagas";"Av. Darcy Bittencourt Costa, 150";"Olaria";"Rio de Janeiro";"RJ";"Brasil";"21073-140";"(21) 2270-2087";"";-22.85012;-43.272926;"Domingo:	07:00, 10:00, 19:00
+Segunda-feira:	19:00
+Terça-feira:	07:00
+Quarta-feira:	20:00
+Quinta-feira:	07:00
+Sexta-feira:	19:00
+Sábado:	19:00";"Segunda-feira:	20:00
+Terça-feira:	20:00
+Quinta-feira:	20:00
+Sexta-feira:	20:00";"http://www.pnsfatima.org.br";"secretaria@pnsfatima.org.br, pascom@pnsfatima.org.br";"Rio de Janeiro";"Miat1";NULL;"Terça, quinta e sexta-feira - 9h às 12h e 15h às 18:30h
+Sábado 8h às 12h";"2015-06-05 12:34:15"
+110;"Nossa Senhora de Fátima";"Mons. Jan Kaleta";"Rua Benevente, 15";"Pechincha";"Rio de Janeiro";"RJ";"Brasil";"22743-140";"(21) 3392-9514";"";-22.929089;-43.354153;"Seg Ter Qui Sex 19:00
+Sab 18:00
+Dom 08:00 10:15 19:30";"";"";"";"Rio de Janeiro";"z2LIY";NULL;NULL;"2013-01-12 13:29:42"
+111;"Paróquia Nossa Senhora de Fátima";"Pe. Sílvio de Barros Gomes";"Estrada dos Sete Riachos, 422";"Santíssimo";"Rio de Janeiro";"RJ";"Brasil";"23098-006";"(21) 2404-2904";"";-22.8659787;-43.5110047;"Domingo 7h, 9h e 17h50";"";"";"";"Rio de Janeiro";"bM5i5";NULL;"";"2014-02-23 16:12:55"
+112;"Nossa Senhora de Fátima";"Pe. Ary da Costa Araújo";"Rua Pereira Pinto, 52";"Tomás Coelho";"Rio de Janeiro";"RJ";"Brasil";"20761-350";"(21) 2289-8738";"";-22.868089;-43.303335;"1a Qui 18:30
+Qui 19:00
+Sab 08:00
+Dom 07:30 09:30 18:00";"";"";"";"Rio de Janeiro";"Dfq7c";NULL;NULL;"2013-02-03 17:31:55"
+113;"Nossa Senhora de Fátima e São João de Deus";"Pe. Luiz Carlos Vital de Oliveira";"Estrada Manoel Nogueira de Sá 1.421 - Jardim Novo";"Realengo";"Rio de Janeiro";"RJ";"Brasil";"21745-290";"(21) 2301-0219";"";-22.893982;-43.419293;"";"";"";"";"Rio de Janeiro";"pzaX9";NULL;NULL;"2013-01-11 18:32:25"
+114;"Nossa Senhora de Fátima Ranha de Todos os Santos";"Pe. Antonio José Afonso da Costa";"Rua Adriano, 158";"Todos os Santos";"Rio de Janeiro";"RJ";"Brasil";"20735-060";"(21) 2289-2099";"";-22.900136;-43.288972;"Sab 17:00
+Dom 8:00 10:00 18:00
+";"";"http://www.riodedeus.com";"";"Rio de Janeiro";"SJKwg";NULL;NULL;"2012-12-29 20:28:12"
+115;"Nossa Senhora de Guadalupe";"Pe. Gersoneide Francisco Costa, OdeM";"Pça. Nossa Senhora de Guadalupe, s/n";"Guadalupe";"Rio de Janeiro";"RJ";"Brasil";"21670-000";"(21) 2458-4551";"";-22.8413088;-43.3710932;"seg, ter, qui, sex  7:30 e 19:30
+qua, sáb 7:30 
+Domingo 7:30 9:30 19:00";"Seg a sáb 7:30 (depois da missa)";"";"";"Rio de Janeiro";"4d5MD";NULL;"Segunda a sexta 8:00 às 11:00 e 16:00 às 19:30";"2014-03-16 18:12:33"
+116;"Nossa Senhora de Guadalupe";"Pe. Barnabé da Cunha";"Travessa Chiaspas, s/n";"Jardim Guadalajara - Inhaúma";"Rio de Janeiro";"RJ";"Brasil";"21061-350";"(21) 2260-4321";"";-22.86551;-43.274901;"";"";"";"";"Rio de Janeiro";"gwplk";NULL;NULL;"2013-01-12 13:29:42"
+118;"Nossa Senhora de Nazaré";"Pe. Flávio Demoliner, SC";"Praça Nossa Senhora de Nazaré, 18";"Anchieta";"Rio de Janeiro";"RJ";"Brasil";"21645-430";"(21) 2455-1359";"";-22.8213435;-43.398707;"Seg Qui Sex 19:00
+Dom 07:00 09:00 19:00";"Seg Qui Sex 18:00";"";"";"Rio de Janeiro";"vaKao";NULL;NULL;"2012-12-29 13:22:16"
+119;"Paróquia Nossa Senhora do Amparo e Santa Maria Goretti";"Pe. Marcelo Renato";"Av. Dom Hélder Câmara, 9887";"Cascadura";"Rio de Janeiro";"RJ";"Brasil";"21380-002";"(21) 2596-9095";"";-22.882733;-43.322242;"domingo 08:00 10:30  18:30
+Seg Ter Qui Sex 19:00";"";"http://www.paroquiaamparo.com";"";"Rio de Janeiro";"Xu50L";NULL;"";"2014-05-24 22:52:40"
+120;"Nossa Senhora do Bonsucesso";"Pe. Geraldo Barcelos de Lima";"Rua General Galiene, 122";"Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21050-780";"(21) 2280-0244";"Confissões sempre meia hora antes das Missas";-22.8693;-43.257959;"Seg 7h
+Seg a sáb 8h e 8:30 (Depende de marcação de Missas)
+sex 18h
+dom 7h, 8h30, 10h, 18h";"";"";"";"Rio de Janeiro";"ADpPs";NULL;NULL;"2013-04-11 10:05:44"
+121;"Paróquia Nossa Senhora do Bonsucesso de Inhaúma";"Pe. Thiago Azevedo Pereira";"Rua Olga, 21";"Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21041-140";"(21) 3437-5111, (21) 3269-4610";"E-mail PASCOM: pascompnsbi@gmail.com
+
+Orkut: http://www.orkut.com.br/Main#Profile?uid=5199497778005357778&rl=t
+
+Facebook: http://www.facebook.com/home.php#%21/profile.php?id=100001429422789
+
+Confissões também antes ou depois das missas (Dependendo da disponibilidade do padre)";-22.8688123;-43.2498363;"Domingo: 8:00, 10:30
+Domingo 18:00 (Capela São José)
+Segunda-feira: 19:00 (Missa da Luz-Falecidos)
+Quarta-feira: 19:00 (Capela São José)
+Quinta-feira: 19:00
+Sexta-feira: 8:00";"Sexta-feira: 15:00 às 19:00";"http://paroquiansbi.blogspot.com.br";"pnsbonsucessoi@yahoo.com.br";"Rio de Janeiro";"mXZpP";NULL;"";"2014-06-02 19:01:33"
+122;"Nossa Senhora do Brasil";"Côn. Antônio José de Moraes";"Av. Portugal, 772";"Urca";"Rio de Janeiro";"RJ";"Brasil";"22291-050";"(21) 2295-0496";"";-22.948322;-43.165648;"Seg Qui 18:00
+Ter Qua Sex 08:00
+Sab 17:30
+Dom 09:00 11:00 18:00";"Seg Qui 17:00";"";"";"Rio de Janeiro";"OrKEw";NULL;NULL;"2012-12-29 13:22:16"
+123;"Nossa Senhora do Carmo";"Pe. Fr. Valter Rubens Gomes dos Santos, OCarm";"Av. Vicente de Carvalho, 970";"Vicente de Carvalho";"Rio de Janeiro";"RJ";"Brasil";"21210-000";"(21) 3391-2007";"";-22.850771;-43.309905;"Domingo 7h30 10h e 18h
+Ter Qui 19h
+Qua Sex 07h
+Sábado 07h e 17h30";"";"";"";"Rio de Janeiro";"1B4eT";NULL;"";"2015-10-08 14:08:03"
+124;"Nossa Senhora do Carmo da Antiga Sé";"Pe. Jaime Henrique";"Rua Sete de Setembro, 14";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20050-009";"(21) 2242-7766";"A Igreja de Nossa Senhora do Monte do Carmo está no Centro da cidade do Rio de Janeiro, no Brasil. Foi a sede episcopal da diocese até 1976, quando foi concluída a nova Catedral de São Sebastião do Rio de Janeiro, razão pela qual também é referida como Antiga Sé.
+
+Visita guiada de segunda a sábado.";-22.903317;-43.175371;"Domingo 9:00 (Missa na Forma Extraordinária) 
+Domingo 11:00
+Segunda 8:00	
+Terça 8:00	
+Quarta 8:00 e 9:00	
+Quinta 8:00 
+Sexta 8:00	
+1o Sabado 10:00 (Arautos do Evangelho)
+2o Sab 10:00 (Virgem de los Milagros de Caacupé)
+1a Quarta 11:30 (Missa em honra a São José)";"Dom 8:30 às 9:00";"";"antigase@gmail.com";"Rio de Janeiro";"dUp40";NULL;"";"2015-02-12 20:44:33"
+125;"Nossa Senhora do Desterro";"Pe. Paulo Roberto Teixeira";"Rua Amaral Costa, 141 - Praça Dom João Esberard";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23050-320";"(21) 2413-4837";"";-22.905652;-43.561279;"Seg a Sex 07:00
+Qua Sex 12:00
+Ter Qui 19:00
+Dom 07:00 09:00 11:00 18:00";"Quinta-feira: 8h30 às 10h30
+Quarta e Sexta-feira: 16h às 18h.";"www.paroquiansradodesterro.com.br";"paquiansradodesterro@uol.com.br";"Rio de Janeiro";"FoZTX";NULL;"Terça a Sexta-feira: 8h às 19h
+Sábado: 8h às 12h.";"2014-04-15 19:44:27"
+126;"Paróquia Nossa Senhora do Divino Amor";"Pe. Rogério Heleno Pereira Félix";"Estrada Coronel Vieira, 812";"Irajá";"Rio de Janeiro";"RJ";"Brasil";"21220-310";"(21) 3352-2486";"<strong>Facebook:</strong> <a href=\"https://www.facebook.com/nsdivinoamor\"> www.facebook.com/nsdivinoamor</a>";-22.8447764;-43.3222026;"Domingo: 7:00, 9:00, 18:00
+Segunda-feira:  19:00
+Quarta-feira: 19:00
+Quinta-feira: 19:00
+Sexta-feira: 19:00
+Sábado: 17:00";"Domingo: 6:30, 8:30, 17:30
+Segunda-feira:  18:30
+Quarta-feira: 18:30
+Quinta-feira: 18:30
+Sexta-feira: 18:30
+Sábado: 16:30";"http://www.paroquiadivinoamor.com";"";"Rio de Janeiro";"s8Jt4";NULL;"";"2015-01-07 18:31:21"
+127;"Nossa Senhora do Loreto (Santuário)";"Pe. Sebastião Noronha Cintra, CRSP";"Ladeira da Freguesia, 375";"Freguesia - Jacarepaguá";"Rio de Janeiro";"RJ";"Brasil";"22760-090";"(21) 3392-4402";"";-22.939175;-43.346632;"Seg a Sex 7:00 19:30
+Sab 7:00 18:30
+Dom 7:00 8:30 10:30 19:00
+";"";"http://www.loreto.org.br";"";"Rio de Janeiro";"US4Ib";NULL;NULL;"2012-12-29 20:28:12"
+128;"Paróquia Nossa Senhora do Loreto";"Pe. Alex da Silva Siqueira";"Estrada do Maracajá, 635";"Galeão";"Rio de Janeiro";"RJ";"Brasil";"21941-395";"(21) 3393-6474";"";-22.820193;-43.230821;"Terça: 18:30
+Última terça 19:30
+Quarta: 19:00
+Quinta 19:00
+Sexta: 19:00
+Sábado: 18:00
+Domingo: 08:00, 10:00 e 19:00";"";"";"";"Rio de Janeiro";"6loi8";NULL;NULL;"2013-08-11 19:00:27"
+129;"Nossa Senhora do Monte Claro (Para os fiéis de língua polonesa)";"Pe. Jan Sobieraj, SChr";"Rua Marquês de Abrantes, 215";"Flamengo";"Rio de Janeiro";"RJ";"Brasil";"22230-060";"(21) 2551-1248";"";-22.940734;-43.178651;"";"";"";"";"Rio de Janeiro";"j5Z7f";NULL;NULL;"2013-01-11 18:32:25"
+130;"Paróquia Nossa Senhora do Perpétuo Socorro";"Pe. Jorge Aziz Abrahão";"Praça Edmundo Rego, 27";"Grajaú";"Rio de Janeiro";"RJ";"Brasil";"20561-130";"(21) 2576-0398";"";-22.922339;-43.264961;"Dom 7h, 8h30, 10h, 17h
+Dom 18h30 (missa dos jovens)
+ 
+Sábado 15:00 (missa das crianças) 
+Sab 17:00
+Segunda, Quarta, Quinta e Sexta 7:00 e 18:00";"";"";"";"Rio de Janeiro";"LPJXC";NULL;NULL;"2013-06-20 12:43:12"
+131;"Paróquia Nossa Senhora do Perpétuo Socorro";"Pe. Manuel Eugênio Amorim Rosa";"Rua General Etchegoyen, 199";"Parque Colúmbia - Pavuna";"Rio de Janeiro";"RJ";"Brasil";"21535-240";"(21) 2474-4962";"";-22.81296;-43.337369;"Domingo 8:30 e 18h
+Terça 19h
+Quarta 19h
+Quinta 19h
+Sexta 19h
+Sábado 18h";"Terça a Sexta das 18h às 19h e das 19:30 às 20:30";"http://www.pansps.com.br";"pnsps.pc@gmail.com";"Rio de Janeiro";"xj3wj";NULL;NULL;"2013-04-15 14:49:03"
+132;"Nossa Senhora do Perpétuo Socorro";"Pe. Adilson Ribeiro dos Santos, OdeM";"Estrada do Curtume, 37";"Santa Cruz";"Rio de Janeiro";"RJ";"Brasil";"23560-130";"(21) 3395-2045";"";-22.875484;-43.6760993;"";"";"";"";"Rio de Janeiro";"a2oMG";NULL;NULL;"2013-01-19 11:41:34"
+133;"Paróquia Nossa Senhora do Rosário";"Pe. João de Deus Góis";"Av. Dom Hélder Câmara, 3.844";"Del Castilho";"Rio de Janeiro";"RJ";"Brasil";"20771-003";"(21) 2281-8075";"";-22.880668;-43.272664;"Seg Sab 18:30 
+Ter a Sex 16:30
+Dom 7:00 9:00 18:00";"Seg Sab 17h
+Dom 6:00 as 7:00 17:00 as 18:00
+1a Sex 16:00 as 18:00";"http://www.vozdorosario.com";"";"Rio de Janeiro";"CMYln";NULL;NULL;"2013-05-10 12:06:55"
+134;"Paróquia Nossa Senhora do Rosário";"";"Rua General Ribeiro da Costa, 164";"Leme";"Rio de Janeiro";"RJ";"Brasil";"22010-050";"(21) 3223-5500";"";-22.962122;-43.1698;"Seg a Sab 09:00 18:00
+Dom 08:30 10:00 11:30 18:00 19:30";"";"";"";"Rio de Janeiro";"ogJBK";NULL;NULL;"2013-05-10 12:07:03"
+135;"Paróquia Nossa Senhora do Rosário de Fátima e Santo Antônio de Lisboa";"Pe Júlio Cesar";"Rua Bacairis, 390";"Taquara";"Rio de Janeiro";"RJ";"Brasil";"22730-120";"(21) 2423-4071";"";-22.91929;-43.372934;"Domingo 6h30 8h30 10h30 19h
+Seg a Sex 19h
+Sábado 16h 18h";"Ter a Sex 15h às 17h";"http://www.rosariodefatima.org.br";"";"Rio de Janeiro";"R03ar";NULL;"";"2015-10-13 11:06:32"
+136;"Paróquia Nossa Senhora do Rosário de Pompéia";"Pe. Thiago Sardinha de Jesus";"Rua Toscana, 118";"Ricardo de Albuquerque";"Rio de Janeiro";"RJ";"Brasil";"21620-590";"(21) 2452-4093";"";-22.839704;-43.407924;"Dom 7:00, 10:00 e 19:00";"";"";"";"Rio de Janeiro";"3Jo0O";NULL;"";"2014-05-18 18:52:03"
+137;"Nossa Senhora do Sagrado Coração";"Pe. Valentim";"Rua Barão, 807";"Praça Seca";"Rio de Janeiro";"RJ";"Brasil";"21321-622";"(21)2464-1947, (21) 2452-5188";"";-22.8994074;-43.3514426;"Seg a Sex 19:15
+Dom 07:00 09:00 18:15 20:00";"Qui Sex 15:00 as 17:00";"http://paroquianssc.wordpress.com/";"";"Rio de Janeiro";"fdYPv";NULL;"";"2014-08-17 16:11:53"
+138;"Nossa Senhora dos Navegantes";"Pe. Jan Baraniecki, SAC";"Rua Luis Ferreira, 217";"Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21042-210";"(21) 2260-5038";"Confissões após as Missas";-22.863466;-43.24575;"Seg, Qua, Qui, Sex, Sáb 19h
+Dom 7h30 10h 19h";"";"";"";"Rio de Janeiro";"HxIpS";NULL;NULL;"2013-04-11 10:23:43"
+139;"Paróquia Nossa Senhora dos Navegantes";"Pe. Irapuan Fonseca";"R. Naudy Esteves, 152";"Padre Miguel";"Rio de Janeiro";"RJ";"Brasil";"21720-580";"(21) 3331-0073";"";-22.852831;-43.4558915;"Segunda-Feira: 20:00
+Sexta-Feira: 19:00
+1º Domingo 07:00 
+2º Domingo: 10:30
+3º Domingo: 07:00
+4º Domingo: 10:30
+Dom 19h30";"";"http://paroquianavegantesrj.com.br/";"";"Rio de Janeiro";"uH3Ez";NULL;NULL;"2013-09-09 12:36:16"
+140;"Nossa Senhora Mãe da Divina Providência";"Pe. Luiz Fábio Domingos";"Estrada dos Bandeirantes, 1.755";"Taquara";"Rio de Janeiro";"RJ";"Brasil";"22710-571";"(21) 2445-3826";"";-22.939378;-43.372202;"Seg Qua Qui Sex 19:30
+Sab 8:00 19:30
+Dom 07:30 09:30 19:30";"";"http://www.nsmaedadivinaprovidencia.com.br";"";"Rio de Janeiro";"WaneW";NULL;NULL;"2012-12-29 20:28:12"
+141;"Nossa Senhora Medianeira de Todas as Graças";"Pe. Josiel de Azevedo SAC";"Rua Riacho Doce, 220";"Oswaldo Cruz";"Rio de Janeiro";"RJ";"Brasil";"21340-340";"(21) 2464-7633, (21) 3390-4890";"Às quintas-feiras, missa e Adoração com benção do santíssimo 
+Todo primeiro sábado e todo terceiro domingo do mês adoração e benção com o santíssimo sacramento.";-22.8733711;-43.3555243;"Domingo 08:00hs, 10:00hs, 19:00hs
+Segunda 19:00hs
+Quarta-feira 19:00hs
+Quinta-feira 15:00hs
+Sexta-feira 19:00hs
+Sábado 18:00hs";"";"";"";"Rio de Janeiro";"8uY43";NULL;"";"2015-01-25 18:51:41"
+142;"Pai Eterno e São José";"Pe.  Ramon Nascimento";"Praça Eliseu, s/n";"Cidade de Deus";"Rio de Janeiro";"RJ";"Brasil";"22773-210";"(21) 3342-1225";"Os padres também atendem 30min antes das missas ou agendando na secretaria paroquial.";-22.948558;-43.364385;"Domingo: 7h, 9h e 19hs
+Segunda: 7h e 19hs
+Quarta: 7h
+Sexta: 7h e 19:30hs";"Segunda 9h às 11hs
+Quarta: 14h às 18hs
+Sexta: 15h às 19hs";"";"pascom.pesj@hotmail.com";"Rio de Janeiro";"lEITa";NULL;"";"2015-02-15 11:25:39"
+143;"Ressureição";"Mons. José Roberto Rodrigues Devellard";"Rua Francisco Otaviano, 99";"Copacabana";"Rio de Janeiro";"RJ";"Brasil";"22080-040";"(21) 2522-7698";"";-22.987159;-43.191842;"Seg 18:00
+Ter a Sex 7:30 18:00
+Sab 7:30 17:00 18:30
+Dom 7:30 09:00 10:30 12:00 17:00 18:30 20:00 21:30";"";"http://www.paroquiadaressurreicao.com.br";"";"Rio de Janeiro";"NY2t7";NULL;NULL;"2012-12-29 20:28:12"
+144;"Sagrada Família";"Pe. Luís da Silva Telles, MSC";"Rua do Livramento, 62/64";"Saúde";"Rio de Janeiro";"RJ";"Brasil";"20221-190";"(21) 2253-6343";"";-22.8971181;-43.1910849;"seg qua qui sex 19:30h
+Sábado 18h
+domingo 9:30 e 18h";"";"";"";"Rio de Janeiro";"zrnIe";NULL;"";"2014-05-07 15:03:23"
+145;"Sagrada Família";"Pe. Carlos Gómez Saiz";"Rua Morro do Ouro, 231";"Ribeira - Ilha do Governador";"Rio de Janeiro";"RJ";"Brasil";"21930-126";"(21) 3396-3292";"";-22.821753;-43.17276;"Ter a Sab 18:30
+Dom 07:30 10:30 18:30";"";"";"";"Rio de Janeiro";"cBXiB";NULL;NULL;"2012-12-29 13:22:16"
+146;"Sagrada Família";"Pe. Roberto Barbosa de Melo";"Estrada do Rio Grande, 3.840";"Taquara";"Rio de Janeiro";"RJ";"Brasil";"22723-002";"(21) 2446-5231";"";-22.918789;-43.403345;"";"";"";"";"Rio de Janeiro";"EVI7i";NULL;NULL;"2013-01-11 18:32:25"
+147;"Sagrada Família";"Pe. Alex Sandro dos Santos Irineu";"Rua Paula Ney, 501";"Realengo";"Rio de Janeiro";"RJ";"Brasil";"21760-035";"(21) 3333-3224";"";-22.8831516;-43.4274361;"Seg Qui Sex 19:00
+Ter Sab 08:00
+Dom 07:00 09:00 18:00";"";"";"";"Rio de Janeiro";"qp2XF";NULL;NULL;"2012-12-29 13:22:16"
+148;"Sagrada Família";"Pe. Damião Avelino de Melo";"Praça do Gaúcho, s/n";"Mendanha - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23097-120";"(21) 2413-7203";"";-22.853097;-43.541241;"Seg Qua 19:00
+Qui Sex 08:00
+Sab 08:00 19:00
+Dom 07:00 09:00 17:00 19:00";"";"";"";"Rio de Janeiro";"T8mwm";NULL;NULL;"2013-01-12 13:28:49"
+149;"Sagrada Famíia";"Pe. Geovane Ferreira Silva";"Rua Tancredo Neves, s/n";"Nova Holanda - Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21044-725";"(21) 3105-0599";"";-22.8579331;-43.2398599;"Seg 18:30
+Ter a Sex 19:00
+Sab 07:00 19:00
+Dom 07:00 18:00";"";"";"";"Rio de Janeiro";"5SXMJ";NULL;NULL;"2012-12-29 13:22:16"
+150;"Sagrado Coração de Jesus";"Pe. Wanderson José Guedes";"Rua Benjamin Constant, 42";"Glória";"Rio de Janeiro";"RJ";"Brasil";"20241-150";"(21) 2509-0044";"";-22.9206405;-43.178298;"Seg a Sab 18:00
+Dom 07:00 08:30 11:30 18:00";"";"";"";"Rio de Janeiro";"hmHlq";NULL;NULL;"2012-12-29 13:22:16"
+151;"Sagrado Coração de Jesus";"Pe. Adriano Gomes Divino";"Rua Padre Paulo Corrêa de Sá, 60";"Padre Miguel";"Rio de Janeiro";"RJ";"Brasil";"21715-300";"(21)3338-9371, (21)3598-9208, (21) 98222-2932";"Hora da Graça: Quinta-feira às 15:00 Horas";-22.8756996;-43.4482255;"Seg a sexta 19:00
+Sab 17:00
+Dom 07:00 09:00 19:00
+1a Sexta 8:00 19:00
+2a Quinta 19:30";"Seg Ter Qua Sex 18h às 19h
+Qui 9:00 as 10:00";"";"contato@pscjdepadremiguel.com.br";"Rio de Janeiro";"K62BN";NULL;"";"2016-11-04 17:19:11"
+152;"Sagrado Coração de Jesus";"Pe. Aloísio Wilibaldo Knob, SCJ";"Rua Carolina Santos, 143";"Méier";"Rio de Janeiro";"RJ";"Brasil";"20720-310";"(21) 2595-5212";"";-22.906248;-43.285719;"Seg a Qui 07:00 08:00 18:00 19:30
+Sex 07:00 08:00 18:00
+Sab 07:00 08:00 17:00
+Dom 06:45 08:00 09:30 11:00 17:00 18:30 20:00
+1a Sex 07:00 08:00 16:00 18:00
+1o Sab 07:00 08:00 09:00 17:00";"Ter a Sex 08:30 as 11:15 15:00 as 20:00";"http://www.iscj.com.br";"";"Rio de Janeiro";"wPmau";NULL;NULL;"2012-12-29 20:28:12"
+153;"Paróquia Sagrados Corações";"Pe. Geraldo Abílio Ribeiro, SSCC";"Rua Conde de Bonfim, 474";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20520-054";"(21) 2268-3118";"";-22.926634;-43.235583;"Seg 7h
+Ter a Sex 07:00 17:00
+Sab 07:00 15:00 16:30 
+Dom 07:00 08:30 10:30 12:00 18:00 19:30";"Ter a Sex 8:00 10:30 15:00 as 16:30
+Sab 08:00 10:30";"";"";"Rio de Janeiro";"YjX0R";NULL;NULL;"2013-05-06 15:36:37"
+154;"Salvador do Mundo";"Pe. Adenilson Corrêa de Campos";"Estrada da Matriz, 6.496";"Ilha de Guaratiba";"Rio de Janeiro";"RJ";"Brasil";"23020-715";"(21) 2410-0751";"";-22.9967729;-43.6069238;"";"";"";"";"Rio de Janeiro";"B3HPy";NULL;NULL;"2013-01-11 18:32:25"
+155;"Sangue de Cristo";"Pe. Gleuson Gonçalves Farias Gomes";"Rua Adalberto Aranha, 48";"Aldeia Campista";"Rio de Janeiro";"RJ";"Brasil";"20540-140";"(21) 2288-7149";"";-22.92298;-43.239299;"Dom 08:00 10:00 18:30
+Seg Qua Sex 07:30 19:00
+Qui 07:30
+Sab 07:30 18:00";"";"http://www.paroquiasanguedecristo.org.br";"";"Rio de Janeiro";"nN1pV";NULL;NULL;"2012-12-29 20:28:12"
+156;"Sant'Ana";"Pe. José Laudares de Ávila, SSS";"Pça. Dom Sebastião Leme, 11";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20230-200";"(21) 2224-0710";"";-22.907784;-43.194329;"Seg a Dom 06:00 18:00 
+Ter a Sab 7:30
+Dom 08:00 10:00";"";"";"";"Rio de Janeiro";"PgmF2";NULL;NULL;"2012-12-29 13:22:16"
+157;"Paróquia de Sant'Ana";"Pe. João Paulo";"Estrada do Mendanha, 208";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23087-284";"(21) 3394-6753";"";-22.888254;-43.559682;"Seg a Sex 19h
+Qua 7h
+Domingo 7h, 9h, 11h e 19h
+1a qui  20h";"";"http://www.igrejasantana.org.br/";"secretaria@igrejasantana.org.br";"Rio de Janeiro";"20WeZ";NULL;NULL;"2013-04-30 11:05:01"
+158;"Paróquia Santa Bárbara";"Pe. Braz Carnielle, SDB";"Rua dos Topázios, 471";"Rocha Miranda";"Rio de Janeiro";"RJ";"Brasil";"21540-020";"(21) 3372-6237";"";-22.851508;-43.347757;"Seg a Sex 07:00 19:00
+Sab 07:00 
+Dom 07:00 09:00 18:00";"Ter Qui 08:00 as 11:00 14:00 as 16:00";"";"";"Rio de Janeiro";"eKH46";NULL;"";"2015-10-30 16:03:38"
+159;"Santa Bárbara e Santa Cecília";"Pe. Klepler Magalhães da Silva Porto Freitas";"Rua Alvarenga Peixoto, 155";"Vigário Geral";"Rio de Janeiro";"RJ";"Brasil";"21240-690";"(21) 3451-8649";"";-22.807105;-43.307141;"Seg Qua Qui Sex 19:00
+Sab 18:00
+Dom 07:00 09:00 19:00";"";"";"";"Rio de Janeiro";"Ge1Td";NULL;NULL;"2013-01-12 13:29:42"
+160;"Santa Bernadette";"Pe. Geraldo José Natalino";"Av. dos Democráticos, 896";"Higienópolis";"Rio de Janeiro";"RJ";"Brasil";"21050-000";"(21) 2270-3915";"";-22.876097;-43.257033;"Dom 07:00 09:00 19:00
+Seg 19:00";"Qui 09:00 as 11:00";"";"";"Rio de Janeiro";"sxltA";NULL;"";"2014-07-03 19:43:36"
+161;"Santa Catarina de Alexandria";"Pe. José Geraldo Gomes";"Rua Senador Pompeu, 204";"Saúde";"Rio de Janeiro";"RJ";"Brasil";"20221-290";"(21) 2263-3233";"";-22.901855;-43.190464;"Dom 07:30 10:00 
+Sab 17:00
+2a Qui 19:00";"";"";"";"Rio de Janeiro";"VHWIh";NULL;NULL;"2013-01-12 13:29:42"
+162;"Santa Cecília";"Pe. Thomas Kizhakethayil Chacko";"Rua Gurupatuba, 74";"Brás de Pina";"Rio de Janeiro";"RJ";"Brasil";"21012-300";"(21) 2270-2478";"";-22.828913;-43.292239;"";"";"";"";"Rio de Janeiro";"7bGiE";NULL;NULL;"2013-01-11 18:32:25"
+163;"Santa Cecília e São Pio X";"Pe. Cesare Ciceri, CS";"Rua Álvaro Ramos, 385";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22280-110";"(21) 2275-6494";"Confissões 30 minutos antes das Missas.";-22.957366;-43.18379;"Seg 19:00
+Qua Qui Sex  19:00
+Sab 19:00
+Dom 8h, 10h, 19:00";"";"http://www.paroquiasantaceciliarj.com.br";"";"Rio de Janeiro";"jv17l";NULL;"";"2013-12-28 13:54:52"
+164;"Santa Clara";"Pe. Felipe Xavier de Moraes";"Estrada do Magarça, 3.678";"Guaratiba";"Rio de Janeiro";"RJ";"Brasil";"23035-380";"(21) 3108-1321";"";-22.95074;-43.605449;"Dom 08:00 10:00 19:00
+Seg e Sex 19:30";"quinta-feira 19:00";"http://www.paroquiasantaclara.org";"";"Rio de Janeiro";"MElXI";NULL;"";"2014-07-14 10:49:12"
+165;"Santa Cruz";"Pe. Enrico Arrigoni";"Rua Siqueira Campos, 143, 3º andar";"Copacabana";"Rio de Janeiro";"RJ";"Brasil";"22031-070";"(21) 2235-3200, (21) 2548-9698";"3o andar";-22.9661691;-43.1876304;"Seg a Sab 18:30
+Dom 09:30 11:00 18:30";"Seg Qua Sex 17:00 as 18:00";"http://igrejasantacruz.com.br/";"";"Rio de Janeiro";"yYVwp";NULL;"";"2015-01-10 18:55:27"
+166;"Santa Cruz do Senhor";"Pe Jorge Luiz Sanz Afonso";"Rua Luiz Vargas, 50";"Piedade";"Rio de Janeiro";"RJ";"Brasil";"20751-340";"(21) 3274-8700";"";-22.879872;-43.305659;"Dom 07:00 09:30
+segunda-feira: 19h
+sexta-feira: 19h
+1a Sexta-Feira 08hs";"Seg Sex 16:30";"";"";"Rio de Janeiro";"asGMM";NULL;"";"2015-10-07 11:12:52"
+167;"Santa Edwiges";"Pe. Divino Alves Pereira da Silva, CSS";"Rua Fonseca Teles, 109";"São Cristóvão";"Rio de Janeiro";"RJ";"Brasil";"20940-200";"(21) 2589-4851";"";-22.90262;-43.221657;"Seg Qua Sex Sab 07:30 18:30
+Qui 08:00 16:00 18:30
+Dom 07:00 08:30 10:30 18:30
+";"Seg Qua Qui Sex 8:30 as 11:00 14:30 as 17:00";"";"";"Rio de Janeiro";"DC0lt";NULL;NULL;"2013-01-12 13:29:42"
+168;"Santa Edwiges";"Pe. Alberto Gonzaga de Almeida";"Rua Gurupema, 36";"Brás de Pina";"Rio de Janeiro";"RJ";"Brasil";"21011-120";"(21) 2260-4310";"";-22.825412;-43.282046;"Seg Ter Qua Sex Sab 19:00 
+Dom 07:00 09:00 19:00";"";"";"";"Rio de Janeiro";"pVlBQ";NULL;NULL;"2013-01-12 13:29:42"
+169;"Santa Edwiges e São Pedro";"Pe. Geraldo Marques Raimundo";"Rua Santa Edwiges, 300";"Sepetiba";"Rio de Janeiro";"RJ";"Brasil";"23530-390";"(21) 3317-7252";"";-22.984245;-43.690442;"Dom 07:30 
+1a Sex 17:00";"";"";"";"Rio de Janeiro";"RpVax";NULL;NULL;"2012-12-29 13:22:16"
+170;"Santa Efigênia e Menino Jesus de Praga";"Pe. Domingos de Gusmão Maria José dos Santos";"Rua Gervásio Ferreira, 121";"Irajá";"Rio de Janeiro";"RJ";"Brasil";"21241-520";"(21) 3371-5760";"";-22.821806;-43.332416;"";"";"";"";"Rio de Janeiro";"49G0U";NULL;NULL;"2013-01-11 18:32:25"
+171;"Paróquia Santa Inês";"Pe. Adriano José Gomes Divino";"Pça. Elias Jabour, 104";"Jabour - Senador Camará";"Rio de Janeiro";"RJ";"Brasil";"21833-160";"(21) 3469-5968";"";-22.8783457;-43.4924133;"Domingo:	07:00, 10:30, 19:00
+Segunda-feira:	19:00
+Quarta-feira:	19:00
+Quinta-feira:	19:00
+Sexta-feira:	19:00";"seg, qua, qui, sexta 18:00";"";"santaines.jabour@uol.com.br";"Rio de Janeiro";"gT0Q1";NULL;"Pároco: Padre Adriano José Gomes Divino 
+Vigário Paroquial: Padre Edilson Roberto da Silva
+Diácono Permanente: Diác. Marcos Venicio Jacintho Chaves.";"2015-08-30 17:52:15"
+172;"Santa Isabel Rainha de Portugal";"Pe. Jaroslaw Lukasz Kaczmarek (Lucas), SAC";"Rua Leopoldina Seabra, 17";"Bento Ribeiro";"Rio de Janeiro";"RJ";"Brasil";"21331-350";"(21) 3350-5126";"";-22.867764;-43.363598;"Seg Qua Qui Sex 07:00 19:00
+Sab 07:00 17:00
+Dom 07:00 08:30 18:30";"Sab 17:00";"";"";"Rio de Janeiro";"ImkpY";NULL;NULL;"2012-12-29 13:22:16"
+173;"Santa Luzia";"Pe. Marcos Paulo Galvão da Silva";"Rua Ururaí, 1.527";"Honório Gurgel";"Rio de Janeiro";"RJ";"Brasil";"21511-000";"(21) 2471-2175";"";-22.847344;-43.35758;"Seg 19:00
+Sex 08:30
+Dom 08:00 10:00 18:00";"Qua Sex 10:30";"";"";"Rio de Janeiro";"v6VF5";NULL;NULL;"2012-12-29 13:22:16"
+174;"Paróquia Santa Luzia";"Pe. Robert Józef Chrzaszcz";"Av. das Lagoas, 12";"Gardênia Azul";"Rio de Janeiro";"RJ";"Brasil";"22765-451";"(21) 2445-4921";"";-22.958832;-43.343665;"Sábado: 18h30
+Domingo: 7h, 9h, 19h30
+
+Segunda e Quinta: 19h30
+Terça: 8h
+Sexta: 19h
+1ª Sexta-feira do mês: 7h";"Sábado: 18h00
+Domingo:  8h30, 19h00
+
+Segunda e Quinta: 19h00
+Terça: 7h30
+Sexta: 18h30";"http://www.santaluziagardenia.org.br";"secretaria@santaluziagardenia.org.br";"Rio de Janeiro";"XQFec";NULL;NULL;"2013-05-29 13:58:04"
+175;"Santa Margarida Maria";"Pe. Manuel de Oliveira Manangão";"Rua Frei Solano, 23";"Lagoa";"Rio de Janeiro";"RJ";"Brasil";"22471-250";"(21) 2286-9596";"";-22.962441;-43.203721;"Seg a Sex 08:00 19:00
+Sab 08:00 17:00
+Dom 09:00 11:30 18:00 19:30";"";"";"";"Rio de Janeiro";"9k049";NULL;NULL;"2012-12-29 13:22:16"
+176;"Santa Margarida de Alacoque";"Pe. Clébio Tosta Júnior";"Estrada do Viegas - Tv. Santa Margarida Maria, 26";"Senador Camará";"Rio de Janeiro";"RJ";"Brasil";"21832-000";"(21) 3422-8412";"";-22.8950927;-43.4933632;"Seg a Qui 07:00
+Dom 06:30 09:00 19:00";"";"http://www.igrejasantamargarida.com.br";"";"Rio de Janeiro";"m3kTg";NULL;NULL;"2012-12-29 20:28:12"
+177;"Santa Mônica";"Pe. Fr. Juan José Ormazábal Garméndia, OAR";"Av. Ataulfo de Paiva, 527";"Leblon";"Rio de Janeiro";"RJ";"Brasil";"22440-030";"(21) 2512-8657";"";-22.983982;-43.221102;"Seg 07:00 17:30
+Ter a Sex 07:00 09:00 12:00 17:30 18:30
+Sab 07:00 09:00 19:00
+Dom 07:00 08:30 10:00 11:30 17:00 18:30 20:00";"";"";"";"Rio de Janeiro";"ONUtD";NULL;NULL;"2012-12-29 13:22:16"
+178;"Santa Rita";"Pe. Pedro Cunha Cruz";"Largo de Santa Rita, s/n";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20091-006";"(21) 2253-7564";"";-22.9001754;-43.1807706;"Seg a Sex 07:00 07:30 08:00 09:00 10:00 12:15 18:00
+Sab 08:00 09:00 10:00
+Dom 07:30 09:00 10:30
+";"Qua Sex 10:00 as 12:00";"";"";"Rio de Janeiro";"0hFIk";NULL;NULL;"2012-12-29 13:22:16"
+179;"Paróquia Santa Rita de Cássia";"Pe. Ivanelito Pereira da Silva";"Estrada do Otaviano, 309";"Turiaçu";"Rio de Janeiro";"RJ";"Brasil";"21540-010";"(21) 3390-0568";"";-22.858897;-43.346014;"Dom 7h , 9h , 18h
+Quarta 19h
+1a Sexta 8h
+Sáb  18h 
+dia 22  8h";"sáb de 9h as 12h";"";"";"Rio de Janeiro";"d0ziH";NULL;NULL;"2013-07-09 15:19:54"
+180;"Paróquia Santa Rita de Cássia";"Padre Ausilio Chessa";"Rua Soldado Francisco Rios, 132";"Paciência";"Rio de Janeiro";"RJ";"Brasil";"23066-140";"(21) 2413-6373";"";-22.8855696;-43.6366439;"Seg a Sex 17h  
+Sábado: 9h (Praça Padre Guilherme Decaminada)
+Domingo: 7h, 10h e 19h";"Qui 15:00 as 17:00";"";"";"Rio de Janeiro";"FKk7o";NULL;NULL;"2013-06-21 16:00:42"
+181;"Santa Rita de Cássia";"";"Av. Mariana, 12";"Vila Santa Rita - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23015-230";"(21) 3403-6372";"";-22.912561;-43.544433;"Seg Qua 18:30
+Qui Sex 07:30
+1a Sex 19:30
+Sab 19:00
+Dom 07:00 09:00 11:00 18:30";"Seg Qua Sex 16:00 as 18:00";"";"";"Rio de Janeiro";"reUXL";NULL;NULL;"2013-01-12 13:29:42"
+182;"Santa Rita dos Impossíveis";"Pe. Fr. Airton Mainardi, OAD";"Av. Nossa Senhora das Graças, 1.260";"Ramos";"Rio de Janeiro";"RJ";"Brasil";"21031-61";"(21) 2590-6098";"";-22.8459384;-43.2536479;"Seg Qui Qua Sex 07:30 19:00
+Ter Sab 07:30
+Dom 07:30 09:30 19h00";"";"http://www.santaritadosimpossiveis.org";"";"Rio de Janeiro";"TyEws";NULL;"Segunda, quarta, quinta e sexta: 08h00 às 12h00 e das 17h00 às 20h00";"2014-12-05 13:43:27"
+183;"Santa Rosa de Lima";"Mons. Luiz Antônio Pereira Lopes";"Rua Cristiano Machado, s/n";"Jardim América";"Rio de Janeiro";"RJ";"Brasil";"21240-470";"(21) 3346-3347";"";-22.81339;-43.320641;"Ter a Qui 19:00
+Sex 07:00
+Sab 20:00
+Dom 07:00 09:00 18:00";"";"http://www.matrizsantarosadelima.com.br";"";"Rio de Janeiro";"6HzMP";NULL;NULL;"2013-01-12 13:29:42"
+184;"Santa Sofia";"Pe. Parampathu Kuriakose Kuncheryia (Tiago)";"Praça Sofia Moreira, s/n";"Cosmos";"Rio de Janeiro";"RJ";"Brasil";"23060-470";"(21) 2409-7042";"";-22.911331;-43.611122;"Dom 09:00 19:00
+Qui Sex 19:00";"";"";"";"Rio de Janeiro";"ibjlw";NULL;NULL;"2013-01-12 13:29:42"
+185;"Santa Teresa de Jesus";"Pe. José Brito Terceiro";"Rua Áurea, 71";"Santa Teresa";"Rio de Janeiro";"RJ";"Brasil";"20240-210";"(21) 2224-2809";"";-22.92254;-43.188609;"Domingo: 07:30, 10h e 18h
+Segunda- feira 19h
+Terça-feira  19h
+Quarta- feira  19h
+Quinta-feira 19h
+Sexta-feira  19h
+Sábado 08h";"quinta-feira 16h";"";"psteresadejesus@outlook.com";"Rio de Janeiro";"KvUBT";NULL;"";"2014-06-21 19:30:45"
+186;"Santa Teresa de Jesus";"Pe. Sérgio Augusto dos Reis";"Rua Macabú, 310";"Vila Santa Teresa - Coelho Neto";"Rio de Janeiro";"RJ";"Brasil";"21510-540";"(21) 2471-6858";"";-22.837269;-43.351163;"Dom 07:00 10:30 19:00
+Seg 19:00
+Qua 18:00
+";"";"";"";"Rio de Janeiro";"xFEb0";NULL;NULL;"2012-12-29 13:22:16"
+187;"Santa Teresinha do Menino Jesus";"Côn. Abílio Soares de Vasconcelos";"Av. Lauro Sodré, 83";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22290-070";"(21) 2295-5197";"";-22.9542466;-43.1785328;"Seg a Sex 07:00 18:00
+Sab 16:30 18:00
+Dom 07:30 09:00 11:00 16:00 17:30 19:00";"Qua 09:00 as 11:30 15:00 as 17:30
+Ter 09:00 as 11:00 16:00 as 17:30
+Qui Sex 16:30 as 17:30
+";"http://www.verecrer.com.br";"";"Rio de Janeiro";"ZYz0X";NULL;NULL;"2012-12-29 20:28:12"
+188;"Basílica Santa Teresinha do Menino Jesus";"Pe. Fr. Fabio Magno de Castro Araújo, OCD";"Rua Mariz e Barros, 354";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20270-001";"(21) 2569-8904";"Adoração do Santíssimo Sacramento toda quinta-feira de 8:30 às 20:30.";-22.913686;-43.21805;"Seg a Sex 07:00 08:00 18:30
+Ter a Sex 12h
+Sab 07:00 08:00 16:00
+Dom 07:00 08:30 10:00 11:30 18:30
+Dia 30 16h (Santa Teresinha)
+Dia 25 7h, 8h, 9h e 18h (Menino Jesus de Praga)
+Dia 13 12h (Nossa Senhora de Fátima)
+Dia 19 8h (São José)
+Dia 16 7h (Nossa Senhora do Carmo)";"terça a sábado 8h30 às 11h30, 15h às 18h";"http://www.basilicasantateresinha.org.br";"";"Rio de Janeiro";"BsjQ4";NULL;"Segunda a sábado, das 8h às 12h e das 14h às 18h; 
+Domingo, das 8h às 12h";"2015-03-14 17:28:51"
+189;"Santa Teresinha do Menino Jesus";"Pe. William Gomes";"Rua Engenheiro Moacir Barbosa, 12";"Urucânia - Santa Cruz";"Rio de Janeiro";"RJ";"Brasil";"23573-000";"(21) 3313-2053";"";-22.917206;-43.651641;"Domingo 7h 10h e 19h
+Seg Qua e Sex 19h";"Seg Qua e Sex de 15h as 18h";"";"";"Rio de Janeiro";"oCTpb";NULL;"";"2015-10-07 11:09:23"
+190;"Santa Teresinha do Menino Jesus";"Padre Marcio Moura";"Rua Manuel Caldeira de Alvarenga, 1.017";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23070-200";"(21) 3402-0098";"";-22.8975292;-43.5805136;"Seg 19:00
+Sex 19:30
+Dom 09:30 19:30";"Seg e Sex 15:00 as 18:00";"";"";"Rio de Janeiro";"QWEF8";NULL;"";"2017-03-14 06:38:41"
+191;"Santíssima Trindade";"Pe. José Aparecido Ignácio, AA";"Rua Senador Vergueiro, 141";"Flamengo";"Rio de Janeiro";"RJ";"Brasil";"22230-000";"(21) 2553-3114";"";-22.937148;-43.175868;"Seg 07:00 18:30
+Ter a Sex 07:00 09:00 18:30
+Sab 07:00 09:00 17:00 18:30
+Dom 07:00 09:00 11:00 17:00 18:30 20:00";"Ter a Sex 17:30 as 18:45";"http://trindadesstasecretaria@gmail.com";"";"Rio de Janeiro";"2pyef";NULL;NULL;"2012-12-29 20:28:12"
+192;"Igreja Santíssimo Sacramento da Antiga Sé";"Pe Sérgio Cavalcante Muniz";"Av. Passos, 50";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20051-040";"(21) 2224-0205";"";-22.904819;-43.183048;"segunda a sexta: 12h15
+Domingo: 10h (Também em dias de preceito)
+Domingo: 12h (Também em dias de preceito)";"Segunda: 11h às 11h50
+Terça:  12h45 às 13h30
+Quarta, quinta: 11h às 11h50 e 12h45 às 13h30
+Sexta: 11h às 11h50 e 13h30 às 14h00
+1o Domingo 11h às 11h30
+3o Domingo 11h às 11h30";"http://www.santissimo.org.br/";"alinegermani@gmail.com, hiereus@hotmail.com";"Rio de Janeiro";"f9j4C";NULL;"";"2014-03-16 21:25:22"
+193;"Paróquia Santo Afonso";"Pe. Luis Carlos de Carvalho Silva, CSsR";"Rua Barão de Mesquita, 275";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20522-270";"(21) 2264-6162";"Paróquia da Congregação dos Missionários Redentoristas";-22.923167;-43.234597;"Segunda-feira: 07h
+Terça-feira: 07h, 08h, 15h, 18h
+quarta-feira: 07h, 08h, 18h
+quinta-feira: 07h, 08h, 12h, 18h
+sexta-feira: 07h, 08h, 18h
+sábado: 07h, 08h, 15h, 18h
+Domingo: 07h, 09h, 11h, 16h, 18h, 20h";"Ter a Sab 08:00 as 10:30 15:00 as 16:30";"http://www.santoafonsorj.org.br";"santoafonsorj@gmail.com";"Rio de Janeiro";"HTTTj";NULL;NULL;"2013-08-03 12:27:29"
+194;"Santo Agostinho";"Pe. Fr. Sebastián Olalla Del Rio, OAR";"Rua Paulo Moreno, 22";"Novo Leblon - Barra da Tijuca";"Rio de Janeiro";"RJ";"Brasil";"22793-690";"(21) 2438-4823";"";-23.002605;-43.38342;"Seg a Sab 07:30 18:00
+Dom 08:30 10:30 17:30 19:00";"";"";"";"Rio de Janeiro";"tnDtG";NULL;NULL;"2012-12-29 13:22:16"
+195;"Santo André";"Pe. Júlio César Costa da Silva";"Rua Bela, 1.265";"São Cristóvão";"Rio de Janeiro";"RJ";"Brasil";"20930-38";"(21) 2580-6234";"";-22.885307;-43.227247;"Seg Qui Sex 18:30
+Sab 17:00
+Dom 07:00 18:00
+1a Sex 07:00";"";"";"";"Rio de Janeiro";"W6yIn";NULL;NULL;"2013-01-12 13:28:33"
+196;"Santo Antônio";"Pe. Fr. Edson Marcos Minski, OAD";"Praça Nossa Senhora das Dores, 500";"Pavuna";"Rio de Janeiro";"RJ";"Brasil";"21520-300";"(21) 2474-1320";"";-22.808519;-43.370062;"Seg Qua Qui Sex Sab 07:00
+Seg Sex 19:30
+Dom 07:00 08:30 10:15 18:00";"Seg Qua Qui Sex 09:00 as 11:00 17:00 as 19:00";"";"";"Rio de Janeiro";"8QiiK";NULL;NULL;"2012-12-29 13:22:16"
+197;"Paróquia Santo Antônio";"Pe. Silvio Klebson S de Oliveira";"Estrada do Quitungo, 1.265";"Brás de Pina";"Rio de Janeiro";"RJ";"Brasil";"21215-564";"(21) 3391-0292";"";-22.834296;-43.302922;"seg qua qui sex 19h
+ sabados 18h
+Domingo 07h 09h 18h";"seg, qua, qui das 15h às 17h
+sex das 15h às 17h de 18h às 19h
+sabado das 09h as 12h";"";"santoantonioquitungo@hotmail.com";"Rio de Janeiro";"kkT7r";NULL;NULL;"2013-06-26 18:10:15"
+198;"Paróquia Santo Antônio";"Pe. Camilo de Albuquerque Silva";"Rua Paraná, 1049";"Água Santa";"Rio de Janeiro";"RJ";"Brasil";"20745-250";"(21) 2594-4588";"";-22.90552;-43.310927;"Sab 18:00
+Dom 07:00 09:00 18:00 
+Seg 08:00
+1a ter 08h
+1a sexta 08h";"Dom 07:00 às 09:00 (Entre as Missas)
+Seg 08:00  (Antes ou depois da Missa)";"http://www.santoantoniodeaguasanta.org.br";"paroquia@santoantoniodeaguasanta.org.br, pascom@santoantoniodeaguasanta.org.br";"Rio de Janeiro";"N4DXO";NULL;"";"2014-04-27 07:23:04"
+199;"Santo Antônio de Pádua e Nossa Senhora da Boa Vista";"Pe. Wagner Toledo Moreira";"Rua Tenente França, 141";"Cachambi";"Rio de Janeiro";"RJ";"Brasil";"20771-445";"(21) 2269-3534";"";-22.889989;-43.278482;"Qua Sex Sab 17:00
+Dom 09:00 18:00";"";"";"";"Rio de Janeiro";"zNxwv";NULL;NULL;"2012-12-29 13:22:16"
+200;"Paróquia Santo Antônio dos Pobres";"Pe. Antônio Bezerra";"Rua dos Inválidos, 42";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20231-040";"(21) 2222-2586";"";-22.909065;-43.185856;"Seg a Sex 7:30  12h15
+Sab 7h30
+Dom 07:00 08:00 10:00 18:00";"";"";"";"Rio de Janeiro";"bhiMS";NULL;"";"2014-03-24 19:49:58"
+201;"Paróquia Santo Antônio Maria Zaccaria";"Pe. Rosinaldo Paulino de Brito";"Av. Geremário Dantas, 101 - Largo do Tanque";"Jacarepaguá";"Rio de Janeiro";"RJ";"Brasil";"22735-000";"(21) 3392-0303";"Confissões: É preciso estar atento aos avisos ao final das missas ou Marcar diretamente com Padre Rosinaldo, após as mesmas
+
+Temporariamente as celebrações de domingo no horário de 10:30 estão acontecendo da Escola Municipal Pio X - local que está acontecendo os encontros da catequese infantil, sito a 
+Rua Serra Negra, 103 - Tanque - Rio de Janeiro/RJ
+
+<strong>Facebook:</strong> <a href=\"https://www.facebook.com/paroquia.samz\" target=\"_blank\">https://www.facebook.com/paroquia.samz</a>";-22.9185668;-43.3606574;"Segunda, Quarta e Sexta-feira 19:00h
+Sábado 18:30h
+Domingo 7h 8:30h 18:30h";"";"http://www.psamz.com.br";"pascompsamz@gmail.com, secretariasamz@gmail.com";"Rio de Janeiro";"E1Slz";NULL;"";"2015-01-06 09:22:01"
+202;"Santo Cristo dos Milagres";"Pe. José Benedito Reis Filho";"Praça Santo Cristo, s/n";"Santo Cristo";"Rio de Janeiro";"RJ";"Brasil";"20220-760";"(21) 2233-3874";"";-22.8995303;-43.2014958;"";"";"";"";"Rio de Janeiro";"qLDBW";NULL;NULL;"2013-01-12 13:29:42"
+203;"Igreja Santo Sepulcro";"Luiz Fernando de Oliveira Gomes";"Rua Sanatório, 310";"Madureira";"Rio de Janeiro";"RJ";"Brasil";"21350-19";"(21) 3899-4750";"";-22.877323;-43.331073;"Seg Ter 19:30 
+Dom 07:00 09:30 18:30";"";"";"";"Rio de Janeiro";"Sexb3";NULL;"";"2015-10-07 14:02:25"
+204;"Paróquia Santos Anjos";"Pe. Célio Calixto";"Av. Afrânio de Melo Franco, 300";"Leblon";"Rio de Janeiro";"RJ";"Brasil";"22430-060";"(21) 2239-8043";"";-22.981528;-43.21806;"Domingo 8:00 10:30 18:00
+Segunda 18:00
+Terça 8:00
+Quarta a sábado 18:00";"Seg a Sab 17:30";"http://www.paroquiasantosanjosleblon.blogspot.com.br";"paroquiadossantosanjos@ig.com.br, padreceliocalixto@gmail.com";"Rio de Janeiro";"4yi0a";NULL;"";"2014-05-06 09:52:19"
+205;"Paróquia Santos Mártires Ugandenses e Nossa Senhora de Nazaré";"Pe.  Sidnei Guimarães Correia Junior";"Rua Guaiuba, 130";"Acari";"Rio de Janeiro";"RJ";"Brasil";"21531-010";"(21) 3450-0353";"SECRETARIA 
+Segunda, Quarta, Quinta e Sexta: 9h às 12h e de 14h às 19h
+Sábado: 9h às 12h
+
+OUTRAS ATIVIDADES
+Grupo de Oração: Segundas às 20h
+Terço dos homens: Quartas às 20h";-22.824229;-43.34783;"DOMINGO: 8h, 10h e 19h (último domingo do mês Missa da Vitória)
+SEGUNDA: 19:30h
+QUARTA: 19:30h
+QUINTA: 19:30h (seguida de adoração ao Santíssimo)
+SEXTA: 19:30h";"(Antes e depois das missas)";"www.facebook.com/pnsnazare";"";"Rio de Janeiro";"hISQ7";NULL;"";"2016-10-04 22:13:44"
+206;"Paroquia de São Bartolomeu";"Pe. Sérgio Ricardo";"Estrada do Itanhangá, 30";"Itanhangá";"Rio de Janeiro";"RJ";"Brasil";"22753-000";"(21) 2493-7488";"";-22.99645;-43.314322;"Seg Qua Sex 19:00
+Sab 18:00 
+Dom 09:00 11:00 19:30";"Qua Sex 16:00 as 18:30";"";"";"Rio de Janeiro";"JcCpe";NULL;NULL;"2013-09-09 12:07:50"
+207;"São Benedito";"Côn. José Mazine Rodrigues";"Av. Dom Hélder Câmara, 6.653";"Pilares";"Rio de Janeiro";"RJ";"Brasil";"20771-002";"(21) 2594-3790";"Confissões: Antes das missas";-22.881627;-43.294435;"Dom 07:00 09:15 11:00 18:00
+Seg Sex Sab 07:30
+Seg Qua Qui Sex 19:00";"";"";"";"Rio de Janeiro";"vvxFB";NULL;"";"2015-09-29 16:20:18"
+209;"São Bonifácio (Para os fiéis de língua alemã)";"Pe. Fr. Eckart Hermann Hofling, OFM";"Rua São Clemente, 350";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22260-000";"(21) 2226-7367";"";-22.950669;-43.193246;"Dom 10:00
+";"";"";"";"Rio de Janeiro";"AZS4F";NULL;NULL;"2012-12-29 13:22:16"
+210;"Paróquia de São Brás";"Pe. Pedro Nunes de Almeida";"Rua Andrade Figueira, 158";"Madureira";"Rio de Janeiro";"RJ";"Brasil";"21360-230";"(21) 3390-3438";"https://www.facebook.com/paroquiasaobrasmadureira
+Twitter: @paroquiasaobras";-22.872706;-43.335162;"Seg Qua Qui Sex 19:00
+Sab 18:00
+Dom 07:00 10:30 18:00";"Seg 17:30 as 19:00";"http://www.paroquiasaobras.com.br";"";"Rio de Janeiro";"mtCTm";NULL;NULL;"2013-05-02 15:26:31"
+211;"São Brás";"Pe. Vilmar Diniz Pereira";"Praça do Lácio, 20";"Jardim Pedregoso - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23095-280";"(21) 2412-5503";"";-22.871581;-43.560469;"Domingo: 11h";"";"";"";"Rio de Janeiro";"PCwtJ";NULL;"";"2013-11-01 17:46:32"
+212;"Santuário São Camilo de Lellis";"Pe. Fábio Eduardo Pinto";"Estrada Velha da Tijuca, 45";"Usina";"Rio de Janeiro";"RJ";"Brasil";"20531-080";"(21) 2238-3509";"<a href=\"http://santuariosaocamilodelellis.blogspot.com.br/\">http://santuariosaocamilodelellis.blogspot.com.br/</a>
+
+Horário de Adoração ao Santíssimo: Toda quinta-feira às 18 horas.";-22.953951;-43.263897;"Segunda a Sábado 19h
+Domingos 8h, 11h e 19h
+Dia 14 15h (Missa dos Enfermos)";"Segunda, Ter, Qua, Qui, Sábado 17h
+Sexta 16h às 19h
+Domingos 7h, 10h e 18h (Antes da missa)";"";"santuariosaocamilo@gmail.com";"Rio de Janeiro";"1WhIq";NULL;"";"2014-03-25 18:11:16"
+213;"São Conrado";"Pe. Marcos Antônio Corrêa Pinto Duarte";"Estrada da Gávea, 904";"São Conrado";"Rio de Janeiro";"RJ";"Brasil";"22610-000";"(21) 3322-0560";"";-22.9954562;-43.2592396;"seg a sabado 18h";"";"";"";"Rio de Janeiro";"dqRiN";NULL;"";"2015-03-16 19:37:33"
+214;"São Cosme e São Damião";"Pe. Lincoln de Almeida Gonçalves";"Rua Leopoldo, 434";"Andaraí";"Rio de Janeiro";"RJ";"Brasil";"20541-170";"(21) 2278-8590";"";-22.928629;-43.252587;"Seg Qua Qui Sex 19:00
+Sab 18:00
+Dom 07:30 09:30 18:00";"";"";"";"Rio de Janeiro";"GAC7u";NULL;NULL;"2012-12-29 13:22:16"
+215;"São Cristóvão";"Pe. André Sampaio de Oliveira";"Praça Padre Séve, 10";"São Cristóvão";"Rio de Janeiro";"RJ";"Brasil";"20931-760";"(21) 2589-5802";"";-22.896481;-43.216809;"";"";"";"";"Rio de Janeiro";"sTwXR";NULL;NULL;"2013-01-11 18:32:26"
+216;"São Dimas";"Pe. Ausilio Antonio Maria Chessa";"Rua Buique, 11";"Padre Miguel";"Rio de Janeiro";"RJ";"Brasil";"21775-310";"(21) 3331-7075";"";-22.890353;-43.449658;"";"";"";"";"Rio de Janeiro";"Ungwy";NULL;NULL;"2013-01-11 18:32:26"
+217;"São Domingos de Gusmão";"Pe. Marciano Rodrigues";"Rua José Higino, 120";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20520-200";"(21) 2238-6450";"";-22.92684;-43.240149;"Seg 19:00
+Ter 09:00
+Qua 17:30
+Sab  17:00
+Dom 8:00 10:00 12:00 18:30
+1a sex 17:30";"Seg 18:00 as 18:55
+Ter 09:30 as 10:00
+Qua 17:00 as 17:30 e 18:00 as 19:00
+Sab 10:00 as 11:45 e 18:00 as 18:30
+Dom 09:30 as 09:55";"";"";"Rio de Janeiro";"77RMV";NULL;"Seg a Sex 08:00 as 12:00 e 13:30 as 17:30
+Sab 08:00 as 12:00 e 15:00 as 18:00
+Dom 08:00 as 13:00";"2016-08-12 18:24:46"
+218;"São Francisco de Assis";"Pe. Fr. Carlos Roberto de Oliveira Charles, OFMConv";"Rua Caetano Martins, 42";"Rio Comprido";"Rio de Janeiro";"RJ";"Brasil";"20251-050";"(21) 2273-6243";"";-22.924648;-43.205067;"Seg a Sex 07:00 19:00
+Sab 19:00
+Dom 07:00 08:30 10:00 18:00 19:30";"";"http://www.franciscodeassisrj.com.br";"";"Rio de Janeiro";"jRBm2";NULL;NULL;"2013-01-12 13:28:18"
+219;"São Francisco de Assis";"Pe. Fábio da Silveira Siqueira";"Estrada do Taquaral, 716";"Senador Camará";"Rio de Janeiro";"RJ";"Brasil";"21842-550";"(21) 2402-8166";"";-22.86666;-43.478476;"Seg Qua Qui 19:00
+Sex 08:00
+Sab 17:00
+Dom 07:00 10:00 19:00";"Qui 18:00";"";"";"Rio de Janeiro";"LkwBZ";NULL;NULL;"2013-01-12 13:28:18"
+220;"São Francisco de Assis";"Pe. Gilmar Florentino da Silva";"Rua Otacílio Pedro Vasco, 812";"Anchieta";"Rio de Janeiro";"RJ";"Brasil";"21635-380";"(21) 3339-2014";"";-22.834708;-43.416393;"Seg 19:00 
+Qui 18:30
+1a Sex 19:00
+Dom 07:00 09:00 18:00";"";"";"";"Rio de Janeiro";"y4gb6";NULL;NULL;"2012-12-29 13:22:16"
+221;"Paróquia São Francisco de Paula";"Pe. Fr. Costantino Mandarino, OM";"Praça Euvaldo Lodi, s/n";"Barra da Tijuca";"Rio de Janeiro";"RJ";"Brasil";"22640-010";"(21) 2493-8973";"";-23.008308;-43.304736;"Terça a sexta 7h30 e 19h
+Sábado 17h (Missa com Crianças)
+Sábado 19h
+Domingo 7h30, 10h, 18h
+Domingo 20h (Missa com Jovens)";"terça a sexta-feira das 9h às 12h e das 15h às 18h
+Sábado das 9h às 11h30
+Domingo 7h30, 10h, 18h, 20h (Antes da Missa)";"http://www.ordemdosminimos.org.br/";"sfpcharitas@gmail.com";"Rio de Janeiro";"aOR0d";NULL;"";"2013-12-28 13:36:31"
+222;"Paróquia São Francisco Xavier";"Pe. José Li Guozhong";"Rua São Francisco Xavier, 75";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20550-010";"(21) 2234-2094";"";-22.9204;-43.222932;"Seg Qua Qui Sex 08:00 18:00
+Sab 08:00 16:00
+Dom 08:00 10:00 18:00 20:00";"";"http://paroquiasfxavier.com.br";"paroquiasfxavier@yahoo.com.br";"Rio de Janeiro";"CiBQA";NULL;NULL;"2013-08-09 14:49:52"
+223;"São Geraldo";"Pe. Jayme Henrique de Araújo Oliveira";"Rua Leopoldina Rego, 344";"Olaria";"Rio de Janeiro";"RJ";"Brasil";"21021-520";"(21) 2564-1282";"";-22.848271;-43.265218;"Segunda-feira 7:30h
+Terça-feira 7:30h
+Quarta-feira 7:30h
+Quinta-feira 7:30h
+Sexta-feira 7:30h e 18h
+Sábado 7:30h
+Domingo 7h, 9h, 18h";"Quintas-feiras 09h às 12h
+sextas-feiras 19h às 21h.";"http://matrizsaogeraldo.blogspot.com.br/";"matrizsaogeraldo@hotmail.com, saogeraldo.pazcom@yahoo.com.br";"Rio de Janeiro";"p1vph";NULL;"Segunda, Quarta, Quinta e Sexta - de 8h às 17h -  ( 12h à 13h - Almoço)
+Terça e Sábado - de 8h à 12h";"2014-06-29 18:33:50"
+224;"Paróquia São Januário e Santo Agostinho";"Pároco Frei Edielson Oliveira da Cunha, OAR";"Rua São Januário, 249";"São Cristóvão";"Rio de Janeiro";"RJ";"Brasil";"20921-000";"(21) 2580-3284";"A Igreja abre todos os dias desde 6h até 20h";-22.898124;-43.225957;"Segundas, ter, qua, Sexta: 7hs 12hs 19hs
+Quinta 7hs
+Sábado 19hs
+Domingo 7h 9h e 18h30";"Segunda, ter, qua, Sexta 9h as 11:30 15h às 18h 
+Sábado 9h as  11:30h
+Quinta-feira  7hs (após a missa)";"";"";"Rio de Janeiro";"RLgFE";NULL;"Segunda a Sexta-feira: Manhã: 9h às 13h - Tarde 15h às 18h.
+Sábado 9h às 12h.";"2014-03-17 19:50:32"
+225;"São Jerônimo";"Côn. José Roberto da Silva";"Rua Theremin, s/n";"Coelho Neto";"Rio de Janeiro";"RJ";"Brasil";"21530-290";"(21) 3837-1815";"";-22.82885;-43.350232;"";"";"";"";"Rio de Janeiro";"3fQel";NULL;NULL;"2013-01-11 18:32:26"
+226;"São João Batista";"Pe. Roberto Pereira";"Rua Damião de Góis, 431";"Vila São João  - Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23035-390";"(21) 2416-1207";"";-22.906196;-43.549605;"Dom 07:00 19:30
+Seg 19:30";"Seg Qui 15:00 as 18:00
+Sex 15:00 as 21:00";"";"";"Rio de Janeiro";"fzB4I";NULL;"";"2014-03-21 09:45:12"
+227;"São João Batista da Lagoa";"Pe. Alex Coêlho Sampaio";"Rua Voluntários da Pátria, 287";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22270-000";"(21) 2538-2926";"";-22.953918;-43.191417;"Seg a Sab 08:00 18:00
+Dom 08:00 09:30 11:00 18:00 19:30";"";"";"";"Rio de Janeiro";"IIvTp";NULL;NULL;"2012-12-29 13:22:16"
+228;"São João Batista e Nossa Senhora das Graças";"Pe. Eduardo Carlos Pereira";"Rua Recife, 746, Vila Nova";"Realengo";"Rio de Janeiro";"RJ";"Brasil";"21730-090";"";"";-22.862521;-43.437007;"Seg 19:00
+1a Sex 19:00
+Dom 07:00 10:00
+";"";"";"";"Rio de Janeiro";"ucftM";NULL;NULL;"2012-12-29 20:55:15"
+229;"Paróquia São João Bosco";"Pe. Gustavo Cola";"Rua Luis Zanchetta, 134";"Riachuelo";"Rio de Janeiro";"RJ";"Brasil";"20970-120";"(21) 2581-9899";"";-22.8967752;-43.2584797;"Segunda a sexta 7h
+Domingo 7h 9h 18h";"";"";"";"Rio de Janeiro";"WwQIt";NULL;NULL;"2013-07-08 16:11:28"
+230;"Paróquia São João Evangelista";"Pe. Lúcio Zorzi";"Estrada do Cabuçú, 3.036";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23017-250";"(21) 2413-9224";"";-22.917363;-43.532557;"";"";"";"";"Rio de Janeiro";"9GAiQ";NULL;NULL;"2013-04-30 15:27:18"
+231;"Paróquia São João Evangelista";"Mons. Gilson José Macedo da Silveira";"Rua Pereira de Figueiredo, 138";"Oswaldo Cruz";"Rio de Janeiro";"RJ";"Brasil";"21341-030";"(21) 3359-0028";"";-22.870965;-43.349331;"Seg 18:30
+Dom 08:00 10:00 18:30
+Qua a Sex 18h30
+Sábado  7h30";"Domingos das 7h30 às 8h e  das 18h às 18h30
+Quinta das 19h às 21h";"http://www.saojoaoevangelista.org.br";"psje@ymail.com";"Rio de Janeiro";"lZv7x";NULL;NULL;"2013-09-20 11:28:58"
+232;"São Joaquim";"Pe. Gleisson";"Rua Joaquim Palhares, 227";"Estácio";"Rio de Janeiro";"RJ";"Brasil";"20260-080";"(21) 2273-3596";"Confissões: marcar com secretário";-22.91339;-43.208973;"Domingo: 8h, 10h, 18h
+Segunda-feira: 8h (Missa das almas)
+Terça-feira: 12h15
+1a quarta-feira  9h
+3o sábado 15h
+dia 13 8h
+dia 19 8h
+dia 22 8h
+dia 26 8h";"";"";"";"Rio de Janeiro";"NtfXU";NULL;"De terça a sábado: das 8h às 12h e das 14h às 17h
+
+Secretário Márcio";"2014-06-06 18:07:02"
+233;"Paróquia São Jorge";"Pe. Dirceu";"Rua Clarimundo de Melo, 769";"Quintino";"Rio de Janeiro";"RJ";"Brasil";"20740-320";"(21) 3271-5616";"Confissões de segunda a sexta. Combinar horário o pároco.";-22.8939256;-43.3213832;"Segunda 19:00
+Quarta 19:00
+Quinta 19:00
+Sexta 19:00 (exceto na 1ª sexta do mês)
+1ª sexta 18:00
+Domingo 07:00 10:00 18:30";"";"";"paroquiamatrizsaojorge@gmail.com";"Rio de Janeiro";"0DPx1";NULL;"Segunda a Sexta das 7:00 às 19:00 (quinta até 18h)
+Sábado e Domingo: das 8:00 às 12:00";"2015-04-04 16:15:29"
+234;"São José";"";"Rua Paraúna, 128";"Ricardo de Albuquerque";"Rio de Janeiro";"RJ";"Brasil";"21640-280";"(21) 3106-1255";"";-22.840076;-43.396846;"";"";"";"";"Rio de Janeiro";"cXAMY";NULL;NULL;"2013-01-11 18:32:26"
+235;"São José";"Pe. Omar Raposo";"Av. Borges de Medeiros, 2735";"Lagoa";"Rio de Janeiro";"RJ";"Brasil";"22470-001";"(21) 2294-6549";"";-22.9642855;-43.2152628;"Seg 19h
+Ter a Sex 07:30 19:00
+Qui 15:00 (Missa com adoração - termina às 17:00)
+Sab 18:00
+Dom 7h 08:00 10:00 12:00 19h";"(após as Missas da manhã)";"";"";"Rio de Janeiro";"Equm5";NULL;"";"2015-11-16 21:36:35"
+236;"São José";"Pe. John Cribbin (João), OMI";"Rua Salustiano Silva, 27";"Magalhães Bastos";"Rio de Janeiro";"RJ";"Brasil";"21745-590";"(21) 2301-1440";"";-22.869072;-43.415196;"Domingo: 7h, 10h, 19h
+Segunda: 19h30
+Terça: 07h30
+última Quinta: 19h30
+Sexta: 07h30";"";"http://www.saojosemb.com/";"pascomsaojose@gmail.com";"Rio de Janeiro";"rAfBc";NULL;"";"2015-01-10 21:08:43"
+237;"São José";"Pe. Vicente de Paula Martins";"Estrada João Paulo, 1.790";"Barros Filho";"Rio de Janeiro";"RJ";"Brasil";"21512-200";"(21) 3847-1504";"Para confissões, marcar com antecedência com o pároco.";-22.8347509;-43.365202;"Domingos  08:00 10:00 19:00
+Quartas   19:00
+Quintas     19:00
+Sextas   19:00
+Último Sábado  09:00";"";"";"";"Rio de Janeiro";"TUPb9";NULL;"";"2015-01-28 09:04:33"
+238;"São José (Para os fiéis de língua chinesa)";"Pe. José Li Guozhong";"Rua Benjamin Constant, 42";"Glória";"Rio de Janeiro";"RJ";"Brasil";"20241-150";"(21) 2242-0614";"";-22.9206405;-43.178298;"";"";"";"";"Rio de Janeiro";"5oA0g";NULL;NULL;"2013-01-11 18:32:26"
+239;"São José e Nossa Senhora das Dores";"Pe. Mauro Odoríssio, CP";"Rua Barão de Mesquita, 763";"Andaraí";"Rio de Janeiro";"RJ";"Brasil";"20540-002";"(21) 2238-4614";"";-22.92614;-43.248211;"Ter a Sex 07:00 18:00
+Sab 07:00 17:00 
+Dom 08:00 10:00 18:00";"";"http://www.psjnsd.com.br";"";"Rio de Janeiro";"i7uQD";NULL;NULL;"2012-12-29 20:28:12"
+240;"São José Operário";"";"Rua Gregório de Castro Morais, 1.058";"Ilha do Governador";"Rio de Janeiro";"RJ";"Brasil";"21931-350";"(21) 3393-1832";"";-22.80634;-43.200762;"Seg 19h
+Ter 07h 19h
+Qua 07h
+Qui 07h
+Sex 07h 19h
+Sáb 19h
+Dom 06h30 08h 10h 19h";"";"";"";"Rio de Janeiro";"KRepk";NULL;NULL;"2013-01-28 13:36:55"
+241;"São José Operário";"Pe. Vitorino Vegini";"Rua Barão do Triunfo, 393";"Realengo";"Rio de Janeiro";"RJ";"Brasil";"21735-390";"(21) 3462-9412, (21) 3331-8322";"";-22.788108;-43.30584;"Ter Sex 19:00
+Qua Qui 19:30
+Dom 07:00 10:00 19:00
+";"";"";"";"Rio de Janeiro";"wlPFH";NULL;NULL;"2012-12-29 13:22:16"
+242;"São José Operário";"Pe. João Carlos Silveira da Silva";"Via A-1, 150";"Vila do Pinheiro - Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21040-361";"(21) 3868-1056";"";-22.8607301;-43.243361;"";"";"";"";"Rio de Janeiro";"Z59eo";NULL;NULL;"2013-01-12 13:29:42"
+243;"Paróquia São José Operário";"Pe. Koodathinal Joseph Thomas";"Rua General Lino Machado, s/n";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23082-055";"(21) 3406-8491";"";-22.8923383;-43.5703185;"Domingo  7:30  10:30  18:00
+Quinta-feira 19:30";"";"";"";"Rio de Janeiro";"BOu4L";NULL;"";"2016-10-04 22:30:08"
+244;"Paróquia São Judas Tadeu";"Pe. Henrique Jorge Diegues";"Rua Cosme Velho, 470";"Cosme Velho";"Rio de Janeiro";"RJ";"Brasil";"22241-090";"(21) 2225-1128";"";-22.940341;-43.198318;"Segunda a Sexta: 07:30, 09:00 e 18:00
+Sábado: 07:30, 09:00, 17:00
+Domingo: 07:00, 08:30, 10:00
+Dom 12:00
+Dom 18:00
+Dia 28  07:00, 08:30, 10:00, 12:00, 15:00, 16:30, 18:30";"Seg a Sex das 10h às 12h e 14h às 15:30";"";"";"Rio de Janeiro";"nieTs";NULL;"";"2016-10-05 21:19:25"
+245;"São Judas Tadeu";"Pe. Jorge Luiz Vieira da Silva";"Av. Eng. Pires Rebelo, 1.825";"Bangu";"Rio de Janeiro";"RJ";"Brasil";"21825-390";"(21) 3331-4268";"";-22.8920155;-43.4761054;"Domingo 7:00  9:30  19:00
+Segunda  19:00
+Quarta  19:00
+Quinta  19:00
+Sexta  19:00
+Sábado  8:00 
+Sábado 17:00 (Capela Cristo Rei e São José)";"Segunda  17:30 às 18:00
+Sexta  17:30 às 18:00
+Sábado  8:30 às 9:30";"";"";"Rio de Janeiro";"Q2OtP";NULL;"";"2015-03-10 16:27:03"
+246;"Paróquia São Judas Tadeu e Nossa Senhora do Carmo";"Pe. Rogério Costa Felix";"Rua Rio Pomba, 5";"Senador Vasconcelos";"Rio de Janeiro";"RJ";"Brasil";"23085-310";"(21) 3155-6892";"";-22.897857;-43.5448142;"Seg Qua Qui Sex 19:00
+Sáb 19h (Cap. Mãe Rainha)
+Dom 07:00 10:30 19:00
+Dom 9h (Cap. Sagrado Coração)";"Seg Sex 17:00 as 19:00";"";"saojudastadeucg@gmail.com";"Rio de Janeiro";"2M9Iw";NULL;"";"2014-08-16 13:06:19"
+247;"Paróquia São Lourenço";"Côn. José Roberto da Silva";"Rua Ministro Ari Franco, 850";"Bangu";"Rio de Janeiro";"RJ";"Brasil";"21862-005";"(21) 2401-9644";"Comunidade Santa Águeda - Rua projetada 550, 2-156 Próximo ao Colégio Bangu
+Comunidade Santa Luzia - Av. Ministro Ari Franco n.:2000- Bangu";-22.8672072;-43.4650348;"seg a sexta 19h
+dom 7h, 9h, 18h30
+Sábado 18:00h (Com. Santa Águeda) 
+Sábado 19:30h (Com. Santa Luzia)";"";"http://paroquiasl.com.br";"pascomsaolourenco@gmail.com, secretaria.psl.bangu@gmail.com";"Rio de Janeiro";"eftiT";NULL;"";"2015-03-14 10:36:15"
+248;"São Luís Gonzaga";"Pe. Paulo Cardoso";"Rua Manuel Martins, 43";"Madureira";"Rio de Janeiro";"RJ";"Brasil";"21310-240";"(21) 3390-7400";"";-22.877741;-43.338757;"";"";"";"";"Rio de Janeiro";"Gze80";NULL;NULL;"2013-01-11 18:32:26"
+249;"São Luís Rei de França";"Pe. Fr. Paulo Sérgio Fernandes, OFMConv";"Estrada de Botafogo, 410";"Costa Barros";"Rio de Janeiro";"RJ";"Brasil";"21532-200";"(21) 2474-3770";"";-22.820661;-43.363458;"Ter a Sex 08:00 
+Qua Sex 19:00
+Dom 07:00 10:00 19:00";"";"";"";"Rio de Janeiro";"tJOXX";NULL;NULL;"2012-12-29 13:22:16"
+250;"Paróquia São Marcos";"Pe. Alan Dias de Oliveira";"Praça Embaixador Gualberto de Oliveira, 10";"Condomínio Barra Sul - Barra da Tijuca";"Rio de Janeiro";"RJ";"Brasil";"22793-360";"(21)2498-4367, (21) 2498-3547";"";-23.0006704;-43.3921967;"Seg a Sáb 19h
+Domingo 7h30 10h30 18h e 19h30";"Ter a  Sex das 15h30 às 17h30";"http://www.paroquiasaomarcos.com.br/";"danielmend@gmail.com, contato@paroquiasaomarcos.com.br, pascom@paroquiasaomarcos.com.br";"Rio de Janeiro";"Vd8x4";NULL;"De segunda a domingo, das 9h às 12h e 14h às 20h.";"2015-09-30 14:29:37"
+251;"São Mateus";"Pe. Izahú Barros Maciel Filho";"Rua Pinto de Campos, 57";"Oswaldo Cruz";"Rio de Janeiro";"RJ";"Brasil";"21550-270";"(21) 2450-1136";"";-22.866165;-43.35111;"";"";"";"";"Rio de Janeiro";"7wtMb";NULL;NULL;"2013-01-11 18:32:26"
+252;"São Miguel";"Pe. João Azeredo";"Rua Princesa Leopoldina, 181";"Magalhães Bastos";"Rio de Janeiro";"RJ";"Brasil";"21710-420";"(21) 3338-8911";"";-22.870526;-43.419701;"";"";"";"";"Rio de Janeiro";"kGdm8";NULL;NULL;"2013-01-11 18:32:26"
+253;"São Miguel Arcanjo";"Pe. Jefferson Araújo de Oliveira";"Rua Toriba, 145";"Colégio";"Rio de Janeiro";"RJ";"Brasil";"21545-260";"(21) 2471-2851";"";-22.844545;-43.339608;"";"";"http://www.psma.kit.net";"";"Rio de Janeiro";"MaOBf";NULL;NULL;"2013-01-12 13:29:42"
+254;"Paróquia São Paulo Apóstolo";"Pe. Paulo de Tarso Rodrigues, CRSP";"Rua Barão de Ipanema, 85";"Copacabana";"Rio de Janeiro";"RJ";"Brasil";"22050-031";"(21) 2255-7547, (21) 2256-5150";"Padres Barnabitas";-22.974557;-43.190657;"Domingo:	07:30, 09:00, 10:30, 12:00, 18:00, 19:30
+Segunda-feira:	07:00, 08:00, 09:00, 18:00
+Terça-feira: 07:00, 08:00, 09:00, 18:00
+Quarta-feira: 07:00, 18:00
+Quinta-feira:	07:00, 08:00, 09:00, 18:00
+Sexta-feira:	07:00, 08:00, 09:00, 18:00
+Sábado:	07:00, 08:00, 09:00, 17:00
+1ª Terça-feira: 15:30 (Missa dos Doentes)
+3ª Sábado: 10:00 (Missa de Nossa Senhora Mãe da Divina Providência)";"Segunda-feira:	09:00 às 11:00, 15:00 às 17:30
+Terça-feira:	09:00 às 11:00, 15:00 às 17:30
+Quinta-feira:	09:00 às 11:00, 15:00 às 17:30
+Sexta-feira:	09:00 às 11:00, 15:00 às 17:30
+Sábado:	09:00 às 11:00";"http://www.paroquiasaopauloapostolorj.com.br/";"p.saopauloapostolo@terra.com.br";"Rio de Janeiro";"yu8bC";NULL;"";"2017-03-05 10:56:27"
+255;"São Pedro Apóstolo";"Pe. Lélio";"Rua General Clarindo, 632";"Encantado";"Rio de Janeiro";"RJ";"Brasil";"20755-320";"(21) 2594-1396";"";-22.8922958;-43.3013649;"Domingo: 8:00, 10:00 e 18:00";"";"";"";"Rio de Janeiro";"bDt0j";NULL;"";"2015-01-20 21:51:05"
+256;"São Pedro Apóstolo";"Pe. Marcus Vinicius Antunes da Trindade";"Rua Belchior da Fonseca, 301";"Pedra de Guaratiba";"Rio de Janeiro";"RJ";"Brasil";"23027-260";"(21) 2417-3238";"Toda quinta-feira a partir das 08:00h Adoração ao Santíssimo.";-23.000528;-43.64192;"Sáb 19:30
+Dom 07:00, 10:00 e 18:30
+Seg 18:30
+Qui 18:30";"Toda Sexta-Feira das 08:00 às 12:00 e das 14:00 às 17:00";"";"";"Rio de Janeiro";"DXdQG";NULL;"";"2013-12-28 16:27:30"
+257;"Paróquia São Pedro do Mar";"Pe. Zdzislaw Blaszczyk";"Rua Gilberto Freire, 100";"Recreio dos Bandeirantes";"Rio de Janeiro";"RJ";"Brasil";"22790-690";"(21) 2490-2287";"Secretaria Paroquia - Horários:
+
+Segundas e Sábados: 8:00 às 12:00
+Terça à Sexta: 9:00 às 12:00 e das 14:00 às 19:00";-23.024029;-43.490481;"Domingo:	07:30h, 10:00h e 19:00h
+Segunda-feira:	19:00
+Quinta-feira:	19:00
+Sábado:	18:00";"Dom 9h30 16h30 18h30
+Seg 18h30
+Qui 18h30
+Sab 17h30";"";"saopedrodomar@hotmail.com";"Rio de Janeiro";"prNpn";NULL;"";"2014-11-15 18:05:36"
+258;"Paróquia São Rafael Arcanjo";"Pe. Alberto Gonzaga de Almeida";"Rua Paratinga, s/nº";"Vista Alegre";"Rio de Janeiro";"RJ";"Brasil";"21230-770";"(21) 3391-1447";"";-22.83083;-43.318382;"Seg a Sex 07:30
+Sab 18:00
+Dom 07:00 09:00 19:00";"";"";"";"Rio de Janeiro";"SB8FK";NULL;NULL;"2013-05-25 17:03:51"
+259;"Paróquia de São Roque";"Pe. Tadeusz Domanski, SAC";"Rua Namur, 373";"Vila Valqueire";"Rio de Janeiro";"RJ";"Brasil";"21330-600";"(21) 2453-0271";"Secretaria:
+Segunda, Quarta, Quinta e Sexta: das 08:00 às 11:00 e das 15:00 às 17:00
+Terças-feiras: não há expediente";-22.882503;-43.359738;"Seg Qua Qui Sex 7:00 19:00
+Sab 17h e 19:00
+Dom 07:00 08:30 10:00 19:00";"";"http://saoroque.info/";"";"Rio de Janeiro";"4User";NULL;NULL;"2013-10-03 10:41:54"
+260;"São Sebastião";"Pe. Alexander Prata de Oliveira";"Praça Manágua, 1";"Bento Ribeiro";"Rio de Janeiro";"RJ";"Brasil";"21550-520";"(21) 2450-1366";"";-22.86061;-43.363512;"seg, qua, qui, sexta 19h
+sáb 18:30
+dom 07h, 9:30 18:30";"";"";"";"Rio de Janeiro";"god4O";NULL;"";"2014-08-16 13:13:12"
+261;"São Sebastião";"Pe. Lindenberg Freitas Muniz";"Av. Duque de Caxias, 760";"Vila Militar - Deodoro";"Rio de Janeiro";"RJ";"Brasil";"21615-220";"(21) 2457-4303";"";-22.860296;-43.391093;"Ter a Sex 19:00
+Sab 17:00
+Dom 08:00 19:00";"Qua Qui Dom 18:00";"";"";"Rio de Janeiro";"J8NTv";NULL;NULL;"2013-01-12 13:29:42"
+262;"São Sebastião";"Côn. Manuel Eugenio Amorim Rosa";"Rua Parimá, 58";"Parada de Lucas";"Rio de Janeiro";"RJ";"Brasil";"21250-430";"(21) 2560-1012";"";-22.819159;-43.303399;"";"";"http://geocities.yahoo.com.br/saosebastiaodelucas";"";"Rio de Janeiro";"vS7tS";NULL;NULL;"2013-01-11 18:32:26"
+263;"Paróquia São Sebastião";"Pe. Ademir Martini, SDV";"Rua Paranapanema, 377";"Olaria";"Rio de Janeiro";"RJ";"Brasil";"21073-185";"(21) 2560-5163";"";-22.8533776;-43.2690114;"Dom 7h 9h e 19h
+Seg 19h
+1ª Sex 7h";"Sábado das 09h às 11h.";"http://www.pssolaria.com.br/";"secretaria@pssolaria.com.br";"Arquidiocese de São Sebastião do Rio de Janeiro";"XlsIz";NULL;"";"2015-10-15 10:13:41"
+264;"Santuário Basílica de São Sebastião";"Pe. Fr. José William Corrêa de Araújo, OFMCap";"Rua Haddock Lobo, 266";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20260-142";"(21) 2204-7900";"";-22.919383;-43.214674;"Seg 18:00
+Ter Qui Sex 07:00 09:00 18:00
+Qua 07:00 09:00 19:00
+Sab 07:00 09:00 17:00
+Dom 07:00 08:30 11:30 18:00 19:30";"segunda a sábado das 8h às 12hs e das 14h às 18h";"http://www.igrejadoscapuchinhos.org.br";"";"Rio de Janeiro";"A5ciW";NULL;"";"2016-10-05 21:26:21"
+265;"São Sebastião";"Pe. Francisco Reinaldo Gonçalves Oliveira";"Estrada dos Bandeirantes, 24.264";"Vargem Grande";"Rio de Janeiro";"RJ";"Brasil";"22785-090";"(21) 2428-1713";"";-22.979334;-43.49165;"Seg Qua Qui Sex 08:00
+Sab 07:30
+Dom 07:30 19:00";"";"";"";"Rio de Janeiro";"mPN83";NULL;NULL;"2012-12-29 13:22:16"
+266;"São Sebastião";"Pe. José Fernando Manguer, MIC";"Praia da Olaria, 607";"Cocotá - Ilha do Governador";"Rio de Janeiro";"RJ";"Brasil";"21910-290";"(21) 3396-5144";"";-22.80528;-43.181345;"Seg a Sex 08:00 19:00
+Sab 08:00 18:00
+Dom 07:00 10:00 19:00";"Sex 15:00 as 18:00";"";"";"Rio de Janeiro";"Oj7Xa";NULL;NULL;"2012-12-29 13:22:16"
+267;"São Sebastião e Santa Cecília";"Pe. Felipe Lime";"Praça da Fé, s/n";"Bangu";"Rio de Janeiro";"RJ";"Brasil";"21810-020";"(21) 2401-8448";"";-22.881908;-43.464673;"Ter Qua Sex Sab 08:00
+Dom 07:00 09:30 18:00";"";"";"";"Rio de Janeiro";"12rx7";NULL;"";"2015-07-10 13:25:45"
+268;"São Tiago";"Côn. José dos Santos Almeid";"Praça 24 de Outubro, 165";"Inhaúma";"Rio de Janeiro";"RJ";"Brasil";"20765-180";"(21) 2594-3646";"";-22.873248;-43.281774;"Domingo 7h 8h30 10h e 18h30
+Seg 18h (Pelas Almas)
+Ter 7h
+Qua a Sex 19h
+Qui 15h (Adoração Eucarística)
+Sábado 16h
+1º Sábado 9h (Em desagravo ao Imaculado Coração de Maria)";"Qua a Sex das 18h às 19h
+Sábado das 9h30 às 11h";"";"";"Rio de Janeiro";"dMcMe";NULL;"";"2015-10-09 09:42:57"
+269;"Paróquia São Tiago Apóstolo";"Pe. Severino Antônio Martini";"Rua Baronesa de Uruguaiana, 42";"Lins de Vasconcelos";"Rio de Janeiro";"RJ";"Brasil";"20710-310";"(21) 2501-0599";"";-22.910657;-43.276871;"Sab 17h";"";"";"";"Rio de Janeiro";"FgMmB";NULL;NULL;"2013-09-20 11:51:57"
+270;"São Vicente de Paulo";"Pe. Marco Túlio de Castro Carvalho";"Av. Álvares da Rocha, 53";"Engenho da Rainha";"Rio de Janeiro";"RJ";"Brasil";"20761-310";"(21) 3272-5361";"";-22.8699446;-43.2963763;"Seg 19:00
+Ter Qua Qui Sab 18:00
+Dom 07:30 10:00 18:00";"";"https://www.facebook.com/ParoquiaSaoVicenteDePaulo.ER";"p.svp.er.1@hotmail.com";"Rio de Janeiro";"s07Bi";NULL;"";"2015-02-27 18:37:55"
+271;"São Vicente de Paulo";"Pe. Sérgio Ricardo da Rosa Viana";"Rua César Múzio, 317";"Vicente de Carvalho";"Rio de Janeiro";"RJ";"Brasil";"21371-020";"(21) 2481-5492";"";-22.85445;-43.316897;"";"";"";"";"Rio de Janeiro";"UJrbF";NULL;NULL;"2013-01-11 18:32:26"
+272;"Paróquia Senhor Bom Jesus do Monte";"Pe. José Carlos dos Passos";"Rua dos Tamoios, 45";"Ilha de Paquetá";"Rio de Janeiro";"RJ";"Brasil";"20397-010";"(21) 3397-0270";"";-22.761107;-43.107428;"Seg a Sex 08:00
+Sab 18:00
+Dom 10:30 18:00";"";"";"";"Rio de Janeiro";"6dc0m";NULL;NULL;"2013-06-16 18:35:38"
+273;"Senhor do Bonfim";"Pe. Marcílio Caetano do Nascimento";"Praça Dom Justino, s/n";"Cidade Alta - Cordovil";"Rio de Janeiro";"RJ";"Brasil";"21010-640";"(21) 3137-3453";"";-22.8202;-43.294301;"";"";"";"";"Rio de Janeiro";"ixMQJ";NULL;NULL;"2013-01-11 18:32:26"
+278;"Capelania Pessoal para os Imigrantes Espanhóis e Filhos (Agregadoria Laboral Embaixada da Espanha)";"Capelão: Pe. José Martinez Fernandez";"Av. Lauro Müller, 116/1608";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22290-160";"(21) 2543-3158";"";-22.956572;-43.176394;"";"";"";"";"Rio de Janeiro";"oY6Ty";NULL;NULL;"2013-01-11 17:56:30"
+280;"Nossa Senhora de Lourdes (Basílica Menor)";"Pe. Valtemario S. Frazão Jr.";"Av. 28 de Setembro, 200";"Vila Isabel";"Rio de Janeiro";"RJ";"Brasil";"20551-031";"(21) 2568-3821";"Todo dia 11: Benção dos Enfermos e distribuição da milagrosa água de Lourdes às 16h
+
+SECRETARIA
+de  2ª à 6ª feira, das 7h:30 às 11h:30 e 15h às 19h";-22.914818;-43.241641;"Seg a Sex 7h30 19h00 
+Sáb 7h30 e 16h00
+Dom 7h00 9h30 17h00 19h00";"terça-feira a sexta-feira das 18h às 19h";"http://www.nsl.org.br";"";"Rio de Janeiro";"3BbJ2";NULL;"";"2016-10-05 21:42:40"
+676;"Nossa Senhora do Líbano";"Mons.  Roger Barakat, MLM";"Rua Conde de Bonfim, 638";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20520-055";"(21) 2208-4846";"";-22.9313327;-43.2389406;"Segunda a sexta 8:00, 18:00
+
+Sábado 8:00, 17:00
+
+Domingo 8:30, 10:00, 11:30 e 18:00";"";"";"";"Eparquia Maronita";"nK2No";NULL;NULL;"2012-12-29 13:22:16"
+679;"Paróquia Divino Espírito Santo";"";"Rua Estácio de Sá, 167";"Estácio de Sá";"Rio de Janeiro";"RJ";"Brasil";"20211-270";"(21) 2273-3648";"";-22.9138286;-43.2039532;"Dom 7h30 9h 11h";"";"";"";"Rio de Janeiro";"eHHcP";NULL;NULL;"2013-09-09 12:37:39"
+680;"Santuário Arquidiocesano de Nossa Senhora das Graças da Medalha Milagrosa";"Pe. Luiz de Oliveira Campos";"Rua Dr. Satamini, 333";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20270-233";"(21) 2563-9496, (21) 2563-9492, (21) 2563-9497";"Anexo ao Hospital São Vicente de Paula";-22.916706;-43.2134804;"domingo 08h30, 10h00 18h
+domingo 18h00 (Com intenções comunitárias)
+segunda-feira a sábado 07h00
+segunda-feira 19h30 (Com a novena perpétua de Nossa Senhora das Graças da Medalha Milagrosa)
+Dia 27 19h30 (Com a novena perpétua de Nossa Senhora das Graças da Medalha Milagrosa)";"terça-feira e quinta-feira 09h00 às 12h00, 14h00 às 17h00 (Outros dias a combinar)";"http://www.asvp.org.br";"siteprovinciadorio@gmail.com";"Rio de Janeiro";"Gb21w";NULL;"2ª feira: 10:00 às 18:00h;
+3ª a 6ª: 08:30 às 18:00h e aos sábados das 09:00 às 12:00h;";"2016-08-28 21:30:13"
+681;"Capela Senhor Bom Jesus do Calvário da Via Sacra";"Mons. José Anchieta Costa Carvalho";"Rua Conde de Bonfim, 48";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20520-053";"(21) 2568-9820, (21) 2254-4425";"Existem outros horários de Missa durante a semana, mas não são fixos, dependem de marcação de Missas.";-22.9233511;-43.2230422;"Seg 18h
+Domingo 8h, 9h, 10h";"";"";"";"Rio de Janeiro";"sumRT";NULL;NULL;"2013-04-01 09:27:42"
+1008;"Nossa Senhora de Schoenstatt";"";"Estrada dos Bandeirantes, 13833";"Jacarepaguá";"Rio de Janeiro";"RJ";"Brasil";"22783-116";"(21) 2442-1072";"";-22.96569;-43.4100726;"domingos 11h30";"";"http://www.santuarios.schoenstatt.de/db_user/cms_db_santuarios_detail1.php?sprache=pt&vid=152";"";"Rio de Janeiro";"z4Z6W";NULL;NULL;"2013-05-03 11:41:10"
+1087;"Igreja São Tomé";"";"Av. Nova Iorque, 348";"Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21041-040";"(21) 2280-7075";"";-22.8647377;-43.251289;"Domingo, Segunda, Quinta 18h";"";"";"";"Rio de Janeiro";"oEhdZ";NULL;NULL;"2013-01-05 23:22:49"
+1232;"Paróquia São Benedito";"Pe. Marcos Andrade da Silva";"Av. Areia Branca, 1460";"Santa Cruz";"Rio de Janeiro";"RJ";"Brasil";"23550-740";"(21) 3395-3024";"Confissões antes e depois da Santa Missa quando necessário.";-22.9383762;-43.686369;"Sábado 18h 
+Domingo 07h
+1o Domingo 09h 
+5o Domingo 9h
+Domingo 18h 
+ 2º Domingo 09h (Capela S. Miguel e Sta. Luzia)
+3º Domingo 09h (Capela N.S de Fátima e S. João Batista)
+1º domingo 10:30 (Capela Nossa Senhora Aparecida)
+3º domingo 10:30 (Capela Nossa Senhora Aparecida)
+4º Domingo 09h (Capela S. Francisco de Assis)";"Quarta-feira 15h as 17:30
+Sexta-Feira 10h as 12h e 15h as 17h";"";"";"Rio de Janeiro";"QQFLk";NULL;NULL;"2013-10-03 11:10:32"
+1684;"Igreja Ordem Terceira Nossa Senhora do Monte do Carmo";"";"Rua Primeiro de Março, 6";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20011-020";"(21) 2242-4828";"";-22.9029982;-43.1753454;"Dia 16/07 9h, 10h, 11h (Festa de Nossa Senhora do Carmo)";"";"http://www.igrejanscarmorj.com.br";"";"Rio de Janeiro";"mObUK";NULL;NULL;"2013-04-17 11:29:50"
+1685;"Mosteiro de São Bento";"Dom Paulo Henrique (Prior)";"Rua Dom Gerardo, 68";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20090-030";"(21) 2206-8100";"O Mosteiro está aberto diariamente no horário das 7:00 às 18:00 h.
+Exige-se traje adequado para ingressar no templo, pois este é um lugar sagrado, casa de Deus.
+A clausura do Mosteiro não é aberta à visitação, com exceção de alguns dias como Corpus Christi e Dia de Finados, onde os fiéis têm acesso somente ao claustro.";-22.8978865;-43.179659;"Seg a Sab 7:30 (Missa conventual com canto gregoriano)
+
+Dom 10h (Missa conventual solene com canto gregoriano) 
+Dom 18h10";"Seg a Sab de 7:00 as 18:00
+Dom de 7:00 as 18:00";"http://www.osb.org.br";"";"Rio de Janeiro";"OiLtr";NULL;NULL;"2013-01-11 15:49:14"
+2159;"Igreja Sagrado Coração de Jesus";"";"Rua Marquês de São Vicente, 225";"Gávea";"Rio de Janeiro";"RJ";"Brasil";"22451-041";"(21) 3527-1001";"Dentro da PUC-Rio";-22.9782071;-43.233428;"Seg a Sex: 12:00h
+Domingo: 18:00h 19:15h 20:30h
+Domingo 11h (Na PUC-RJ)";"";"";"";"Rio de Janeiro";"LhB69";NULL;"";"2014-08-16 13:26:53"
+3143;"Paróquia Italo-Albanesa Católica de Nossa Senhora Aparecida";"Pe. Atanásio Acuursi";"Rua Marechal Bittencourt, 112";"Riachuelo";"Rio de Janeiro";"RJ";"Brasil";"20950-001";"(21) 2261-9716";"Missa em Grego, Italiano e Português.";-22.9040711;-43.2561481;"";"";"";"";"Ordinariato Fiéis de Rito Oriental";"V7mJt";NULL;NULL;"2013-05-06 12:38:17"
+4172;"Igreja de Santo Inácio";"";"Rua São Clemente, 226";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22260-000";"(21) 3184-6200";"A missa das 19h15 no domingo não ocorre durante as férias escolares (dezembro a fevereiro e no mês de julho).
+
+As confissões também podem ser agendadas na secretaria.";-22.9497306;-43.1899272;"Segunda a sexta 12h05 e 18h
+sáb 7h 18h
+Domingo 8h, 11h, 18h e 19h15";"Segunda a sexta 12h05
+Segunda a sexta 18h (Depois das missas)
+Sab 7h
+Sab 18h (Depois das missas)
+Domingo 8h, 11h, 18h 
+Domingo 19h15 (Depois das missas)";"http://www.santoinacio-rio.com.br/";"";"Rio de Janeiro";"St44a";"IIvTp";"";"2015-02-07 20:21:06"
+4531;"Igreja da Irmadade da Santa Cruz dos Militares";"";"Rua Primeiro de Março, 36";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20010-000";"(21) 2509-3878";"Visitas guiadas: Segunda a Sexta-feira 9h às 16h
+Sábados: 9h às 14h";-22.9022287;-43.1759246;"segunda-feira 12:00
+quarta-feira 12:00
+sextas-feiras 12:00
+sábados 12:00";"";"http://www.irmandade.com.br";"iscm@terra.com.br";"Ordinariato Militar";"LEnuf";NULL;"";"2014-05-16 12:31:25"
+4532;"Capela São Francisco";"Pe. João Paulo";"Rua Paulo Sérgio, nº 1";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23088-290";"(21) 3404-0786";"";-22.8852294;-43.5475104;"Sábado 18h
+Domingo 17h";"";"http://www.igrejasantana.org.br/";"secretaria@igrejasantana.org.br";"Rio de Janeiro";"xYYKC";"20WeZ";NULL;"2013-04-30 11:05:34"
+4646;"Igreja Nossa Senhora do Bom Parto";"";"Rua Rodrigo Silva 7";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20011-040";"(21) 2292-8892";"";-22.9053374;-43.1771274;"Seg a Sex 8h 12h 13h30 17h 18h30";"";"";"";"Rio de Janeiro";"PrtGs";NULL;NULL;"2013-05-01 10:15:15"
+4923;"Paróquia São Basílio e Nossa Senhora do Perpétuo Socorro";"Mons. George Khoury";"Rua República do Líbano, 17";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20061-030";"(21) 2242-5101";"Trata-se de uma paróquia de rito oriental, pertencente à Igreja Católica Greco-Melquita.";-22.9076127;-43.1857953;"segunda a sexta 12h (rito latino)
+domingo 9h 
+Dom 11h (rito bizantino)";"";"http://www.paroquiasaobasiliorj.com.br/";"";"Eparquia Melquita Grega - São Paulo";"c6FLJ";NULL;NULL;"2013-09-09 11:19:59"
+5006;"Igreja da Penha - Venerável Irmandade de Nossa Senhora da Penha de França";"Pe. Serafim Fernandes";"Largo da Penha, 19";"Penha";"Rio de Janeiro";"RJ";"Brasil";"21070-560";"(21) 3219-6262";"";-22.84386;-43.275018;"Qua a sábado 8h
+Seg 8h
+Domingos:  7h 8:30 10h e 16h";"";"http://www.santuariopenhario.org.br/";"faleconosco@santuariopenhario.org.br";"Rio de Janeiro";"uXNWU";NULL;NULL;"2013-05-10 11:59:20"
+5007;"Igreja da Glória do Outeiro";"Mons. Sérgio Costa Couto";"Praça Nossa Senhora da Glória, 135/204";"Glória";"Rio de Janeiro";"RJ";"Brasil";"22211-110";"(21) 2225-2869, (21) 2557-4600, (21) 2557-6908";"";-22.921426;-43.1753629;"Domingo 9h
+Domingo 11h
+1o Sábado 9h (Rito Romano Extraordinário)";"";"http://outeirodagloria.org.br";"irmandade@outeirodagloria.org.br";"Rio de Janeiro";"Wr7w1";NULL;NULL;"2013-05-10 12:05:17"
+5008;"Igreja de Nossa Senhora do Rosário e São Benedito dos Homens Pretos";"";"Rua Uruguaiana, 77";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20050-095";"";"";-22.9039712;-43.1803565;"Segunda, terça, quartas e sextas  8h, 12h e 16h
+Quintas  8h e 12h
+Sábados 12h
+1o Domingo 11h";"";"";"";"Rio de Janeiro";"9AsLY";NULL;NULL;"2013-07-02 11:44:16"
+5009;"Igreja da Venerável Ordem de Nossa Senhora da Conceição e Boa Morte";"";"Rua do Rosário, s/n";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20041-002";"(21) 2252-9535, (21) 2252-7488";"Missas variáveis diariamente, dependendo de marcação na secretaria.";-22.90316;-43.178634;"Terça 10h
+Sábado 11:45";"";"";"";"Rio de Janeiro";"lUcl5";NULL;NULL;"2013-06-11 15:01:18"
+5036;"Capela Nossa Senhora da Conceição (Hospital Gaffrée e Guinle)";"Pe. Fr. Fabio Magno de Castro Araújo, OCD";"Rua Mariz e Barros, 755";"Tijuca";"Rio de Janeiro";"RJ";"Brasil";"20270-001";"(21) 2228-8969";"";-22.9156774;-43.2212801;"sextas 15h
+domingos 10h";"";"http://basilicasantateresinha.org.br";"";"Rio de Janeiro";"S5psS";"BsjQ4";"";"2014-04-24 10:42:38"
+5037;"Capela São José";"Pe. Fr. Fabio Magno de Castro Araújo, OCD";"Rua Hilário Ribeiro, 205";"Praça da Bandeira";"Rio de Janeiro";"RJ";"Brasil";"20270-160";"(21) 2569-8904";"- Batismo: último domingo de cada mês, às 17 horas 
+- Catequese de crianças: sábados, às 9h30 
+- Catequese de adultos: sextas-feiras, às 19 horas 
+- Pastoral da Criança: todo 3º domingo de cada mês, das 11h às 12h 
+- Leitura da Palavra e Adoração ao Santíssimo: segundas-feiras, das 15h30 às 17h 
+- Adoração ao Santíssimo: quintas e sextas-feiras, das 9h30 às 11h e sábados, das 16h às 17h 
+- Momento de louvor e oração: terças-feiras, às 19h";-22.90881;-43.216602;"Domingos 17h";"";"http://www.basilicasantateresinha.org.br/";"";"Rio de Janeiro";"4PaHz";"BsjQ4";"";"2014-04-24 10:43:17"
+5039;"Capela do Colégio Santo Amaro";"";"R. Dezenove de Fevereiro, 172";"Botafogo";"Rio de Janeiro";"RJ";"Brasil";"22280-030";"";"Quando a Missa é às 6h00 a entrada é por um portão na rua General Polidoro.";-22.9544453;-43.1851244;"Seg a Sex 6h00
+Sab 7h
+Dom 7h15";"";"";"";"Rio de Janeiro";"J3573";NULL;NULL;"2013-05-15 11:21:24"
+5132;"Santuário Cristo Redentor do Corcovado (Capela N. S. Aparecida)";"";"Rua Cosme Velho, 513";"Cosme Velho";"Rio de Janeiro";"RJ";"Brasil";"22241-090";"(21) 3874-1568, (21) 2205-1045, (21) 2558-1329";"Capela aos pés da estátua do Cristo Redentor no morro do Corcovado.";-22.95191;-43.210423;"Seg, Ter, Qua, Qui, Sex, Sáb, Dom 10h 16h";"";"";"";"Rio de Janeiro";"mfhPY";NULL;"";"2014-03-14 12:40:17"
+7209;"Capela Nossa Senhora Aparecida";"Pe. Robert Józef Chrzaszcz";"Rua Araticum, 515";"Anil";"Rio de Janeiro";"RJ";"Brasil";"22753-501";"(21) 2436-9054";"";-22.9569511;-43.3322863;"Sábado: 16h30
+Domingo: 17h30
+Segunda e Quinta: 18h";"";"http://www.santaluziagardenia.org.br";"aparecida@santaluziagardenia.org.br";"Rio de Janeiro";"SFUk3";"XQFec";NULL;"2013-05-29 15:17:07"
+7210;"Comunidade Católica Shalom";"";"Rua Bento Lisboa, 112";"Catete";"Rio de Janeiro";"RJ";"Brasil";"22221-011";"(21) 3251-4831";"";-22.9282012;-43.1793588;"Sexta   18:30
+Sábado  19:00
+Domingo 18:00";"Sexta  15:00";"https://www.facebook.com/shalomrio?fref=ts";"";"Rio de Janeiro";"4ZF9a";NULL;NULL;"2013-05-31 09:52:34"
+7770;"Igreja da Ordem Terceira de São Francisco da Penitência";"";"Largo da Carioca, 5";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20050-008";"(21) 2262-0197";"";-22.907297;-43.178972;"";"";"http://www.conventosantoantonio.org.br/vot/";"";"Rio de Janeiro";"AwRle";NULL;NULL;"2013-06-14 17:23:10"
+7771;"Igreja da Ordem Terceira dos Mínimos de São Francisco de Paula";"";"Largo de São Francisco de Paula";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20051-070";"(21) 2509-0069";"";-22.9051756;-43.1808447;"Segunda a sexta 12h
+Dom 11h";"";"";"";"Rio de Janeiro";"nGCBB";NULL;"";"2016-10-21 12:11:35"
+7772;"Convento de Santo Antônio";"Frei Vitório Mazzuco Filho";"Largo da Carioca, s/n";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20050-020";"(21) 2262-0129, (21) 2262-1201";"";-22.90722;-43.178979;"Segunda, quarta, quinta e sexta: 8h00, 9h00, 10h00, 11h, 12h30, 18h00
+Terças:  7h00, 8h00, 9h00, 10h00, 11h00, 12h00, 15h00, 17h00, 18h00
+Sábados 8h00, 9h00 e 10h00
+Domingos 10h00";"Seg das 8h00 as 18h00
+Qua a Sex das 8h00 as 18h00
+terças: das 7h00 as 18h
+sábados das 8h00 às 11h00 e das 15h30 às 16h30";"http://www.conventosantoantonio.org.br";"conventorj@franciscanos.org.br";"Rio de Janeiro";"PZwai";NULL;NULL;"2013-06-14 22:09:12"
+7774;"Igreja São Gonçalo Garcia e São Jorge";"";"Rua da Alfândega, 382";"Centro";"RIo de Janeiro";"RJ";"Brasil";"20061-022";"(21) 2221-9661";"Próximo à Praça da República";-22.9051024;-43.1876161;"domingo 10h
+Seg 12h
+Dia 23 9h
+Dia 19 9h 
+Dia 08 9h
+Dia 06 9h
+1a Quarta 12h";"";"http://igrejasaojorgerj.blogspot.com/";"igrejasaojorge@uol.com.br";"Rio de Janeiro";"eDRPm";NULL;NULL;"2013-06-15 12:56:17"
+7783;"Paróquia São Sebastião";"Pe. Alex Sandro Irineu";"Rua Nogueira, 25";"Quintino Bocaiúva";"Rio de Janeiro";"RJ";"Brasil";"21380-290";"(21)3268-4961";"Confissão: Agendar com o pároco";-22.8858619;-43.3186753;"domingo 7h 9h 19h
+Seg 19:30";"";"";"matheuspires49@hotmail.com";"Rio de Janeiro";"D5B7Z";NULL;NULL;"2013-06-18 12:13:08"
+7898;"Comunidade Coração Novo";"";"Rua Baronesa do Engenho Novo, 311";"Engenho Novo";"Rio de Janeiro";"RJ";"Brasil";"20961-210";"(21) 2201-3302";"1ª Sexta-Feira do Mês: Adoração e Vigília com Missa de 20h a meia-noite";-22.8965955;-43.2646742;"Quinta 19:30";"";"http://www.coracaonovo.com.br";"contato@coracaonovo.com.br";"Rio de Janeiro";"HiGTm";NULL;NULL;"2013-06-26 18:04:33"
+8996;"Capela Santo Cristo dos Milagres";"Pe. Navarro";"Estr da Paz 1626";"Alto da Boa Vista";"Rio de Janeiro";"RJ";"Brasil";"20531-340";"(21) 2492-5374";"";-22.9624489;-43.2900157;"Domingo: 9h, 10h30";"";"";"";"Rio de Janeiro";"tSCeC";NULL;NULL;"2013-07-29 15:46:28"
+198529;"Paróquia São João Batista";"Pe. Marcos Vinicio Vieira Miranda";"Estrada de Jacarepaguá, 4450";"Rio das Pedras";"Rio de Janeiro";"RJ";"Brasil";22753842;"(21) 3415-0399";"";-22.9725236;-43.3304738;"Sábado 19:00
+Domingo 07:30, 09:30 e 18:00 
+Sextas 19:30 (Capela da Rua Nova)";"Quarta e Sexta 16:00 (Capela na Rua nova).";"";"";"Rio de Janeiro";"0XMLf";NULL;NULL;"2013-09-20 11:31:50"
+198566;"Carmelo São José";"";"Rua Timboaçú, 421 - Freguesia - Jacarepaguá";"Freguesia - Jacarepaguá";"Rio de Janeiro";"RJ";"Brasil";"22745-170";"(21) 3392-0408";"";-22.93563;-43.324286;"Segunda a sábado 7:00
+Domingo 9:00";"";"";"";"Rio de Janeiro";"sK3aM";NULL;"";"2013-11-01 18:32:32"
+198567;"Casa de Saúde São José";"";"R. Macedo Sobrinho, 21";"Humaitá";"Rio de Janeiro";"RJ";"Brasil";"22271-080";"(21) 2538-7626";"As missas da capela principal podem ser assistidas no canal 117, dos quartos da Casa de Saúde São José";-22.9584957;-43.1985798;"Quarta-feira 18h (Capela principal)
+Quinta-feira 16h (Capela do 2º andar)
+Sábado e Domingo 18h (Capela principal)";"";"http://www.cssj.com.br";"";"Rio de Janeiro";"Udnzt";NULL;"";"2014-04-24 11:10:03"
+198610;"Igreja de Santa Luzia";"Padre Luiz Fernando (capelão)";"Rua Santa Luzia, 490";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20030-042";"(21) 2220-4367";"Não há missa nos fins de semana.
+Confissões nos intervalos das missas.";-22.9096902;-43.1725406;"segunda a sexta: 9h, 10h, 11h, 12h, 13h e 14h";"Segunda a sexta 9h as 14h (Nos intervalos das Missas)";"";"";"Rio de Janeiro";"4Kzhm";NULL;"";"2014-03-09 21:42:58"
+198620;"Nossa Senhora do Carmo";"Pe. Alessandro Manoel dos Santos";"Rua Justiniano de Carvalho, 516";"Campo Grande";"Rio de Janeiro";"RJ";"Brasil";"23055-005";"(21) 2416-1978";"";-22.912723;-43.5766925;"Segunda 19:00h
+Quarta a sexta-feira: 19:00h
+Domingo: 07:00 e 19:00h";"";"https://www.facebook.com/paroquiansa.docarmo?fref=ts";"paroquia.nsadocarmo@hotmail.com";"Rio de Janeiro";"FWTp6";NULL;"";"2014-06-25 19:12:48"
+198623;"Paróquia Nossa Senhora Aparecida";"Pe. Sebastião Gonçalves da Silveira";"Avenida Bacaxá, Quadra 64, Lote 03";"Cosmos";"Rio de Janeiro";"RJ";"Brasil";"23066-450";"(21) 3313-8465";"Última quinta-feira 07:00 às 18:30 (adoração ao Santíssimo)";-22.8901561;-43.6094451;"Domingo 07:00 10:00 19:30
+Segunda 19:00
+Quarta 19:00
+Sexta 19:00
+Ultima quinta-feira do mês 19:00
+1a segunda-feira 08:00 
+1o sábado 08:00";"";"";"pns.aparecida@hotmail.com";"Rio de Janeiro";"6Tj3h";NULL;"Segunda, Quarta, Quinta, Sexta e Sábado de 08 às 12:00 e das 14:00 às 18:00";"2014-03-16 21:50:33"
+198627;"Capela do Menino Deus";"Padre Antônio Augusto Bezerra";"Rua Riachuelo, 75";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20230-014";"(21) 2242-0460";"A Igreja abre apenas 30 minutos antes da Missa.
+Confissões: Combinar com o padre";-22.9143015;-43.1827855;"Domingo: 7:30 e 9:00
+Segunda: 18:00
+Terça a Sábado: 17:00";"";"http://capeladomeninodeus.blogspot.com.br/";"capeladomeninodeus@gmail.com";"Rio de Janeiro";"Zkihp";"bhiMS";"";"2014-03-21 09:46:23"
+198628;"Capela Nossa Senhora do Carmo (Hospital da Ordem Terceira)";"Padre Antônio Augusto Bezerra";"Rua Riachuelo, 43";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20230-011";"";"A Capela fica dentro do Hospital (2º Andar) e abre 30 minutos antes da Missa.";-22.9139802;-43.1815538;"Domingos 9h";"";"";"";"Rio de Janeiro";"C4T7M";"bhiMS";"";"2014-03-16 22:16:09"
+198649;"Igreja São José";"Pe. Pedro";"Av. Presidente Antônio Carlos, s/n";"Centro";"Rio de Janeiro";"RJ";"Brasil";"20010-010";"(21) 2533-4545";"Horário de funcionamento:
+De segunda a sexta, das 8h às 17h";-22.90463;-43.174195;"Domingo: 10h
+Segunda-feira: 11h30
+Terça-feira: 12h
+Quarta-feira: 12h
+Quinta-feira: 12h
+Sexta-feira: 12h";"";"";"";"Rio de Janeiro";"AlBlX";NULL;"";"2014-04-17 17:56:46"
+198650;"Paróquia Nossa Senhora do Rosário de Fátima";"Pe. Jerônimo Pessanha de Almeida";"Rua Engenheiro Manoel Segurado, 192";"Bonsucesso";"Rio de Janeiro";"RJ";"Brasil";"21061-600";"(21) 3868-9118";"Grupo de Oração Emanuel:
+Quintas-feiras: 19:30";-22.8646677;-43.2667307;"Domingo: 7h, 9h e 18h
+Segunda e sexta-feira: 18h";"Domingo: 6h, 10h 
+Domingo 17h (Uma hora antes das missas)
+Segunda e sexta-feira: 17h (Uma hora antes das missas)";"https://www.facebook.com/ParoquiaRosariodeFatima";"paroquiarosariodefatima@hotmail.com";"Rio de Janeiro";"n4wB4";NULL;"Segunda, quarta, quinta e sexta: de 9h às 18h.
+Sábado: de 9h às 12h.
+Terças-feiras: não há funcionamento paroquial";"2014-04-17 18:05:51"
+198656;"Capela Jesus Eucaristia";"";"Rua Dona Teresa, 72";"Engenho de Dentro";"Rio de Janeiro";"RJ";"Brasil";"20770-110";"(21) 2591-5649";"";-22.8945274;-43.2890677;"terça-feira, quarta-feira, sexta-feira, sábado 19h
+Domingo 8h  10h 18h00min";"";"";"";"Rio de Janeiro";"UzQeG";"Lt8sv";"";"2016-11-09 17:47:48"
+198657;"Igreja Santo Antônio";"Padre Álvaro";"Rua Capanema, 34";"Tauá";"Rio de Janeiro";"RJ";"Brasil";"21920-070";"(21) 3363-2042";"";-22.7949663;-43.1827541;"seg a sex 19:30
+ter 7:30
+Sábado 17:00
+Domingo 8:00 e 18:00
+Quarta 7:30 (São Pedro)
+sábado 18:30 (São Pedro)
+Domingo às 10:00 (INPS)";"ter e qui 17:00 às 19:00";"";"santoantonio.ilha@gmail.com";"Rio de Janeiro";"7JB3n";"zWAeH";"";"2014-05-04 14:54:24"
+198668;"Santuário de Nossa Senhora de Fátima";"";"Av. Alfredo Baltazar da Silveira, 900";"Recreio do Bandeirantes";"Rio de Janeiro";"RJ";"Brasil";"22790-710";"(21) 3114-0000";"As confissões são na parte da manhã e à tarde todos os dias úteis.
+Nos sábados e domingos, uma hora antes da missa, conforme informado no final da missa.";-23.0194714;-43.4519043;"Segunda à sexta-feira: 18:00
+Sábado: 10:00, 16:00 e 19:00
+Domingo: 08:00, 10:00 e 19:00";"";"http://www.tardecommaria.com.br/";"contato@tardecommaria.com.br";"Rio de Janeiro";"uoPae";NULL;"";"2016-10-02 07:31:53"
+198681;"Capela Imperial Imaculada Conceição";"";"Praça Jerusalém s/n";"Jardim Guanabara - Ilha do Governador";"Rio de Janeiro";"RJ";"Brasil";"21940-460";"(21) 3393-1832";"";-22.8188294;-43.2011939;"Quarta 18h
+Sábado 18h
+Domingo 9h, 11h e 19h
+1a sexta do mês 18:00h (em honra ao Sagrado Coração de Jesus)";"";"http://www.saojoseoperarioilha.com.br/index.php?conteudo=est_missas.php";"";"Rio de Janeiro";"wx8wZ";"KRepk";"";"2014-05-24 12:58:15"
+198710;"Capela João Paulo II";"Pe. André Vilar de Moraes Martins";"Av. das Américas, 15500";"Recreio dos Bandeirantes";"Rio de Janeiro";"RJ";"Brasil";"22790-702";"";"Dentro do Shopping Americas";-23.0125846;-43.4621768;"Domingo, segunda, quarta, sexta e sábado 12h15";"";"";"";"Rio de Janeiro";"sBqt0";"U6ReE";"";"2014-07-30 09:56:29"
+198754;"Capela Nossa Senhora Aparecida e São José";"Pe. Rosinaldo Paulino de Brito";"Estrada da Covanca,1838";"Tanque";"Rio de Janeiro";"RJ";"Brasil";"";"(21) 2426-7940";"Catequese sábados 14:00";-22.9167411;-43.339847;"Sábado 16h";"";"";"";"Rio de Janeiro";"4Cn0Q";"E1Slz";"";"2014-11-16 19:56:44"
+198755;"Capela Nossa Senhora da Piedade";"Pe. Rosinaldo Paulino de Brito";"Rua Godofredo Viana, 64";"Taquara";"Rio de Janeiro";"RJ";"Brasil";"22730-020";"(21) 2423-4090, (21) 3392-0303";"Dentro do Hospital Curupaiti";-22.9138466;-43.3643215;"Domingo 10h";"";"";"";"Rio de Janeiro";"gWXPx";"E1Slz";"";"2014-11-16 19:57:48"
+198756;"Capela Nossa Senhora Aparecida";"Pe. Fr. Airton Mainardi, OAD";"Rua Nossa Senhora Aparecida";"Ramos";"Rio de Janeiro";"RJ";"Brasil";"21072-740";"(21) 2590-6098";"";-22.8428654;-43.2488511;"Domingos: 08h00 (no 1º Domingo, a Missa ocorrerá na Capela São Pedro)
+Quintas:19h00";"Quinta das 16h00 às 19h00";"";"";"Rio de Janeiro";"IqHpU";"TyEws";"";"2014-12-05 13:46:59"
+198766;"Paróquia Sagrada Família";"Pe. Geovane Ferreira";"Rua Tancredo Neves, s/n";"Nova Holanda, Maré";"Rio de Janeiro";"RJ";"Brazil";"";"(21) 3105-0599";"A igreja fica aberta de segunda a sábado das 6:00 as 21:00 e no domingo das 6:00 as 22:00.
+
+Confissões nos finais de semana de manhã e de tarde, conforme a disponibilidade dos sacerdotes.";-22.8543961;-43.2404147;"Seg a Sex 7:00 8:00 9:00 12:00 17:00 18:00
+Qua 20:00
+Sáb 7:00 8:00 9:00 12:00 15:00 17:00 
+Dom 7:30 9:00 10:30 12:00 17:00 18:30  20:00";"";"http://www.paroquiasagradafamilia-rj.com.br/";"";"Rio de Janeiro";"U1lwo";NULL;"Diariamente das 7h às 19h.";"2016-08-24 18:03:39"
+198819;"Igreja Nossa Senhora Aparecida";"Pe. Ramon Nascimento";"Rua Ana Cristina César 43 BL01";"Freguesia";"Rio de Janeiro";"RJ";"Brazil";"";"(21) 3342-6171";"";-22.94922;-43.3507463;"Domingo: 8h e 18hs
+Quarta: 19hs";"";"";"";"Rio de Janeiro";"EuRm1";"lEITa";"";"2015-02-15 11:43:00"
+198820;"Igreja Nossa Senhora do Sagrado Coração";"Pe. Ramon Nascimento";"Rua Monte Sião 248";"Cidade de Deus";"Rio de Janeiro";"RJ";"Brazil";"22770-370";"";"";-22.944242;-43.361581;"Quinta: 19:30hs
+Domingo: 10:30hs";"";"";"";"Rio de Janeiro";"rECBY";"lEITa";"";"2015-02-15 11:50:16"
+198821;"Igreja São Jorge";"Pe. Ramon Nascimento";"Rua Jeremias - Travessa Perseu 01";"Cidade de Deus";"Rio de Janeiro";"RJ";"Brazil";"22773-515";"";"";-22.9450538;-43.3659073;"Sábado: 19:30hs";"";"";"";"Rio de Janeiro";"TXwb5";"lEITa";"";"2015-02-15 11:56:45"
+198822;"Igreja Santa Rita";"Pe. Ramon Nascimento";"Rua Vila Nova Cruzada Quadra 12 - s/nº - Rocinha II";"Cidade de Deus";"Rio de Janeiro";"RJ";"Brazil";"22723-255";"";"";-22.9535559;-43.3646237;"Sábado: 18:30hs";"";"";"";"Rio de Janeiro";"5rh0c";"lEITa";"";"2015-02-15 12:02:28"
+198824;"Capela São Francisco de Paula - Hospital Quinta D'Or";"Pe. Paulo Celso Dias do Nascimento (Capelão)";"Rua Almirante Baltazar, 435";"São Cristóvão";"Rio de Janeiro";"RJ";"Brazil";"20941-150";"(21) 3461-3592";"Para visitas aos enfermos, ligar para o ramal 3592 e deixar o nome e o leito do paciente.
+
+Batizados aos domingos, com reunião preparatória. É preciso agendar com o capelão.";-22.907685;-43.2215716;"Domingo 10:30, 18:30
+Segunda, Quarta, Sexta 12:30
+Quinta 17:30";"Domingo 10:30, 18:30 (Após a missa)
+Segunda, Quarta, Sexta 12:30 (Após a missa)
+Quinta 17:30 (Após a missa)";"";"";"Rio de Janeiro";"KVBpg";NULL;"";"2015-02-21 23:22:35"
+198834;"Capela Santa Rosa de Lima";"Mons. Joel Portella Amado";"Av. Jornalista Ricardo Marinho, 301";"Barra da Tijuca";"Rio de Janeiro";"RJ";"Brazil";"";"(21) 3326-4277";"";-23.0032411;-43.3472625;"Domingo 7:30, 10:30, 18:30
+Seg, Ter 19:30
+1a Sexta-feira 8h
+2a Quinta-feira 19:30 (Cura e Libertação)";"";"";"";"Rio de Janeiro";"Vgfx0";"KZrX6";"Segunda-feira a sexta-feira das 9:30 às 18:30";"2015-03-16 20:06:36"
+198838;"Paróquia Nossa Senhora Aparecida";"Pe. Rodrigo de Oliveira Dias";"Travessa Eduardo, 29";"Del Castilho";"Rio de Janeiro";"RJ";"Brasil";"21051-130";"";"";-22.8780595;-43.2679757;"Domingo: 08:00h e 18:00h
+Segunda: 18:30h
+Quarta 18:30
+Quinta: 18:30h
+Sexta 18:30
+Sábado: 18:00h";"";"";"";"Rio de Janeiro";"yxfb8";NULL;"";"2015-03-18 22:56:04"
+198847;"Paróquia Nossa Senhora de Fátima";"Monsenhor Jan Kaleta";"Rua Benevente, 15";"Pechincha";"Rio de Janeiro";"RJ";"Brazil";"22743-140";"";"";-22.9290959;-43.3541353;"Sábado: 18:00 
+Dom: 08:00, 10:15, 19:00
+Seg: 19:00
+Terça: 08:00
+Quinta: 19:00
+Sexta: 19:00";"(Antes e após as missas)";"https://www.facebook.com/ParoquiaNossaSenhoraDeFatimaPechincha";"";"São Sebastião do Rio de Janeiro";"XpPIv";NULL;"";"2015-09-21 17:04:16"
+198859;"Paróquia Santo Agostinho";"Frei Carlos Alberto de Trindade";"Rua Paulo Moreno, 22";"Barra da Tijuca";"Rio de Janeiro";"RJ";"Brazil";"22793-690";"(21) 2438-4823";"Confissões:
+De segunda à sexta após a missa das 18h
+Durante as missas dominicais
+Para outros horários agendar na secretaria paroquial";-23.003245;-43.3882705;"Domingo: 8h30  10h30  17h30 e 19h
+Segunda: 7h30
+Terça: 7h30 e 18h
+Quarta: 7h30 e 18h
+Quinta: 7h30 e 18h
+Sexta: 7h30 e 18h
+Sábado: 7h30 e 18h";"";"http://paroquiasantoagostinhorj.com.br/";"";"";"xeOFJ";NULL;"Terça-feira a sábado de 10h às 12h e das 13h às 19h";"2015-09-21 16:18:53"
+198871;"Capela São Pedro";"";"Rua Dr. Sebastião de Aquino, n° 90A";"";"Rio de Janeiro";"RJ";"Brazil";"22640-348";"";"";-23.003044;-43.30947;"Dom 9h";"";"";"";"Rio de Janeiro";"NTNBh";"aOR0d";"";"2016-10-05 21:37:39"
+198872;"Igreja Santa Teresinha";"";"Praça Desembargador Araújo Jorge";"Largo da Barra";"Rio de Janeiro";"RJ";"Brazil";"22611-000";"";"";-23.0102425;-43.2970673;"Dom 19h30";"";"";"";"Rio de Janeiro";"zn7bE";"aOR0d";"";"2016-10-05 21:38:48"

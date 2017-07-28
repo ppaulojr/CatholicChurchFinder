@@ -39,6 +39,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     // This removes the margins in the text view
     if ([self.observacaoTextView respondsToSelector:@selector(textContainer)])
     {

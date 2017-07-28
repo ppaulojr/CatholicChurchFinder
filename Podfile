@@ -1,5 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
+use_frameworks!
 abstract_target 'Igreja' do
         # key tools
         # Evaluate if we can go to AFNetworking 2.6.x

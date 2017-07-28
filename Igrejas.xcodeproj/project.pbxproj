@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		350EFDE0C2AD61826B0C8D0E /* libPods-Igreja-Igrejas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49799D24E5AA123A1024DA07 /* libPods-Igreja-Igrejas.a */; };
-		3CD952C4DD6F01B7B7AA8864 /* libPods-Igreja-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D456FD9328F085A4049792EC /* libPods-Igreja-CSVImporter.a */; };
 		8226127317BA970900E0BA70 /* OrdinalNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8226127217BA970800E0BA70 /* OrdinalNumberFormatter.m */; };
 		8226127C17BAA8A900E0BA70 /* HolyRosary.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127617BAA8A900E0BA70 /* HolyRosary.png */; };
 		8226127D17BAA8A900E0BA70 /* HolyRosary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127717BAA8A900E0BA70 /* HolyRosary@2x.png */; };
@@ -16,11 +14,15 @@
 		8226127F17BAA8A900E0BA70 /* Neovulgata@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127917BAA8A900E0BA70 /* Neovulgata@2x.png */; };
 		8226128017BAA8A900E0BA70 /* Orationis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127A17BAA8A900E0BA70 /* Orationis.png */; };
 		8226128117BAA8A900E0BA70 /* Orationis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8226127B17BAA8A900E0BA70 /* Orationis@2x.png */; };
+		82B559611D7F548100DCCB27 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B559631D7F548100DCCB27 /* Storyboard.storyboard */; };
+		82B559641D7F549300DCCB27 /* NFIgrejaDetailPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B559661D7F549300DCCB27 /* NFIgrejaDetailPanel.xib */; };
 		82C8CB47179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */; };
 		82C8CB49179489EE00C8F787 /* template.cs in Resources */ = {isa = PBXBuildFile; fileRef = 82C8CB48179489EE00C8F787 /* template.cs */; };
 		82C8CB4A1794933100C8F787 /* NFEventMatchContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ED747BF9178B62BB00E6D242 /* NFEventMatchContext.m */; };
 		83591BC517E11A4F00197C06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83591BC417E11A4F00197C06 /* Images.xcassets */; };
+		879AFB4CB799147F88F746E7 /* Pods_Igreja_CSVImporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B1759E0F90394B5B0E44A3 /* Pods_Igreja_CSVImporter.framework */; };
 		9F0BE6C017F3989800D05D2B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0BE6BF17F3989800D05D2B /* MessageUI.framework */; };
+		A5F665903D23EA6D9FCC2F39 /* Pods_Igreja_Igrejas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FCF7E9E5D4DD13933BAC07 /* Pods_Igreja_Igrejas.framework */; };
 		D3CE16E33E7681591A5F2BE2 /* libPods-Igrejas-CSVImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E5D2286C747B7874ABD49E /* libPods-Igrejas-CSVImporter.a */; };
 		ED021FA81784C69100E96B49 /* NFLaredoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FA71784C69100E96B49 /* NFLaredoViewController.m */; };
 		ED021FAB1784C6C800E96B49 /* NFAppUteisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED021FAA1784C6C800E96B49 /* NFAppUteisViewController.m */; };
@@ -60,7 +62,6 @@
 		ED50D51117788B54000C0FB3 /* NFIgrejaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50D51017788B54000C0FB3 /* NFIgrejaListViewController.m */; };
 		ED5BB10D177B258E00C98CE9 /* NFIgrejaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5BB10C177B258E00C98CE9 /* NFIgrejaDetailViewController.m */; };
 		ED5BB111177B2E3100C98CE9 /* NFIgrejaDetailPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5BB10F177B2E3100C98CE9 /* NFIgrejaDetailPanel.m */; };
-		ED5BB112177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5BB110177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib */; };
 		ED6B2F3817748BBE00EA66D0 /* NFCoreDataStackManager+Import.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */; };
 		ED6B2F3917748BDD00EA66D0 /* _NFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FBE17748748000CDF87 /* _NFEvent.m */; };
 		ED6B2F3A17748BDD00EA66D0 /* _NFIgreja.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD33FC017748748000CDF87 /* _NFIgreja.m */; };
@@ -118,15 +119,12 @@
 		EDF24AD117830CD200AEDC32 /* licenses.html in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AD017830CD200AEDC32 /* licenses.html */; };
 		EDF24AD51783152500AEDC32 /* NFGoogleMapsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF24AD41783152500AEDC32 /* NFGoogleMapsIntegration.m */; };
 		EDF24AD817831AC000AEDC32 /* NFWazeIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF24AD717831AC000AEDC32 /* NFWazeIntegration.m */; };
-		EDF24ADF17836CB500AEDC32 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24ADE17836CB500AEDC32 /* Icon.png */; };
-		EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AE017836CBB00AEDC32 /* Icon@2x.png */; };
 		EDF24AF417836F9500AEDC32 /* ico-igreja.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AEE17836F9500AEDC32 /* ico-igreja.png */; };
 		EDF24AF517836F9500AEDC32 /* ico-igreja@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */; };
 		EDF24AF817836F9500AEDC32 /* ico-missas.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF217836F9500AEDC32 /* ico-missas.png */; };
 		EDF24AF917836F9500AEDC32 /* ico-missas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */; };
 		EDF24AFC17836FD700AEDC32 /* pin-map.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AFA17836FD700AEDC32 /* pin-map.png */; };
 		EDF24AFD17836FD700AEDC32 /* pin-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDF24AFB17836FD700AEDC32 /* pin-map@2x.png */; };
-		EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE65E1774E905002F886A /* Storyboard.storyboard */; };
 		EDFEE6611774EB4E002F886A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6601774EB4E002F886A /* MapKit.framework */; };
 		EDFEE6681774FCDE002F886A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEE6671774FCDE002F886A /* CoreLocation.framework */; };
 		EDFEE66A17750205002F886A /* Igrejas.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EDFEE66917750205002F886A /* Igrejas.sqlite */; };
@@ -144,7 +142,6 @@
 
 /* Begin PBXFileReference section */
 		08495F0D41AF18F3ED5D6CD2 /* Pods-Igreja-CSVImporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Igreja-CSVImporter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Igreja-CSVImporter/Pods-Igreja-CSVImporter.debug.xcconfig"; sourceTree = "<group>"; };
-		49799D24E5AA123A1024DA07 /* libPods-Igreja-Igrejas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Igreja-Igrejas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2D88AC421DD209008A180E /* Pods-Igreja-Igrejas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Igreja-Igrejas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Igreja-Igrejas/Pods-Igreja-Igrejas.release.xcconfig"; sourceTree = "<group>"; };
 		5C1CA4B0DBD8DE3063AD89AA /* Pods-Igreja-Igrejas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Igreja-Igrejas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Igreja-Igrejas/Pods-Igreja-Igrejas.debug.xcconfig"; sourceTree = "<group>"; };
 		8226127117BA969800E0BA70 /* OrdinalNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdinalNumberFormatter.h; sourceTree = "<group>"; };
@@ -155,6 +152,13 @@
 		8226127917BAA8A900E0BA70 /* Neovulgata@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Neovulgata@2x.png"; sourceTree = "<group>"; };
 		8226127A17BAA8A900E0BA70 /* Orationis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orationis.png; sourceTree = "<group>"; };
 		8226127B17BAA8A900E0BA70 /* Orationis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orationis@2x.png"; sourceTree = "<group>"; };
+		82316C631F2BC9C2007FA5C2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/NFIgrejaDetailPanel.strings"; sourceTree = "<group>"; };
+		82316C641F2BC9C2007FA5C2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Storyboard.strings"; sourceTree = "<group>"; };
+		82316C651F2BC9C2007FA5C2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		82B559671D7F54DE00DCCB27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NFIgrejaDetailPanel.xib; sourceTree = "<group>"; };
+		82B559681D7F54DE00DCCB27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
+		82B5596A1D7F550600DCCB27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NFIgrejaDetailPanel.strings; sourceTree = "<group>"; };
+		82B5596C1D7F551200DCCB27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Storyboard.strings; sourceTree = "<group>"; };
 		82C8CB45179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCSharpCodeGeneratorLanguage.h; sourceTree = "<group>"; };
 		82C8CB46179486B300C8F787 /* NFCSharpCodeGeneratorLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCSharpCodeGeneratorLanguage.m; sourceTree = "<group>"; };
 		82C8CB48179489EE00C8F787 /* template.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.cs; sourceTree = "<group>"; };
@@ -163,8 +167,9 @@
 		90F1EB23AEEFEADD8A05F151 /* Pods-Igreja-CSVImporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Igreja-CSVImporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Igreja-CSVImporter/Pods-Igreja-CSVImporter.release.xcconfig"; sourceTree = "<group>"; };
 		9F0BE6BF17F3989800D05D2B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A28937634899DD99676041D9 /* Pods-Igrejas-CSVImporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Igrejas-CSVImporter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Igrejas-CSVImporter/Pods-Igrejas-CSVImporter.debug.xcconfig"; sourceTree = "<group>"; };
+		A8B1759E0F90394B5B0E44A3 /* Pods_Igreja_CSVImporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Igreja_CSVImporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FCF7E9E5D4DD13933BAC07 /* Pods_Igreja_Igrejas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Igreja_Igrejas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8D8EF543753F1B7EE13478 /* Pods-Igrejas-CSVImporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Igrejas-CSVImporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Igrejas-CSVImporter/Pods-Igrejas-CSVImporter.release.xcconfig"; sourceTree = "<group>"; };
-		D456FD9328F085A4049792EC /* libPods-Igreja-CSVImporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Igreja-CSVImporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED021FA61784C69100E96B49 /* NFLaredoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFLaredoViewController.h; sourceTree = "<group>"; };
 		ED021FA71784C69100E96B49 /* NFLaredoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFLaredoViewController.m; sourceTree = "<group>"; };
 		ED021FA91784C6C800E96B49 /* NFAppUteisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFAppUteisViewController.h; sourceTree = "<group>"; };
@@ -223,7 +228,6 @@
 		ED5BB10C177B258E00C98CE9 /* NFIgrejaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaDetailViewController.m; sourceTree = "<group>"; };
 		ED5BB10E177B2E3100C98CE9 /* NFIgrejaDetailPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIgrejaDetailPanel.h; sourceTree = "<group>"; };
 		ED5BB10F177B2E3100C98CE9 /* NFIgrejaDetailPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIgrejaDetailPanel.m; sourceTree = "<group>"; };
-		ED5BB110177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NFIgrejaDetailPanel.xib; sourceTree = "<group>"; };
 		ED6B2F3617748BBE00EA66D0 /* NFCoreDataStackManager+Import.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NFCoreDataStackManager+Import.m"; sourceTree = "<group>"; };
 		ED6B2F3717748BBE00EA66D0 /* NFCoreDataStackManager+Import.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NFCoreDataStackManager+Import.h"; sourceTree = "<group>"; };
 		ED6B2F4717748C1E00EA66D0 /* events.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = events.csv; sourceTree = "<group>"; };
@@ -291,15 +295,12 @@
 		EDF24AD41783152500AEDC32 /* NFGoogleMapsIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFGoogleMapsIntegration.m; sourceTree = "<group>"; };
 		EDF24AD617831AC000AEDC32 /* NFWazeIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFWazeIntegration.h; sourceTree = "<group>"; };
 		EDF24AD717831AC000AEDC32 /* NFWazeIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFWazeIntegration.m; sourceTree = "<group>"; };
-		EDF24ADE17836CB500AEDC32 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
-		EDF24AE017836CBB00AEDC32 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		EDF24AEE17836F9500AEDC32 /* ico-igreja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-igreja.png"; sourceTree = "<group>"; };
 		EDF24AEF17836F9500AEDC32 /* ico-igreja@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-igreja@2x.png"; sourceTree = "<group>"; };
 		EDF24AF217836F9500AEDC32 /* ico-missas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-missas.png"; sourceTree = "<group>"; };
 		EDF24AF317836F9500AEDC32 /* ico-missas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-missas@2x.png"; sourceTree = "<group>"; };
 		EDF24AFA17836FD700AEDC32 /* pin-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-map.png"; sourceTree = "<group>"; };
 		EDF24AFB17836FD700AEDC32 /* pin-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-map@2x.png"; sourceTree = "<group>"; };
-		EDFEE65E1774E905002F886A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		EDFEE6601774EB4E002F886A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EDFEE6671774FCDE002F886A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EDFEE66917750205002F886A /* Igrejas.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Igrejas.sqlite; sourceTree = "<group>"; };
@@ -321,7 +322,7 @@
 				ED3B1452177485AD00213826 /* UIKit.framework in Frameworks */,
 				ED3B1454177485AD00213826 /* Foundation.framework in Frameworks */,
 				ED3B1456177485AD00213826 /* CoreGraphics.framework in Frameworks */,
-				350EFDE0C2AD61826B0C8D0E /* libPods-Igreja-Igrejas.a in Frameworks */,
+				A5F665903D23EA6D9FCC2F39 /* Pods_Igreja_Igrejas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +345,7 @@
 				EDB202A61774892D00AB8CFD /* Foundation.framework in Frameworks */,
 				EDB202A71774892D00AB8CFD /* CoreGraphics.framework in Frameworks */,
 				D3CE16E33E7681591A5F2BE2 /* libPods-Igrejas-CSVImporter.a in Frameworks */,
-				3CD952C4DD6F01B7B7AA8864 /* libPods-Igreja-CSVImporter.a in Frameworks */,
+				879AFB4CB799147F88F746E7 /* Pods_Igreja_CSVImporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +402,8 @@
 				ED0B88441785B478003174F6 /* Social.framework */,
 				ED3B1451177485AD00213826 /* UIKit.framework */,
 				85E5D2286C747B7874ABD49E /* libPods-Igrejas-CSVImporter.a */,
-				D456FD9328F085A4049792EC /* libPods-Igreja-CSVImporter.a */,
-				49799D24E5AA123A1024DA07 /* libPods-Igreja-Igrejas.a */,
+				A8B1759E0F90394B5B0E44A3 /* Pods_Igreja_CSVImporter.framework */,
+				B9FCF7E9E5D4DD13933BAC07 /* Pods_Igreja_Igrejas.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -432,8 +433,6 @@
 				ED3B1467177485AD00213826 /* Default-568h@2x.png */,
 				ED3B1463177485AD00213826 /* Default.png */,
 				ED3B1465177485AD00213826 /* Default@2x.png */,
-				EDF24ADE17836CB500AEDC32 /* Icon.png */,
-				EDF24AE017836CBB00AEDC32 /* Icon@2x.png */,
 				ED3B1459177485AD00213826 /* Igrejas-Info.plist */,
 				ED3B145F177485AD00213826 /* Igrejas-Prefix.pch */,
 				ED3B145D177485AD00213826 /* main.m */,
@@ -646,7 +645,7 @@
 			children = (
 				ED5BB10E177B2E3100C98CE9 /* NFIgrejaDetailPanel.h */,
 				ED5BB10F177B2E3100C98CE9 /* NFIgrejaDetailPanel.m */,
-				ED5BB110177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib */,
+				82B559661D7F549300DCCB27 /* NFIgrejaDetailPanel.xib */,
 				ED040CF6177B71F80028B73D /* NFIgrejaEventsPanel.h */,
 				ED040CF7177B71F80028B73D /* NFIgrejaEventsPanel.m */,
 				ED50D50C17788984000C0FB3 /* NFIgrejaListCell.h */,
@@ -655,7 +654,7 @@
 				EDD967BA1779DEA200F9FC93 /* NFMissaListCell.m */,
 				ED0B884F1785E016003174F6 /* NFTwitterTimelineCell.h */,
 				ED0B88501785E016003174F6 /* NFTwitterTimelineCell.m */,
-				EDFEE65E1774E905002F886A /* Storyboard.storyboard */,
+				82B559631D7F548100DCCB27 /* Storyboard.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -742,6 +741,8 @@
 				ORGANIZATIONNAME = NetFilter;
 				TargetAttributes = {
 					ED3B144D177485AD00213826 = {
+						DevelopmentTeam = PWFMZR3KY6;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -759,6 +760,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
+				"pt-BR",
 			);
 			mainGroup = ED3B1445177485AC00213826;
 			productRefGroup = ED3B144F177485AD00213826 /* Products */;
@@ -780,12 +783,10 @@
 				ED3B1464177485AD00213826 /* Default.png in Resources */,
 				ED3B1466177485AD00213826 /* Default@2x.png in Resources */,
 				ED3B1468177485AD00213826 /* Default-568h@2x.png in Resources */,
-				EDFEE65F1774E905002F886A /* Storyboard.storyboard in Resources */,
+				82B559611D7F548100DCCB27 /* Storyboard.storyboard in Resources */,
 				EDFEE66A17750205002F886A /* Igrejas.sqlite in Resources */,
-				ED5BB112177B2E3100C98CE9 /* NFIgrejaDetailPanel.xib in Resources */,
+				82B559641D7F549300DCCB27 /* NFIgrejaDetailPanel.xib in Resources */,
 				EDF24AD117830CD200AEDC32 /* licenses.html in Resources */,
-				EDF24ADF17836CB500AEDC32 /* Icon.png in Resources */,
-				EDF24AE117836CBB00AEDC32 /* Icon@2x.png in Resources */,
 				83591BC517E11A4F00197C06 /* Images.xcassets in Resources */,
 				EDF24AF417836F9500AEDC32 /* ico-igreja.png in Resources */,
 				EDF24AF517836F9500AEDC32 /* ico-igreja@2x.png in Resources */,
@@ -880,7 +881,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 		};
 		A96210B39F2D18F66DE8E6CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -894,7 +895,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B7B62FBE480A4E41BBC324AD /* [CP] Copy Pods Resources */ = {
@@ -1035,10 +1036,31 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		82B559631D7F548100DCCB27 /* Storyboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82B559681D7F54DE00DCCB27 /* Base */,
+				82B5596C1D7F551200DCCB27 /* en */,
+				82316C641F2BC9C2007FA5C2 /* pt-BR */,
+			);
+			name = Storyboard.storyboard;
+			sourceTree = "<group>";
+		};
+		82B559661D7F549300DCCB27 /* NFIgrejaDetailPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82B559671D7F54DE00DCCB27 /* Base */,
+				82B5596A1D7F550600DCCB27 /* en */,
+				82316C631F2BC9C2007FA5C2 /* pt-BR */,
+			);
+			name = NFIgrejaDetailPanel.xib;
+			sourceTree = "<group>";
+		};
 		ED8496551790A507009B61A4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ED8496561790A507009B61A4 /* en */,
+				82316C651F2BC9C2007FA5C2 /* pt-BR */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1050,6 +1072,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1082,6 +1105,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1111,13 +1135,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PWFMZR3KY6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Igrejas/Igrejas-Prefix.pch";
 				INFOPLIST_FILE = "Igrejas/Igrejas-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.netfilter.igrejaslaredo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1130,16 +1156,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PWFMZR3KY6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Igrejas/Igrejas-Prefix.pch";
 				INFOPLIST_FILE = "Igrejas/Igrejas-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.netfilter.igrejaslaredo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "480A2F07-2D97-413B-BB3A-3B2989D9BC76";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
